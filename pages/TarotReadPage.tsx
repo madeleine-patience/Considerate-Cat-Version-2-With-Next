@@ -47,16 +47,8 @@ export default function FirstPost() {
         "A more in-depth spread, this can be viewed as an expanded version of the three card layout. Cards can represent a variety of aspects such as past, present, future, subconscious influences, personal feelings, external influences, hopes or fears, and the outcome. The positions' meanings can vary based on the reader's system.",
     },
   ];
-  //   const displayCardSuitButtonData: { buttonLabel: CardSuitTypes }[] = [
-  //     { buttonLabel: "Major" },
-  //     { buttonLabel: "Cups" },
-  //     { buttonLabel: "Pentacles" },
-  //     { buttonLabel: "Swords" },
-  //     { buttonLabel: "Wands" },
-  //   ];
-  // : instead of {button: string} as const makes it recognize the literal string values
 
-  const mappedDisplayGetCardsBuySuitButton = buttonInfo.map((item, index) => {
+  const mappedTarotReadButtons = buttonInfo.map((item, index) => {
     return (
       <GenericButton
         key={index}
@@ -69,13 +61,13 @@ export default function FirstPost() {
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
       <GenericButton buttonLabel="Test" onClick={() => displaySomeCards(5)} />
-      {mappedDisplayGetCardsBuySuitButton}
+      {mappedTarotReadButtons}
       <DisplayTarotCards width="248px" data={displayFilteredData} />
-      <SingleTarotCard image={tarotBack} />
+      {/* <SingleTarotCard image={tarotBack} /> */}
       <Typography> Bonjour </Typography>
       <SingleTarotCardWithFlip
         isCardFlipped={isFlipped}
-        onClick={() => setIsFlipped(true)}
+        onClick={() => setIsFlipped(!isFlipped)}
         image={tarotCards[12]?.image_link}
         transitionDelay="testing"
       />
