@@ -12,8 +12,11 @@ interface SingleTarotCardWithFlipAction {
 interface SingleTarotCardWithFlipProps extends SingleTarotCardWithFlipAction {
   image: string;
   isCardFlipped: boolean;
-  transitionDelay: string;
+  transitionDelay?: string;
 }
+
+const boxShadow =
+  "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px";
 
 const SingleTarotCard = ({
   image,
@@ -31,8 +34,9 @@ const SingleTarotCard = ({
         alignItems: "center",
         position: "relative",
         transformStyle: "preserve-3d",
-        transition: "transform 600ms",
-        transitionDelay: transitionDelay,
+        //Set to 0ms to kill the transition on state change between views and avoid transition.
+        transition: isCardFlipped ? "transform 800ms" : "transform 0ms",
+        transitionDelay: isCardFlipped ? transitionDelay : "",
         cursor: "pointer",
         height: 425,
         width: 250,
@@ -46,6 +50,8 @@ const SingleTarotCard = ({
         width="250px"
         sx={{
           borderRadius: 3,
+          boxShadow: { boxShadow },
+          backfaceVisibility: "hidden",
         }}
         component="img"
         src={tarotBack}
@@ -54,8 +60,7 @@ const SingleTarotCard = ({
         width="250px"
         sx={{
           borderRadius: 3,
-          boxShadow:
-            "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+          boxShadow: { boxShadow },
           transformOrigin: "center center",
           width: "100%",
           height: "100%",

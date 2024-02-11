@@ -11,6 +11,8 @@ import { CardSuitTypes } from "../types/cardSuitTypes";
 import SingleTarotCard from "../components/singleTarotCard/SingleTarotCard";
 import SingleTarotCardWithFlip from "../components/singleTarotCardWithFlip/SingleTarotCardWithFlip";
 import { useState } from "react";
+import DisplayTarotCardsWithFlip from "../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip";
+import HompeageHeader from "../components/homepageHeader/HomepageHeader";
 
 const tarotBack =
   "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/tarotcard/0.jpg";
@@ -20,6 +22,11 @@ export default function FirstPost() {
   const { tarotCards, loading } = useFetchTarotDeck();
   const { tarotCardData, displaySomeCards, displayFilteredData } =
     useTarotCard(tarotCards);
+
+  const displayTarotSpread = (lengthOfSpread: number) => {
+    displaySomeCards(lengthOfSpread);
+    setIsFlipped(false);
+  };
 
   const buttonInfo = [
     {
@@ -53,24 +60,29 @@ export default function FirstPost() {
       <GenericButton
         key={index}
         buttonLabel={item.buttonname}
-        onClick={() => displaySomeCards(item.cardreadLength)}
+        onClick={() => displayTarotSpread(item.cardreadLength)}
       />
     );
   });
 
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
-      <GenericButton buttonLabel="Test" onClick={() => displaySomeCards(5)} />
-      {mappedTarotReadButtons}
-      <DisplayTarotCards width="248px" data={displayFilteredData} />
-      {/* <SingleTarotCard image={tarotBack} /> */}
-      <Typography> Bonjour </Typography>
-      <SingleTarotCardWithFlip
+      <HompeageHeader />
+      <Box display="flex" justifyContent="center" gap={3} p={3}>
+        {mappedTarotReadButtons}
+      </Box>
+      <DisplayTarotCardsWithFlip
+        width="248px"
+        data={displayFilteredData}
+        isFlipped={isFlipped}
+        onClick={() => setIsFlipped(true)}
+      />
+      {/* <SingleTarotCardWithFlip
         isCardFlipped={isFlipped}
         onClick={() => setIsFlipped(!isFlipped)}
         image={tarotCards[12]?.image_link}
         transitionDelay="testing"
-      />
+      /> */}
     </TarotDeckContext.Provider>
   );
 }
