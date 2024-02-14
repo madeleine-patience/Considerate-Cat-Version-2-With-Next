@@ -8,6 +8,7 @@ import { TarotDeckContext } from "../context/TarotDeckContext";
 import DisplayTarotCards from "../components/displayTarotCards/DisplayTarotCards";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import { CardSuitTypes } from "../types/cardSuitTypes";
+import HompeageHeader from "../components/homepageHeader/HomepageHeader";
 
 export default function FirstPost() {
   const { tarotCards, loading } = useFetchTarotDeck();
@@ -42,6 +43,7 @@ export default function FirstPost() {
   if (loading) return <p>Loading...</p>;
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
+      <HompeageHeader />
       <Box
         minHeight="100vh"
         display="flex"
@@ -50,21 +52,20 @@ export default function FirstPost() {
       >
         <Box
           maxWidth="1000px"
-          margin="auto"
+          mx="auto"
+          my={4}
           display="flex"
           flexDirection="column"
           alignItems="center"
         >
           <ElmerCircleIcon />
-          <Typography variant="h5" fontStyle="italic" py={4}>
+          <Typography variant="h5" fontStyle="italic" py={4} textAlign="center">
             {tarotSuitDescription}
           </Typography>
           <Box display="flex" flexDirection="row" mx="auto" gap={4}>
             {mappedDisplayGetCardsBuySuitButton}
           </Box>
-          <Box mx="auto">
-            <DisplayTarotCards width="248px" data={displayFilteredData} />
-          </Box>
+          <DisplayTarotCards width="248px" data={displayFilteredData} />
         </Box>
         <FlowerFooter />
       </Box>
