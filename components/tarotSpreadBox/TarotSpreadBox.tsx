@@ -21,7 +21,6 @@ const TarotSpreadBox = ({
   const tarotDeckData = useContext(TarotDeckContext);
   const { palette } = useTheme();
   const [isHovered, setIsHovered] = useState(false);
-  console.log(isHovered);
   // const CardContainer = styled(Box)({
   //   "&:hover > *": {
   //     transition: "transform .5s ease-in-out",

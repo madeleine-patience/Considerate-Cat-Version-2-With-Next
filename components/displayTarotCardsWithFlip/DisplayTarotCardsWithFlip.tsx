@@ -19,8 +19,6 @@ const DisplayTarotCardsWithFlip = ({
   const getDelaysArr = (amountOfElements: number) => {
     const pageAnimationTime =
       amountOfElements < 4 ? 1000 : amountOfElements < 6 ? 2000 : 8000;
-    console.log(amountOfElements);
-    console.log(pageAnimationTime);
     const result = [];
     const delta = pageAnimationTime / (amountOfElements - 1);
     let current = 0;
