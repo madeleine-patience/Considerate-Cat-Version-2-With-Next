@@ -3,9 +3,11 @@ import Box from "@mui/material/Box";
 import SingleTarotCard from "../singleTarotCard/SingleTarotCard";
 import { useContext, useState } from "react";
 import { TarotDeckContext } from "../../context/TarotDeckContext";
-import { styled } from "@mui/system";
 
-interface TarotSpreadProps {
+interface TarotSpreadAction {
+  onClick: () => void;
+}
+interface TarotSpreadProps extends TarotSpreadAction {
   title: string;
   amountOfCards?: number;
   // backgroundColor: string;
@@ -17,45 +19,14 @@ const TarotSpreadBox = ({
   title,
   // backgroundColor,
   description,
+  onClick,
 }: TarotSpreadProps) => {
   const tarotDeckData = useContext(TarotDeckContext);
   const { palette } = useTheme();
   const [isHovered, setIsHovered] = useState(false);
-  // const CardContainer = styled(Box)({
-  //   "&:hover > *": {
-  //     transition: "transform .5s ease-in-out",
-  //   },
-
-  //   "&:hover > *:nth-child(1)": {
-  //     transform: " rotate(3deg) scale(1.2) translate(0px, -10px) ",
-  //   },
-  //   "&:hover > *:nth-child(2)": {
-  //     transform: " rotate(-3deg) scale(1.2) translate(0px, -10px) ",
-  //   },
-  //   "&:hover > *:nth-child(3)": {
-  //     transform: " rotate(3deg) scale(1.2) translate(0px, -10px) ",
-  //   },
-
-  //   "&:hover > *:nth-child(4)": {
-  //     transform: " rotate(-3deg) scale(1.2) translate(0px, -10px) ",
-  //   },
-
-  //   "&:hover > *:nth-child(5)": {
-  //     transform: " rotate(3deg) scale(1.2) translate(0px, -10px) ",
-  //   },
-  // });
-
-  //   const StyledTarotCard = styled("img")({
-  //     top: 25,
-  //     boxShadow:
-  //       "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
-  //     borderRadius: 10,
-  //     transition: "transform .4s ease-in-out",
-  //     border: "4px white solid",
-  //     width: 100,
-  //   });
   return (
     <Box
+      onClick={onClick}
       sx={{ width: "fit-content" }}
       onMouseEnter={() => {
         setIsHovered(true);
@@ -94,7 +65,6 @@ const TarotSpreadBox = ({
         >
           {tarotDeckData.length > 0 && (
             <Box display="flex">
-              {/* left card */}
               {amountOfCards > 4 && (
                 <SingleTarotCard
                   image={tarotDeckData[10].image_link}
@@ -128,7 +98,6 @@ const TarotSpreadBox = ({
                   }}
                 />
               )}
-              {/* middle card */}
               {amountOfCards > 0 && (
                 <SingleTarotCard
                   image={tarotDeckData[1].image_link}
@@ -144,7 +113,6 @@ const TarotSpreadBox = ({
                   }}
                 />
               )}
-              {/* right card */}
               {amountOfCards > 2 && (
                 <SingleTarotCard
                   image={tarotDeckData[5].image_link}
@@ -161,7 +129,6 @@ const TarotSpreadBox = ({
                   }}
                 />
               )}
-
               {amountOfCards > 4 && (
                 <SingleTarotCard
                   image={tarotDeckData[6].image_link}
@@ -179,24 +146,6 @@ const TarotSpreadBox = ({
               )}
             </Box>
           )}
-          {/* {amountOfCards > 2 && (
-            <StyledTarotCard
-              style={{ position: "absolute", right: "75px", zIndex: 1 }}
-              src={image3}
-            />
-          )}
-          {amountOfCards > 4 && (
-            <StyledTarotCard
-              style={{ position: "absolute", right: "170px" }}
-              src={image4}
-            />
-          )}
-          {amountOfCards > 4 && (
-            <StyledTarotCard
-              style={{ position: "absolute", right: "24px" }}
-              src={image5}
-            />
-          )} */}
         </Box>
       </Box>
       <Box
@@ -237,7 +186,4 @@ const TarotSpreadBox = ({
     </Box>
   );
 };
-
 export default TarotSpreadBox;
-
-// marble_wraith: Also worth noting, be careful about which properties you animate on. Stick to Translate, scale, rotate, and opacity. Because those are the ones that can be GPU accelerated.
