@@ -1,25 +1,16 @@
-import Link from "next/link";
 import GenericButton from "../components/genericButton/GenericButton";
 import { useTarotCard } from "../hooks/useTarotCard";
 import useFetchTarotDeck from "../hooks/fetchTarotDeck";
-import ElmerCircleIcon from "../components/elmerCircleIcon/ElmerCircleIcon";
 import { Box, Typography } from "@mui/material";
 import { TarotDeckContext } from "../context/TarotDeckContext";
-import DisplayTarotCards from "../components/displayTarotCards/DisplayTarotCards";
-import FlowerFooter from "../components/flowerFooter/FlowerFooter";
-import { CardSuitTypes } from "../types/cardSuitTypes";
-import SingleTarotCard from "../components/singleTarotCard/SingleTarotCard";
-import SingleTarotCardWithFlip from "../components/singleTarotCardWithFlip/SingleTarotCardWithFlip";
 import { useState } from "react";
 import DisplayTarotCardsWithFlip from "../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip";
 import HompeageHeader from "../components/homepageHeader/HomepageHeader";
-
-const tarotBack =
-  "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/tarotcard/0.jpg";
+import TarotSpreadBox from "../components/tarotSpreadBox/TarotSpreadBox";
 
 export default function FirstPost() {
   const [isFlipped, setIsFlipped] = useState(false);
-  const { tarotCards, loading } = useFetchTarotDeck();
+  const { tarotCards } = useFetchTarotDeck();
   const { tarotCardData, displaySomeCards, displayFilteredData } =
     useTarotCard(tarotCards);
 
@@ -83,6 +74,7 @@ export default function FirstPost() {
         image={tarotCards[12]?.image_link}
         transitionDelay="testing"
       /> */}
+      <TarotSpreadBox />
     </TarotDeckContext.Provider>
   );
 }
