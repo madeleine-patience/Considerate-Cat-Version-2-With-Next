@@ -74,7 +74,23 @@ export default function FirstPost() {
         image={tarotCards[12]?.image_link}
         transitionDelay="testing"
       /> */}
-      <TarotSpreadBox />
+      <Box display="flex" justifyContent="center" gap={10}>
+        <TarotSpreadBox
+          title="Vibe Check"
+          amountOfCards={1}
+          description="Single Card Pull. Good for yes or no questions."
+        />
+        <TarotSpreadBox
+          title="Three Card Spread"
+          amountOfCards={3}
+          description="Past, Present and Future."
+        />
+        <TarotSpreadBox
+          title="Five Card Spread"
+          amountOfCards={5}
+          description="Past, Present and Future with guides to move you forward."
+        />
+      </Box>
     </TarotDeckContext.Provider>
   );
 }

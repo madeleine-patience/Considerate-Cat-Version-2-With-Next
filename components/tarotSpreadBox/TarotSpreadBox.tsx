@@ -1,59 +1,50 @@
 import { Typography, useTheme } from "@mui/material";
 import Box from "@mui/material/Box";
 import SingleTarotCard from "../singleTarotCard/SingleTarotCard";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { TarotDeckContext } from "../../context/TarotDeckContext";
 import { styled } from "@mui/system";
 
 interface TarotSpreadProps {
-  //   title: string;
+  title: string;
   amountOfCards?: number;
-  //   backgroundColor: string;
-  //   image1: string;
-  //   image2?: string;
-  //   image3?: string;
-  //   image4?: string;
-  //   image5?: string;
-  //   description: string;
+  // backgroundColor: string;
+  description: string;
 }
 
 const TarotSpreadBox = ({
-  amountOfCards = 3,
-}: //   title,
-//   backgroundColor,
-//   image1,
-//   image2,
-//   image3,
-//   image4,
-//   image5,
-//   description,
-TarotSpreadProps) => {
+  amountOfCards,
+  title,
+  // backgroundColor,
+  description,
+}: TarotSpreadProps) => {
   const tarotDeckData = useContext(TarotDeckContext);
   const { palette } = useTheme();
+  const [isHovered, setIsHovered] = useState(false);
+  console.log(isHovered);
+  // const CardContainer = styled(Box)({
+  //   "&:hover > *": {
+  //     transition: "transform .5s ease-in-out",
+  //   },
 
-  const CardContainer = styled(Box)({
-    "&:hover > *": {
-      transition: "transform .5s ease-in-out",
-    },
+  //   "&:hover > *:nth-child(1)": {
+  //     transform: " rotate(3deg) scale(1.2) translate(0px, -10px) ",
+  //   },
+  //   "&:hover > *:nth-child(2)": {
+  //     transform: " rotate(-3deg) scale(1.2) translate(0px, -10px) ",
+  //   },
+  //   "&:hover > *:nth-child(3)": {
+  //     transform: " rotate(3deg) scale(1.2) translate(0px, -10px) ",
+  //   },
 
-    "&:hover > *:nth-child(1)": {
-      transform: " rotate(3deg) scale(1.2) translate(0px, -10px) ",
-    },
-    "&:hover > *:nth-child(2)": {
-      transform: " rotate(-3deg) scale(1.2) translate(0px, -10px) ",
-    },
-    "&:hover > *:nth-child(3)": {
-      transform: " rotate(3deg) scale(1.2) translate(0px, -10px) ",
-    },
+  //   "&:hover > *:nth-child(4)": {
+  //     transform: " rotate(-3deg) scale(1.2) translate(0px, -10px) ",
+  //   },
 
-    "&:hover > *:nth-child(4)": {
-      transform: " rotate(-3deg) scale(1.2) translate(0px, -10px) ",
-    },
-
-    "&:hover > *:nth-child(5)": {
-      transform: " rotate(3deg) scale(1.2) translate(0px, -10px) ",
-    },
-  });
+  //   "&:hover > *:nth-child(5)": {
+  //     transform: " rotate(3deg) scale(1.2) translate(0px, -10px) ",
+  //   },
+  // });
 
   //   const StyledTarotCard = styled("img")({
   //     top: 25,
@@ -65,7 +56,15 @@ TarotSpreadProps) => {
   //     width: 100,
   //   });
   return (
-    <Box>
+    <Box
+      sx={{ width: "fit-content" }}
+      onMouseEnter={() => {
+        setIsHovered(true);
+      }}
+      onMouseLeave={() => {
+        setIsHovered(false);
+      }}
+    >
       <Box
         gap="8px"
         flexDirection="column"
@@ -85,91 +84,97 @@ TarotSpreadProps) => {
           color="grey"
           variant="h6"
           textAlign="center"
-        >
-          {/* {title} */}
-        </Typography>
+        ></Typography>
         <Box
           position="relative"
           width={300}
           height={300}
           display="flex"
           alignItems="center"
-          justifyContent="flex-start"
+          justifyContent="center"
         >
-          {/* left card */}
           {tarotDeckData.length > 0 && (
-            <Box>
-              <SingleTarotCard
-                image={tarotDeckData[3].image_link}
-                sx={{
-                  position: "relative",
-                  left: "10px",
-                  width: "100px",
-                  zIndex: "1",
-                  "&:hover": {
-                    transition: "transform .5s ease-in-out",
-                    transform:
-                      " rotate(3deg) scale(1.2) translate(0px, -10px) ",
-                  },
-                }}
-              />
-              {/* middle card */}
-              {amountOfCards > 2 && (
+            <Box display="flex">
+              {/* left card */}
+              {amountOfCards > 4 && (
                 <SingleTarotCard
-                  image={tarotDeckData[1].image_link}
+                  image={tarotDeckData[10].image_link}
                   sx={{
+                    border: "4px solid white",
                     position: "relative",
                     width: "100px",
-                    zIndex: "2",
-                    "&:hover": {
-                      transition: "transform .5s ease-in-out",
-                      transform: "  scale(1.2) translate(0px, -10px) ",
-                    },
+                    left: "120px",
+
+                    transition: "transform .5s ease-in-out",
+                    transform: isHovered
+                      ? "scale(1.1) rotate(-2deg) translate(0px, -10px)"
+                      : "none",
                   }}
                 />
               )}
+              {amountOfCards > 2 && (
+                <SingleTarotCard
+                  image={tarotDeckData[3].image_link}
+                  sx={{
+                    border: "4px solid white",
+                    position: "relative",
+                    left: "50px",
+                    width: "100px",
+                    zIndex: "2",
+
+                    transition: "transform .5s ease-in-out",
+                    transform: isHovered
+                      ? "scale(1.1) rotate(-2deg) translate(0px, -10px)"
+                      : "none",
+                  }}
+                />
+              )}
+              {/* middle card */}
+              {amountOfCards > 0 && (
+                <SingleTarotCard
+                  image={tarotDeckData[1].image_link}
+                  sx={{
+                    border: "4px solid white",
+                    position: "relative",
+                    width: "100px",
+                    zIndex: "3",
+                    transition: "transform .5s ease-in-out",
+                    transform: isHovered
+                      ? "scale(1.1) translate(0px, -10px)"
+                      : "none",
+                  }}
+                />
+              )}
+              {/* right card */}
               {amountOfCards > 2 && (
                 <SingleTarotCard
                   image={tarotDeckData[5].image_link}
                   sx={{
+                    zIndex: 2,
+                    border: "4px solid white",
                     position: "relative",
                     width: "100px",
-                    right: "10px",
-                    "&:hover": {
-                      transition: "transform .5s ease-in-out",
-                      transform:
-                        " rotate(3deg) scale(1.2) translate(0px, -10px) ",
-                    },
+                    right: "50px",
+                    transition: "transform .5s ease-in-out",
+                    transform: isHovered
+                      ? "scale(1.1) rotate(2deg) translate(0px, -10px)"
+                      : "none",
                   }}
                 />
               )}
+
               {amountOfCards > 4 && (
                 <SingleTarotCard
-                  image={tarotDeckData[20].image_link}
+                  image={tarotDeckData[6].image_link}
                   sx={{
-                    position: "absolute",
-                    right: "170px",
+                    border: "4px solid white",
+                    position: "relative",
                     width: "100px",
-                    "&:hover": {
-                      transition: "transform .5s ease-in-out",
-                      transform:
-                        " rotate(3deg) scale(1.2) translate(0px, -10px) ",
-                    },
-                  }}
-                />
-              )}
-              {amountOfCards > 4 && (
-                <SingleTarotCard
-                  image={tarotDeckData[27].image_link}
-                  sx={{
-                    position: "absolute",
-                    right: "24px",
-                    width: "100px",
-                    "&:hover": {
-                      transition: "transform .5s ease-in-out",
-                      transform:
-                        " rotate(3deg) scale(1.2) translate(0px, -10px) ",
-                    },
+                    right: "120px",
+                    transition: "transform .5s ease-in-out",
+                    transform: isHovered
+                      ? "scale(1.1) rotate(2deg) translate(0px, -10px)"
+                      : "none",
                   }}
                 />
               )}
@@ -218,7 +223,7 @@ TarotSpreadProps) => {
           fontWeight={600}
           color={palette.primary.dark}
         >
-          Vibe Check
+          {title}
         </Typography>
         <Typography
           variant="h6"
@@ -227,7 +232,7 @@ TarotSpreadProps) => {
           fontWeight={600}
           color={palette.primary.dark}
         >
-          Testing 123
+          {description}
         </Typography>
       </Box>
     </Box>
