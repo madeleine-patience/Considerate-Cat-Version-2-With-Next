@@ -7,20 +7,20 @@ import { TarotDeckContext } from "../../context/TarotDeckContext";
 interface TarotSpreadAction {
   onClick: () => void;
 }
-interface TarotSpreadProps extends TarotSpreadAction {
+interface TarotSpreadSpreadSelectionProps extends TarotSpreadAction {
   title: string;
   amountOfCards?: number;
-  // backgroundColor: string;
+  backgroundColor?: string;
   description: string;
 }
 
-const TarotSpreadBox = ({
+const TarotSpreadSelectionBox = ({
   amountOfCards,
   title,
-  // backgroundColor,
+  backgroundColor,
   description,
   onClick,
-}: TarotSpreadProps) => {
+}: TarotSpreadSpreadSelectionProps) => {
   const tarotDeckData = useContext(TarotDeckContext);
   const { palette } = useTheme();
   const [isHovered, setIsHovered] = useState(false);
@@ -43,7 +43,9 @@ const TarotSpreadBox = ({
         height={300}
         position="relative"
         sx={{
-          backgroundColor: palette.primary.light,
+          backgroundColor: { backgroundColor },
+          backgroundImage:
+            "linear-gradient(to right bottom, #f2afda, #ffb3c2, #ffbeb0, #f7cba9, #e7d8ae)",
           borderTopLeftRadius: "10%",
           borderTopRightRadius: "10%",
         }}
@@ -64,16 +66,33 @@ const TarotSpreadBox = ({
           justifyContent="center"
         >
           {tarotDeckData.length > 0 && (
-            <Box display="flex">
-              {amountOfCards > 4 && (
+            <Box display="flex" pr={amountOfCards == 4 ? "60px" : "0px"}>
+              {amountOfCards > 6 && (
+                <SingleTarotCard
+                  image={tarotDeckData[51].image_link}
+                  sx={{
+                    border: "4px solid white",
+                    position: "relative",
+                    width: "100px",
+                    top: "30px",
+                    left: "205px",
+                    transition: "transform .5s ease-in-out",
+                    transform: isHovered
+                      ? "scale(1.1) rotate(-2deg) translate(0px, -10px)"
+                      : "none",
+                  }}
+                />
+              )}
+
+              {amountOfCards > 3 && (
                 <SingleTarotCard
                   image={tarotDeckData[10].image_link}
                   sx={{
                     border: "4px solid white",
                     position: "relative",
+                    zIndex: "2",
                     width: "100px",
                     left: "120px",
-
                     transition: "transform .5s ease-in-out",
                     transform: isHovered
                       ? "scale(1.1) rotate(-2deg) translate(0px, -10px)"
@@ -88,9 +107,10 @@ const TarotSpreadBox = ({
                     border: "4px solid white",
                     position: "relative",
                     left: "50px",
-                    width: "100px",
-                    zIndex: "2",
+                    bottom: amountOfCards == 7 ? "40px" : "",
 
+                    width: "100px",
+                    zIndex: "3",
                     transition: "transform .5s ease-in-out",
                     transform: isHovered
                       ? "scale(1.1) rotate(-2deg) translate(0px, -10px)"
@@ -104,8 +124,9 @@ const TarotSpreadBox = ({
                   sx={{
                     border: "4px solid white",
                     position: "relative",
+                    bottom: amountOfCards == 7 ? "70px" : "",
                     width: "100px",
-                    zIndex: "3",
+                    zIndex: "4",
                     transition: "transform .5s ease-in-out",
                     transform: isHovered
                       ? "scale(1.1) translate(0px, -10px)"
@@ -117,11 +138,13 @@ const TarotSpreadBox = ({
                 <SingleTarotCard
                   image={tarotDeckData[5].image_link}
                   sx={{
-                    zIndex: 2,
+                    zIndex: amountOfCards == 4 ? "6" : "3",
                     border: "4px solid white",
                     position: "relative",
                     width: "100px",
                     right: "50px",
+                    bottom: amountOfCards == 7 ? "40px" : "",
+
                     transition: "transform .5s ease-in-out",
                     transform: isHovered
                       ? "scale(1.1) rotate(2deg) translate(0px, -10px)"
@@ -137,6 +160,25 @@ const TarotSpreadBox = ({
                     position: "relative",
                     width: "100px",
                     right: "120px",
+                    zIndex: "2",
+                    transition: "transform .5s ease-in-out",
+                    transform: isHovered
+                      ? "scale(1.1) rotate(2deg) translate(0px, -10px)"
+                      : "none",
+                  }}
+                />
+              )}
+
+              {amountOfCards > 6 && (
+                <SingleTarotCard
+                  image={tarotDeckData[1].image_link}
+                  sx={{
+                    border: "4px solid white",
+                    position: "relative",
+                    width: "100px",
+                    right: "205px",
+                    top: "30px",
+                    // left: amountOfCards == 7 ? "203px" : "",
                     transition: "transform .5s ease-in-out",
                     transform: isHovered
                       ? "scale(1.1) rotate(2deg) translate(0px, -10px)"
@@ -186,4 +228,4 @@ const TarotSpreadBox = ({
     </Box>
   );
 };
-export default TarotSpreadBox;
+export default TarotSpreadSelectionBox;

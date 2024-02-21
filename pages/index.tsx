@@ -47,13 +47,6 @@ export default function Home() {
           card3={tarotCards[14].image_link}
         />
 
-        <ElmerIcon />
-
-        <GenericButton
-          buttonLabel="Pentacles"
-          onClick={() => displayCardBySuit("Pentacles")}
-        />
-
         <Box mx="auto">
           <DisplayTarotCards width="248px" data={displayFilteredData} />
         </Box>
@@ -62,49 +55,3 @@ export default function Home() {
     </TarotDeckContext.Provider>
   );
 }
-
-// import { Box } from "@mui/material";
-// import FlowerFooter from "../components/flowerFooter/FlowerFooter";
-// import GenericButton from "../components/genericButton/GenericButton";
-// import useFetchTarotCards from "../hooks/fetchTarotCardData";
-// import { useTarotCardHook } from "../hooks/useTarotCardHook";
-// import DisplayTarotCards from "../components/displayTarotCards/DisplayTarotCards";
-// import { useState } from "react";
-
-// export default function Home() {
-//   const { tarotCards, loading } = useFetchTarotCards();
-//   const { tarotCardData, displaySomeCards, displayTarotCards } =
-//     useTarotCardHook(tarotCards);
-//   if (loading) return <p>Loading...</p>;
-
-//   const displayFirstCards = () => {
-//     setDisplayCards(true);
-//   };
-
-//   return (
-//     <Box
-//       minHeight="100vh"
-//       display="flex"
-//       flexDirection="column"
-//       alignContent="center"
-//       position="relative"
-//       sx={{ backgroundColor: "pink" }}
-//     >
-//       <Box display="flex" flexDirection="row" mx="auto">
-//         <GenericButton buttonLabel="One" onClick={() => displaySomeCards(1)} />
-//         <GenericButton buttonLabel="Two" onClick={() => displaySomeCards(2)} />
-//         <GenericButton
-//           buttonLabel="Three"
-//           onClick={() => displaySomeCards(3)}
-//         />
-//         <GenericButton buttonLabel="Four" onClick={() => displaySomeCards(4)} />
-//         <GenericButton buttonLabel="Five" onClick={() => displaySomeCards(5)} />
-//       </Box>
-
-//       <Box mx="auto">
-//         <DisplayTarotCards width="248px" data={tarotCardData} />
-//       </Box>
-//       <FlowerFooter sx={{ position: "absolute", bottom: 0, pt: 100 }} />
-//     </Box>
-//   );
-// }
