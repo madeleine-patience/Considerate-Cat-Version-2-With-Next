@@ -12,7 +12,6 @@ const FlowerFooter = ({ sx }: flowerFooterProps) => {
   return (
     <Box
       sx={{
-        width: "100%",
         display: "flex",
         height: "400px",
         background: "linear-gradient(transparent, #a0b594)",
@@ -36,7 +35,7 @@ const FlowerFooter = ({ sx }: flowerFooterProps) => {
               background: "rgba(177, 210, 175, 0.8)",
               display: "flex",
               alignItems: "center",
-              p: 10,
+              p: 11,
               borderRadius: 5,
               gap: 5,
             }}
@@ -53,24 +52,23 @@ const FlowerFooter = ({ sx }: flowerFooterProps) => {
             >
               <Box
                 component="img"
-                style={{ width: 350 }}
+                sx={{ width: 300, position: "relative", top: 10, right: 8 }}
                 src={catFooterImage}
               />
             </Box>
             <Box
               sx={{
                 maxWidth: "600px",
-                p: 8,
-                my: "auto",
+                p: 10,
+                gap: 4,
                 background: "#9C6E4F",
                 borderRadius: 5,
                 display: "flex",
                 alignItems: "center",
                 flexDirection: "column",
-                justifyContent: "space-around",
               }}
             >
-              <Typography variant="h6">
+              <Typography variant="h6" fontWeight="600">
                 Considerate Cat is purrrrrently under construction. Hold onto
                 your whiskers while we work our
                 <b style={{ color: "yellow" }}>
@@ -78,11 +76,9 @@ const FlowerFooter = ({ sx }: flowerFooterProps) => {
                 </b>
               </Typography>
 
-              <Box>
-                <InstagramIcon
-                  sx={{ color: "white", transform: "scale(2)", pr: 8 }}
-                />
-                <EmailIcon sx={{ color: "white", transform: "scale(2)" }} />
+              <Box sx={{ display: "flex", gap: "16px" }}>
+                <InstagramIcon sx={{ color: "white", fontSize: "56px" }} />
+                <EmailIcon sx={{ color: "white", fontSize: "56px" }} />
               </Box>
             </Box>
           </Box>

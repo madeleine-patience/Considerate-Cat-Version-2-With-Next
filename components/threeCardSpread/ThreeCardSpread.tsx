@@ -15,7 +15,7 @@ export const ThreeCardSpread = ({
 }: ThreeCardSpreadProps) => {
   const tarotDeckData = useContext(TarotDeckContext);
   return (
-    <Box p={16}>
+    <Box>
       {tarotDeckData.length > 0 && (
         <Box position="relative">
           <SingleTarotCard

@@ -31,24 +31,35 @@ export default function Home() {
         sx={{ backgroundColor: palette.primary.main }}
       >
         <HompeageHeader />
-        <Box
-          component="img"
-          src={homePageMainImage}
-          width="600px"
-          sx={{
-            borderRadius: 4,
-            boxShadow:
-              "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px",
-          }}
-        />
-        <ThreeCardSpread
-          card1={tarotCards[12].image_link}
-          card2={tarotCards[13].image_link}
-          card3={tarotCards[14].image_link}
-        />
+        <Box sx={{ p: 8 }}>
+          <Box
+            width="100%"
+            display="flex"
+            justifyContent="center"
+            position="relative"
+          >
+            <Box
+              component="img"
+              src={homePageMainImage}
+              width="800px"
+              sx={{
+                borderRadius: 4,
+                boxShadow:
+                  "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px",
+              }}
+            />
+            <Box sx={{ position: "absolute", top: "300px", right: "-50px" }}>
+              <ThreeCardSpread
+                card1={tarotCards[12].image_link}
+                card2={tarotCards[13].image_link}
+                card3={tarotCards[14].image_link}
+              />
+            </Box>
+          </Box>
 
-        <Box mx="auto">
-          <DisplayTarotCards width="248px" data={displayFilteredData} />
+          <Box mx="auto">
+            <DisplayTarotCards width="248px" data={displayFilteredData} />
+          </Box>
         </Box>
         <FlowerFooter />
       </Box>
