@@ -5,7 +5,7 @@ import { Box, useTheme } from "@mui/material";
 import { TarotDeckContext } from "../context/TarotDeckContext";
 import { useState } from "react";
 import DisplayTarotCardsWithFlip from "../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip";
-import HompeageHeader from "../components/homepageHeader/HomepageHeader";
+import HompeageHeader from "../components/header/Header";
 import TarotSpreadSelectionBox from "../components/tarotSpreadSelectionBox/TarotSpreadSelectionBox";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 
