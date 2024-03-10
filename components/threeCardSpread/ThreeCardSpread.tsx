@@ -15,26 +15,28 @@ export const ThreeCardSpread = ({
 }: ThreeCardSpreadProps) => {
   const tarotDeckData = useContext(TarotDeckContext);
   return (
-    <Box>
+    <Box sx={{}}>
       {tarotDeckData.length > 0 && (
         <Box position="relative">
           <SingleTarotCard
             sx={{
-              transform: "rotate(-0.04turn)",
-              top: -40,
+              position: "relative",
+              transform: "rotate(-.04turn)",
+              top: "25px",
+              right: "-75px",
             }}
             image={card1}
           />
           <SingleTarotCard
-            sx={{ position: "relative", zIndex: 2, top: -50, right: 75 }}
+            sx={{ position: "relative", zIndex: 2 }}
             image={card2}
           />
           <SingleTarotCard
             sx={{
               position: "relative",
               transform: "rotate(.04turn)",
-              top: -10,
-              right: 175,
+              top: "25px",
+              right: "75px",
             }}
             image={card3}
           />

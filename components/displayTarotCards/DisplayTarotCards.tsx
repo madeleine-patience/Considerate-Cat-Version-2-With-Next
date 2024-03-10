@@ -7,7 +7,7 @@ interface DisplayTarotCardsProps {
   data: TarotDeckData[];
   width: string;
 }
-const DisplayTarotCards = ({ data, width }: DisplayTarotCardsProps) => {
+export const DisplayTarotCards = ({ data, width }: DisplayTarotCardsProps) => {
   return (
     <Box>
       <Box
@@ -36,5 +36,3 @@ const DisplayTarotCards = ({ data, width }: DisplayTarotCardsProps) => {
     </Box>
   );
 };
-
-export default DisplayTarotCards;

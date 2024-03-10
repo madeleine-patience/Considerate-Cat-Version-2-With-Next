@@ -3,11 +3,12 @@ import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import GenericButton from "../components/genericButton/GenericButton";
 import useFetchTarotDeck from "../hooks/fetchTarotDeck";
 import { useTarotCard } from "../hooks/useTarotCard";
-import DisplayTarotCards from "../components/displayTarotCards/DisplayTarotCards";
 import ElmerIcon from "../components/elmerCircleIcon/ElmerCircleIcon";
 import ThreeCardSpread from "../components/threeCardSpread/ThreeCardSpread";
 import { TarotDeckContext } from "../context/TarotDeckContext";
-import HompeageHeader from "../components/homepageHeader/HomepageHeader";
+import Header from "../components/header/Header";
+import { DisplayTarotCards } from "../components/displayTarotCards";
+import HomepageWelcome from "../components/homepageWelcome/HomepageWelcome";
 
 const homePageMainImage =
   "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/homepageImage.png";
@@ -24,31 +25,30 @@ export default function Home() {
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
       <Box
-        minHeight="100vh"
-        display="flex"
-        flexDirection="column"
-        justifyContent="space-between"
-        sx={{ backgroundColor: palette.primary.main }}
+        sx={{
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          backgroundColor: palette.primary.main,
+        }}
       >
-        <HompeageHeader />
-        <Box sx={{ p: 8 }}>
-          <Box
-            width="100%"
-            display="flex"
-            justifyContent="center"
-            position="relative"
-          >
+        <Header isHomepage={true} />
+        <Box sx={{ maxWidth: "1200px", margin: "auto", pt: 20 }}>
+          <Box display="flex" justifyContent="center" position="relative">
             <Box
               component="img"
               src={homePageMainImage}
-              width="800px"
+              width="900px"
               sx={{
                 borderRadius: 4,
+                position: "relative",
+                mr: 75,
                 boxShadow:
                   "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px",
               }}
             />
-            <Box sx={{ position: "absolute", top: "300px", right: "-50px" }}>
+            <Box sx={{ position: "absolute", right: "-200px", top: "150px" }}>
               <ThreeCardSpread
                 card1={tarotCards[12].image_link}
                 card2={tarotCards[13].image_link}
@@ -56,6 +56,7 @@ export default function Home() {
               />
             </Box>
           </Box>
+          <HomepageWelcome sx={{ my: 20 }} />
 
           <Box mx="auto">
             <DisplayTarotCards width="248px" data={displayFilteredData} />

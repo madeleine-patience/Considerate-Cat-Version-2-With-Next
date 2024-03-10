@@ -1,14 +1,14 @@
-import Link from "next/link";
 import GenericButton from "../components/genericButton/GenericButton";
 import { useTarotCard } from "../hooks/useTarotCard";
 import useFetchTarotDeck from "../hooks/fetchTarotDeck";
 import ElmerCircleIcon from "../components/elmerCircleIcon/ElmerCircleIcon";
 import { Box, Typography } from "@mui/material";
 import { TarotDeckContext } from "../context/TarotDeckContext";
-import DisplayTarotCards from "../components/displayTarotCards/DisplayTarotCards";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import { CardSuitTypes } from "../types/cardSuitTypes";
-import HompeageHeader from "../components/homepageHeader/HomepageHeader";
+import HompeageHeader from "../components/header/Header";
+import { DisplayTarotCards } from "../components/displayTarotCards";
+import ThreeCardSpread from "../components/threeCardSpread/ThreeCardSpread";
 
 export default function FirstPost() {
   const { tarotCards, loading } = useFetchTarotDeck();
@@ -26,7 +26,6 @@ export default function FirstPost() {
     { buttonLabel: "Swords" },
     { buttonLabel: "Wands" },
   ];
-  // : instead of {button: string} as const makes it recognize the literal string values
 
   const mappedDisplayGetCardsBuySuitButton = displayCardSuitButtonData.map(
     (item, index) => {
@@ -66,6 +65,11 @@ export default function FirstPost() {
             {mappedDisplayGetCardsBuySuitButton}
           </Box>
           <DisplayTarotCards width="248px" data={displayFilteredData} />
+          <ThreeCardSpread
+            card1={tarotCards[15].image_link}
+            card2={tarotCards[5].image_link}
+            card3={tarotCards[7].image_link}
+          />
         </Box>
         <FlowerFooter />
       </Box>
