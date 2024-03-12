@@ -1,7 +1,5 @@
-import { useContext } from "react";
 import { TarotDeckData } from "../../types/tarotDeckData";
-import { Typography, Box, SxProps } from "@mui/material";
-import { TarotDeckContext } from "../../context/TarotDeckContext";
+import { Box } from "@mui/material";
 
 interface DisplayTarotCardsProps {
   data: TarotDeckData[];

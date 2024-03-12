@@ -3,10 +3,12 @@ import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import HompeageHeader from "../components/header/Header";
 import useFetchCats from "../hooks/fetchCatData";
 import Purrlaroid from "../components/purrlaroid/Purrlaroid";
+import MagicCatAnimation from "../components/magicCatAnimation/MagicCatAnimation";
+import { LoadingPage } from "../components/loadingPage/LoadingPage";
 
 export default function CatDirectory() {
   const { cats, loading } = useFetchCats();
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <LoadingPage />;
 
   const getCatPurrrlaroids = () => {
     return cats.map((cat) => (

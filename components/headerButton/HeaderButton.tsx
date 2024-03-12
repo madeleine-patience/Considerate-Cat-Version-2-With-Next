@@ -1,5 +1,4 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import ElmerCircleIcon from "../elmerCircleIcon/ElmerCircleIcon";
 
 interface HeaderButtonProps {
   label: string;
@@ -16,7 +15,7 @@ const HeaderButton = ({ label }: HeaderButtonProps) => {
           width: "100%",
           textAlign: "center",
           "&:hover": {
-            backgroundColor: "#81a67e",
+            color: "white",
           },
         }}
       >

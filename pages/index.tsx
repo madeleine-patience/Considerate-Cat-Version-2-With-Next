@@ -9,6 +9,7 @@ import { TarotDeckContext } from "../context/TarotDeckContext";
 import Header from "../components/header/Header";
 import { DisplayTarotCards } from "../components/displayTarotCards";
 import HomepageWelcome from "../components/homepageWelcome/HomepageWelcome";
+import { LoadingPage } from "../components/loadingPage/LoadingPage";
 
 const homePageMainImage =
   "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/homepageImage.png";
@@ -16,12 +17,11 @@ const homePageMainImage =
 export default function Home() {
   const { tarotCards, loading } = useFetchTarotDeck();
 
-  const { tarotCardData, displayCardBySuit, displayFilteredData } =
-    useTarotCard(tarotCards);
+  const { tarotCardData, displayFilteredData } = useTarotCard(tarotCards);
 
   const { palette } = useTheme();
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <LoadingPage />;
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
       <Box
