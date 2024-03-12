@@ -1,6 +1,7 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import HeaderButton from "../headerButton/HeaderButton";
 import Link from "next/link";
+import MagicCatAnimation from "../magicCatAnimation/MagicCatAnimation";
 
 interface GenericButtonAction {}
 
@@ -17,11 +18,10 @@ const HompeageHeader = ({ isHomepage }: HeaderProps) => {
         width: "100%",
         display: "flex",
         flexDirection: "column",
+        justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#b1d9a7",
-        height: isHomepage ? "450px" : "fitContent",
         p: 8,
-        overflow: "hidden",
       }}
     >
       <Box display="flex" sx={{ textDecoration: "capitalize" }}>
@@ -49,24 +49,19 @@ const HompeageHeader = ({ isHomepage }: HeaderProps) => {
         </Link>
         <HeaderButton label="Shop" />
       </Box>
-      <Box sx={{ display: "flex", position: "relative" }}>
-        {isHomepage && (
-          <Box
-            component="img"
-            src="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/ElmerBasic.png?t=2024-03-09T01%3A07%3A03.957Z"
-            sx={{
-              width: "1000px",
-              position: "absolute",
-              right: "-100px",
-              top: "25px",
-            }}
-          />
-        )}
+      <Box
+        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+      >
+        {isHomepage && <MagicCatAnimation />}
 
         <Box
           display="flex"
           flexDirection="column"
-          sx={{ top: "75px", left: "125px" }}
+          sx={{
+            top: "75px",
+            left: "125px",
+            width: isHomepage ? "400px" : "auto",
+          }}
         >
           <Typography
             variant="h1"

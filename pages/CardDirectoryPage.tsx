@@ -9,6 +9,7 @@ import { CardSuitTypes } from "../types/cardSuitTypes";
 import HompeageHeader from "../components/header/Header";
 import { DisplayTarotCards } from "../components/displayTarotCards";
 import ThreeCardSpread from "../components/threeCardSpread/ThreeCardSpread";
+import { LoadingPage } from "../components/loadingPage/LoadingPage";
 
 export default function FirstPost() {
   const { tarotCards, loading } = useFetchTarotDeck();
@@ -39,7 +40,7 @@ export default function FirstPost() {
     }
   );
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <LoadingPage />;
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
       <HompeageHeader />

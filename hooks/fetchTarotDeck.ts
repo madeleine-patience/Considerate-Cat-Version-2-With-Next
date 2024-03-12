@@ -20,7 +20,9 @@ const useFetchTarotDeck = () => {
         setTarotCards(data);
       } catch (error) {
       } finally {
-        setLoading(false);
+        setTimeout(() => {
+          setLoading(false);
+        }, 1500);
       }
     };
 

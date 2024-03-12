@@ -8,6 +8,7 @@ import DisplayTarotCardsWithFlip from "../components/displayTarotCardsWithFlip/D
 import HompeageHeader from "../components/header/Header";
 import TarotSpreadSelectionBox from "../components/tarotSpreadSelectionBox/TarotSpreadSelectionBox";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
+import { LoadingPage } from "../components/loadingPage/LoadingPage";
 
 export default function FirstPost() {
   const { palette } = useTheme();
@@ -16,7 +17,7 @@ export default function FirstPost() {
   const [areSpreadChoicesVisible, setAreIsSpreadChoicesVisible] =
     useState(true);
   const [isTarotReadVisible, setIsTarotReadVisible] = useState(false);
-  const { tarotCards } = useFetchTarotDeck();
+  const { tarotCards, loading } = useFetchTarotDeck();
   const { tarotCardData, displaySomeCards, displayFilteredData } =
     useTarotCard(tarotCards);
 
@@ -32,6 +33,7 @@ export default function FirstPost() {
     setIsFlipped(false);
     setIsTarotReadVisible(false);
   };
+  if (loading) return <LoadingPage />;
 
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
