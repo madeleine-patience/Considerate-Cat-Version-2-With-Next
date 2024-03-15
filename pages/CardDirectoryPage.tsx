@@ -10,6 +10,7 @@ import HompeageHeader from "../components/header/Header";
 import { DisplayTarotCards } from "../components/displayTarotCards";
 import ThreeCardSpread from "../components/threeCardSpread/ThreeCardSpread";
 import { LoadingPage } from "../components/loadingPage/LoadingPage";
+import { useState } from "react";
 
 export default function FirstPost() {
   const { tarotCards, loading } = useFetchTarotDeck();
@@ -19,7 +20,7 @@ export default function FirstPost() {
     displayFilteredData,
     tarotSuitDescription,
   } = useTarotCard(tarotCards);
-
+  const [showThreeCards, setShowCards] = useState(true);
   const displayCardSuitButtonData: { buttonLabel: CardSuitTypes }[] = [
     { buttonLabel: "Major" },
     { buttonLabel: "Cups" },
@@ -28,13 +29,18 @@ export default function FirstPost() {
     { buttonLabel: "Wands" },
   ];
 
+  const displayCards = (cards: CardSuitTypes) => {
+    setShowCards(false);
+    displayCardBySuit(cards);
+  };
+
   const mappedDisplayGetCardsBuySuitButton = displayCardSuitButtonData.map(
     (item, index) => {
       return (
         <GenericButton
           key={index}
           buttonLabel={item.buttonLabel}
-          onClick={() => displayCardBySuit(item.buttonLabel)}
+          onClick={() => displayCards(item.buttonLabel)}
         />
       );
     }
@@ -66,11 +72,13 @@ export default function FirstPost() {
             {mappedDisplayGetCardsBuySuitButton}
           </Box>
           <DisplayTarotCards width="248px" data={displayFilteredData} />
-          <ThreeCardSpread
-            card1={tarotCards[15].image_link}
-            card2={tarotCards[5].image_link}
-            card3={tarotCards[7].image_link}
-          />
+          {showThreeCards && (
+            <ThreeCardSpread
+              card1={tarotCards[15].image_link}
+              card2={tarotCards[5].image_link}
+              card3={tarotCards[7].image_link}
+            />
+          )}
         </Box>
         <FlowerFooter />
       </Box>

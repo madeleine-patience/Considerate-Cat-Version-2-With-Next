@@ -39,7 +39,7 @@ const TarotSpreadSelectionBox = ({
         gap="8px"
         flexDirection="column"
         justifyContent="center"
-        width={300}
+        width={325}
         height={300}
         position="relative"
         sx={{
@@ -59,7 +59,7 @@ const TarotSpreadSelectionBox = ({
         ></Typography>
         <Box
           position="relative"
-          width={300}
+          width={325}
           height={300}
           display="flex"
           alignItems="center"
@@ -194,7 +194,7 @@ const TarotSpreadSelectionBox = ({
         gap="8px"
         flexDirection="column"
         justifyContent="center"
-        width={300}
+        width={325}
         height={200}
         position="relative"
         display="flex"
@@ -216,7 +216,7 @@ const TarotSpreadSelectionBox = ({
           {title}
         </Typography>
         <Typography
-          variant="h6"
+          variant="body1"
           textAlign="center"
           fontSize="bold"
           fontWeight={600}
