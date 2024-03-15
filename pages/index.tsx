@@ -10,6 +10,7 @@ import Header from "../components/header/Header";
 import { DisplayTarotCards } from "../components/displayTarotCards";
 import HomepageWelcome from "../components/homepageWelcome/HomepageWelcome";
 import { LoadingPage } from "../components/loadingPage/LoadingPage";
+import Head from "next/head";
 
 const homePageMainImage =
   "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/homepageImage.png";
@@ -24,6 +25,78 @@ export default function Home() {
   if (loading) return <LoadingPage />;
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
+      <Head>
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-01.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-02.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-03.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-04.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-05.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-06.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-07.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-08.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-09.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-10.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-11.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-12.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-13.png"
+          as="image"
+        />
+        <link
+          rel="preload"
+          href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-14.png"
+          as="image"
+        />
+      </Head>
       <Box
         sx={{
           minHeight: "100vh",
