@@ -1,11 +1,20 @@
 import { TarotDeckData } from "../../types/tarotDeckData";
 import { Box } from "@mui/material";
 
-interface DisplayTarotCardsProps {
+interface DisplayTarotCardActionProps {
+  onClick?: (card) => void;
+}
+
+interface DisplayTarotCardsProps extends DisplayTarotCardActionProps {
   data: TarotDeckData[];
   width: string;
 }
-export const DisplayTarotCards = ({ data, width }: DisplayTarotCardsProps) => {
+export const DisplayTarotCards = ({
+  data,
+  width,
+  onClick,
+}: DisplayTarotCardsProps) => {
+  console.log(data);
   return (
     <Box>
       <Box
@@ -22,6 +31,7 @@ export const DisplayTarotCards = ({ data, width }: DisplayTarotCardsProps) => {
           <Typography>Suit: {card.card_suit}</Typography> */}
             {/* <Typography>Description: {card.description}</Typography> */}
             <Box
+              onClick={() => onClick(card)}
               width={width}
               borderRadius={2}
               component="img"

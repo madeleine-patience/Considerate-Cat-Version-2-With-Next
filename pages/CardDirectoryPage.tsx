@@ -11,6 +11,8 @@ import { DisplayTarotCards } from "../components/displayTarotCards";
 import ThreeCardSpread from "../components/threeCardSpread/ThreeCardSpread";
 import { LoadingPage } from "../components/loadingPage/LoadingPage";
 import { useState } from "react";
+import TarotDialog from "../components/tarotDialog/TarotDialog";
+import { useCardDirectory } from "../hooks/useCardDirectory";
 
 export default function FirstPost() {
   const { tarotCards, loading } = useFetchTarotDeck();
@@ -20,6 +22,10 @@ export default function FirstPost() {
     displayFilteredData,
     tarotSuitDescription,
   } = useTarotCard(tarotCards);
+
+  const { dialogProps, displayTarotDialog, openTarotDialog, closeTarotDialog } =
+    useCardDirectory();
+  console.log(dialogProps);
   const [showThreeCards, setShowCards] = useState(true);
   const displayCardSuitButtonData: { buttonLabel: CardSuitTypes }[] = [
     { buttonLabel: "Major" },
@@ -71,7 +77,13 @@ export default function FirstPost() {
           <Box display="flex" flexDirection="row" mx="auto" gap={4}>
             {mappedDisplayGetCardsBuySuitButton}
           </Box>
-          <DisplayTarotCards width="248px" data={displayFilteredData} />
+          {
+            <DisplayTarotCards
+              onClick={() => openTarotDialog(tarotCards)}
+              width="248px"
+              data={displayFilteredData}
+            />
+          }
           {showThreeCards && (
             <ThreeCardSpread
               card1={tarotCards[15].image_link}
@@ -80,6 +92,8 @@ export default function FirstPost() {
             />
           )}
         </Box>
+        <TarotDialog {...dialogProps} />
+
         <FlowerFooter />
       </Box>
     </TarotDeckContext.Provider>

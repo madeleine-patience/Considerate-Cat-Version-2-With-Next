@@ -1,0 +1,3 @@
+const defaultTarotCard: TarotDialogProps{
+    
+}
