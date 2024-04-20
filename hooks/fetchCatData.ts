@@ -10,7 +10,6 @@ const useFetchCats = () => {
       try {
         setLoading(true);
         const { data, error } = await supabase.from("catData").select("*");
-        console.log(data);
         if (error) {
           throw error;
         }

@@ -22,11 +22,19 @@ export default function FirstPost() {
     displayFilteredData,
     tarotSuitDescription,
   } = useTarotCard(tarotCards);
+  const {
+    dialogProps,
+    displayTarotDialog,
+    openTarotDialog,
+    currentCard,
+    setDisplayTarotDialog,
+    setCurrentCard,
+  } = useCardDirectory();
+  currentCard;
 
-  const { dialogProps, displayTarotDialog, openTarotDialog, closeTarotDialog } =
-    useCardDirectory();
-  console.log(dialogProps);
+  console.log("dialogProps", dialogProps);
   const [showThreeCards, setShowCards] = useState(true);
+
   const displayCardSuitButtonData: { buttonLabel: CardSuitTypes }[] = [
     { buttonLabel: "Major" },
     { buttonLabel: "Cups" },
@@ -38,6 +46,11 @@ export default function FirstPost() {
   const displayCards = (cards: CardSuitTypes) => {
     setShowCards(false);
     displayCardBySuit(cards);
+  };
+
+  const handleCardClick = (cardId) => {
+    setCurrentCard(cardId);
+    openTarotDialog(tarotCardData[cardId]);
   };
 
   const mappedDisplayGetCardsBuySuitButton = displayCardSuitButtonData.map(
@@ -79,7 +92,7 @@ export default function FirstPost() {
           </Box>
           {
             <DisplayTarotCards
-              onClick={() => openTarotDialog(tarotCards)}
+              onClick={handleCardClick}
               width="248px"
               data={displayFilteredData}
             />
@@ -92,8 +105,7 @@ export default function FirstPost() {
             />
           )}
         </Box>
-        <TarotDialog {...dialogProps} />
-
+        {displayTarotDialog && <TarotDialog {...dialogProps} />}
         <FlowerFooter />
       </Box>
     </TarotDeckContext.Provider>

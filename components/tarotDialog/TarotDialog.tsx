@@ -19,6 +19,7 @@ const TarotDialog = ({
   description,
   onClick,
 }: TarotDialogProps) => {
+  console.log(onClick);
   return (
     <Dialog open={isOpen}>
       <Box>
@@ -27,8 +28,8 @@ const TarotDialog = ({
         <CardMedia component="img" src={image} />
         <Typography> {description}</Typography>
       </Box>
-      <Box sx={{ backgroundColor: "green" }}>
-        <Typography onClick={onClick}> X </Typography>
+      <Box onClick={onClick} sx={{ backgroundColor: "green" }}>
+        <Typography>X</Typography>
       </Box>
     </Dialog>
   );
