@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TarotDialogProps } from "../components/tarotDialog/TarotDialog";
 import { TarotDeckData } from "../types/tarotDeckData";
+import { CardSuitTypes } from "../types/cardSuitTypes";
 
 const initialDialogProps: TarotDialogProps = {
   isOpen: false,
@@ -15,6 +16,15 @@ export const useCardDirectory = () => {
   const [displayTarotDialog, setDisplayTarotDialog] = useState(false);
   const [dialogProps, setDialogProps] = useState(initialDialogProps);
   const [currentCard, setCurrentCard] = useState({});
+  const [showThreeCards, setShowCards] = useState(true);
+
+  const displayCardSuitButtonData: { buttonLabel: CardSuitTypes }[] = [
+    { buttonLabel: "Major" },
+    { buttonLabel: "Cups" },
+    { buttonLabel: "Pentacles" },
+    { buttonLabel: "Swords" },
+    { buttonLabel: "Wands" },
+  ];
 
   const openTarotDialog = (tarotCard: TarotDeckData) => {
     setDialogProps({
@@ -40,5 +50,8 @@ export const useCardDirectory = () => {
     closeTarotDialog,
     setDisplayTarotDialog,
     setCurrentCard,
+    displayCardSuitButtonData,
+    setShowCards,
+    showThreeCards,
   };
 };

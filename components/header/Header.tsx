@@ -24,6 +24,29 @@ const HompeageHeader = ({ isHomepage }: HeaderProps) => {
         p: 8,
       }}
     >
+      {isHomepage && <MagicCatAnimation />}
+
+      <Box
+        display="flex"
+        flexDirection="column"
+        sx={{
+          top: "75px",
+          left: "125px",
+          width: isHomepage ? "400px" : "auto",
+          gap: "20px",
+        }}
+      ></Box>
+      <Typography
+        variant="h1"
+        fontWeight={600}
+        color={palette.primary.light}
+        sx={{
+          textShadow: " 5px 5px hotpink",
+          fontStyle: "italic",
+        }}
+      >
+        Considerate Cat Tarot
+      </Typography>
       <Box display="flex" sx={{ textDecoration: "capitalize" }}>
         <Link href="./" style={{ textDecoration: "none", color: "black" }}>
           <HeaderButton label="Home" />
@@ -48,33 +71,6 @@ const HompeageHeader = ({ isHomepage }: HeaderProps) => {
           <HeaderButton label="Meet The Cats" />
         </Link>
         <HeaderButton label="Shop" />
-      </Box>
-      <Box
-        sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
-      >
-        {isHomepage && <MagicCatAnimation />}
-
-        <Box
-          display="flex"
-          flexDirection="column"
-          sx={{
-            top: "75px",
-            left: "125px",
-            width: isHomepage ? "400px" : "auto",
-          }}
-        >
-          <Typography
-            variant="h1"
-            fontWeight={600}
-            color={palette.primary.dark}
-            sx={{
-              textShadow: " 5px 5px purple",
-              fontStyle: "italic",
-            }}
-          >
-            Considerate Cat
-          </Typography>
-        </Box>
       </Box>
     </Box>
   );

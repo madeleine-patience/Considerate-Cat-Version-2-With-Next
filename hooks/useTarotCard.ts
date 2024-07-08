@@ -54,8 +54,11 @@ export const useTarotCard = (cardData: TarotDeckData[]) => {
     setDisplayFilteredData(tarotCardData);
     setDisplayTarotCards(true);
     setDisplayFilteredData(
-      tarotCardData.filter((card) => card.card_suit === cardSuit)
+      tarotCardData
+        .filter((card) => card.card_suit === cardSuit)
+        .sort((a, b) => a.id - b.id)
     );
+
     if (cardSuit === "Major") {
       setTarotSuitDescription(
         "The major Arcana cards represent significant life events and spiritual lessons, reflecting powerful archetypal energies and themes that can profoundly impact one's journey of personal growth and self-discovery."

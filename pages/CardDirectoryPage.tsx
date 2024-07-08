@@ -26,29 +26,18 @@ export default function FirstPost() {
     dialogProps,
     displayTarotDialog,
     openTarotDialog,
-    currentCard,
-    setDisplayTarotDialog,
     setCurrentCard,
+    displayCardSuitButtonData,
+    setShowCards,
+    showThreeCards,
   } = useCardDirectory();
-  currentCard;
-
-  console.log("dialogProps", dialogProps);
-  const [showThreeCards, setShowCards] = useState(true);
-
-  const displayCardSuitButtonData: { buttonLabel: CardSuitTypes }[] = [
-    { buttonLabel: "Major" },
-    { buttonLabel: "Cups" },
-    { buttonLabel: "Pentacles" },
-    { buttonLabel: "Swords" },
-    { buttonLabel: "Wands" },
-  ];
-
+  console.log(displayFilteredData);
   const displayCards = (cards: CardSuitTypes) => {
     setShowCards(false);
     displayCardBySuit(cards);
   };
 
-  const handleCardClick = (cardId) => {
+  const handleCardClick = (cardId: number) => {
     setCurrentCard(cardId);
     openTarotDialog(tarotCardData[cardId]);
   };
