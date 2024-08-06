@@ -10,7 +10,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
   return (
     <Box
       sx={{
-        w: "100%",
+        w: "max-content",
         p: 4,
         borderRadius: 3,
         boxShadow:
