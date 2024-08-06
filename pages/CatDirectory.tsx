@@ -3,7 +3,7 @@ import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import HompeageHeader from "../components/header/Header";
 import useFetchCats from "../hooks/fetchCatData";
 import Purrlaroid from "../components/purrlaroid/Purrlaroid";
-import MagicCatAnimation from "../components/magicCatAnimation/MagicCatAnimation";
+import MagicCatAnimation from "../components/magicCatAnimation/magicCatAnimation/MagicCatAnimation";
 import { LoadingPage } from "../components/loadingPage/LoadingPage";
 
 export default function CatDirectory() {

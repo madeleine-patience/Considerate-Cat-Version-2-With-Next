@@ -10,7 +10,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
   return (
     <Box
       sx={{
-        w: "100%",
+        w: "max-content",
         p: 4,
         borderRadius: 3,
         boxShadow:
@@ -49,11 +49,11 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
         />
         <Typography variant="h6">
           Considerate Cat is a tarot deck that was published in 2018, brought to
-          life by a community of folks on kickstarter. Since then the deck has
-          been brought home by many inspiring people with the stories of rescue
-          cats from across the world. Now we are bringing you the deck to life
-          online! Here you can have your cards read, learn about the cats that
-          inspired the deck and dive deeper into the artwork.
+          life by a community of folks on Kickstarter. Since then, the deck has
+          been brought into many inspiring people's homes, featuring stories of
+          rescue cats from across the world. Now, we are bringing the deck to
+          life online! Here, you can have your cards read, learn about the cats
+          that inspired the deck, and dive deeper into the artwork.
         </Typography>
       </Box>
     </Box>

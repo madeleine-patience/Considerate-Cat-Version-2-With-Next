@@ -11,6 +11,8 @@ import { DisplayTarotCards } from "../components/displayTarotCards";
 import ThreeCardSpread from "../components/threeCardSpread/ThreeCardSpread";
 import { LoadingPage } from "../components/loadingPage/LoadingPage";
 import { useState } from "react";
+import TarotDialog from "../components/tarotDialog/TarotDialog";
+import { useCardDirectory } from "../hooks/useCardDirectory";
 
 export default function FirstPost() {
   const { tarotCards, loading } = useFetchTarotDeck();
@@ -20,18 +22,24 @@ export default function FirstPost() {
     displayFilteredData,
     tarotSuitDescription,
   } = useTarotCard(tarotCards);
-  const [showThreeCards, setShowCards] = useState(true);
-  const displayCardSuitButtonData: { buttonLabel: CardSuitTypes }[] = [
-    { buttonLabel: "Major" },
-    { buttonLabel: "Cups" },
-    { buttonLabel: "Pentacles" },
-    { buttonLabel: "Swords" },
-    { buttonLabel: "Wands" },
-  ];
-
+  const {
+    dialogProps,
+    displayTarotDialog,
+    openTarotDialog,
+    setCurrentCard,
+    displayCardSuitButtonData,
+    setShowCards,
+    showThreeCards,
+  } = useCardDirectory();
+  console.log(displayFilteredData);
   const displayCards = (cards: CardSuitTypes) => {
     setShowCards(false);
     displayCardBySuit(cards);
+  };
+
+  const handleCardClick = (cardId: number) => {
+    setCurrentCard(cardId);
+    openTarotDialog(tarotCardData[cardId]);
   };
 
   const mappedDisplayGetCardsBuySuitButton = displayCardSuitButtonData.map(
@@ -71,7 +79,13 @@ export default function FirstPost() {
           <Box display="flex" flexDirection="row" mx="auto" gap={4}>
             {mappedDisplayGetCardsBuySuitButton}
           </Box>
-          <DisplayTarotCards width="248px" data={displayFilteredData} />
+          {
+            <DisplayTarotCards
+              onClick={handleCardClick}
+              width="248px"
+              data={displayFilteredData}
+            />
+          }
           {showThreeCards && (
             <ThreeCardSpread
               card1={tarotCards[15].image_link}
@@ -80,6 +94,7 @@ export default function FirstPost() {
             />
           )}
         </Box>
+        {displayTarotDialog && <TarotDialog {...dialogProps} />}
         <FlowerFooter />
       </Box>
     </TarotDeckContext.Provider>
