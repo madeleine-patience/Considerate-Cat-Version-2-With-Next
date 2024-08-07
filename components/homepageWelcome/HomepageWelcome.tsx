@@ -1,4 +1,5 @@
 import { Box, Typography, SxProps, useTheme } from "@mui/material";
+import { ChubbyStar, CompactGlitter } from "../../SVGs/GlitterSvg";
 
 interface HomepageWelcomeProps {
   sx?: SxProps;
@@ -55,6 +56,8 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
           life online! Here, you can have your cards read, learn about the cats
           that inspired the deck, and dive deeper into the artwork.
         </Typography>
+        <ChubbyStar fillColor="white" />
+        <CompactGlitter fillColor="white" />
       </Box>
     </Box>
   );
