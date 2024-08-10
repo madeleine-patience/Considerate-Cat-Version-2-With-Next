@@ -2,7 +2,7 @@ import { Box, SxProps, Typography, useTheme } from "@mui/material";
 
 interface HeaderButtonProps {
   label: string;
-  sx: SxProps;
+  sx?: SxProps;
 }
 
 const HeaderButton = ({ label, ...sx }: HeaderButtonProps) => {

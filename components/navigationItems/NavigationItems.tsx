@@ -16,14 +16,36 @@ export const NavigationItems = () => {
       }}
     >
       <Link href="./" style={{ textDecoration: "none", color: "black" }}>
-        <HeaderButton
-          label="Home"
+        <HeaderButton label="Home" />
+      </Link>
+      <Link
+        href="./CardDirectoryPage"
+        style={{
+          textDecoration: "none",
+          color: "black",
+        }}
+      >
+        <ChubbyStar
           sx={{
-            "&:hover": { transform: "rotate(30deg)" },
+            position: "absolute",
+            "&:hover": {},
           }}
         />
-        <ChubbyStar />
+        <HeaderButton label="Card Directory" />
       </Link>
+      <Link
+        href="./TarotReadPage"
+        style={{ textDecoration: "none", color: "black" }}
+      >
+        <HeaderButton label="Tarot Readings" />
+      </Link>
+      <Link
+        href="./CatDirectory"
+        style={{ textDecoration: "none", color: "black" }}
+      >
+        <HeaderButton label="Meet The Cats" />
+      </Link>
+      <HeaderButton label="Shop" />
     </Box>
   );
 };
