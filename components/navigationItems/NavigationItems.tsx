@@ -1,5 +1,6 @@
 import { Box, Link, Typography, useTheme } from "@mui/material";
 import HeaderButton from "../headerButton/HeaderButton";
+import { ChubbyStar } from "../../SVGs/GlitterSvg";
 
 export const NavigationItems = () => {
   const theme = useTheme();
@@ -15,27 +16,14 @@ export const NavigationItems = () => {
       }}
     >
       <Link href="./" style={{ textDecoration: "none", color: "black" }}>
-        <HeaderButton label="Home" />
+        <HeaderButton
+          label="Home"
+          sx={{
+            "&:hover": { transform: "rotate(30deg)" },
+          }}
+        />
+        <ChubbyStar />
       </Link>
-      <Link
-        href="./CardDirectoryPage"
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        <HeaderButton label="Card Directory" />
-      </Link>
-      <Link
-        href="./TarotReadPage"
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        <HeaderButton label="Tarot Readings" />
-      </Link>
-      <Link
-        href="./CatDirectory"
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        <HeaderButton label="Meet The Cats" />
-      </Link>
-      <HeaderButton label="Shop" />
     </Box>
   );
 };

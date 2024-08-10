@@ -1,14 +1,20 @@
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, SxProps, Typography, useTheme } from "@mui/material";
 
 interface HeaderButtonProps {
   label: string;
+  sx: SxProps;
 }
 
-const HeaderButton = ({ label }: HeaderButtonProps) => {
+const HeaderButton = ({ label, ...sx }: HeaderButtonProps) => {
   const { palette } = useTheme();
 
   return (
-    <Box display="flex" width="250px" justifyContent="center">
+    <Box
+      display="flex"
+      width="250px"
+      justifyContent="center"
+      sx={{ display: "flex", width: "250px", justifyContent: "cetner", ...sx }}
+    >
       <Typography
         variant="h5"
         sx={{
