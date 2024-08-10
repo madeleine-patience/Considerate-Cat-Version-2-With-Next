@@ -64,37 +64,6 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
             }}
             src="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/No-Background-Phaedra-White.png"
           />
-          <ChubbyStar
-            sx={{
-              opacity: 1,
-              transform: "rotate(10deg)",
-              position: "absolute",
-              animation: `${rotateAnimation} 4s 1 linear`,
-            }}
-            fillColor="white"
-          />
-          <ChubbyStar
-            sx={{
-              top: 100,
-              right: 20,
-              opacity: 1,
-              transform: "rotate(10deg)",
-              position: "absolute",
-              animation: `${rotateAnimation} 4s 1 linear`,
-            }}
-            fillColor="white"
-          />
-          <ChubbyStar
-            sx={{
-              top: 200,
-              right: 200,
-              opacity: 1,
-              transform: "rotate(10deg)",
-              position: "absolute",
-              animation: `${rotateAnimation} 4s 1 linear`,
-            }}
-            fillColor="white"
-          />
         </Box>
         <Typography variant="h6">
           Considerate Cat is a tarot deck that was published in 2018, brought to

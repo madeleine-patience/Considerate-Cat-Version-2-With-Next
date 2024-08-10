@@ -13,11 +13,12 @@ const HeaderButton = ({ label, ...sx }: HeaderButtonProps) => {
       display="flex"
       width="250px"
       justifyContent="center"
-      sx={{ display: "flex", width: "250px", justifyContent: "cetner", ...sx }}
+      sx={{ display: "flex", justifyContent: "cetner", ...sx }}
     >
       <Typography
         variant="h5"
         sx={{
+          color: palette.primary.dark,
           width: "100%",
           textAlign: "center",
           "&:hover": {

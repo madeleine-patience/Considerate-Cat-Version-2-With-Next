@@ -1,51 +1,25 @@
-import { Box, Link, Typography, useTheme } from "@mui/material";
-import HeaderButton from "../headerButton/HeaderButton";
-import { ChubbyStar } from "../../SVGs/GlitterSvg";
+import { Box, useTheme } from "@mui/material";
+import { GlitterWordWrapper } from "./GlitterWordWrapper";
 
 export const NavigationItems = () => {
   const theme = useTheme();
 
   return (
     <Box
-      display="flex"
       sx={{
+        display: "flex",
+        p: 4,
         textDecoration: "capitalize",
         [theme.breakpoints.down("lg")]: {
           flexDirection: "column",
         },
       }}
     >
-      <Link href="./" style={{ textDecoration: "none", color: "black" }}>
-        <HeaderButton label="Home" />
-      </Link>
-      <Link
-        href="./CardDirectoryPage"
-        style={{
-          textDecoration: "none",
-          color: "black",
-        }}
-      >
-        <ChubbyStar
-          sx={{
-            position: "absolute",
-            "&:hover": {},
-          }}
-        />
-        <HeaderButton label="Card Directory" />
-      </Link>
-      <Link
-        href="./TarotReadPage"
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        <HeaderButton label="Tarot Readings" />
-      </Link>
-      <Link
-        href="./CatDirectory"
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        <HeaderButton label="Meet The Cats" />
-      </Link>
-      <HeaderButton label="Shop" />
+      <GlitterWordWrapper title="Home" link="./" />
+      <GlitterWordWrapper title="Tarot Reading" link="./TarotReadPage" />
+      <GlitterWordWrapper title="Card Directory" link="./CardDirectoryPage" />
+      <GlitterWordWrapper title="Meet The Cats" link="./CatDirectory" />
+      <GlitterWordWrapper title="Shop" link="www.consideratecat.com" />
     </Box>
   );
 };

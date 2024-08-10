@@ -10,6 +10,7 @@ const initialDialogProps: TarotDialogProps = {
   image: "",
   description: "",
   onClick: () => {},
+  handleClickAway: () => {},
 };
 
 export const useCardDirectory = () => {
@@ -34,12 +35,14 @@ export const useCardDirectory = () => {
       image: tarotCard.image_link,
       description: tarotCard.description,
       onClick: closeTarotDialog,
+      handleClickAway: closeTarotDialog,
     });
     setDisplayTarotDialog(true);
   };
 
   const closeTarotDialog = () => {
     setDisplayTarotDialog(false);
+    console.log("hi");
   };
 
   return {

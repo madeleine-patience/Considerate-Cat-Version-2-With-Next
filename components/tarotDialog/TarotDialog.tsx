@@ -1,6 +1,15 @@
-import { Box, Typography, Dialog, CardMedia } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Dialog,
+  CardMedia,
+  ClickAwayListener,
+} from "@mui/material";
+import { useState } from "react";
+
 interface TarotDialogActions {
   onClick: () => void;
+  handleClickAway: () => void;
 }
 
 export interface TarotDialogProps extends TarotDialogActions {
@@ -18,19 +27,21 @@ const TarotDialog = ({
   image,
   description,
   onClick,
+  handleClickAway,
 }: TarotDialogProps) => {
-  console.log(onClick);
   return (
     <Dialog open={isOpen}>
-      <Box>
-        <Typography>{card}</Typography>
-        <Typography>{suit} </Typography>
-        <CardMedia component="img" src={image} />
-        <Typography> {description}</Typography>
-      </Box>
-      <Box onClick={onClick} sx={{ backgroundColor: "green" }}>
-        <Typography>X</Typography>
-      </Box>
+      <ClickAwayListener onClickAway={handleClickAway}>
+        <Box>
+          <Typography>{card}</Typography>
+          <Typography>{suit}</Typography>
+          <CardMedia component="img" src={image} />
+          <Typography>{description}</Typography>
+          <Box onClick={onClick} sx={{ backgroundColor: "green" }}>
+            <Typography>X</Typography>
+          </Box>
+        </Box>
+      </ClickAwayListener>
     </Dialog>
   );
 };
