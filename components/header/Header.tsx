@@ -30,7 +30,7 @@ const HompeageHeader = ({ isHomepage }: HeaderProps) => {
       <Typography
         variant="h1"
         fontWeight={600}
-        color={palette.primary.dark}
+        color={palette.pinks.dark}
         sx={{
           textShadow: " 5px 5px white",
           fontStyle: "italic",

@@ -9,6 +9,7 @@ const initialDialogProps: TarotDialogProps = {
   suit: "",
   image: "",
   description: "",
+  keyWords: [],
   onClick: () => {},
   handleClickAway: () => {},
 };
@@ -34,6 +35,7 @@ export const useCardDirectory = () => {
       suit: tarotCard.card_suit,
       image: tarotCard.image_link,
       description: tarotCard.description,
+      keyWords: tarotCard.key_words,
       onClick: closeTarotDialog,
       handleClickAway: closeTarotDialog,
     });

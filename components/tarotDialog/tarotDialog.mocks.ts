@@ -6,6 +6,7 @@ const defaultTarotCard: TarotDialogProps = {
   image:
     "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/tarotcard/15.jpg",
   description: "Something something something",
+  keyWords: [],
   isOpen: true,
   onClick: () => {},
   handleClickAway: () => {},

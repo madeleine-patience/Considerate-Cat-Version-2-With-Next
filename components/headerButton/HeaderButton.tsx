@@ -18,11 +18,13 @@ const HeaderButton = ({ label, ...sx }: HeaderButtonProps) => {
       <Typography
         variant="h5"
         sx={{
-          color: palette.primary.dark,
+          color: palette.pinks.dark,
+
           width: "100%",
           textAlign: "center",
           "&:hover": {
             color: "white",
+            textShadow: `7px 4px 9px ${palette.pinks.dark};`,
           },
         }}
       >

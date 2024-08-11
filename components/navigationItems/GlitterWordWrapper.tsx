@@ -35,7 +35,6 @@ export const GlitterWordWrapper = ({ title, link }: GlitterWrapperProps) => {
         href={link}
         style={{
           textDecoration: "none",
-          color: "black",
         }}
       >
         <ChubbyStar
@@ -46,7 +45,7 @@ export const GlitterWordWrapper = ({ title, link }: GlitterWrapperProps) => {
             top: 5,
           }}
         />
-        <ChubbyStar
+        <Glitter
           sx={{
             position: "absolute",
             width: 20,
@@ -65,7 +64,7 @@ export const GlitterWordWrapper = ({ title, link }: GlitterWrapperProps) => {
             bottom: 10,
           }}
         />
-        <Glitter
+        <ChubbyStar
           sx={{
             opacity: 0,
             position: "absolute",

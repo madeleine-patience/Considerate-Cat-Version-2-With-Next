@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import HompeageHeader from "../components/header/Header";
 import useFetchCats from "../hooks/fetchCatData";
@@ -8,6 +8,8 @@ import { LoadingPage } from "../components/loadingPage/LoadingPage";
 
 export default function CatDirectory() {
   const { cats, loading } = useFetchCats();
+  const { palette } = useTheme();
+
   if (loading) return <LoadingPage />;
 
   const getCatPurrrlaroids = () => {
@@ -22,36 +24,40 @@ export default function CatDirectory() {
   };
 
   return (
-    <>
+    <Box
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        backgroundColor: palette.pinks.main,
+      }}
+    >
       <HompeageHeader />
       <Box
-        minHeight="100vh"
-        display="flex"
-        flexDirection="column"
-        justifyContent="space-between"
+        sx={{
+          maxWidth: "1500px",
+          mx: "auto",
+          my: 4,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
       >
         <Box
-          mx="auto"
-          my={4}
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
+          sx={{
+            display: "flex",
+            gap: 8,
+            flexWrap: "wrap",
+            width: "100%",
+            p: 16,
+          }}
         >
-          <Box
-            sx={{
-              display: "flex",
-              gap: 8,
-              flexWrap: "wrap",
-              width: "100%",
-              p: 16,
-            }}
-          >
-            {getCatPurrrlaroids()}
-          </Box>
+          {getCatPurrrlaroids()}
         </Box>
-
-        <FlowerFooter />
       </Box>
-    </>
+
+      <FlowerFooter />
+    </Box>
   );
 }

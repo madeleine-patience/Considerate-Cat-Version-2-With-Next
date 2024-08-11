@@ -2,7 +2,7 @@ import GenericButton from "../components/genericButton/GenericButton";
 import { useTarotCard } from "../hooks/useTarotCard";
 import useFetchTarotDeck from "../hooks/fetchTarotDeck";
 import ElmerCircleIcon from "../components/elmerCircleIcon/ElmerCircleIcon";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { TarotDeckContext } from "../context/TarotDeckContext";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import { CardSuitTypes } from "../types/cardSuitTypes";
@@ -16,6 +16,8 @@ import { useCardDirectory } from "../hooks/useCardDirectory";
 
 export default function FirstPost() {
   const { tarotCards, loading } = useFetchTarotDeck();
+  const { palette } = useTheme();
+
   const {
     tarotCardData,
     displayCardBySuit,
@@ -57,13 +59,17 @@ export default function FirstPost() {
   if (loading) return <LoadingPage />;
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
-      <HompeageHeader />
       <Box
-        minHeight="100vh"
-        display="flex"
-        flexDirection="column"
-        justifyContent="space-between"
+        sx={{
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          backgroundColor: palette.pinks.main,
+        }}
       >
+        <HompeageHeader />
+
         <Box
           maxWidth="1000px"
           mx="auto"

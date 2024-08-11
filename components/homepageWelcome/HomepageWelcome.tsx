@@ -1,27 +1,61 @@
-import { Box, Typography, SxProps, useTheme, keyframes } from "@mui/material";
-import { ChubbyStar, CompactGlitter, Glitter } from "../../SVGs/GlitterSvg";
+import {
+  Box,
+  Typography,
+  SxProps,
+  useTheme,
+  styled,
+  CardMedia,
+} from "@mui/material";
+import { useContext, useState } from "react";
+import { TarotDeckContext } from "../../context/TarotDeckContext";
+import SingleTarotCard from "../singleTarotCardWithFlip/SingleTarotCardWithFlip";
 
 interface HomepageWelcomeProps {
   sx?: SxProps;
 }
 
-const rotateAnimation = keyframes`
-  0% {
-    transform: rotate(0deg);
-    opacity: 0;
-  },
-  50% {
-    transform: rotate(50deg);
-    opacity: 1;
-  },
-  100% {
-    transform: rotate(75deg);
-    opacity: 0;
-  }
-`;
+// const CatContainer = styled(Box)({
+//   width: "fit-content",
+//   position: "relative",
+//   "&:hover .MuiBox-root:not(:first-of-type)": {
+//     "@keyframes cardAnimation": {
+//       "0%": {},
+//       "100%": {
+//         transform: "rotate(20deg)  ",
+//       },
+//     },
+//     animation: "cardAnimation 200ms linear 1 normal forwards ",
+//   },
+// });
 
 const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
   const { palette } = useTheme();
+  const tarotDeckData = useContext(TarotDeckContext);
+  const [catIsPet, setCatIsPet] = useState(false);
+  const [petCount, setPetCount] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const [butters, setButters] = useState(
+    "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-3.png"
+  );
+
+  const petTheCat = () => {
+    setPetCount((prev) => prev + 1);
+    if (petCount > 2) {
+      setCatIsPet(true);
+    }
+    if (petCount >= 0) {
+      setButters(
+        "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-1.png"
+      );
+      setIsFlipped(true);
+    }
+    if (petCount >= 1) {
+      setButters(
+        "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-3.png"
+      );
+    }
+  };
 
   return (
     <Box
@@ -40,7 +74,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
         variant="h2"
         fontWeight="bold"
         fontStyle="italic"
-        color={palette.primary.dark}
+        color={palette.pinks.dark}
         textAlign="center"
         sx={{ textShadow: " 3px 3px purple" }}
       >
@@ -56,14 +90,35 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
       >
         <Box sx={{ position: "relative" }}>
           <Box
+            onClick={() => petTheCat()}
             component="img"
+            src={butters}
             sx={{
-              "&:hover": {
-                transform: "rotate(-.04turn)",
-              },
+              width: "500px",
+              filter:
+                " drop-shadow(9px 0 0 white) drop-shadow(0 9px 0 white) drop-shadow(-9px 0 0 white) drop-shadow(0 -9px 0 white)",
             }}
-            src="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/No-Background-Phaedra-White.png"
           />
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              gap: 4,
+            }}
+          >
+            <SingleTarotCard
+              image={tarotDeckData[51].image_link}
+              isCardFlipped={isFlipped}
+            />
+            <SingleTarotCard
+              image={tarotDeckData[2].image_link}
+              isCardFlipped={isFlipped}
+            />
+            <SingleTarotCard
+              image={tarotDeckData[15].image_link}
+              isCardFlipped={isFlipped}
+            />
+          </Box>
         </Box>
         <Typography variant="h6">
           Considerate Cat is a tarot deck that was published in 2018, brought to
