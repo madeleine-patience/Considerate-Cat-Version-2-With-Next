@@ -9,10 +9,13 @@ interface SingleTarotCardWithFlipAction {
   onClick?: () => void;
 }
 
+type cardSize = "small" | "medium";
+
 interface SingleTarotCardWithFlipProps extends SingleTarotCardWithFlipAction {
   image: string;
   isCardFlipped?: boolean;
   transitionDelay?: string;
+  size?: cardSize;
 }
 
 const boxShadow =
@@ -23,6 +26,7 @@ const SingleTarotCard = ({
   isCardFlipped = true,
   transitionDelay,
   onClick,
+  size = "medium",
 }: SingleTarotCardWithFlipProps) => {
   return (
     <Box
@@ -37,35 +41,42 @@ const SingleTarotCard = ({
         transition: isCardFlipped ? "transform 800ms" : "transform 0ms",
         transitionDelay: isCardFlipped ? transitionDelay : "",
         cursor: "pointer",
-        height: 425,
-        width: 250,
-        margin: 10,
         transform: isCardFlipped
           ? "perspective(1000px) rotateY(180deg)"
           : "perspective(1000px) rotateY(0deg)",
       }}
     >
       <Box
-        width="100px"
+        data-size={size}
         sx={{
           borderRadius: 3,
           boxShadow: { boxShadow },
           backfaceVisibility: "hidden",
+          "&[data-size='medium']": {
+            width: "200px",
+          },
+          "&[data-size='small']": {
+            width: "100px",
+          },
         }}
         component="img"
         src={tarotBack}
       />
       <Box
-        width="250px"
+        data-size={size}
         sx={{
           borderRadius: 3,
           boxShadow: { boxShadow },
           transformOrigin: "center center",
-          width: "100%",
-          height: "100%",
           position: "absolute",
           backfaceVisibility: "hidden",
           transform: "rotateY(180deg)",
+          "&[data-size='medium']": {
+            width: "200px",
+          },
+          "&[data-size='small']": {
+            width: "100px",
+          },
         }}
         component="img"
         src={image}

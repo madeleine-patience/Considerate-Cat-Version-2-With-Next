@@ -54,9 +54,6 @@ export default function Home() {
             />
           </Box>
           <HomepageWelcome />
-          <Box mx="auto">
-            <DisplayTarotCards width="248px" data={displayFilteredData} />
-          </Box>
         </Box>
         <FlowerFooter />
       </Box>
