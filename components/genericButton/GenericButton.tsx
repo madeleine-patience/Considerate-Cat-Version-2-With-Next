@@ -21,13 +21,13 @@ const GenericButton = ({ buttonLabel, onClick, width }: GenericButtonProps) => {
         cursor: "pointer",
         textAlign: "center",
         width: width ? `${width}px` : "fit-Content",
-        border: `2px solid ${palette.pinks.dark}`,
-        boxShadow: `3px 3px 0px 3px ${palette.pinks.dark}`,
+        // border: `2px solid ${palette.pinks.dark}`,
+        // boxShadow: `3px 3px 0px 3px ${palette.pinks.dark}`,
         "&:hover": {
-          backgroundColor: palette.pinks.light,
+          // backgroundColor: palette.pinks.light,
         },
         "&:active": {
-          backgroundColor: palette.pinks.dark,
+          // backgroundColor: palette.pinks.dark,
         },
       }}
       onClick={onClick}

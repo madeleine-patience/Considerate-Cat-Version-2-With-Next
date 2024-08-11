@@ -51,7 +51,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
         variant="h2"
         fontWeight="bold"
         fontStyle="italic"
-        color={palette.pinks.dark}
+        // color={palette.pinks.dark}
         textAlign="center"
         sx={{ textShadow: " 3px 3px purple" }}
       >

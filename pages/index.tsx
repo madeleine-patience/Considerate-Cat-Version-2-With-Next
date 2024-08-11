@@ -34,7 +34,7 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          backgroundColor: palette.pinks.main,
+          backgroundColor: "pink",
         }}
       >
         <Header isHomepage={true} />

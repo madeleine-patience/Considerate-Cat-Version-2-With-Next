@@ -211,7 +211,7 @@ const TarotSpreadSelectionBox = ({
           textAlign="center"
           fontSize="bold"
           fontWeight={600}
-          color={palette.pinks.dark}
+          color="pink"
         >
           {title}
         </Typography>
@@ -220,7 +220,7 @@ const TarotSpreadSelectionBox = ({
           textAlign="center"
           fontSize="bold"
           fontWeight={600}
-          color={palette.pinks.dark}
+          color="pink"
         >
           {description}
         </Typography>
