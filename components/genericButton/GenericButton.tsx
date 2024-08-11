@@ -18,7 +18,6 @@ const GenericButton = ({ buttonLabel, onClick, width }: GenericButtonProps) => {
         px: 2,
         py: 1,
         borderRadius: 2,
-        backgroundColor: palette.pinks.main,
         cursor: "pointer",
         textAlign: "center",
         width: width ? `${width}px` : "fit-Content",
