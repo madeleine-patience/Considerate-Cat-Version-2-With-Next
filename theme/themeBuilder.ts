@@ -13,12 +13,12 @@ const baseOptions: ThemeOptions = {
     fontFamily: lora.style.fontFamily,
   },
   palette: {
-    // pinks: {
-    //   main: "#fcd4ee",
-    //   light: "#fdeef8",
-    //   dark: "#ef6aae",
-    //   contrastText: "#ef6aae",
-    // },
+    pinks: {
+      main: "#fcd4ee",
+      light: "#fdeef8",
+      dark: "#ef6aae",
+      contrastText: "#ef6aae",
+    },
     secondary: {
       main: "#f7f2cd",
       light: "#f7f2cd",
