@@ -75,7 +75,7 @@ const TarotDialog = ({
                     variant="body1"
                     sx={{
                       borderRadius: "64px",
-                      background: "pink",
+                      background: palette.pinks.main,
                       width: "fit-content",
                       p: 2,
                     }}
@@ -89,7 +89,7 @@ const TarotDialog = ({
           <Box onClick={onClick}>
             <Typography
               sx={{
-                background: "pink",
+                background: palette.pinks.main,
                 color: "white",
                 width: "25px",
                 height: "25px",

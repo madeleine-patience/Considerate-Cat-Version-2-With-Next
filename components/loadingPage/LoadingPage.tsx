@@ -14,7 +14,7 @@ export const LoadingPage = ({}) => {
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        // backgroundColor: palette.pinks.main,
+        backgroundColor: palette.pinks.main,
         height: "100vh",
       }}
     >
@@ -25,10 +25,9 @@ export const LoadingPage = ({}) => {
       />
       <Typography
         variant="h2"
-        // sx={{ color: palette.pinks.dark, fontWeight: 600 }}
+        sx={{ color: palette.pinks.dark, fontWeight: 600 }}
       >
-        {" "}
-        Loading . . .{" "}
+        Loading . . .
       </Typography>
     </Box>
   );

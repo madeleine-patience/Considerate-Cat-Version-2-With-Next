@@ -42,7 +42,7 @@ export default function FirstPost() {
         display="flex"
         flexDirection="column"
         justifyContent="space-between"
-        sx={{ backgroundColor: "pink" }}
+        sx={{ backgroundColor: palette.pinks.main }}
       >
         <HompeageHeader />
         {areSpreadChoicesVisible && (

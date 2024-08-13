@@ -14,7 +14,6 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
   const router = useRouter();
 
   const tarotDeckData = useContext(TarotDeckContext);
-  const [catIsPet, setCatIsPet] = useState(false);
   const [petCount, setPetCount] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -24,9 +23,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
 
   const petTheCat = () => {
     setPetCount((prev) => prev + 1);
-    if (petCount > 2) {
-      setCatIsPet(true);
-    }
+
     if (petCount >= 0) {
       setButters(
         "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-2.png"
@@ -43,7 +40,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
         borderRadius: 3,
         boxShadow:
           "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;",
-        // backgroundColor: palette.greens.light,
+        backgroundColor: palette.pinks.light,
         ...sx,
       }}
     >
@@ -51,7 +48,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
         variant="h2"
         fontWeight="bold"
         fontStyle="italic"
-        // color={palette.pinks.dark}
+        color={palette.pinks.dark}
         textAlign="center"
         sx={{ textShadow: " 3px 3px purple" }}
       >

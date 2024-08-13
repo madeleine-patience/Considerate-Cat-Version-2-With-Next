@@ -30,7 +30,7 @@ export default function CatDirectory() {
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        // backgroundColor: palette.pinks.main,
+        backgroundColor: palette.pinks.main,
       }}
     >
       <HompeageHeader />

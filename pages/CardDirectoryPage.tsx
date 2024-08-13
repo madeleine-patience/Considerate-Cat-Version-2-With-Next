@@ -65,7 +65,7 @@ export default function FirstPost() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          backgroundColor: "pink",
+          backgroundColor: palette.pinks.main,
         }}
       >
         <HompeageHeader />

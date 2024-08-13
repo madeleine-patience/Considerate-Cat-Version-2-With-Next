@@ -19,7 +19,7 @@ export const NavigationItems = () => {
       <GlitterWordWrapper title="Tarot Reading" link="./TarotReadPage" />
       <GlitterWordWrapper title="Card Directory" link="./CardDirectoryPage" />
       <GlitterWordWrapper title="Meet The Cats" link="./CatDirectory" />
-      <GlitterWordWrapper title="Shop" link="www.consideratecat.com" />
+      {/* <GlitterWordWrapper title="Shop" link="www.consideratecat.com" /> */}
     </Box>
   );
 };
