@@ -2,7 +2,7 @@ import GenericButton from "../components/genericButton/GenericButton";
 import { useTarotCard } from "../hooks/useTarotCard";
 import useFetchTarotDeck from "../hooks/fetchTarotDeck";
 import ElmerCircleIcon from "../components/elmerCircleIcon/ElmerCircleIcon";
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { TarotDeckContext } from "../context/TarotDeckContext";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import { CardSuitTypes } from "../types/cardSuitTypes";
@@ -17,6 +17,10 @@ import { useCardDirectory } from "../hooks/useCardDirectory";
 export default function FirstPost() {
   const { tarotCards, loading } = useFetchTarotDeck();
   const { palette } = useTheme();
+
+  const theme = useTheme();
+
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   const {
     tarotCardData,
@@ -33,7 +37,6 @@ export default function FirstPost() {
     setShowCards,
     showThreeCards,
   } = useCardDirectory();
-  console.log(displayFilteredData);
   const displayCards = (cards: CardSuitTypes) => {
     setShowCards(false);
     displayCardBySuit(cards);
@@ -43,6 +46,8 @@ export default function FirstPost() {
     setCurrentCard(cardId);
     openTarotDialog(tarotCardData[cardId]);
   };
+
+  const shouldShowThreeCards = !isSmallScreen && showThreeCards;
 
   const mappedDisplayGetCardsBuySuitButton = displayCardSuitButtonData.map(
     (item, index) => {
@@ -62,6 +67,7 @@ export default function FirstPost() {
       <Box
         sx={{
           minHeight: "100vh",
+          width: "100vw",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -71,18 +77,28 @@ export default function FirstPost() {
         <HompeageHeader />
 
         <Box
-          maxWidth="1000px"
-          mx="auto"
-          my={4}
-          display="flex"
-          flexDirection="column"
-          alignItems="center"
+          sx={{
+            maxWidth: "1000px",
+            m: "auto",
+            p: 10,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
         >
           <ElmerCircleIcon />
           <Typography variant="h5" fontStyle="italic" py={4} textAlign="center">
             {tarotSuitDescription}
           </Typography>
-          <Box display="flex" flexDirection="row" mx="auto" gap={4}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexDirection: isSmallScreen ? "column" : "row",
+              gap: 4,
+            }}
+          >
             {mappedDisplayGetCardsBuySuitButton}
           </Box>
           {
@@ -92,7 +108,7 @@ export default function FirstPost() {
               data={displayFilteredData}
             />
           }
-          {showThreeCards && (
+          {shouldShowThreeCards && (
             <ThreeCardSpread
               card1={tarotCards[15].image_link}
               card2={tarotCards[5].image_link}

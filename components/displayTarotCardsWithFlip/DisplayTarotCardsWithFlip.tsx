@@ -4,9 +4,9 @@ import { Typography, Box, SxProps } from "@mui/material";
 import { TarotDeckContext } from "../../context/TarotDeckContext";
 import SingleTarotCardWithFlip from "../../components/singleTarotCardWithFlip/SingleTarotCardWithFlip";
 
+// ** TODO note to self get rid or this mandaory width
 interface DisplayTarotCardsProps {
   data: TarotDeckData[];
-  width: string;
   isFlipped: boolean;
   onClick: () => void;
 }
@@ -34,26 +34,25 @@ const DisplayTarotCardsWithFlip = ({
   const arrayOfDelays = getDelaysArr(data.length);
 
   return (
-    <Box>
-      <Box
-        margin="auto"
-        width="fit-content"
-        display="grid"
-        gap={4}
-        p={4}
-        gridTemplateColumns="auto auto auto auto "
-      >
-        {data.map((card, index) => (
-          <Box key={card.id}>
-            <SingleTarotCardWithFlip
-              image={card.image_link}
-              isCardFlipped={isFlipped}
-              onClick={onClick}
-              transitionDelay={`${arrayOfDelays[index]}ms`}
-            />
-          </Box>
-        ))}
-      </Box>
+    <Box
+      sx={{
+        width: "100%",
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        gap: 4,
+      }}
+    >
+      {data.map((card, index) => (
+        <Box key={card.id}>
+          <SingleTarotCardWithFlip
+            image={card.image_link}
+            isCardFlipped={isFlipped}
+            onClick={onClick}
+            transitionDelay={`${arrayOfDelays[index]}ms`}
+          />
+        </Box>
+      ))}
     </Box>
   );
 };

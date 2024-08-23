@@ -1,4 +1,4 @@
-import { Box, useTheme } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import HompeageHeader from "../components/header/Header";
 import useFetchCats from "../hooks/fetchCatData";
@@ -9,6 +9,8 @@ import { LoadingPage } from "../components/loadingPage/LoadingPage";
 export default function CatDirectory() {
   const { cats, loading } = useFetchCats();
   const { palette } = useTheme();
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   if (loading) return <LoadingPage />;
 
@@ -50,7 +52,7 @@ export default function CatDirectory() {
             gap: 8,
             flexWrap: "wrap",
             width: "100%",
-            p: 16,
+            p: isSmallScreen ? 0 : 16,
           }}
         >
           {getCatPurrrlaroids()}

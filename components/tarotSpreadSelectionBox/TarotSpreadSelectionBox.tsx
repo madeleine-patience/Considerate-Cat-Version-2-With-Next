@@ -39,8 +39,6 @@ const TarotSpreadSelectionBox = ({
         gap="8px"
         flexDirection="column"
         justifyContent="center"
-        width={325}
-        height={300}
         position="relative"
         sx={{
           backgroundColor: { backgroundColor },

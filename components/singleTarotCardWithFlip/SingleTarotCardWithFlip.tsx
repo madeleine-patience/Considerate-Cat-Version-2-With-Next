@@ -56,7 +56,7 @@ const SingleTarotCard = ({
             width: "200px",
           },
           "&[data-size='small']": {
-            width: "100px",
+            width: "75px",
           },
         }}
         component="img"

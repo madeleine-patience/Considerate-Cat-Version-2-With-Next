@@ -1,4 +1,10 @@
-import { Box, Typography, SxProps, useTheme } from "@mui/material";
+import {
+  Box,
+  Typography,
+  SxProps,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
 import { useContext, useState } from "react";
 import { TarotDeckContext } from "../../context/TarotDeckContext";
 import SingleTarotCard from "../singleTarotCardWithFlip/SingleTarotCardWithFlip";
@@ -12,6 +18,7 @@ interface HomepageWelcomeProps {
 const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
   const { palette } = useTheme();
   const router = useRouter();
+  const theme = useTheme();
 
   const tarotDeckData = useContext(TarotDeckContext);
   const [petCount, setPetCount] = useState(0);
@@ -21,6 +28,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
     "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-1.png"
   );
 
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
   const petTheCat = () => {
     setPetCount((prev) => prev + 1);
 
@@ -35,42 +43,42 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
   return (
     <Box
       sx={{
-        height: "700px",
         p: 4,
         borderRadius: 3,
-        boxShadow:
-          "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;",
-        backgroundColor: palette.pinks.light,
         ...sx,
       }}
     >
-      <Typography
-        variant="h2"
-        fontWeight="bold"
-        fontStyle="italic"
-        color={palette.pinks.dark}
-        textAlign="center"
-        sx={{ textShadow: " 3px 3px purple" }}
-      >
-        Welcome to Considerate Cat!
-      </Typography>
       <Box
         sx={{
           display: "flex",
           justifyContent: "alignItems",
           alignContent: "center",
           alignItems: "center",
+          flexDirection: isSmallScreen ? "column" : "row",
         }}
       >
-        <Box sx={{ position: "relative" }}>
+        <Box>
+          <Box
+            onClick={() => petTheCat()}
+            component="img"
+            src={butters}
+            sx={{
+              top: 25,
+              zIndex: 2,
+              position: "relative",
+              width: isSmallScreen ? "100%" : "500px",
+              filter:
+                " drop-shadow(9px 0 0 white) drop-shadow(0 9px 0 white) drop-shadow(-9px 0 0 white) drop-shadow(0 -9px 0 white)",
+            }}
+          />
           <Box
             sx={{
+              zIndex: 1,
+              position: "relative",
               display: "flex",
               justifyContent: "center",
-              gap: 4,
-              position: "absolute",
-              left: 50,
-              bottom: -75,
+              gap: 2,
+              top: -50,
             }}
           >
             <SingleTarotCard
@@ -89,19 +97,17 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
               size="small"
             />
           </Box>
-          <Box
-            onClick={() => petTheCat()}
-            component="img"
-            src={butters}
-            sx={{
-              zIndex: 2,
-              width: "500px",
-              filter:
-                " drop-shadow(9px 0 0 white) drop-shadow(0 9px 0 white) drop-shadow(-9px 0 0 white) drop-shadow(0 -9px 0 white)",
-            }}
-          />
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column", gap: 4 }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 4,
+            textAlign: "center",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Typography variant="h6">
             Considerate Cat is a tarot deck that was published in 2018, brought
             to life by a community of folks on Kickstarter. Since then, the deck

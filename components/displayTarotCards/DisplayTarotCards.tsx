@@ -1,5 +1,5 @@
 import { TarotDeckData } from "../../types/tarotDeckData";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 interface DisplayTarotCardActionProps {
   onClick?: (param: number) => void;
@@ -14,12 +14,17 @@ export const DisplayTarotCards = ({
   width,
   onClick,
 }: DisplayTarotCardsProps) => {
+  const theme = useTheme();
+
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Box>
       <Box
         margin="auto"
         width="fit-content"
-        display="grid"
+        display={isSmallScreen ? "flex" : "grid"}
+        flexDirection="column"
         gap={4}
         p={4}
         gridTemplateColumns="auto auto auto auto auto"

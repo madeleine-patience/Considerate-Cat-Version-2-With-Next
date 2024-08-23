@@ -86,22 +86,29 @@ export default function FirstPost() {
           </Box>
         )}
 
-        {isTarotReadVisible && (
-          <DisplayTarotCardsWithFlip
-            width="248px"
-            data={displayFilteredData}
-            isFlipped={isFlipped}
-            onClick={() => setIsFlipped(true)}
-          />
-        )}
-        {isFlipped && (
+        <Box
+          sx={{
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            gap: 6,
+          }}
+        >
+          {isTarotReadVisible && (
+            <DisplayTarotCardsWithFlip
+              data={displayFilteredData}
+              isFlipped={isFlipped}
+              onClick={() => setIsFlipped(true)}
+            />
+          )}
           <Box display="flex" justifyContent="center">
             <GenericButton
+              disabled={!isFlipped}
               buttonLabel="Get Another Read"
               onClick={() => resetAndViewTarotSpreads()}
             />
           </Box>
-        )}
+        </Box>
         <FlowerFooter />
       </Box>
     </TarotDeckContext.Provider>

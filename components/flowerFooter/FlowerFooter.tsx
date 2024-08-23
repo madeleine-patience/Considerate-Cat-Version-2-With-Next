@@ -1,6 +1,12 @@
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
-import { Typography, Box, SxProps } from "@mui/material";
+import {
+  Typography,
+  Box,
+  SxProps,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 const catFooterImage =
   "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/catNamedShoe.png";
 
@@ -9,19 +15,25 @@ interface flowerFooterProps {
 }
 
 const FlowerFooter = ({ sx }: flowerFooterProps) => {
+  const theme = useTheme();
+
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Box
       sx={{
-        display: "flex",
-        height: "400px",
+        height: isSmallScreen ? "100vh" : "400px",
         background: "linear-gradient(transparent, #a0b594)",
         ...sx,
+        display: "flex",
       }}
     >
       <Box
         sx={{
           width: "100%",
-          backgroundImage: `url("https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/tulipFooter.png")`,
+          backgroundImage: isSmallScreen
+            ? ""
+            : `url("https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/tulipFooter.png")`,
           backgroundRepeat: "repeat",
           backgroundSize: "contain",
           display: "flex",
@@ -29,15 +41,23 @@ const FlowerFooter = ({ sx }: flowerFooterProps) => {
           justifyContent: "center",
         }}
       >
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <Box
             sx={{
               background: "rgba(177, 210, 175, 0.8)",
               display: "flex",
               alignItems: "center",
-              p: 11,
+              p: 10,
               borderRadius: 5,
+              borderBottomRightRadius: isSmallScreen ? 0 : 5,
+              borderBottomLeftRadius: isSmallScreen ? 0 : 5,
               gap: 5,
+              flexDirection: isSmallScreen ? "column" : "row",
             }}
           >
             <Box
@@ -66,6 +86,7 @@ const FlowerFooter = ({ sx }: flowerFooterProps) => {
                 display: "flex",
                 alignItems: "center",
                 flexDirection: "column",
+                textAlign: "center",
               }}
             >
               <Typography variant="h6" fontWeight="600">

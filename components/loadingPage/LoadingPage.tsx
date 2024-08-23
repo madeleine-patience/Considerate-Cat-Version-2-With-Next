@@ -1,11 +1,14 @@
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 interface GenericButtonAction {}
 
 interface HeaderProps extends GenericButtonAction {}
 
 export const LoadingPage = ({}) => {
+  const theme = useTheme();
   const { palette } = useTheme();
+
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Box
@@ -19,12 +22,12 @@ export const LoadingPage = ({}) => {
       }}
     >
       <Box
-        sx={{ height: "800px" }}
+        sx={{ height: isSmallScreen ? "300px" : "800px" }}
         component="img"
         src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHZtNnIydmx3YXJ5NDRpbnd4ZWFmMnVmODI5a29mOXIyOTUwbTZhYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QeXnegIcgtpPlHppFV/source.gif"
       />
       <Typography
-        variant="h2"
+        variant={isSmallScreen ? "h4" : "h2"}
         sx={{ color: palette.pinks.dark, fontWeight: 600 }}
       >
         Loading . . .
