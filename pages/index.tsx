@@ -1,4 +1,4 @@
-import { Box, useTheme } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import GenericButton from "../components/genericButton/GenericButton";
 import useFetchTarotDeck from "../hooks/fetchTarotDeck";
@@ -17,11 +17,13 @@ const homePageMainImage =
   "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/homepageImage.png";
 
 export default function Home() {
-  const { tarotCards, loading } = useFetchTarotDeck();
-
-  const { tarotCardData, displayFilteredData } = useTarotCard(tarotCards);
-
+  const theme = useTheme();
   const { palette } = useTheme();
+
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+
+  const { tarotCards, loading } = useFetchTarotDeck();
+  const { tarotCardData } = useTarotCard(tarotCards);
 
   if (loading) return <LoadingPage />;
   return (
@@ -30,14 +32,14 @@ export default function Home() {
       <Box
         sx={{
           minHeight: "100vh",
-          width: "100%",
+          width: "fit-content%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
           backgroundColor: palette.pinks.main,
         }}
       >
-        <Header isHomepage={true} />
+        <Header />
         <Box sx={{ maxWidth: "1200px", margin: "auto" }}>
           <Box display="flex" justifyContent="center" position="relative">
             <Box
@@ -45,6 +47,7 @@ export default function Home() {
               src={homePageMainImage}
               width="100%"
               sx={{
+                display: isSmallScreen ? "none" : undefined,
                 mb: 10,
                 borderRadius: 4,
                 position: "relative",

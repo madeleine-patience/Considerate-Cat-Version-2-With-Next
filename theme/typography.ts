@@ -46,6 +46,6 @@ export const typography: TypographyOptions = {
   },
   button: {
     fontWeight: 500,
-    fontSize: "1rem",
+    fontSize: "1.1rem",
   },
 };

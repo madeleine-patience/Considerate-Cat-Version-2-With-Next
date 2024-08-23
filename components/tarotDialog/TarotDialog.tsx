@@ -39,7 +39,7 @@ const TarotDialog = ({
       <ClickAwayListener onClickAway={handleClickAway}>
         <Box
           sx={{
-            // background: palette.greens.light,
+            background: palette.greens.light,
             display: "flex",
             p: 6,
             gap: 6,

@@ -8,8 +8,6 @@ export const NavigationItems = () => {
     <Box
       sx={{
         display: "flex",
-        p: 4,
-        textDecoration: "capitalize",
         [theme.breakpoints.down("lg")]: {
           flexDirection: "column",
         },

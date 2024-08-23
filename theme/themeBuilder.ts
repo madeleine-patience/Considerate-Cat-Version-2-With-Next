@@ -11,6 +11,7 @@ const lora = Lora({
 const baseOptions: ThemeOptions = {
   typography: {
     fontFamily: lora.style.fontFamily,
+    fontSize: 16,
   },
   palette: {
     pinks: {
@@ -24,10 +25,10 @@ const baseOptions: ThemeOptions = {
       light: "#f7f2cd",
       dark: "#e0dbb1",
     },
-    // greens: {
-    //   main: "#accca5",
-    //   light: "#add4a5",
-    // },
+    greens: {
+      main: "#accca5",
+      light: "#add4a5",
+    },
   },
   spacing: 4,
 };
