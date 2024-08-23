@@ -7,7 +7,7 @@ interface GenericButtonAction {
 interface GenericButtonProps extends GenericButtonAction {
   width?: number;
   buttonLabel: string;
-  disabled: boolean;
+  disabled?: boolean;
 }
 //TODO just use an MUI button dont overcomplicate everything
 const GenericButton = ({
