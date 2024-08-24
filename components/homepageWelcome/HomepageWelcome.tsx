@@ -8,15 +8,14 @@ import {
 import { useContext, useState } from "react";
 import { TarotDeckContext } from "../../context/TarotDeckContext";
 import SingleTarotCard from "../singleTarotCardWithFlip/SingleTarotCardWithFlip";
-import GenericButton from "../genericButton/GenericButton";
 import { useRouter } from "next/router";
+import RaisedButton from "../raisedButton/RaisedButton";
 
 interface HomepageWelcomeProps {
   sx?: SxProps;
 }
 
 const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
-  const { palette } = useTheme();
   const router = useRouter();
   const theme = useTheme();
 
@@ -121,7 +120,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
             Also, Butters is patiently waiting to have his cards read. Click him
             to give him the reading he's been waiting for!
           </Typography>
-          <GenericButton
+          <RaisedButton
             buttonLabel="Get My Own Tarot Read!"
             onClick={() => {
               router.push("/TarotReadPage");

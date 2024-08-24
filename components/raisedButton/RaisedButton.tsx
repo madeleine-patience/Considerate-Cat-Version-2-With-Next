@@ -1,35 +1,28 @@
-import { Box, Typography, useTheme } from "@mui/material";
+import { Button, ButtonProps, Typography, useTheme } from "@mui/material";
 
-interface GenericButtonAction {
-  onClick: () => void;
-}
-
-interface GenericButtonProps extends GenericButtonAction {
+interface RaisedButtonProps extends ButtonProps {
   width?: number;
   buttonLabel: string;
   disabled?: boolean;
 }
-//TODO just use an MUI button dont overcomplicate everything
-const GenericButton = ({
+
+const RaisedButton = ({
   buttonLabel,
   onClick,
-  width,
   disabled,
-}: GenericButtonProps) => {
+}: RaisedButtonProps) => {
   const { palette } = useTheme();
 
   return (
-    <Box
+    <Button
+      disableRipple
       sx={{
-        visibility: disabled ? "hidden" : "visible",
-        px: 2,
-        py: 1,
-        borderRadius: 2,
         cursor: "pointer",
-        textAlign: "center",
-        width: width ? `${width}px` : "fit-Content",
+        visibility: disabled ? "hidden" : "visible",
+        borderRadius: 2,
         border: `2px solid ${palette.pinks.dark}`,
-        boxShadow: `3px 3px 0px 3px ${palette.pinks.dark}`,
+        boxShadow: `4px 4px 0px 4px ${palette.pinks.dark}`,
+        color: "black",
         "&:hover": {
           backgroundColor: palette.pinks.light,
         },
@@ -40,8 +33,8 @@ const GenericButton = ({
       onClick={onClick}
     >
       <Typography variant="button">{buttonLabel}</Typography>
-    </Box>
+    </Button>
   );
 };
 
-export default GenericButton;
+export default RaisedButton;
