@@ -1,6 +1,4 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import HeaderButton from "../headerButton/HeaderButton";
-import Link from "next/link";
 import MagicCatAnimation from "../magicCatAnimation/magicCatAnimation/MagicCatAnimation";
 import { NavigationItems } from "../navigationItems/NavigationItems";
 

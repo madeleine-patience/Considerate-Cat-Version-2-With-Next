@@ -1,12 +1,11 @@
 import {
   Box,
-  Typography,
-  Dialog,
   CardMedia,
   ClickAwayListener,
+  Dialog,
+  Typography,
   useTheme,
 } from "@mui/material";
-import { useState } from "react";
 
 interface TarotDialogActions {
   onClick: () => void;
@@ -33,7 +32,6 @@ const TarotDialog = ({
   handleClickAway,
 }: TarotDialogProps) => {
   const { palette } = useTheme();
-  const theme = useTheme();
   return (
     <Dialog open={isOpen}>
       <ClickAwayListener onClickAway={handleClickAway}>
@@ -72,6 +70,7 @@ const TarotDialog = ({
               {keyWords.map((keyword) => {
                 return (
                   <Typography
+                    key={keyword}
                     variant="body1"
                     sx={{
                       borderRadius: "64px",

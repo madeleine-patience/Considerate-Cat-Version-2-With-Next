@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { supabase } from "../supabase"; // Adjust the path as necessary
 
 const useFetchTarotDeck = () => {
@@ -19,6 +19,7 @@ const useFetchTarotDeck = () => {
 
         setTarotCards(data);
       } catch (error) {
+        console.log(error);
       } finally {
         setTimeout(() => {
           setLoading(false);

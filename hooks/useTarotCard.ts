@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
-import { TarotDeckData } from "../types/tarotDeckData";
 import { CardSuitTypes } from "../types/cardSuitTypes";
-
-const tarotBackImage =
-  "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/tarotcard/0.jpg";
+import { TarotDeckData } from "../types/tarotDeckData";
 
 const initialTarotCardDescription =
   "There are five suits of cards in the Considerate Cat Tarot deck. Major, Cups, Wands, Pentacles and Swords. While each card means something different from the next, each card has a connection or meaning to the suit of which it belongs.";

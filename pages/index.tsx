@@ -1,12 +1,12 @@
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
-import useFetchTarotDeck from "../hooks/fetchTarotDeck";
-import { useTarotCard } from "../hooks/useTarotCard";
-import { TarotDeckContext } from "../context/TarotDeckContext";
 import Header from "../components/header/Header";
 import HomepageWelcome from "../components/homepageWelcome/HomepageWelcome";
 import { LoadingPage } from "../components/loadingPage/LoadingPage";
 import { MagicCatReload } from "../components/magicCatAnimation/magicCatReload/MagicCatReload";
+import { TarotDeckContext } from "../context/TarotDeckContext";
+import useFetchTarotDeck from "../hooks/fetchTarotDeck";
+import { useTarotCard } from "../hooks/useTarotCard";
 
 const homePageMainImage =
   "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/homepageImage.png";

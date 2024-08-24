@@ -1,15 +1,15 @@
 import {
   Box,
-  Typography,
   SxProps,
-  useTheme,
+  Typography,
   useMediaQuery,
+  useTheme,
 } from "@mui/material";
+import { useRouter } from "next/router";
 import { useContext, useState } from "react";
 import { TarotDeckContext } from "../../context/TarotDeckContext";
-import SingleTarotCard from "../singleTarotCardWithFlip/SingleTarotCardWithFlip";
-import { useRouter } from "next/router";
 import RaisedButton from "../raisedButton/RaisedButton";
+import SingleTarotCard from "../singleTarotCardWithFlip/SingleTarotCardWithFlip";
 
 interface HomepageWelcomeProps {
   sx?: SxProps;
@@ -110,7 +110,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
           <Typography variant="h6">
             Considerate Cat is a tarot deck that was published in 2018, brought
             to life by a community of folks on Kickstarter. Since then, the deck
-            has been brought into many inspiring people's homes, featuring
+            has been brought into many inspiring people&apos;s homes, featuring
             stories of rescue cats from across the world. Now, we are bringing
             the deck to life online! Here, you can have your cards read, learn
             about the cats that inspired the deck, and dive deeper into the
@@ -118,7 +118,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
           </Typography>
           <Typography variant="h6">
             Also, Butters is patiently waiting to have his cards read. Click him
-            to give him the reading he's been waiting for!
+            to give him the reading he&apos;s been waiting for!
           </Typography>
           <RaisedButton
             buttonLabel="Get My Own Tarot Read!"

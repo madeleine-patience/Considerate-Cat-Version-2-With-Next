@@ -1,6 +1,4 @@
-import { styled } from "@mui/system";
-import { ThemeProvider } from "@mui/material/styles";
-import { Box, Typography, SxProps } from "@mui/material";
+import { Box } from "@mui/material";
 
 const tarotBack =
   "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/tarotcard/0.jpg";

@@ -1,6 +1,4 @@
 import type { Preview } from "@storybook/react";
-import { Decorator } from "@storybook/react";
-import { CssBaseline, ThemeProvider } from "@mui/material";
 
 const preview: Preview = {
   parameters: {

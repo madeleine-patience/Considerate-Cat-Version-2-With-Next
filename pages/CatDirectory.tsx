@@ -1,10 +1,9 @@
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import HompeageHeader from "../components/header/Header";
-import useFetchCats from "../hooks/fetchCatData";
-import Purrlaroid from "../components/purrlaroid/Purrlaroid";
-import MagicCatAnimation from "../components/magicCatAnimation/magicCatAnimation/MagicCatAnimation";
 import { LoadingPage } from "../components/loadingPage/LoadingPage";
+import Purrlaroid from "../components/purrlaroid/Purrlaroid";
+import useFetchCats from "../hooks/fetchCatData";
 
 export default function CatDirectory() {
   const { cats, loading } = useFetchCats();
@@ -15,8 +14,9 @@ export default function CatDirectory() {
   if (loading) return <LoadingPage />;
 
   const getCatPurrrlaroids = () => {
-    return cats.map((cat) => (
+    return cats.map((cat, index) => (
       <Purrlaroid
+        key={index}
         catName={cat.cat_name}
         width="300px"
         catImage={cat.cat_main_image}

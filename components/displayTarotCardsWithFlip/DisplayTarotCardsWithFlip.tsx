@@ -1,6 +1,6 @@
-import { TarotDeckData } from "../../types/tarotDeckData";
 import { Box } from "@mui/material";
 import SingleTarotCardWithFlip from "../../components/singleTarotCardWithFlip/SingleTarotCardWithFlip";
+import { TarotDeckData } from "../../types/tarotDeckData";
 
 interface DisplayTarotCardsProps {
   data: TarotDeckData[];

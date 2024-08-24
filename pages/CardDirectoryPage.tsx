@@ -1,18 +1,17 @@
-import { useTarotCard } from "../hooks/useTarotCard";
-import useFetchTarotDeck from "../hooks/fetchTarotDeck";
-import ElmerCircleIcon from "../components/elmerCircleIcon/ElmerCircleIcon";
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
-import { TarotDeckContext } from "../context/TarotDeckContext";
-import FlowerFooter from "../components/flowerFooter/FlowerFooter";
-import { CardSuitTypes } from "../types/cardSuitTypes";
-import HompeageHeader from "../components/header/Header";
 import { DisplayTarotCards } from "../components/displayTarotCards";
-import ThreeCardSpread from "../components/threeCardSpread/ThreeCardSpread";
+import ElmerCircleIcon from "../components/elmerCircleIcon/ElmerCircleIcon";
+import FlowerFooter from "../components/flowerFooter/FlowerFooter";
+import HompeageHeader from "../components/header/Header";
 import { LoadingPage } from "../components/loadingPage/LoadingPage";
-import { useState } from "react";
-import TarotDialog from "../components/tarotDialog/TarotDialog";
-import { useCardDirectory } from "../hooks/useCardDirectory";
 import RaisedButton from "../components/raisedButton/RaisedButton";
+import TarotDialog from "../components/tarotDialog/TarotDialog";
+import ThreeCardSpread from "../components/threeCardSpread/ThreeCardSpread";
+import { TarotDeckContext } from "../context/TarotDeckContext";
+import useFetchTarotDeck from "../hooks/fetchTarotDeck";
+import { useCardDirectory } from "../hooks/useCardDirectory";
+import { useTarotCard } from "../hooks/useTarotCard";
+import { CardSuitTypes } from "../types/cardSuitTypes";
 
 export default function FirstPost() {
   const { tarotCards, loading } = useFetchTarotDeck();

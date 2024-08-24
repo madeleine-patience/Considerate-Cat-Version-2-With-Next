@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { supabase } from "../supabase";
 
 const useFetchCats = () => {
   const [cats, setCats] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [fetchError, setFetchError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchTarotCards = async () => {
@@ -16,6 +17,8 @@ const useFetchCats = () => {
 
         setCats(data);
       } catch (error) {
+        setFetchError((error as Error).message);
+        console.error(error);
       } finally {
         setTimeout(() => {
           setLoading(false);
@@ -26,7 +29,7 @@ const useFetchCats = () => {
     fetchTarotCards();
   }, []);
 
-  return { cats, loading };
+  return { cats, loading, fetchError };
 };
 
 export default useFetchCats;

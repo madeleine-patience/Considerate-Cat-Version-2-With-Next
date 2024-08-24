@@ -1,5 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
-import React from "react";
+import { Box } from "@mui/material";
 
 interface MagicButtonAction {
   onClick?: () => void;
@@ -35,8 +34,6 @@ export const MagicButton = ({
   backgroundColor,
   textColor,
   width,
-  isAnimated,
-  catImage,
 }: MagicButtonProps) => {
   return (
     <Box

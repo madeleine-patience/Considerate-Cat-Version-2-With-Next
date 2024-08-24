@@ -1,8 +1,8 @@
-import { TarotDeckData } from "../../types/tarotDeckData";
 import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { TarotDeckData } from "../../types/tarotDeckData";
 
 interface DisplayTarotCardActionProps {
-  onClick?: (param: number) => void;
+  onClick?: () => void;
 }
 
 interface DisplayTarotCardsProps extends DisplayTarotCardActionProps {
@@ -33,7 +33,7 @@ export const DisplayTarotCards = ({
           <Box key={card.id}>
             <Box
               key={card.id}
-              onClick={() => onClick(card.id)}
+              onClick={onClick}
               width={width}
               borderRadius={2}
               component="img"

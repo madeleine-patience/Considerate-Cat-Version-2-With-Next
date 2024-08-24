@@ -1,12 +1,5 @@
-import { Meta, StoryFn } from "@storybook/react";
+import { Meta } from "@storybook/react";
 import ElmerCircleIcon from "./ElmerCircleIcon";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-} from "@mui/material";
 
 export default {
   title: "Components/ElmerCircleIcon",

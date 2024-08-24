@@ -1,6 +1,4 @@
-import { styled } from "@mui/system";
-import { ThemeProvider } from "@mui/material/styles";
-import { Box, Typography, SxProps } from "@mui/material";
+import { Box, SxProps } from "@mui/material";
 
 interface SingleTarotCardProps {
   image: string;
