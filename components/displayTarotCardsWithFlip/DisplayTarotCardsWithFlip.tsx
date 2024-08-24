@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import { TarotDeckData } from "../../types/tarotDeckData";
 import { Box } from "@mui/material";
 import SingleTarotCardWithFlip from "../../components/singleTarotCardWithFlip/SingleTarotCardWithFlip";
