@@ -1,9 +1,5 @@
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 
-interface GenericButtonAction {}
-
-interface HeaderProps extends GenericButtonAction {}
-
 export const LoadingPage = ({}) => {
   const theme = useTheme();
   const { palette } = useTheme();

@@ -4,9 +4,7 @@ import Link from "next/link";
 import MagicCatAnimation from "../magicCatAnimation/magicCatAnimation/MagicCatAnimation";
 import { NavigationItems } from "../navigationItems/NavigationItems";
 
-interface GenericButtonAction {}
-
-interface HeaderProps extends GenericButtonAction {
+interface HeaderProps {
   isHomepage?: boolean;
 }
 

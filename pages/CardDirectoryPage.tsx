@@ -1,4 +1,3 @@
-import GenericButton from "../components/genericButton/GenericButton";
 import { useTarotCard } from "../hooks/useTarotCard";
 import useFetchTarotDeck from "../hooks/fetchTarotDeck";
 import ElmerCircleIcon from "../components/elmerCircleIcon/ElmerCircleIcon";
@@ -13,6 +12,7 @@ import { LoadingPage } from "../components/loadingPage/LoadingPage";
 import { useState } from "react";
 import TarotDialog from "../components/tarotDialog/TarotDialog";
 import { useCardDirectory } from "../hooks/useCardDirectory";
+import RaisedButton from "../components/raisedButton/RaisedButton";
 
 export default function FirstPost() {
   const { tarotCards, loading } = useFetchTarotDeck();
@@ -52,7 +52,7 @@ export default function FirstPost() {
   const mappedDisplayGetCardsBuySuitButton = displayCardSuitButtonData.map(
     (item, index) => {
       return (
-        <GenericButton
+        <RaisedButton
           key={index}
           buttonLabel={item.buttonLabel}
           onClick={() => displayCards(item.buttonLabel)}
