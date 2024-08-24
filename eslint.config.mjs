@@ -26,5 +26,10 @@ export default [
       "no-unused-vars": "error",
       semi: ["error", "always"],
     },
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
   },
 ];
