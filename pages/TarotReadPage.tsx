@@ -1,4 +1,3 @@
-import GenericButton from "../components/genericButton/GenericButton";
 import { useTarotCard } from "../hooks/useTarotCard";
 import useFetchTarotDeck from "../hooks/fetchTarotDeck";
 import { Box, useTheme } from "@mui/material";
@@ -9,6 +8,7 @@ import HompeageHeader from "../components/header/Header";
 import TarotSpreadSelectionBox from "../components/tarotSpreadSelectionBox/TarotSpreadSelectionBox";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import { LoadingPage } from "../components/loadingPage/LoadingPage";
+import RaisedButton from "../components/raisedButton/RaisedButton";
 
 export default function FirstPost() {
   const { palette } = useTheme();
@@ -102,7 +102,7 @@ export default function FirstPost() {
             />
           )}
           <Box display="flex" justifyContent="center">
-            <GenericButton
+            <RaisedButton
               disabled={!isFlipped}
               buttonLabel="Get Another Read"
               onClick={() => resetAndViewTarotSpreads()}
