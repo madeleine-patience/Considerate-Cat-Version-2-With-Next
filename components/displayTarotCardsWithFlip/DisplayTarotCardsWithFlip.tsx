@@ -1,10 +1,8 @@
 import { useContext } from "react";
 import { TarotDeckData } from "../../types/tarotDeckData";
-import { Typography, Box, SxProps } from "@mui/material";
-import { TarotDeckContext } from "../../context/TarotDeckContext";
+import { Box } from "@mui/material";
 import SingleTarotCardWithFlip from "../../components/singleTarotCardWithFlip/SingleTarotCardWithFlip";
 
-// ** TODO note to self get rid or this mandaory width
 interface DisplayTarotCardsProps {
   data: TarotDeckData[];
   isFlipped: boolean;
