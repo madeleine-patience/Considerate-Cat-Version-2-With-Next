@@ -1,5 +1,6 @@
+import { Box } from "@mui/material";
+import { Meta } from "@storybook/react";
 import RaisedButton from "./RaisedButton";
-import { Meta, StoryFn } from "@storybook/react";
 
 export default {
   title: "Components/RaisedButton",
@@ -7,8 +8,18 @@ export default {
   decorators: [(Story) => <Story />],
 } as Meta<typeof RaisedButton>;
 
-const Template: StoryFn<typeof RaisedButton> = () => (
-  <RaisedButton buttonLabel="Test" onClick={() => console.log("madeleine")} />
-);
-
-export const Default = Template.bind({});
+export const AllStates = () => {
+  return (
+    <Box>
+      <Box>
+        <RaisedButton buttonLabel="tiny" />
+      </Box>
+      <Box>
+        <RaisedButton buttonLabel="medium" />
+      </Box>
+      <Box>
+        <RaisedButton buttonLabel="large text" />
+      </Box>
+    </Box>
+  );
+};

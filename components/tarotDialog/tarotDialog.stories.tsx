@@ -5,7 +5,6 @@ import { tarotDialogMocks } from "./tarotDialog.mocks";
 export default {
   title: "Components/TarotDialog",
   component: TarotDialog,
-  decorators: [(Story) => <Story />],
 } as Meta<typeof TarotDialog>;
 
 const Template: StoryFn<typeof TarotDialog> = (args) => (
