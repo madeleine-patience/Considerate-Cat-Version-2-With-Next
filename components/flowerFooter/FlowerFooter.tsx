@@ -1,14 +1,13 @@
-import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import {
-  Typography,
   Box,
   SxProps,
+  Typography,
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-const catFooterImage =
-  "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/catNamedShoe.png";
+const catFooterImage = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/considerate%20cat%20assets/catNamedShoe.png`;
 
 interface flowerFooterProps {
   sx?: SxProps;
@@ -33,7 +32,7 @@ const FlowerFooter = ({ sx }: flowerFooterProps) => {
           width: "100%",
           backgroundImage: isSmallScreen
             ? ""
-            : `url("https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/tulipFooter.png")`,
+            : `url(${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/considerate%20cat%20assets/tulipFooter.png)`,
           backgroundRepeat: "repeat",
           backgroundSize: "contain",
           display: "flex",

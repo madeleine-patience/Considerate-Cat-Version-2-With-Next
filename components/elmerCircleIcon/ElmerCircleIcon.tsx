@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
 
-const ElmerBasic =
-  "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/ElmerBasic.png?t=2024-01-27T03%3A25%3A28.802Z";
+const ElmerBasic = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/considerate%20cat%20assets/ElmerBasic.png?t=2024-01-27T03%3A25%3A28.802Z`;
 
 const ElmerCircleIcon = () => {
   return (

@@ -1,76 +1,78 @@
 import Head from "next/head";
 
 export const MagicCatReload = () => {
+  const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+
   return (
     <Head>
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-01.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-01.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-02.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-02.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-03.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-03.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-04.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-04.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-05.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-05.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-06.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-06.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-07.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-07.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-08.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-08.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-09.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-09.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-10.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-10.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-11.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-11.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-12.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-12.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-13.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-13.png`}
         as="image"
       />
       <link
         rel="preload"
-        href="https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/headerAnimation/heidi-14.png"
+        href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-14.png`}
         as="image"
       />
     </Head>

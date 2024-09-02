@@ -1,7 +1,6 @@
 import { Meta, StoryFn } from "@storybook/react";
 import Purrlaroid from "./Purrlaroid";
-const Eddie =
-  "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/Cat%20Images/Eddie.jpg";
+const Eddie = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/Cat%20Images/Eddie.jpg`;
 export default {
   title: "Components/Purrlaroid",
   component: Purrlaroid,

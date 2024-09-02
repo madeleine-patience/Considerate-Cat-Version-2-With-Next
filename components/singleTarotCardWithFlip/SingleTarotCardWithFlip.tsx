@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
 
-const tarotBack =
-  "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/tarotcard/0.jpg";
+const tarotBack = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/tarotcard/0.jpg`;
 
 interface SingleTarotCardWithFlipAction {
   onClick?: () => void;

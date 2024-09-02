@@ -24,7 +24,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const [butters, setButters] = useState(
-    "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-1.png"
+    `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-1.png`
   );
 
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
@@ -33,7 +33,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
 
     if (petCount >= 0) {
       setButters(
-        "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-2.png"
+        `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-2.png`
       );
       setIsFlipped(true);
     }
