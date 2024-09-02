@@ -1,8 +1,7 @@
 import { Meta, StoryFn } from "@storybook/react";
 import ThreeCardSpread from "./ThreeCardSpread";
 
-const tarotImage =
-  "https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/tarotcard/19.jpg";
+const tarotImage = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/tarotcard/19.jpg`;
 
 export default {
   title: "Components/ThreeCardSpread",
