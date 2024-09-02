@@ -1,26 +1,26 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import { ReactNode } from "react";
 
 interface PurrlaroidAction {
   onClick?: () => void;
 }
 
 interface PurrlaroidProps extends PurrlaroidAction {
-  catName: string;
   isAnimated?: boolean;
-  width: `${number}px`;
   catImage: string;
+  children: ReactNode;
 }
 
-const Purrlaroid = ({
+const PurrlaroidRoot = ({
   onClick,
-  catName,
-  width,
   isAnimated,
   catImage,
+  children,
 }: PurrlaroidProps) => {
   return (
     <Box
       sx={{
+        width: "300px",
         textAlign: "center",
         backgroundColor: "lightYellow",
         border: "3px solid lightGrey",
@@ -37,45 +37,17 @@ const Purrlaroid = ({
       <Box
         component="img"
         sx={{
-          width: width,
-          height: width,
+          width: "100%",
           objectFit: "cover",
           transition: "opacity .5s ease-in-out",
-          // "&:hover": {
-          //   opacity: isAnimated ? 0 : 1,
-          // },
         }}
         onClick={onClick}
         src={catImage}
       />
-      {/* {isAnimated && (
-        <Box
-          component="img"
-          onClick={onClick}
-          src={"/Art/Abe.jpg"}
-          sx={{
-            width: width,
-            height: width,
-            objectFit: "cover",
-            position: "absolute",
-            zIndex: -1,
-          }}
-        />
-      )} */}
-      {catName && (
-        <Typography
-          sx={{
-            fontSize: 40,
-            fontWeight: "bold",
-            fontStyle: "italic",
-            color: "#7d7168",
-          }}
-        >
-          {catName}
-        </Typography>
-      )}
+
+      {children}
     </Box>
   );
 };
 
-export default Purrlaroid;
+export default PurrlaroidRoot;
