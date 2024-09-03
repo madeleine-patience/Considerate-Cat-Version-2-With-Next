@@ -43,6 +43,7 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
     <Box
       sx={{
         p: 4,
+        backgroundColor: "green",
         borderRadius: 3,
         ...sx,
       }}
