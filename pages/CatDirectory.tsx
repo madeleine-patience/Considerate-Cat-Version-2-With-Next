@@ -2,7 +2,7 @@ import { Box, useMediaQuery, useTheme } from "@mui/material";
 import FlowerFooter from "../components/flowerFooter/FlowerFooter";
 import HompeageHeader from "../components/header/Header";
 import { LoadingPage } from "../components/loadingPage/LoadingPage";
-import Purrlaroid from "../components/purrlaroid/Purrlaroid";
+import { Purrlaroid } from "../components/purrlaroid";
 import useFetchCats from "../hooks/fetchCatData";
 
 export default function CatDirectory() {
@@ -15,13 +15,9 @@ export default function CatDirectory() {
 
   const getCatPurrrlaroids = () => {
     return cats.map((cat, index) => (
-      <Purrlaroid
-        key={index}
-        catName={cat.cat_name}
-        width="300px"
-        catImage={cat.cat_main_image}
-        isAnimated={true}
-      />
+      <Purrlaroid.Root key={index} catImage={cat.cat_main_image} isAnimated>
+        <Purrlaroid.Title catName={cat.cat_name} />
+      </Purrlaroid.Root>
     ));
   };
 
