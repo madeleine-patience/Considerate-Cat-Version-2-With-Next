@@ -31,54 +31,82 @@ const TarotDialog = ({
   onClick,
   handleClickAway,
 }: TarotDialogProps) => {
-  const { palette } = useTheme();
+  const { palette, breakpoints } = useTheme();
   return (
     <Dialog open={isOpen}>
       <ClickAwayListener onClickAway={handleClickAway}>
         <Box
           sx={{
-            background: palette.greens.light,
-            display: "flex",
-            p: 6,
-            gap: 6,
-          }}
-        >
-          <CardMedia component="img" src={image} sx={{ width: "50%" }} />
+              background: palette.greens.light,
+              display: "flex",
+              p: 4,
+              [breakpoints.down('md')]: {
+                  display: "block",
+                  textAlign: "center"
+              }
+          }}>
+          <CardMedia
+              component="img"
+              src={image}
+              sx={
+              {
+                  objectFit: "contain",
+                  objectPosition: "top",
+                  maxHeight: "500px",
+                  [breakpoints.down('md')]: {
+                      maxHeight: "300px",
+                  }
+              }
+          }/>
           <Box
             sx={{
-              width: "50%",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              gap: 4,
-            }}
-          >
-            <Typography variant="h4" fontWeight={600}>
+                pl: 4,
+                display: "flex",
+                flexFlow: "column wrap",
+                justifyContent: "center",
+                width: "100%",
+          }}>
+            <Typography
+                variant="h2"
+                fontWeight={700}
+                sx={{
+                    fontSize: 32
+            }}>
               {card}
             </Typography>
             <Typography
-              variant="h5"
-              fontWeight={400}
-              sx={{ fontStyle: "italic" }}
-            >
+              variant="h3"
+              sx={{
+                  fontStyle: "italic",
+                  pb: 4,
+                  fontSize: 26
+            }}>
               {suit}
             </Typography>
             <Typography variant="body1">{description}</Typography>
             <Box
-              sx={{ width: "100%", display: "flex", flexWrap: "wrap", gap: 2 }}
-            >
+              sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: 2,
+                  pt: 4,
+                  [breakpoints.down('md')]: {
+                      justifyContent: "center",
+                      pb: 4
+                  }
+            }}>
               {keyWords.map((keyword) => {
                 return (
                   <Typography
                     key={keyword}
                     variant="body1"
                     sx={{
-                      borderRadius: "64px",
-                      background: palette.pinks.main,
-                      width: "fit-content",
-                      p: 2,
-                    }}
-                  >
+                        borderRadius: "64px",
+                        background: palette.pinks.main,
+                        p: "4px 8px",
+                        fontSize: "14px",
+                        fontWeight: 500
+                  }}>
                     {keyword}
                   </Typography>
                 );
@@ -88,17 +116,15 @@ const TarotDialog = ({
           <Box onClick={onClick}>
             <Typography
               sx={{
-                background: palette.pinks.main,
-                color: "white",
-                width: "25px",
-                height: "25px",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                border: "2px solid pink",
-              }}
-            >
-              X
+                  background: palette.pinks.main,
+                  color: "#FF2222",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  cursor: "pointer",
+                  p: "0 6px"
+              }}>
+                <span aria-label="close">✕</span>
             </Typography>
           </Box>
         </Box>
