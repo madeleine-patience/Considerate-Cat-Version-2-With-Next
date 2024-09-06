@@ -2,8 +2,9 @@ import {
   Box,
   CardMedia,
   ClickAwayListener,
-  Dialog,
   Typography,
+  Grid,
+  Dialog,
   useTheme,
 } from "@mui/material";
 
@@ -31,103 +32,118 @@ const TarotDialog = ({
   onClick,
   handleClickAway,
 }: TarotDialogProps) => {
-  const { palette, breakpoints } = useTheme();
+  const {palette, breakpoints} = useTheme();
   return (
     <Dialog open={isOpen}>
-      <ClickAwayListener onClickAway={handleClickAway}>
-        <Box
+      <ClickAwayListener onClickAway={handleClickAway} sx={{backgroundColor: "transparent"}}>
+        <Grid
+          container
           sx={{
-              background: palette.greens.light,
-              display: "flex",
-              p: 4,
-              [breakpoints.down('md')]: {
-                  display: "block",
-                  textAlign: "center"
-              }
+            backgroundColor: palette.greens.light,
+            p: 4
           }}>
-          <CardMedia
+          <Grid item xs={12} md={6} sx={{
+            [breakpoints.up('md')]: {
+              minHeight: "500px"
+            }
+          }}>
+            <CardMedia
               component="img"
               src={image}
-              sx={
-              {
-                  objectFit: "contain",
-                  objectPosition: "top",
-                  maxHeight: "500px",
-                  [breakpoints.down('md')]: {
-                      maxHeight: "300px",
-                  }
-              }
-          }/>
-          <Box
-            sx={{
-                pl: 4,
-                display: "flex",
-                flexFlow: "column wrap",
-                justifyContent: "center",
-                width: "100%",
+              sx={{borderRadius: 2}}/>
+          </Grid>
+          <Grid item xs={12} md={6} sx={{
+            height: "100%",
+            display: "grid",
+            flexFlow: "column wrap",
+            [breakpoints.up('md')]: {
+              minHeight: "500px"
+            }
           }}>
-            <Typography
-                variant="h2"
-                fontWeight={700}
+            <Box onClick={onClick} sx={{
+              justifySelf: "flex-end",
+              [breakpoints.down('md')]: {
+                order: 1,
+                width: "100%",
+                textAlign: "center"
+              }
+            }}>
+              <Typography
                 sx={{
-                    fontSize: 32
-            }}>
-              {card}
-            </Typography>
-            <Typography
-              variant="h3"
-              sx={{
-                  fontStyle: "italic",
-                  pb: 4,
-                  fontSize: 26
-            }}>
-              {suit}
-            </Typography>
-            <Typography variant="body1">{description}</Typography>
+                  background: palette.pinks.main,
+                  color: palette.pinks.contrastLightAAA,
+                  cursor: "pointer",
+                  p: "0 6px",
+                  fontWeight: "700",
+                  [breakpoints.down('md')]: {
+                    pt: 2,
+                    pb: 2,
+                    '&::after': {
+                      content: '"Close"',
+                      pl: 1
+                    }
+                  }
+                }}>
+                <span aria-label="close">✕</span>
+              </Typography>
+            </Box>
             <Box
               sx={{
+                p: 4,
+                [breakpoints.up('md')]: {
+                  pt: 0
+                }
+              }}>
+              <Typography
+                variant="h2"
+                fontWeight={700}
+                fontSize={32}
+                sx={{
+                  [breakpoints.down('md')]: {
+                    pt: 4
+                  }
+                }}
+              >
+                {card}
+              </Typography>
+              <Typography
+                variant="h3"
+                fontSize={26}
+                sx={{
+                  fontStyle: "italic",
+                  pb: 4
+                }}>
+                {suit}
+              </Typography>
+              <Typography>{description}</Typography>
+              <Box
+                sx={{
                   display: "flex",
                   flexWrap: "wrap",
                   gap: 2,
                   pt: 4,
-                  [breakpoints.down('md')]: {
-                      justifyContent: "center",
-                      pb: 4
-                  }
-            }}>
-              {keyWords.map((keyword) => {
-                return (
-                  <Typography
-                    key={keyword}
-                    variant="body1"
-                    sx={{
+                  mb: 4
+                }}>
+                {keyWords.map((keyword) => {
+                  return (
+                    <Typography
+                      key={keyword}
+                      fontSize={14}
+                      sx={{
                         borderRadius: "64px",
                         background: palette.pinks.main,
-                        p: "4px 8px",
-                        fontSize: "14px",
-                        fontWeight: 500
-                  }}>
-                    {keyword}
-                  </Typography>
-                );
-              })}
+                        color: palette.pinks.contrastLightAAA,
+                        fontWeight: 600,
+                        p: "4px 8px"
+                      }}>
+                      {keyword}
+                    </Typography>
+                  );
+                })}
+              </Box>
             </Box>
-          </Box>
-          <Box onClick={onClick}>
-            <Typography
-              sx={{
-                  background: palette.pinks.main,
-                  color: "#FF2222",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  cursor: "pointer",
-                  p: "0 6px"
-              }}>
-                <span aria-label="close">✕</span>
-            </Typography>
-          </Box>
-        </Box>
+          </Grid>
+        </Grid>
       </ClickAwayListener>
     </Dialog>
   );
