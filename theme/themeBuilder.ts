@@ -21,15 +21,17 @@ const baseOptions: ThemeOptions = {
       light: "#fdeef8",
       dark: "#ef6aae",
       contrastText: "#ef6aae",
+      contrastLightAAA: "#832A58"
     },
     secondary: {
       main: "#f7f2cd",
       light: "#f7f2cd",
-      dark: "#e0dbb1",
+      dark: "#e0dbb1"
     },
     greens: {
       main: "#accca5",
       light: "#add4a5",
+      contrastLightAAA: "#283626"
     },
   },
   spacing: 4,

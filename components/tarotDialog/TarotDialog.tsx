@@ -2,8 +2,9 @@ import {
   Box,
   CardMedia,
   ClickAwayListener,
-  Dialog,
   Typography,
+  Grid,
+  Dialog,
   useTheme,
 } from "@mui/material";
 
@@ -31,77 +32,118 @@ const TarotDialog = ({
   onClick,
   handleClickAway,
 }: TarotDialogProps) => {
-  const { palette } = useTheme();
+  const {palette, breakpoints} = useTheme();
   return (
     <Dialog open={isOpen}>
-      <ClickAwayListener onClickAway={handleClickAway}>
-        <Box
+      <ClickAwayListener onClickAway={handleClickAway} sx={{backgroundColor: "transparent"}}>
+        <Grid
+          container
           sx={{
-            background: palette.greens.light,
-            display: "flex",
-            p: 6,
-            gap: 6,
-          }}
-        >
-          <CardMedia component="img" src={image} sx={{ width: "50%" }} />
-          <Box
-            sx={{
-              width: "50%",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              gap: 4,
-            }}
-          >
-            <Typography variant="h4" fontWeight={600}>
-              {card}
-            </Typography>
-            <Typography
-              variant="h5"
-              fontWeight={400}
-              sx={{ fontStyle: "italic" }}
-            >
-              {suit}
-            </Typography>
-            <Typography variant="body1">{description}</Typography>
-            <Box
-              sx={{ width: "100%", display: "flex", flexWrap: "wrap", gap: 2 }}
-            >
-              {keyWords.map((keyword) => {
-                return (
-                  <Typography
-                    key={keyword}
-                    variant="body1"
-                    sx={{
-                      borderRadius: "64px",
-                      background: palette.pinks.main,
-                      width: "fit-content",
-                      p: 2,
-                    }}
-                  >
-                    {keyword}
-                  </Typography>
-                );
-              })}
+            backgroundColor: palette.greens.light,
+            p: 4
+          }}>
+          <Grid xs={12} md={6} sx={{
+            [breakpoints.up('md')]: {
+              minHeight: "500px"
+            }
+          }}>
+            <CardMedia
+              component="img"
+              src={image}
+              sx={{borderRadius: 2}}/>
+          </Grid>
+          <Grid xs={12} md={6} sx={{
+            height: "100%",
+            display: "grid",
+            flexFlow: "column wrap",
+            [breakpoints.up('md')]: {
+              minHeight: "500px"
+            }
+          }}>
+            <Box onClick={onClick} sx={{
+              justifySelf: "flex-end",
+              [breakpoints.down('md')]: {
+                order: 1,
+                width: "100%",
+                textAlign: "center"
+              }
+            }}>
+              <Typography
+                sx={{
+                  background: palette.pinks.main,
+                  color: palette.pinks.contrastLightAAA,
+                  cursor: "pointer",
+                  p: "0 6px",
+                  fontWeight: "700",
+                  [breakpoints.down('md')]: {
+                    pt: 2,
+                    pb: 2,
+                    '&::after': {
+                      content: '"Close"',
+                      pl: 1
+                    }
+                  }
+                }}>
+                <span aria-label="close">✕</span>
+              </Typography>
             </Box>
-          </Box>
-          <Box onClick={onClick}>
-            <Typography
+            <Box
               sx={{
-                background: palette.pinks.main,
-                color: "white",
-                width: "25px",
-                height: "25px",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                border: "2px solid pink",
-              }}
-            >
-              X
-            </Typography>
-          </Box>
-        </Box>
+                p: 4,
+                [breakpoints.up('md')]: {
+                  pt: 0
+                }
+              }}>
+              <Typography
+                variant="h2"
+                fontWeight={700}
+                fontSize={32}
+                sx={{
+                  [breakpoints.down('md')]: {
+                    pt: 4
+                  }
+                }}
+              >
+                {card}
+              </Typography>
+              <Typography
+                variant="h3"
+                fontSize={26}
+                sx={{
+                  fontStyle: "italic",
+                  pb: 4
+                }}>
+                {suit}
+              </Typography>
+              <Typography>{description}</Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: 2,
+                  pt: 4,
+                  mb: 4
+                }}>
+                {keyWords.map((keyword) => {
+                  return (
+                    <Typography
+                      key={keyword}
+                      fontSize={14}
+                      sx={{
+                        borderRadius: "64px",
+                        background: palette.pinks.main,
+                        color: palette.pinks.contrastLightAAA,
+                        fontWeight: 600,
+                        p: "4px 8px"
+                      }}>
+                      {keyword}
+                    </Typography>
+                  );
+                })}
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
       </ClickAwayListener>
     </Dialog>
   );
