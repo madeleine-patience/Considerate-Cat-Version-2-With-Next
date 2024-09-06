@@ -42,7 +42,7 @@ const TarotDialog = ({
             backgroundColor: palette.greens.light,
             p: 4
           }}>
-          <Grid item xs={12} md={6} sx={{
+          <Grid xs={12} md={6} sx={{
             [breakpoints.up('md')]: {
               minHeight: "500px"
             }
@@ -52,7 +52,7 @@ const TarotDialog = ({
               src={image}
               sx={{borderRadius: 2}}/>
           </Grid>
-          <Grid item xs={12} md={6} sx={{
+          <Grid xs={12} md={6} sx={{
             height: "100%",
             display: "grid",
             flexFlow: "column wrap",
