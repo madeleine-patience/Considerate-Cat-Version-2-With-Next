@@ -1,5 +1,14 @@
 {
+  "name": "Considerate Cat Tarot - Version 2",
+  "version": "2.1.6",
+  "author": "madeleine-patience",
+  "description": "A Meowdern Divination Expurrience",
+  "homepage": "https://conisderate-cat-version-2.vercel.app",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next.git"
+  },
   "scripts": {
     "build": "next build",
     "dev": "next dev",
