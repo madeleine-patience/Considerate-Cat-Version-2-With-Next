@@ -20,7 +20,11 @@ const HeaderButton = ({ label, ...sx }: HeaderButtonProps) => {
         sx={{
           color: palette.pinks.dark,
           width: '100%',
+<<<<<<< HEAD
           textAlign: 'left',
+=======
+          textAlign: 'center',
+>>>>>>> 72ffe7f (Adjustments to CSS, font size change + restructured reducing markup.)
           '&:hover': {
             color: 'white',
             textShadow: `7px 4px 9px ${palette.pinks.dark};`

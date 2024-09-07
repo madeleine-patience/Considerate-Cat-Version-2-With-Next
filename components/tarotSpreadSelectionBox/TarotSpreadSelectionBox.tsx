@@ -36,10 +36,6 @@ const TarotSpreadSelectionBox = ({
       }}
     >
       <Box
-        gap='8px'
-        flexDirection='column'
-        justifyContent='center'
-        position='relative'
         sx={{
           backgroundColor: { backgroundColor },
           backgroundImage:
@@ -48,13 +44,6 @@ const TarotSpreadSelectionBox = ({
           borderTopRightRadius: '10%'
         }}
       >
-        <Typography
-          pt='20px'
-          fontSize={30}
-          color='grey'
-          variant='h6'
-          textAlign='center'
-        ></Typography>
         <Box
           position='relative'
           width={325}
@@ -105,8 +94,7 @@ const TarotSpreadSelectionBox = ({
                     border: '4px solid white',
                     position: 'relative',
                     left: '50px',
-                    bottom: amountOfCards == 7 ? '40px' : '',
-
+                    bottom: amountOfCards == 7 ? '35px' : '',
                     width: '100px',
                     zIndex: '3',
                     transition: 'transform .5s ease-in-out',
@@ -122,7 +110,7 @@ const TarotSpreadSelectionBox = ({
                   sx={{
                     border: '4px solid white',
                     position: 'relative',
-                    bottom: amountOfCards == 7 ? '70px' : '',
+                    bottom: amountOfCards == 7 ? '45px' : '',
                     width: '100px',
                     zIndex: '4',
                     transition: 'transform .5s ease-in-out',
@@ -141,7 +129,7 @@ const TarotSpreadSelectionBox = ({
                     position: 'relative',
                     width: '100px',
                     right: '50px',
-                    bottom: amountOfCards == 7 ? '40px' : '',
+                    bottom: amountOfCards == 7 ? '35px' : '',
 
                     transition: 'transform .5s ease-in-out',
                     transform: isHovered
@@ -176,7 +164,6 @@ const TarotSpreadSelectionBox = ({
                     width: '100px',
                     right: '205px',
                     top: '30px',
-                    // left: amountOfCards == 7 ? "203px" : "",
                     transition: 'transform .5s ease-in-out',
                     transform: isHovered
                       ? 'scale(1.1) rotate(2deg) translate(0px, -10px)'
@@ -220,7 +207,7 @@ const TarotSpreadSelectionBox = ({
           {title}
         </Typography>
         <Typography
-          variant='body1'
+          variant='body2'
           textAlign='center'
           fontSize='bold'
           fontWeight={600}
