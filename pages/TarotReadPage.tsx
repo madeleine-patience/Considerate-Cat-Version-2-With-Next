@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useTarotCard } from '../hooks/useTarotCard';
 import useFetchTarotDeck from '../hooks/fetchTarotDeck';
 import { Box, useTheme } from '@mui/material';
@@ -9,6 +10,19 @@ import TarotSpreadSelectionBox from '../components/tarotSpreadSelectionBox/Tarot
 import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import RaisedButton from '../components/raisedButton/RaisedButton';
+=======
+import { Box, useTheme } from '@mui/material';
+import { useState } from 'react';
+import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
+import FlowerFooter from '../components/flowerFooter/FlowerFooter';
+import HompeageHeader from '../components/header/Header';
+import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import RaisedButton from '../components/raisedButton/RaisedButton';
+import TarotSpreadSelectionBox from '../components/tarotSpreadSelectionBox/TarotSpreadSelectionBox';
+import { TarotDeckContext } from '../context/TarotDeckContext';
+import useFetchTarotDeck from '../hooks/fetchTarotDeck';
+import { useTarotCard } from '../hooks/useTarotCard';
+>>>>>>> cb8097f (Added Elipsis for potential overflow of description)
 
 export default function FirstPost() {
   const { palette } = useTheme();

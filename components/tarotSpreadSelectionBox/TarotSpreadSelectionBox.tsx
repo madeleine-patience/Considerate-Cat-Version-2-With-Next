@@ -217,10 +217,17 @@ const TarotSpreadSelectionBox = ({
         </Typography>
         <Typography
           variant='body2'
-          textAlign='center'
-          fontSize='bold'
-          fontWeight={600}
-          color={palette.pinks.dark}
+          sx={{
+            textAlign: 'center',
+            fontSize: 'bold',
+            fontWeight: 600,
+            color: palette.pinks.dark,
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            display: '-webkit-box',
+            WebkitLineClamp: '2',
+            WebkitBoxOrient: 'vertical'
+          }}
         >
           {description}
         </Typography>
