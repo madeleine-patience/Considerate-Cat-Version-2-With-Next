@@ -1,8 +1,8 @@
 import { Typography, useTheme } from '@mui/material';
 import Box from '@mui/material/Box';
-import SingleTarotCard from '../singleTarotCard/SingleTarotCard';
 import { useContext, useState } from 'react';
 import { TarotDeckContext } from '../../context/TarotDeckContext';
+import SingleTarotCard from '../singleTarotCard/SingleTarotCard';
 
 interface TarotSpreadAction {
   onClick: () => void;
@@ -199,6 +199,12 @@ const TarotSpreadSelectionBox = ({
         alignContent='center'
         zIndex={1}
         sx={{
+          p: 2,
+          display: 'flex',
+          gap: 2,
+          flexDirection: 'column',
+          height: 200,
+          width: 325,
           backgroundColor: palette.secondary.main,
           borderBottomRightRadius: '10%',
           borderBottomLeftRadius: '10%'
