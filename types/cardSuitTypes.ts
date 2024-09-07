@@ -1,1 +1,1 @@
-export type CardSuitTypes = "Major" | "Cups" | "Pentacles" | "Swords" | "Wands";
+export type CardSuitTypes = 'Major' | 'Cups' | 'Pentacles' | 'Swords' | 'Wands';

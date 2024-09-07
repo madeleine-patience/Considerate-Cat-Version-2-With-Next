@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { supabase } from "../supabase"; // Adjust the path as necessary
+import { useEffect, useState } from 'react';
+import { supabase } from '../supabase'; // Adjust the path as necessary
 
 const useFetchTarotDeck = () => {
   const [tarotCards, setTarotCards] = useState([]);
@@ -10,8 +10,8 @@ const useFetchTarotDeck = () => {
       try {
         setLoading(true);
         const { data, error } = await supabase
-          .from("tarotCardInformation")
-          .select("*");
+          .from('tarotCardInformation')
+          .select('*');
 
         if (error) {
           throw error;

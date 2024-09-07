@@ -1,59 +1,63 @@
-import { Box, useMediaQuery, useTheme } from "@mui/material";
-import FlowerFooter from "../components/flowerFooter/FlowerFooter";
-import HompeageHeader from "../components/header/Header";
-import { LoadingPage } from "../components/loadingPage/LoadingPage";
-import Purrlaroid from "../components/purrlaroid";
-import useFetchCats from "../hooks/fetchCatData";
+import { Box, useMediaQuery, useTheme } from '@mui/material';
+import FlowerFooter from '../components/flowerFooter/FlowerFooter';
+import HompeageHeader from '../components/header/Header';
+import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import Purrlaroid from '../components/purrlaroid';
+import useFetchCats from '../hooks/fetchCatData';
 
 export default function CatDirectory() {
-    const { cats, loading } = useFetchCats();
-    const { palette } = useTheme();
-    const theme = useTheme();
-    const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+  const { cats, loading } = useFetchCats();
+  const { palette } = useTheme();
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
 
-    if (loading) return <LoadingPage />;
+  if (loading) return <LoadingPage />;
 
-    const getCatPurrrlaroids = () => {
-        return cats.map((cat, index) => (
-            <Purrlaroid key={index} catImage={cat.cat_main_image} catName={cat.cat_name}/>
-        ));
-    };
+  const getCatPurrrlaroids = () => {
+    return cats.map((cat, index) => (
+      <Purrlaroid
+        key={index}
+        catImage={cat.cat_main_image}
+        catName={cat.cat_name}
+      />
+    ));
+  };
 
-    return (
+  return (
+    <Box
+      sx={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        backgroundColor: palette.pinks.main
+      }}
+    >
+      <HompeageHeader />
+      <Box
+        sx={{
+          maxWidth: '1500px',
+          mx: 'auto',
+          my: 4,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center'
+        }}
+      >
         <Box
-            sx={{
-                minHeight: "100vh",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-between",
-                backgroundColor: palette.pinks.main,
-            }}
+          sx={{
+            display: 'flex',
+            gap: 8,
+            flexWrap: 'wrap',
+            width: '100%',
+            p: isSmallScreen ? 0 : 16
+          }}
         >
-            <HompeageHeader />
-            <Box
-                sx={{
-                    maxWidth: "1500px",
-                    mx: "auto",
-                    my: 4,
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                }}
-            >
-                <Box
-                    sx={{
-                        display: "flex",
-                        gap: 8,
-                        flexWrap: "wrap",
-                        width: "100%",
-                        p: isSmallScreen ? 0 : 16,
-                    }}
-                >
-                    {getCatPurrrlaroids()}
-                </Box>
-            </Box>
-
-            <FlowerFooter />
+          {getCatPurrrlaroids()}
         </Box>
-    );
+      </Box>
+
+      <FlowerFooter />
+    </Box>
+  );
 }

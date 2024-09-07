@@ -1,4 +1,4 @@
-import { Button, ButtonProps, Typography, useTheme } from "@mui/material";
+import { Button, ButtonProps, Typography, useTheme } from '@mui/material';
 
 interface RaisedButtonProps extends ButtonProps {
   width?: number;
@@ -9,7 +9,7 @@ interface RaisedButtonProps extends ButtonProps {
 const RaisedButton = ({
   buttonLabel,
   onClick,
-  disabled,
+  disabled
 }: RaisedButtonProps) => {
   const { palette } = useTheme();
 
@@ -18,22 +18,22 @@ const RaisedButton = ({
       disableRipple
       sx={{
         marginTop: 4,
-        cursor: "pointer",
-        visibility: disabled ? "hidden" : "visible",
+        cursor: 'pointer',
+        visibility: disabled ? 'hidden' : 'visible',
         borderRadius: 2,
         border: `2px solid ${palette.pinks.dark}`,
         boxShadow: `4px 4px 0px 4px ${palette.pinks.dark}`,
-        color: "black",
-        "&:hover": {
-          backgroundColor: palette.pinks.light,
+        color: 'black',
+        '&:hover': {
+          backgroundColor: palette.pinks.light
         },
-        "&:active": {
-          backgroundColor: palette.pinks.dark,
-        },
+        '&:active': {
+          backgroundColor: palette.pinks.dark
+        }
       }}
       onClick={onClick}
     >
-      <Typography variant="button">{buttonLabel}</Typography>
+      <Typography variant='button'>{buttonLabel}</Typography>
     </Button>
   );
 };

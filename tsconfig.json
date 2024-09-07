@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -21,9 +17,8 @@
     "next-env.d.ts",
     "theme.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "pages/posts/CardDirectoryPage.tsx.ts"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "**/*.tsx",
+    "pages/posts/CardDirectoryPage.tsx.ts"
+  ],
+  "exclude": ["node_modules"]
 }

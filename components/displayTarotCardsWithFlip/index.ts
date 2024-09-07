@@ -1,1 +1,1 @@
-export * from "./DisplayTarotCardsWithFlip";
+export * from './DisplayTarotCardsWithFlip';

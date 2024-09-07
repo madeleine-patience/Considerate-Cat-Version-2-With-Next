@@ -1,16 +1,16 @@
-import { TarotDialogProps } from "./TarotDialog";
+import { TarotDialogProps } from './TarotDialog';
 
 const defaultTarotCard: TarotDialogProps = {
-  card: "Temperance",
-  suit: "Major Arcana",
+  card: 'Temperance',
+  suit: 'Major Arcana',
   image: `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/tarotcard/15.jpg`,
-  description: "Something something something",
+  description: 'Something something something',
   keyWords: [],
   isOpen: true,
   onClick: () => {},
-  handleClickAway: () => {},
+  handleClickAway: () => {}
 };
 
 export const tarotDialogMocks = {
-  defaultTarotCard,
+  defaultTarotCard
 };

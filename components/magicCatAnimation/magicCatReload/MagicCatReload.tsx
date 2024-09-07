@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 export const MagicCatReload = () => {
   const baseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
@@ -6,74 +6,74 @@ export const MagicCatReload = () => {
   return (
     <Head>
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-01.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-02.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-03.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-04.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-05.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-06.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-07.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-08.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-09.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-10.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-11.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-12.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-13.png`}
-        as="image"
+        as='image'
       />
       <link
-        rel="preload"
+        rel='preload'
         href={`${baseUrl}/storage/v1/object/public/headerAnimation/heidi-14.png`}
-        as="image"
+        as='image'
       />
     </Head>
   );
