@@ -1,5 +1,5 @@
-import { keyframes } from "@emotion/react";
-import { styled } from "@mui/system";
+import { keyframes } from '@emotion/react';
+import { styled } from '@mui/system';
 
 const animatedCat = keyframes`
 0%{background-image:url(${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/headerAnimation/heidi-01.png)}
@@ -17,19 +17,19 @@ const animatedCat = keyframes`
 96%{background-image:url(${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/headerAnimation/heidi-13.png)};
 100%{background-image:url(${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/headerAnimation/heidi-14.png)};`;
 
-const AnimatedCat = styled("div")({
+const AnimatedCat = styled('div')({
   backgroundImage: `url(${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/headerAnimation/heidi-01.png)`,
   animationName: animatedCat,
-  animationDuration: "2.5s",
-  animationIterationCount: "1",
-  backgroundSize: "cover",
+  animationDuration: '2.5s',
+  animationIterationCount: '1',
+  backgroundSize: 'cover',
   height: 362,
   width: 400,
-  alignItems: "center",
-  animationPlayState: "running",
-  "&:hover": {
-    animationIterationCount: "2",
-  },
+  alignItems: 'center',
+  animationPlayState: 'running',
+  '&:hover': {
+    animationIterationCount: '2'
+  }
 });
 
 const MagicCatAnimation = () => {

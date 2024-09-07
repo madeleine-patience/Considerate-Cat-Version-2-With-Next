@@ -1,1 +1,1 @@
-export * from "./ThreeCardSpread";
+export * from './ThreeCardSpread';

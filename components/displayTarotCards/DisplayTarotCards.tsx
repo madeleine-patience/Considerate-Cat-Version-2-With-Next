@@ -1,5 +1,5 @@
-import { Box, useMediaQuery, useTheme } from "@mui/material";
-import { TarotDeckData } from "../../types/tarotDeckData";
+import { Box, useMediaQuery, useTheme } from '@mui/material';
+import { TarotDeckData } from '../../types/tarotDeckData';
 
 interface DisplayTarotCardActionProps {
   onClick?: (param: number) => void;
@@ -12,22 +12,22 @@ interface DisplayTarotCardsProps extends DisplayTarotCardActionProps {
 export const DisplayTarotCards = ({
   data,
   width,
-  onClick,
+  onClick
 }: DisplayTarotCardsProps) => {
   const theme = useTheme();
 
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Box>
       <Box
-        margin="auto"
-        width="fit-content"
-        display={isSmallScreen ? "flex" : "grid"}
-        flexDirection="column"
+        margin='auto'
+        width='fit-content'
+        display={isSmallScreen ? 'flex' : 'grid'}
+        flexDirection='column'
         gap={4}
         p={4}
-        gridTemplateColumns="auto auto auto auto auto"
+        gridTemplateColumns='auto auto auto auto auto'
       >
         {data.map((card) => (
           <Box key={card.id}>
@@ -36,7 +36,7 @@ export const DisplayTarotCards = ({
               onClick={() => onClick(card.id)}
               width={width}
               borderRadius={2}
-              component="img"
+              component='img'
               src={card.image_link}
               alt={card.card_name}
             />

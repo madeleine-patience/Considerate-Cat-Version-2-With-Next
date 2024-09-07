@@ -1,6 +1,6 @@
 {
   "name": "Considerate Cat Tarot - Version 2",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "author": "madeleine-patience",
   "description": "A Meowdern Divination Expurrience",
   "homepage": "https://conisderate-cat-version-2.vercel.app",
@@ -16,7 +16,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "lint": "eslint .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,css,scss,md,json,html}\""
   },
   "dependencies": {
     "@mui/icons-material": "^5.15.6",

@@ -1,12 +1,12 @@
-import { Meta, StoryFn } from "@storybook/react";
-import ThreeCardSpread from "./ThreeCardSpread";
+import { Meta, StoryFn } from '@storybook/react';
+import ThreeCardSpread from './ThreeCardSpread';
 
 const tarotImage = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/tarotcard/19.jpg`;
 
 export default {
-  title: "Components/ThreeCardSpread",
+  title: 'Components/ThreeCardSpread',
   component: ThreeCardSpread,
-  decorators: [(Story) => <Story />],
+  decorators: [(Story) => <Story />]
 } as Meta<typeof ThreeCardSpread>;
 
 const Template: StoryFn<typeof ThreeCardSpread> = () => (

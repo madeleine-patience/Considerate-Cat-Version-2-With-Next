@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography } from '@mui/material';
 
 interface PurrlaroidTitleProps {
   catName: string;
@@ -9,9 +9,9 @@ const PurrlaroidTitle = ({ catName }: PurrlaroidTitleProps) => {
     <Typography
       sx={{
         fontSize: 40,
-        fontWeight: "bold",
-        fontStyle: "italic",
-        color: "#7d7168",
+        fontWeight: 'bold',
+        fontStyle: 'italic',
+        color: '#7d7168'
       }}
     >
       {catName}

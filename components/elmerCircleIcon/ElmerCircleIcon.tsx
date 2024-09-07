@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box } from '@mui/material';
 
 const ElmerBasic = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/considerate%20cat%20assets/ElmerBasic.png?t=2024-01-27T03%3A25%3A28.802Z`;
 
@@ -8,30 +8,30 @@ const ElmerCircleIcon = () => {
       sx={{
         width: 150,
         height: 150,
-        background: "#e6dbbe",
-        borderRadius: "100%",
-        overflow: "hidden",
-        position: "relative",
-        border: "10px solid #a0b594",
+        background: '#e6dbbe',
+        borderRadius: '100%',
+        overflow: 'hidden',
+        position: 'relative',
+        border: '10px solid #a0b594'
       }}
     >
       <Box
-        component="img"
+        component='img'
         src={ElmerBasic}
         sx={{
-          "@keyframes elmerRise": {
-            "0%": {
-              top: 110,
+          '@keyframes elmerRise': {
+            '0%': {
+              top: 110
             },
-            "100%": { top: -4 },
+            '100%': { top: -4 }
           },
-          position: "absolute",
+          position: 'absolute',
           width: 250,
-          overflow: "hidden",
+          overflow: 'hidden',
           left: -70,
           top: 110,
-          animation: "800ms ease 700ms 1 normal none running elmerRise",
-          animationFillMode: "forwards",
+          animation: '800ms ease 700ms 1 normal none running elmerRise',
+          animationFillMode: 'forwards'
         }}
       />
     </Box>

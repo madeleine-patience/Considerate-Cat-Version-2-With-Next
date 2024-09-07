@@ -1,51 +1,51 @@
-import { TypographyOptions } from "@mui/material/styles/createTypography";
+import { TypographyOptions } from '@mui/material/styles/createTypography';
 
 export const typography: TypographyOptions = {
   h1: {
-    fontFamily: "Lora",
-    fontWeight: 700,
+    fontFamily: 'Lora',
+    fontWeight: 700
   },
   h2: {
-    fontFamily: "Lora",
+    fontFamily: 'Lora',
     fontWeight: 600,
-    fontSize: "4rem",
+    fontSize: '4rem'
   },
   h3: {
-    fontFamily: "Lora",
+    fontFamily: 'Lora',
     fontWeight: 600,
-    fontSize: "3rem",
-    fontStyle: "italic",
+    fontSize: '3rem',
+    fontStyle: 'italic'
   },
   h4: {
-    fontFamily: "Lora",
+    fontFamily: 'Lora',
     fontWeight: 600,
-    fontSize: "2rem",
+    fontSize: '2rem'
   },
   h5: {
-    fontFamily: "Lora",
+    fontFamily: 'Lora',
     fontWeight: 600,
-    fontSize: "1.5rem",
+    fontSize: '1.5rem'
   },
   h6: {
-    fontFamily: "Lora",
+    fontFamily: 'Lora',
     fontWeight: 600,
-    fontSize: "1rem",
+    fontSize: '1rem'
   },
   body1: {
-    fontFamily: "Lora",
+    fontFamily: 'Lora',
     fontWeight: 600,
-    fontSize: ".9rem",
+    fontSize: '.9rem'
   },
   body2: {
     fontWeight: 500,
-    fontSize: ".8rem",
+    fontSize: '.8rem'
   },
   caption: {
     fontWeight: 500,
-    fontSize: ".8rem",
+    fontSize: '.8rem'
   },
   button: {
     fontWeight: 500,
-    fontSize: "1.1rem",
-  },
+    fontSize: '1.1rem'
+  }
 };

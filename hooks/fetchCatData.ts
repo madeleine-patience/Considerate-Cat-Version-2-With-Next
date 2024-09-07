@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { supabase } from "../supabase";
+import { useEffect, useState } from 'react';
+import { supabase } from '../supabase';
 
 const useFetchCats = () => {
   const [cats, setCats] = useState([]);
@@ -10,7 +10,7 @@ const useFetchCats = () => {
     const fetchTarotCards = async () => {
       try {
         setLoading(true);
-        const { data, error } = await supabase.from("catData").select("*");
+        const { data, error } = await supabase.from('catData').select('*');
         if (error) {
           throw error;
         }

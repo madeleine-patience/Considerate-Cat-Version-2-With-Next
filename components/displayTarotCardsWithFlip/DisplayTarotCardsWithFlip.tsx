@@ -1,6 +1,6 @@
-import { Box } from "@mui/material";
-import SingleTarotCardWithFlip from "../../components/singleTarotCardWithFlip/SingleTarotCardWithFlip";
-import { TarotDeckData } from "../../types/tarotDeckData";
+import { Box } from '@mui/material';
+import SingleTarotCardWithFlip from '../../components/singleTarotCardWithFlip/SingleTarotCardWithFlip';
+import { TarotDeckData } from '../../types/tarotDeckData';
 
 interface DisplayTarotCardsProps {
   data: TarotDeckData[];
@@ -11,7 +11,7 @@ interface DisplayTarotCardsProps {
 const DisplayTarotCardsWithFlip = ({
   data,
   isFlipped,
-  onClick,
+  onClick
 }: DisplayTarotCardsProps) => {
   const getDelaysArr = (amountOfElements: number) => {
     const pageAnimationTime =
@@ -33,11 +33,11 @@ const DisplayTarotCardsWithFlip = ({
   return (
     <Box
       sx={{
-        width: "100%",
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        gap: 4,
+        width: '100%',
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        gap: 4
       }}
     >
       {data.map((card, index) => (

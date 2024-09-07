@@ -1,1 +1,1 @@
-export * from "./FlowerFooter";
+export * from './FlowerFooter';

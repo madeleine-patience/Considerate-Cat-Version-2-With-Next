@@ -1,17 +1,17 @@
-import { useState } from "react";
-import { TarotDialogProps } from "../components/tarotDialog/TarotDialog";
-import { TarotDeckData } from "../types/tarotDeckData";
-import { CardSuitTypes } from "../types/cardSuitTypes";
+import { useState } from 'react';
+import { TarotDialogProps } from '../components/tarotDialog/TarotDialog';
+import { TarotDeckData } from '../types/tarotDeckData';
+import { CardSuitTypes } from '../types/cardSuitTypes';
 
 const initialDialogProps: TarotDialogProps = {
   isOpen: false,
-  card: "",
-  suit: "",
-  image: "",
-  description: "",
+  card: '',
+  suit: '',
+  image: '',
+  description: '',
   keyWords: [],
   onClick: () => {},
-  handleClickAway: () => {},
+  handleClickAway: () => {}
 };
 
 export const useCardDirectory = () => {
@@ -21,11 +21,11 @@ export const useCardDirectory = () => {
   const [showThreeCards, setShowCards] = useState(true);
 
   const displayCardSuitButtonData: { buttonLabel: CardSuitTypes }[] = [
-    { buttonLabel: "Major" },
-    { buttonLabel: "Cups" },
-    { buttonLabel: "Pentacles" },
-    { buttonLabel: "Swords" },
-    { buttonLabel: "Wands" },
+    { buttonLabel: 'Major' },
+    { buttonLabel: 'Cups' },
+    { buttonLabel: 'Pentacles' },
+    { buttonLabel: 'Swords' },
+    { buttonLabel: 'Wands' }
   ];
 
   const openTarotDialog = (tarotCard: TarotDeckData) => {
@@ -37,14 +37,14 @@ export const useCardDirectory = () => {
       description: tarotCard.description,
       keyWords: tarotCard.key_words,
       onClick: closeTarotDialog,
-      handleClickAway: closeTarotDialog,
+      handleClickAway: closeTarotDialog
     });
     setDisplayTarotDialog(true);
   };
 
   const closeTarotDialog = () => {
     setDisplayTarotDialog(false);
-    console.log("hi");
+    console.log('hi');
   };
 
   return {
@@ -57,6 +57,6 @@ export const useCardDirectory = () => {
     setCurrentCard,
     displayCardSuitButtonData,
     setShowCards,
-    showThreeCards,
+    showThreeCards
   };
 };
