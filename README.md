@@ -66,6 +66,12 @@ pull requests, start noting your changes under "Unreleased".
 
 #### Fixes
 
+### [2.1.7] 2024-09-07
+
+#### Improvements
+
+- Prettier formatting project-wide
+
 ### [2.1.6] 2024-09-07
 
 #### New Features
