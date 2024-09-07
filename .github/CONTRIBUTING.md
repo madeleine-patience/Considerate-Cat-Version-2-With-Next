@@ -15,30 +15,21 @@ maintained.
      there’s no issue to scratch, create one before submitting your pull
      request.
 
-2. **Follow Formatting Guidelines**:
-
-   - Our code should be formatted according to our Prettier configuration. We
-     use a pre-commit hook to enforce this to make sure your code is fur-matted
-     correctly while committing, so you shouldn't (in theory) need to worry
-     about setting up Prettier if it isn't configured. (Check your commits!)
-
-3. **Ensure Functionality**:
+2. **Ensure Functionality**:
 
    - Test your changes to ensure all components are consistent in both the main
      application and Storybook. We need every fantastic feature to work smoothly
      in both environments.
 
-4. **Use Built-Ins When Possible**:
+3. **Use Built-Ins When Possible**:
 
    - Prefer using built-in components and utilities from our included
      frameworks. This helps maintain a consistent look and reduces our
      dependency clutter.
 
-5. **Pre-Commit Hook**:
-   - We use Husky to enforce Prettier formatting through a pre-commit hook. The
-     hook will ensure your code is formatted correctly before you commit it, so
-     make sure to let it purr before you push (note that whitespace only changes
-     are not allowed).
+4. **Follow the Pull Request Template**:
+   - Make sure to follow the instructions in the
+     [Pull Request Template](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
 
 ### Setting Up Your Development Environment
 
