@@ -1,5 +1,5 @@
-import { Box } from "@mui/material";
-import { ReactNode } from "react";
+import { Box } from '@mui/material';
+import { ReactNode } from 'react';
 
 interface PurrlaroidAction {
   onClick?: () => void;
@@ -15,31 +15,31 @@ const PurrlaroidRoot = ({
   onClick,
   isAnimated,
   catImage,
-  children,
+  children
 }: PurrlaroidProps) => {
   return (
     <Box
       sx={{
-        width: "300px",
-        textAlign: "center",
-        backgroundColor: "lightYellow",
-        border: "3px solid lightGrey",
-        transform: "rotate(0deg)",
-        transition: "1s transform ease",
-        margin: "auto",
+        width: '300px',
+        textAlign: 'center',
+        backgroundColor: 'lightYellow',
+        border: '3px solid lightGrey',
+        transform: 'rotate(0deg)',
+        transition: '1s transform ease',
+        margin: 'auto',
         padding: 4,
-        boxShadow: "5px 5px 15px 5px rgba(0,0,0,0.27)        ",
-        "&:hover": {
-          transform: isAnimated ? "rotate(3deg)" : "rotate(0)",
-        },
+        boxShadow: '5px 5px 15px 5px rgba(0,0,0,0.27)        ',
+        '&:hover': {
+          transform: isAnimated ? 'rotate(3deg)' : 'rotate(0)'
+        }
       }}
     >
       <Box
-        component="img"
+        component='img'
         sx={{
-          width: "100%",
-          objectFit: "cover",
-          transition: "opacity .5s ease-in-out",
+          width: '100%',
+          objectFit: 'cover',
+          transition: 'opacity .5s ease-in-out'
         }}
         onClick={onClick}
         src={catImage}

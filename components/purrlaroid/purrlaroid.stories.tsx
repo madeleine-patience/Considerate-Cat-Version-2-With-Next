@@ -1,15 +1,15 @@
-import { Meta, StoryFn } from "@storybook/react";
-import Purrlaroid from "./index";
+import { Meta, StoryFn } from '@storybook/react';
+import Purrlaroid from './index';
 const Eddie = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/Cat%20Images/Eddie.jpg`;
 
 export default {
-    title: "Components/Purrlaroid",
-    component: Purrlaroid,
-    decorators: [(Story) => <Story />],
+  title: 'Components/Purrlaroid',
+  component: Purrlaroid,
+  decorators: [(Story) => <Story />]
 } as Meta<typeof Purrlaroid>;
 
 const Template: StoryFn<typeof Purrlaroid> = () => (
-    <Purrlaroid catImage={Eddie} catName="Eddie"/>
+  <Purrlaroid catImage={Eddie} catName='Eddie' />
 );
 
 export const Default = Template.bind({});

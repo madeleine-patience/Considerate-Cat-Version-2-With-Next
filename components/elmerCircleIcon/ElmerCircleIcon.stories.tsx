@@ -1,9 +1,9 @@
-import { Meta } from "@storybook/react";
-import ElmerCircleIcon from "./ElmerCircleIcon";
+import { Meta } from '@storybook/react';
+import ElmerCircleIcon from './ElmerCircleIcon';
 
 export default {
-  title: "Components/ElmerCircleIcon",
-  component: ElmerCircleIcon,
+  title: 'Components/ElmerCircleIcon',
+  component: ElmerCircleIcon
 } as Meta<typeof ElmerCircleIcon>;
 
 // const states = [
@@ -43,5 +43,5 @@ export default {
 // );
 
 export const Default = {
-  args: {},
+  args: {}
 };

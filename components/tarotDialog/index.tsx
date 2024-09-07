@@ -1,1 +1,1 @@
-export * from "./TarotDialog";
+export * from './TarotDialog';

@@ -1,1 +1,1 @@
-export * from "./SingleTarotCardWithFlip";
+export * from './SingleTarotCardWithFlip';

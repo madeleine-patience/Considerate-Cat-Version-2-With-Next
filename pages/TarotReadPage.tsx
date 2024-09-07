@@ -1,14 +1,14 @@
-import { useTarotCard } from "../hooks/useTarotCard";
-import useFetchTarotDeck from "../hooks/fetchTarotDeck";
-import { Box, useTheme } from "@mui/material";
-import { TarotDeckContext } from "../context/TarotDeckContext";
-import { useState } from "react";
-import DisplayTarotCardsWithFlip from "../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip";
-import HompeageHeader from "../components/header/Header";
-import TarotSpreadSelectionBox from "../components/tarotSpreadSelectionBox/TarotSpreadSelectionBox";
-import FlowerFooter from "../components/flowerFooter/FlowerFooter";
-import { LoadingPage } from "../components/loadingPage/LoadingPage";
-import RaisedButton from "../components/raisedButton/RaisedButton";
+import { useTarotCard } from '../hooks/useTarotCard';
+import useFetchTarotDeck from '../hooks/fetchTarotDeck';
+import { Box, useTheme } from '@mui/material';
+import { TarotDeckContext } from '../context/TarotDeckContext';
+import { useState } from 'react';
+import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
+import HompeageHeader from '../components/header/Header';
+import TarotSpreadSelectionBox from '../components/tarotSpreadSelectionBox/TarotSpreadSelectionBox';
+import FlowerFooter from '../components/flowerFooter/FlowerFooter';
+import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import RaisedButton from '../components/raisedButton/RaisedButton';
 
 export default function FirstPost() {
   const { palette } = useTheme();
@@ -38,60 +38,60 @@ export default function FirstPost() {
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
       <Box
-        minHeight="100vh"
-        display="flex"
-        flexDirection="column"
-        justifyContent="space-between"
+        minHeight='100vh'
+        display='flex'
+        flexDirection='column'
+        justifyContent='space-between'
         sx={{ backgroundColor: palette.pinks.main }}
       >
         <HompeageHeader />
         {areSpreadChoicesVisible && (
           <Box
-            display="flex"
-            flexWrap="wrap"
-            justifyContent="center"
+            display='flex'
+            flexWrap='wrap'
+            justifyContent='center'
             gap={10}
             p={10}
           >
             <TarotSpreadSelectionBox
               onClick={() => displayTarotSpread(1)}
-              title="Vibe Check"
+              title='Vibe Check'
               amountOfCards={1}
-              description="Single Card Pull. Good for yes or no questions."
+              description='Single Card Pull. Good for yes or no questions.'
             />
             <TarotSpreadSelectionBox
               onClick={() => displayTarotSpread(3)}
-              title="Three Card Spread"
+              title='Three Card Spread'
               amountOfCards={3}
-              description="Past, Present and Future."
+              description='Past, Present and Future.'
             />
             <TarotSpreadSelectionBox
               onClick={() => displayTarotSpread(4)}
-              title="Four Card Spread"
+              title='Four Card Spread'
               amountOfCards={4}
-              description="Self Love Spread"
+              description='Self Love Spread'
             />
             <TarotSpreadSelectionBox
               onClick={() => displayTarotSpread(5)}
-              title="Five Card Spread"
+              title='Five Card Spread'
               amountOfCards={5}
-              description="Past, Present and Future with guides to move you forward."
+              description='Past, Present and Future with guides to move you forward.'
             />
             <TarotSpreadSelectionBox
               onClick={() => displayTarotSpread(7)}
-              title="Horse Shoe Spread"
+              title='Horse Shoe Spread'
               amountOfCards={7}
-              description="A spread useful for when the querent needs to make a decison."
+              description='A spread useful for when the querent needs to make a decison.'
             />
           </Box>
         )}
 
         <Box
           sx={{
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            gap: 6,
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: 6
           }}
         >
           {isTarotReadVisible && (
@@ -101,10 +101,10 @@ export default function FirstPost() {
               onClick={() => setIsFlipped(true)}
             />
           )}
-          <Box display="flex" justifyContent="center">
+          <Box display='flex' justifyContent='center'>
             <RaisedButton
               disabled={!isFlipped}
-              buttonLabel="Get Another Read"
+              buttonLabel='Get Another Read'
               onClick={() => resetAndViewTarotSpreads()}
             />
           </Box>
