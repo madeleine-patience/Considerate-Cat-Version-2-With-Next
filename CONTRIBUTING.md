@@ -18,8 +18,9 @@ maintained.
 2. **Follow Formatting Guidelines**:
 
    - Our code should be formatted according to our Prettier configuration. We
-     use a pre-commit hook to enforce this, so make sure your code is fur-matted
-     correctly before committing.
+     use a pre-commit hook to enforce this to make sure your code is fur-matted
+     correctly while committing, so you shouldn't (in theory) need to worry
+     about setting up Prettier if it isn't configured. (Check your commits!)
 
 3. **Ensure Functionality**:
 
