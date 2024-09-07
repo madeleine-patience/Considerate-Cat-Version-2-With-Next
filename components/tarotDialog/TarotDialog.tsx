@@ -1,4 +1,12 @@
-import { Box, CardMedia, ClickAwayListener, Typography, Grid, Dialog, useTheme } from '@mui/material';
+import {
+  Box,
+  CardMedia,
+  ClickAwayListener,
+  Typography,
+  Grid,
+  Dialog,
+  useTheme
+} from '@mui/material';
 
 interface TarotDialogActions {
   onClick: () => void;
@@ -27,7 +35,10 @@ const TarotDialog = ({
   const { palette, breakpoints } = useTheme();
   return (
     <Dialog open={isOpen}>
-      <ClickAwayListener onClickAway={handleClickAway} sx={{ backgroundColor: 'transparent' }}>
+      <ClickAwayListener
+        onClickAway={handleClickAway}
+        sx={{ backgroundColor: 'transparent' }}
+      >
         <Grid
           container
           sx={{
