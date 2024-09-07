@@ -1,1 +1,8 @@
+# Ignore the _ dir
 _
+
+# Ignore Husky’s debug logs
+*.log
+
+# Ignore any temporary files created during hook execution
+*.tmp

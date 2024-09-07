@@ -13,8 +13,6 @@ interface TarotDialogActions {
   handleClickAway: () => void;
 }
 
-const notRealFunc = () => {};
-
 export interface TarotDialogProps extends TarotDialogActions {
   isOpen: boolean;
   card: string;
