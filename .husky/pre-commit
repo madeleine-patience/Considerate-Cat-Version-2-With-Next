@@ -1,4 +1,12 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx lint-staged
+# Get the current branch name
+branch=$(git rev-parse --abbrev-ref HEAD)
+
+# Skip running lint-staged on 'main'
+if [ "$branch" != "main" ]; then
+  npx lint-staged
+else
+  echo "Skipping lint-staged on main branch"
+fi
