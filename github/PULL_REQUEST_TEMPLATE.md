@@ -1,12 +1,12 @@
 # Pull Request Title
 
-**Description of Purrrrrl Request**
+**🐾Description of Purrrrr Request🐾**
 
 ### Type of Change
 
-- [ ] Feature added
+- [ ] Mew Feature added
 - [ ] Bug fixed
-- [ ] Refactor / Cleanup
+- [ ] Re-fur-ctor / Cleanup
 
 ### Description of Change
 
@@ -20,14 +20,14 @@
 | Before | After |
 | ------ | ----- |
 
-| Before | After |
-| ------ | ----- |
+| Screenshot |
+| ---------- |
 
-### How has this been tested.
+### How did you purrrsonally test this
 
 ### Checklist
 
 - [ ] Tests added or updated
 - [ ] Documentation updated
 - [ ] Follows coding standards
-- [ ] Ready for review
+- [ ] Ready fur review
