@@ -27,16 +27,6 @@ const TarotSpreadSelectionBox = ({
   return (
     <Box
       onClick={onClick}
-<<<<<<< HEAD
-      sx={{ width: 'fit-content' }}
-=======
-      sx={{
-        backgroundColor: { backgroundColor },
-        backgroundImage:
-          'linear-gradient(to right bottom, #f2afda, #ffb3c2, #ffbeb0, #f7cba9, #e7d8ae)',
-        borderRadius: '30px'
-      }}
->>>>>>> 922f8eb (Removed unused width)
       onMouseEnter={() => {
         setIsHovered(true);
       }}
