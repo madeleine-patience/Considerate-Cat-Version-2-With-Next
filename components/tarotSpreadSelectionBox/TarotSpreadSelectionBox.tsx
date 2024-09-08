@@ -101,7 +101,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
       gridTemplateColumns: '20px 25px 30px 30px 25px 20px 100px',
       gridHover: '30px 40px 40px 40px 40px 30px 100px',
       gridVerticalOffset: '20px',
-      verticalCardSpacing: 100
+      verticalCardSpacing: 10
     }
   };
 
