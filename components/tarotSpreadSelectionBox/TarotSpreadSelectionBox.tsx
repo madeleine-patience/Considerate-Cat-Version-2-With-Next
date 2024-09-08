@@ -1,13 +1,13 @@
 import { Typography, useTheme } from '@mui/material';
 import Box from '@mui/material/Box';
-import { useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { TarotDeckContext } from '../../context/TarotDeckContext';
 import SingleTarotCard from '../singleTarotCard/SingleTarotCard';
 
 interface TarotSpreadAction {
   onClick: () => void;
 }
-interface TarotSpreadSpreadSelectionProps extends TarotSpreadAction {
+export interface TarotSpreadSelectionProps extends TarotSpreadAction {
   title: string;
   amountOfCards?: number;
   backgroundColor?: string;
@@ -19,7 +19,10 @@ interface TarotSpreadSpreadSelectionProps extends TarotSpreadAction {
 interface CardLayout {
   images: string[];
   gridTemplateColumns: string;
-  styles: Array<{ sx: React.CSSProperties }>;
+  gridHover: string;
+  gridVerticalOffset?: string;
+  verticalCardSpacing?: number;
+  styles?: Array<{ sx: React.CSSProperties }>;
 }
 
 const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
@@ -28,8 +31,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   backgroundColor,
   zIndex,
   description,
-  onClick,
-  isCurved
+  onClick
 }) => {
   const tarotDeckData = useContext(TarotDeckContext);
   const { palette } = useTheme();
@@ -110,7 +112,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   };
 
   const generateStylesForLayout = (
-    layout: string[]
+    layout: CardLayout
   ): Array<{ sx: React.CSSProperties }> => {
     const { images, verticalCardSpacing } = layout;
     const centerIndex = Math.floor(images.length / 2);
@@ -177,7 +179,13 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
             const img = cardLayouts[amountOfCards].images[i];
             const { sx } = cardLayouts[amountOfCards].styles[i];
 
-            return <SingleTarotCard image={img} sx={sx} />;
+            return (
+              <SingleTarotCard
+                key={`single-tarot-card-${i}`}
+                image={img}
+                sx={sx}
+              />
+            );
           })}
         </Box>
       </Box>

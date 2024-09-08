@@ -1,14 +1,15 @@
-import { Box, useTheme } from '@mui/material';
 import { useState } from 'react';
-import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
-import FlowerFooter from '../components/flowerFooter/FlowerFooter';
-import HompeageHeader from '../components/header/Header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
-import RaisedButton from '../components/raisedButton/RaisedButton';
-import TarotSpreadSelectionBox from '../components/tarotSpreadSelectionBox/TarotSpreadSelectionBox';
-import { TarotDeckContext } from '../context/TarotDeckContext';
-import useFetchTarotDeck from '../hooks/fetchTarotDeck';
+import { Box, useTheme } from '@mui/material';
 import { useTarotCard } from '../hooks/useTarotCard';
+import { TarotDeckContext } from '../context/TarotDeckContext';
+import { TarotSpreadSelectionProps } from '../components/tarotSpreadSelectionBox/TarotSpreadSelectionBox';
+import FlowerFooter from '../components/flowerFooter/FlowerFooter';
+import RaisedButton from '../components/raisedButton/RaisedButton';
+import HompeageHeader from '../components/header/Header';
+import useFetchTarotDeck from '../hooks/fetchTarotDeck';
+import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
+import TarotSpreadSelectionBoxList from '../components/tarotSpreadSelectionBoxList/TarotSpreadSelectionBoxList';
 
 export default function FirstPost() {
   const { palette } = useTheme();
@@ -35,7 +36,7 @@ export default function FirstPost() {
   };
   if (loading) return <LoadingPage />;
 
-  const tarotSpreadSelectionBoxes = [
+  const tarotSpreadSelectionBoxes: TarotSpreadSelectionProps[] = [
     {
       onClick: () => displayTarotSpread(1),
       title: 'Vibe Check',
@@ -80,28 +81,7 @@ export default function FirstPost() {
       >
         <HompeageHeader />
         {areSpreadChoicesVisible && (
-          <Box
-            display='flex'
-            flexWrap='wrap'
-            justifyContent='center'
-            gap={10}
-            p={10}
-          >
-            {tarotSpreadSelectionBoxes.map((box, i) => {
-              const { onClick, title, amountOfCards, description } = box;
-
-              return (
-                <TarotSpreadSelectionBox
-                  key={`tarotSpreadSelectionBox-${i}`}
-                  onClick={onClick}
-                  title={title}
-                  amountOfCards={amountOfCards}
-                  description={description}
-                  zIndex={i}
-                />
-              );
-            })}
-          </Box>
+          <TarotSpreadSelectionBoxList data={tarotSpreadSelectionBoxes} />
         )}
 
         <Box
