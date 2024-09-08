@@ -12,21 +12,131 @@ interface TarotSpreadSpreadSelectionProps extends TarotSpreadAction {
   amountOfCards?: number;
   backgroundColor?: string;
   description: string;
+  onClick: () => void;
 }
 
-const TarotSpreadSelectionBox = ({
+interface CardLayout {
+  images: string[];
+  gridTemplateColumns: string;
+  styles: Array<{ sx: React.CSSProperties }>;
+}
+
+const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   amountOfCards,
   title,
   backgroundColor,
   description,
-  onClick
-}: TarotSpreadSpreadSelectionProps) => {
+  onClick,
+  isCurved
+}) => {
   const tarotDeckData = useContext(TarotDeckContext);
   const { palette } = useTheme();
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState<boolean>(false);
+
+  const SingleTarotCardBaseStyles: React.CSSProperties = {
+    border: '4px solid white',
+    position: 'relative',
+    width: '100px',
+    transition: 'transform .2s ease-in'
+  };
+
+  const getTransformStyle = (
+    index: number,
+    centerIndex: number
+  ): React.CSSProperties => {
+    const transforms = {
+      left: 'scale(1.2) rotate(-2deg) translate(0px, -10px)',
+      right: 'scale(1.2) rotate(2deg) translate(0px, -10px)',
+      center: 'scale(1.2) translate(0px, -10px)'
+    };
+
+    if (!isHovered) return { transform: 'none' };
+
+    return {
+      transform:
+        index < centerIndex
+          ? transforms.left
+          : index > centerIndex
+            ? transforms.right
+            : transforms.center
+    };
+  };
+
+  const img = {
+    a: tarotDeckData[51].image_link,
+    b: tarotDeckData[10].image_link,
+    c: tarotDeckData[3].image_link,
+    d: tarotDeckData[1].image_link,
+    e: tarotDeckData[5].image_link,
+    f: tarotDeckData[6].image_link
+  };
+
+  const cardLayouts: Record<number, CardLayout> = {
+    1: {
+      images: [img.d],
+      gridTemplateColumns: 'auto',
+      gridHover: 'auto'
+    },
+    3: {
+      images: [img.c, img.d, img.e],
+      gridTemplateColumns: '50px 50px 100px',
+      gridHover: '80px 80px 100px',
+      gridVerticalOffset: '10px',
+      verticalCardSpacing: 10
+    },
+    4: {
+      images: [img.b, img.c, img.d, img.e],
+      gridTemplateColumns: '50px 50px 50px 100px',
+      gridHover: '80px 80px 80px 100px'
+    },
+    5: {
+      images: [img.b, img.c, img.d, img.e, img.f],
+      gridTemplateColumns: '25px 30px 30px 25px 100px',
+      gridHover: '45px 60px 60px 45px 100px',
+      gridVerticalOffset: '20px',
+      verticalCardSpacing: 10
+    },
+    7: {
+      images: [img.a, img.b, img.c, img.d, img.e, img.f, img.d],
+      gridTemplateColumns: '20px 25px 30px 30px 25px 20px 100px',
+      gridHover: '30px 40px 40px 40px 40px 30px 100px',
+      gridVerticalOffset: '20px',
+      verticalCardSpacing: 100
+    }
+  };
+
+  const generateStylesForLayout = (
+    layout: string[]
+  ): Array<{ sx: React.CSSProperties }> => {
+    const { images, verticalCardSpacing } = layout;
+    const centerIndex = Math.floor(images.length / 2);
+
+    return images.map((_, i) => ({
+      sx: {
+        ...SingleTarotCardBaseStyles,
+        ...getTransformStyle(i, centerIndex),
+        zIndex:
+          amountOfCards !== 4 ? images.length - Math.abs(centerIndex - i) : 1,
+        top: `${Math.abs(centerIndex - i) * verticalCardSpacing || 0}px`
+      }
+    }));
+  };
+
+  const layout = cardLayouts[amountOfCards];
+  layout.styles = generateStylesForLayout(layout);
+
   return (
     <Box
       onClick={onClick}
+      sx={{
+        width: '320px',
+        backgroundColor: palette.secondary.main,
+        borderRadius: '20px',
+        cursor: 'pointer',
+        transition: 'all 0.3s',
+        boxShadow: isHovered ? '8' : '2',
+        transform: isHovered ? 'scale(1.025) ' : ''
+      }}
       onMouseEnter={() => {
         setIsHovered(true);
       }}
@@ -36,187 +146,55 @@ const TarotSpreadSelectionBox = ({
     >
       <Box
         sx={{
+          padding: '50px 0',
+          borderTopLeftRadius: '20px',
+          borderTopRightRadius: '20px',
           backgroundColor: { backgroundColor },
           backgroundImage:
-            'linear-gradient(to right bottom, #f2afda, #ffb3c2, #ffbeb0, #f7cba9, #e7d8ae)',
-          borderTopLeftRadius: '10%',
-          borderTopRightRadius: '10%'
+            'linear-gradient(to right bottom, #f2afda, #ffb3c2, #ffbeb0, #f7cba9, #e7d8ae)'
         }}
       >
         <Box
-          position='relative'
-          width={325}
-          height={300}
-          display='flex'
-          alignItems='center'
+          display='grid'
           justifyContent='center'
+          gridTemplateColumns={
+            isHovered
+              ? cardLayouts[amountOfCards].gridHover
+              : cardLayouts[amountOfCards].gridTemplateColumns
+          }
+          sx={{
+            position: 'relative',
+            bottom: layout.gridVerticalOffset,
+            transition: 'all 0.5s'
+          }}
         >
-          {tarotDeckData.length > 0 && (
-            <Box display='flex' pr={amountOfCards == 4 ? '60px' : '0px'}>
-              {amountOfCards > 6 && (
-                <SingleTarotCard
-                  image={tarotDeckData[51].image_link}
-                  sx={{
-                    border: '4px solid white',
-                    position: 'relative',
-                    width: '100px',
-                    top: '30px',
-                    left: '205px',
-                    transition: 'transform .5s ease-in-out',
-                    transform: isHovered
-                      ? 'scale(1.1) rotate(-2deg) translate(0px, -10px)'
-                      : 'none'
-                  }}
-                />
-              )}
+          {Array.from({ length: amountOfCards }).map((_, i) => {
+            const img = cardLayouts[amountOfCards].images[i];
+            const { sx } = cardLayouts[amountOfCards].styles[i];
 
-              {amountOfCards > 3 && (
-                <SingleTarotCard
-                  image={tarotDeckData[10].image_link}
-                  sx={{
-                    border: '4px solid white',
-                    position: 'relative',
-                    zIndex: '2',
-                    width: '100px',
-                    left: '120px',
-                    transition: 'transform .5s ease-in-out',
-                    transform: isHovered
-                      ? 'scale(1.1) rotate(-2deg) translate(0px, -10px)'
-                      : 'none'
-                  }}
-                />
-              )}
-              {amountOfCards > 2 && (
-                <SingleTarotCard
-                  image={tarotDeckData[3].image_link}
-                  sx={{
-                    border: '4px solid white',
-                    position: 'relative',
-                    left: '50px',
-                    bottom: amountOfCards == 7 ? '35px' : '',
-                    width: '100px',
-                    zIndex: '3',
-                    transition: 'transform .5s ease-in-out',
-                    transform: isHovered
-                      ? 'scale(1.1) rotate(-2deg) translate(0px, -10px)'
-                      : 'none'
-                  }}
-                />
-              )}
-              {amountOfCards > 0 && (
-                <SingleTarotCard
-                  image={tarotDeckData[1].image_link}
-                  sx={{
-                    border: '4px solid white',
-                    position: 'relative',
-                    bottom: amountOfCards == 7 ? '45px' : '',
-                    width: '100px',
-                    zIndex: '4',
-                    transition: 'transform .5s ease-in-out',
-                    transform: isHovered
-                      ? 'scale(1.1) translate(0px, -10px)'
-                      : 'none'
-                  }}
-                />
-              )}
-              {amountOfCards > 2 && (
-                <SingleTarotCard
-                  image={tarotDeckData[5].image_link}
-                  sx={{
-                    zIndex: amountOfCards == 4 ? '6' : '3',
-                    border: '4px solid white',
-                    position: 'relative',
-                    width: '100px',
-                    right: '50px',
-                    bottom: amountOfCards == 7 ? '35px' : '',
-
-                    transition: 'transform .5s ease-in-out',
-                    transform: isHovered
-                      ? 'scale(1.1) rotate(2deg) translate(0px, -10px)'
-                      : 'none'
-                  }}
-                />
-              )}
-              {amountOfCards > 4 && (
-                <SingleTarotCard
-                  image={tarotDeckData[6].image_link}
-                  sx={{
-                    border: '4px solid white',
-                    position: 'relative',
-                    width: '100px',
-                    right: '120px',
-                    zIndex: '2',
-                    transition: 'transform .5s ease-in-out',
-                    transform: isHovered
-                      ? 'scale(1.1) rotate(2deg) translate(0px, -10px)'
-                      : 'none'
-                  }}
-                />
-              )}
-
-              {amountOfCards > 6 && (
-                <SingleTarotCard
-                  image={tarotDeckData[1].image_link}
-                  sx={{
-                    border: '4px solid white',
-                    position: 'relative',
-                    width: '100px',
-                    right: '205px',
-                    top: '30px',
-                    transition: 'transform .5s ease-in-out',
-                    transform: isHovered
-                      ? 'scale(1.1) rotate(2deg) translate(0px, -10px)'
-                      : 'none'
-                  }}
-                />
-              )}
-            </Box>
-          )}
+            return <SingleTarotCard image={img} sx={sx} />;
+          })}
         </Box>
       </Box>
-      <Box
-        gap='8px'
-        flexDirection='column'
-        justifyContent='center'
-        width={325}
-        height={200}
-        position='relative'
-        display='flex'
-        alignContent='center'
-        zIndex={1}
-        sx={{
-          p: 2,
-          display: 'flex',
-          gap: 2,
-          flexDirection: 'column',
-          height: 200,
-          width: 325,
-          backgroundColor: palette.secondary.main,
-          borderBottomRightRadius: '10%',
-          borderBottomLeftRadius: '10%'
-        }}
-      >
+      <Box>
         <Typography
           variant='h3'
           textAlign='center'
-          fontSize='bold'
-          fontWeight={600}
-          color={palette.pinks.dark}
+          fontSize='30px'
+          fontWeight={700}
+          color={palette.pinks.darker}
+          p={4}
         >
           {title}
         </Typography>
         <Typography
           variant='body2'
+          p={4}
+          pt={0}
           sx={{
             textAlign: 'center',
-            fontSize: 'bold',
-            fontWeight: 600,
-            color: palette.pinks.dark,
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
-            display: '-webkit-box',
-            WebkitLineClamp: '2',
-            WebkitBoxOrient: 'vertical'
+            fontSize: '18px',
+            color: palette.pinks.contrastLightAAA
           }}
         >
           {description}
