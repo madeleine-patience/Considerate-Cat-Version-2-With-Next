@@ -11,6 +11,7 @@ interface TarotSpreadSpreadSelectionProps extends TarotSpreadAction {
   title: string;
   amountOfCards?: number;
   backgroundColor?: string;
+  zIndex?: number;
   description: string;
   onClick: () => void;
 }
@@ -25,6 +26,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   amountOfCards,
   title,
   backgroundColor,
+  zIndex,
   description,
   onClick,
   isCurved
@@ -32,12 +34,14 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   const tarotDeckData = useContext(TarotDeckContext);
   const { palette } = useTheme();
   const [isHovered, setIsHovered] = useState<boolean>(false);
+  const cardTransitionTime = '300ms';
+  const gridTransitionTime = '120ms';
 
   const SingleTarotCardBaseStyles: React.CSSProperties = {
     border: '4px solid white',
     position: 'relative',
     width: '100px',
-    transition: 'transform .2s ease-in'
+    transition: `transform ${cardTransitionTime} ease-in`
   };
 
   const getTransformStyle = (
@@ -99,9 +103,9 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
     7: {
       images: [img.a, img.b, img.c, img.d, img.e, img.f, img.d],
       gridTemplateColumns: '20px 25px 30px 30px 25px 20px 100px',
-      gridHover: '30px 40px 40px 40px 40px 30px 100px',
-      gridVerticalOffset: '20px',
-      verticalCardSpacing: 10
+      gridHover: '60px 70px 80px 80px 70px 60px 100px',
+      gridVerticalOffset: '40px',
+      verticalCardSpacing: 25
     }
   };
 
@@ -133,9 +137,10 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
         backgroundColor: palette.secondary.main,
         borderRadius: '20px',
         cursor: 'pointer',
-        transition: 'all 0.3s',
+        transition: `all ${gridTransitionTime}`,
         boxShadow: isHovered ? '8' : '2',
-        transform: isHovered ? 'scale(1.025) ' : ''
+        transform: isHovered ? 'scale(1.025) ' : '',
+        zIndex: zIndex
       }}
       onMouseEnter={() => {
         setIsHovered(true);
@@ -165,7 +170,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
           sx={{
             position: 'relative',
             bottom: layout.gridVerticalOffset,
-            transition: 'all 0.5s'
+            transition: `all ${cardTransitionTime}`
           }}
         >
           {Array.from({ length: amountOfCards }).map((_, i) => {

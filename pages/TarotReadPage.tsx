@@ -35,6 +35,40 @@ export default function FirstPost() {
   };
   if (loading) return <LoadingPage />;
 
+  const tarotSpreadSelectionBoxes = [
+    {
+      onClick: () => displayTarotSpread(1),
+      title: 'Vibe Check',
+      amountOfCards: 1,
+      description: 'Single Card Pull. Good for yes or no questions.'
+    },
+    {
+      onClick: () => displayTarotSpread(3),
+      title: 'Three Card Spread',
+      amountOfCards: 3,
+      description: 'Past, Present and Future.'
+    },
+    {
+      onClick: () => displayTarotSpread(4),
+      title: 'Four Card Spread',
+      amountOfCards: 4,
+      description: 'Self Love Spread'
+    },
+    {
+      onClick: () => displayTarotSpread(5),
+      title: 'Five Card Spread',
+      amountOfCards: 5,
+      description: 'Past, Present and Future with guides to move you forward.'
+    },
+    {
+      onClick: () => displayTarotSpread(7),
+      title: 'Horse Shoe Spread',
+      amountOfCards: 7,
+      description:
+        'A spread useful for when the querent needs to make a decison.'
+    }
+  ];
+
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
       <Box
@@ -53,36 +87,20 @@ export default function FirstPost() {
             gap={10}
             p={10}
           >
-            <TarotSpreadSelectionBox
-              onClick={() => displayTarotSpread(1)}
-              title='Vibe Check'
-              amountOfCards={1}
-              description='Single Card Pull. Good for yes or no questions.'
-            />
-            <TarotSpreadSelectionBox
-              onClick={() => displayTarotSpread(3)}
-              title='Three Card Spread'
-              amountOfCards={3}
-              description='Past, Present and Future.'
-            />
-            <TarotSpreadSelectionBox
-              onClick={() => displayTarotSpread(4)}
-              title='Four Card Spread'
-              amountOfCards={4}
-              description='Self Love Spread'
-            />
-            <TarotSpreadSelectionBox
-              onClick={() => displayTarotSpread(5)}
-              title='Five Card Spread'
-              amountOfCards={5}
-              description='Past, Present and Future with guides to move you forward.'
-            />
-            <TarotSpreadSelectionBox
-              onClick={() => displayTarotSpread(7)}
-              title='Horse Shoe Spread'
-              amountOfCards={7}
-              description='A spread useful for when the querent needs to make a decison.'
-            />
+            {tarotSpreadSelectionBoxes.map((box, i) => {
+              const { onClick, title, amountOfCards, description } = box;
+
+              return (
+                <TarotSpreadSelectionBox
+                  key={`tarotSpreadSelectionBox-${i}`}
+                  onClick={onClick}
+                  title={title}
+                  amountOfCards={amountOfCards}
+                  description={description}
+                  zIndex={i}
+                />
+              );
+            })}
           </Box>
         )}
 
