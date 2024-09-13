@@ -6,6 +6,7 @@ export interface CardLayout {
   gridHover: string;
   verticalCardSpacing?: number[];
   gridVerticalOffset?: string;
+  tilt?: number;
   styles?: Array<{ sx: React.CSSProperties }>;
 }
 
@@ -34,12 +35,13 @@ export default function getLayout(
 
   const getTransformStyle = (
     index: number,
-    centerIndex: number
+    centerIndex: number,
+    tilt: number = 0
   ): React.CSSProperties => {
     const transforms = {
-      left: 'scale(1.2) rotate(-2deg) translate(0px, -10px)',
-      right: 'scale(1.2) rotate(2deg) translate(0px, -10px)',
-      center: 'scale(1.2) translate(0px, -10px)'
+      left: `scale(1) rotate(-${tilt}deg) translate(0px, -10px)`,
+      right: `scale(1) rotate(${tilt}deg) translate(0px, -10px)`,
+      center: 'scale(1) translate(0px, -10px)'
     };
 
     return {
@@ -77,29 +79,29 @@ export default function getLayout(
     },
     3: {
       images: [img.c, img.d, img.e],
-      gridTemplateColumns: '50px 50px 100px',
-      gridHover: '80px 80px 100px',
-      verticalCardSpacing: [5, 10, 5],
-      gridVerticalOffset: '10px'
+      gridTemplateColumns: '30px 30px 100px',
+      gridHover: '70px 70px 100px',
+      gridVerticalOffset: '5px'
     },
     4: {
       images: [img.b, img.c, img.d, img.e],
-      gridTemplateColumns: '50px 50px 50px 100px',
-      gridHover: '80px 80px 80px 100px'
+      gridTemplateColumns: '30px 30px 30px 100px',
+      gridHover: '55px 55px 55px 100px'
     },
     5: {
       images: [img.b, img.c, img.d, img.e, img.f],
-      gridTemplateColumns: '25px 30px 30px 25px 100px',
-      gridHover: '45px 60px 60px 45px 100px',
+      gridTemplateColumns: '20px 20px 20px 20px 100px',
+      gridHover: '40px 50px 50px 40px 100px',
       verticalCardSpacing: [10, 8, 6, 8, 10],
-      gridVerticalOffset: '20px'
+      gridVerticalOffset: '5px'
     },
     7: {
       images: [img.a, img.b, img.c, img.d, img.e, img.f, img.d],
-      gridTemplateColumns: '20px 25px 30px 30px 25px 20px 100px',
+      gridTemplateColumns: '15px 15px 20px 20px 15px 15px 100px',
       gridHover: '60px 70px 80px 80px 70px 60px 100px',
-      verticalCardSpacing: [10, 10, 10, 10, 10, 10, 10],
-      gridVerticalOffset: '40px'
+      verticalCardSpacing: [40, 30, 20, 10, 20, 30, 40],
+      gridVerticalOffset: '20px',
+      tilt: 2
     }
   };
 

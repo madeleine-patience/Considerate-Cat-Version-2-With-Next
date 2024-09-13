@@ -11,7 +11,7 @@ export default function TarotSpreadSelectionBoxList({
   data
 }: TarotSpreadListProps) {
   return (
-    <Box display='flex' flexWrap='wrap' justifyContent='center' gap={10} p={10}>
+    <Box display='flex' flexWrap='wrap' justifyContent='center' gap={8} p={8}>
       {data.map((box, i) => {
         const { onClick, title, amountOfCards, description } = box;
 

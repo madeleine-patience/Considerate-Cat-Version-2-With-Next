@@ -38,12 +38,12 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
     <Box
       onClick={onClick}
       sx={{
-        width: '320px',
+        width: '325px',
         backgroundColor: palette.secondary.main,
         borderRadius: '20px',
         cursor: 'pointer',
         transition: `
-          box-shadow ${gridTransitionTime}
+          box-shadow ${gridTransitionTime},
           transform ${gridTransitionTime}
         `,
         boxShadow: isHovered ? '8' : '2',
