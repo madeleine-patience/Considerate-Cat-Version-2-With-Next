@@ -3,7 +3,7 @@ import { Typography, useTheme } from '@mui/material';
 import { TarotDeckContext } from '../../context/TarotDeckContext';
 import { TarotDeckData } from '../../types/tarotDeckData';
 import SingleTarotCard from '../singleTarotCard/SingleTarotCard';
-import getLayout from './getLayout';
+import getLayoutStyles from './getLayoutStyles';
 import Box from '@mui/material/Box';
 
 interface TarotSpreadAction {
@@ -32,7 +32,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   const { palette } = useTheme();
   const cardTransitionTime = '300ms';
   const gridTransitionTime = '120ms';
-  const layout = getLayout(
+  const layout = getLayoutStyles(
     tarotDeckData,
     amountOfCards,
     cardTransitionTime,
@@ -72,7 +72,9 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
           display='grid'
           justifyContent='center'
           gridTemplateColumns={
-            isHovered ? layout.gridHover : layout.gridTemplateColumns
+            isHovered
+              ? `${layout.gridHover} 0fr`
+              : `${layout.gridTemplateColumns} 0fr`
           }
           sx={{
             position: 'relative',
