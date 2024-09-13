@@ -27,19 +27,6 @@ export default function getLayout(
   let result: CardLayout;
 
   /**
-   * Mapping of tarot card indices to their respective image links.
-   * This serves to shorten the images array for each layout.
-   */
-  const img = {
-    a: tarotDeckData[51].image_link,
-    b: tarotDeckData[10].image_link,
-    c: tarotDeckData[3].image_link,
-    d: tarotDeckData[1].image_link,
-    e: tarotDeckData[5].image_link,
-    f: tarotDeckData[6].image_link
-  };
-
-  /**
    * Base styles applied to each tarot card.
    */
   const SingleTarotCardBaseStyles: React.CSSProperties = {
@@ -96,37 +83,36 @@ export default function getLayout(
       scaleHovered,
       verticalCardSpacing = []
     } = layout;
-
     const centerIndex = Math.floor(images.length / 2);
-    const isOddNumberOfCards = images.length % 2 !== 0;
 
     return images.map((_, i) => {
-      const transformStyle = getTransformStyle(
-        i,
-        centerIndex,
-        tilt,
-        tiltHovered,
-        scaleHovered
-      );
-
       const distanceFromCenter = Math.abs(centerIndex - i);
       const top = `${distanceFromCenter * (verticalCardSpacing[i] || 0)}px`;
-
-      let zIndex = 1;
-
-      if (isOddNumberOfCards) {
-        zIndex = images.length - distanceFromCenter;
-      }
+      const zIndex =
+        images.length % 2 !== 0 ? images.length - distanceFromCenter : 1;
 
       return {
         sx: {
           ...SingleTarotCardBaseStyles,
-          ...transformStyle,
+          ...getTransformStyle(i, centerIndex, tilt, tiltHovered, scaleHovered),
           top,
           zIndex
         }
       };
     });
+  };
+
+  /**
+   * Mapping of tarot card indices to their respective image links.
+   * This serves to shorten the images array for each layout.
+   */
+  const img = {
+    a: tarotDeckData[51].image_link,
+    b: tarotDeckData[10].image_link,
+    c: tarotDeckData[3].image_link,
+    d: tarotDeckData[1].image_link,
+    e: tarotDeckData[5].image_link,
+    f: tarotDeckData[6].image_link
   };
 
   /**
