@@ -17,13 +17,13 @@ export interface CardLayout {
    * In other words, it is the defined space in between cards in a layout.
    * Since it is the space in between, the length will be one less than amountOfCards.
    */
-  gridTemplateColumns: string;
+  gridTemplateColumns?: string;
 
   /**
    * CSS grid column definition for the hover state of the cards.
    * Specifies how the columns should adjust when the cards are hovered.
    */
-  gridHover: string;
+  gridHover?: string;
 
   /**
    * Optional array defining the vertical spacing between each card.
@@ -32,9 +32,16 @@ export interface CardLayout {
 
   /**
    * Optional vertical offset applied to the entire grid layout.
-   * This offset shifts the grid vertically relative to its container (from the top).
+   * This offset shifts the grid vertically relative to its container (from the bottom).
    */
   gridVerticalOffset?: string;
+
+  /**
+   * Optional vertical offset applied to the entire grid layout when hovered.
+   *
+   * Defaults to gridVerticalOffset (doesn't move)
+   */
+  gridVerticalOffsetHovered?: string;
 
   /**
    * Optional tilt angle for the cards.
@@ -89,25 +96,29 @@ export default function getLayout(
   const cardLayouts: Record<number, CardLayout> = {
     1: {
       images: [img.d],
-      gridTemplateColumns: 'auto',
-      gridHover: 'auto'
+      scaleHovered: 1.1,
+      gridVerticalOffsetHovered: '10px'
     },
     3: {
       images: [img.c, img.d, img.e],
-      gridTemplateColumns: '30px 30px',
-      gridHover: '70px 70px',
+      gridTemplateColumns: '50px 50px',
+      gridHover: '50px 50px',
+      scaleHovered: 1.1,
+      tiltHovered: 5,
       gridVerticalOffset: '5px'
     },
     4: {
       images: [img.b, img.c, img.d, img.e],
       gridTemplateColumns: '30px 30px 30px',
-      gridHover: '55px 55px 55px'
+      gridHover: '55px 55px 55px',
+      scaleHovered: 1.1
     },
     5: {
       images: [img.b, img.c, img.d, img.e, img.f],
       gridTemplateColumns: '20px 20px 20px 20px',
       gridHover: '40px 50px 50px 40px',
       verticalCardSpacing: [10, 8, 6, 8, 10],
+      scaleHovered: 1.1,
       gridVerticalOffset: '5px'
     },
     7: {
@@ -115,6 +126,7 @@ export default function getLayout(
       gridTemplateColumns: '15px 15px 20px 20px 15px 15px',
       gridHover: '60px 70px 80px 80px 70px 60px',
       verticalCardSpacing: [40, 30, 20, 10, 20, 30, 40],
+      scaleHovered: 1.1,
       gridVerticalOffset: '20px',
       tilt: 50
     }

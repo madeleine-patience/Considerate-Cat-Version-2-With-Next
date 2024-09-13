@@ -30,8 +30,8 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   const tarotDeckData: TarotDeckData = useContext(TarotDeckContext);
   const [isHovered, setIsHovered] = useState<boolean>(false);
   const { palette } = useTheme();
-  const cardTransitionTime = '300ms';
-  const gridTransitionTime = '120ms';
+  const cardTransitionTime = '250ms';
+  const gridTransitionTime = '400ms';
   const layout = getLayoutStyles(
     tarotDeckData,
     amountOfCards,
@@ -43,7 +43,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
     <Box
       onClick={onClick}
       sx={{
-        width: '325px',
+        width: '340px',
         backgroundColor: palette.secondary.main,
         borderRadius: '20px',
         cursor: 'pointer',
@@ -51,7 +51,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
           box-shadow ${gridTransitionTime},
           transform ${gridTransitionTime}
         `,
-        boxShadow: isHovered ? '8' : '2',
+        boxShadow: isHovered ? '3' : '1',
         transform: isHovered ? 'scale(1.025) ' : '',
         zIndex: zIndex
       }}
@@ -72,14 +72,16 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
           display='grid'
           justifyContent='center'
           gridTemplateColumns={
-            isHovered
+            isHovered && layout.gridHover
               ? `${layout.gridHover} 0fr`
-              : `${layout.gridTemplateColumns} 0fr`
+              : `${layout.gridTemplateColumns || 'auto'} 0fr`
           }
           sx={{
             position: 'relative',
-            bottom: layout.gridVerticalOffset,
-            transition: `grid ${cardTransitionTime}`
+            bottom: isHovered
+              ? layout.gridVerticalOffsetHovered || layout.gridVerticalOffset
+              : layout.gridVerticalOffset || 0,
+            transition: `grid ${cardTransitionTime}, bottom ${gridTransitionTime}`
           }}
         >
           {Array.from({ length: amountOfCards }).map((_, i) => {
