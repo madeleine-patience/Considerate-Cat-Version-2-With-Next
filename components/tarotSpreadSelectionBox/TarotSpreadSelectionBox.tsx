@@ -32,7 +32,12 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   const { palette } = useTheme();
   const cardTransitionTime = '300ms';
   const gridTransitionTime = '120ms';
-  const layout = getLayout(tarotDeckData, amountOfCards, cardTransitionTime);
+  const layout = getLayout(
+    tarotDeckData,
+    amountOfCards,
+    cardTransitionTime,
+    isHovered
+  );
 
   return (
     <Box

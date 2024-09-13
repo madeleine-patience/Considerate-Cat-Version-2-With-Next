@@ -1,5 +1,8 @@
 import { TarotDeckData } from '../../types/tarotDeckData';
 
+/**
+ * Defines the layout and styling properties for a group of tarot cards.
+ */
 export interface CardLayout {
   images: string[];
   gridTemplateColumns: string;
@@ -7,16 +10,26 @@ export interface CardLayout {
   verticalCardSpacing?: number[];
   gridVerticalOffset?: string;
   tilt?: number;
+  tiltHovered?: number;
+  scaleHovered?: number;
   styles?: Array<{ sx: React.CSSProperties }>;
 }
 
+/**
+ * Determines the layout and styles for tarot cards based on input parameters.
+ */
 export default function getLayout(
   tarotDeckData: TarotDeckData,
   amountOfCards: number,
-  cardTransitionTime: string
+  cardTransitionTime: string,
+  isHovered: boolean
 ) {
   let result: CardLayout;
 
+  /**
+   * Mapping of tarot card indices to their respective image links.
+   * This serves to shorten the images array for each layout.
+   */
   const img = {
     a: tarotDeckData[51].image_link,
     b: tarotDeckData[10].image_link,
@@ -26,6 +39,9 @@ export default function getLayout(
     f: tarotDeckData[6].image_link
   };
 
+  /**
+   * Base styles applied to each tarot card.
+   */
   const SingleTarotCardBaseStyles: React.CSSProperties = {
     border: '4px solid white',
     position: 'relative',
@@ -33,16 +49,29 @@ export default function getLayout(
     transition: `transform ${cardTransitionTime} ease-in`
   };
 
+  /**
+   * Determines transform styles for a card based on its own position and layout.
+   */
   const getTransformStyle = (
     index: number,
+    tilt: number = 0,
     centerIndex: number,
-    tilt: number = 0
+    tiltHovered: number = 4,
+    scaleHovered: number = 1.0
   ): React.CSSProperties => {
-    const transforms = {
-      left: `scale(1) rotate(-${tilt}deg) translate(0px, -10px)`,
-      right: `scale(1) rotate(${tilt}deg) translate(0px, -10px)`,
-      center: 'scale(1) translate(0px, -10px)'
+    let transforms = {
+      left: `scale(1) rotate(-${tilt}deg)`,
+      right: `scale(1) rotate(${tilt}deg)`,
+      center: 'scale(1)'
     };
+
+    if (isHovered) {
+      transforms = {
+        left: `scale(${scaleHovered}) rotate(-${tiltHovered}deg)`,
+        right: `scale(${scaleHovered}) rotate(${tiltHovered}deg)`,
+        center: `scale(${scaleHovered})`
+      };
+    }
 
     return {
       transform:
@@ -54,23 +83,55 @@ export default function getLayout(
     };
   };
 
+  /**
+   * Generates styles for each card based on the given layout configuration.
+   */
   const generateStylesForLayout = (
     layout: CardLayout
   ): Array<{ sx: React.CSSProperties }> => {
-    const { images, verticalCardSpacing = [] } = layout;
-    const centerIndex = Math.floor(images.length / 2);
+    const {
+      images,
+      tilt,
+      tiltHovered,
+      scaleHovered,
+      verticalCardSpacing = []
+    } = layout;
 
-    return images.map((_, i) => ({
-      sx: {
-        ...SingleTarotCardBaseStyles,
-        ...getTransformStyle(i, centerIndex),
-        top: `${Math.abs(centerIndex - i) * verticalCardSpacing[i] || 0}px`,
-        zIndex:
-          amountOfCards !== 4 ? images.length - Math.abs(centerIndex - i) : 1
+    const centerIndex = Math.floor(images.length / 2);
+    const isOddNumberOfCards = images.length % 2 !== 0;
+
+    return images.map((_, i) => {
+      const transformStyle = getTransformStyle(
+        i,
+        centerIndex,
+        tilt,
+        tiltHovered,
+        scaleHovered
+      );
+
+      const distanceFromCenter = Math.abs(centerIndex - i);
+      const top = `${distanceFromCenter * (verticalCardSpacing[i] || 0)}px`;
+
+      let zIndex = 1;
+
+      if (isOddNumberOfCards) {
+        zIndex = images.length - distanceFromCenter;
       }
-    }));
+
+      return {
+        sx: {
+          ...SingleTarotCardBaseStyles,
+          ...transformStyle,
+          top,
+          zIndex
+        }
+      };
+    });
   };
 
+  /**
+   * Defines card layouts and images for different cards amounts.
+   */
   const cardLayouts: Record<number, CardLayout> = {
     1: {
       images: [img.d],
@@ -101,10 +162,13 @@ export default function getLayout(
       gridHover: '60px 70px 80px 80px 70px 60px 100px',
       verticalCardSpacing: [40, 30, 20, 10, 20, 30, 40],
       gridVerticalOffset: '20px',
-      tilt: 2
+      tilt: 4
     }
   };
 
+  /**
+   * Get the layout configuration and generate styles based on the number of cards.
+   */
   result = cardLayouts[amountOfCards];
   result.styles = generateStylesForLayout(result);
 
