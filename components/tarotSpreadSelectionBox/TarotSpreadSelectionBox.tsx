@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react';
 import { Typography, useTheme } from '@mui/material';
-import Box from '@mui/material/Box';
 import { TarotDeckContext } from '../../context/TarotDeckContext';
+import { TarotDeckData } from '../../types/tarotDeckData';
 import SingleTarotCard from '../singleTarotCard/SingleTarotCard';
 import getLayout from './getLayout';
+import Box from '@mui/material/Box';
 
 interface TarotSpreadAction {
   onClick: () => void;
@@ -19,24 +20,19 @@ export interface TarotSpreadSelectionProps extends TarotSpreadAction {
 }
 
 const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
-  amountOfCards,
-  title,
   backgroundColor,
-  zIndex,
+  amountOfCards,
   description,
-  onClick
+  onClick,
+  zIndex,
+  title
 }) => {
-  const tarotDeckData = useContext(TarotDeckContext);
-  const { palette } = useTheme();
+  const tarotDeckData: TarotDeckData = useContext(TarotDeckContext);
   const [isHovered, setIsHovered] = useState<boolean>(false);
+  const { palette } = useTheme();
   const cardTransitionTime = '300ms';
   const gridTransitionTime = '120ms';
-  const layout = getLayout(
-    tarotDeckData,
-    amountOfCards,
-    cardTransitionTime,
-    isHovered
-  );
+  const layout = getLayout(tarotDeckData, amountOfCards, cardTransitionTime);
 
   return (
     <Box
@@ -46,7 +42,10 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
         backgroundColor: palette.secondary.main,
         borderRadius: '20px',
         cursor: 'pointer',
-        transition: `all ${gridTransitionTime}`,
+        transition: `
+          box-shadow ${gridTransitionTime}
+          transform ${gridTransitionTime}
+        `,
         boxShadow: isHovered ? '8' : '2',
         transform: isHovered ? 'scale(1.025) ' : '',
         zIndex: zIndex
@@ -94,8 +93,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
         <Typography
           variant='h3'
           textAlign='center'
-          fontSize='30px'
-          fontWeight={700}
+          fontWeight={600}
           color={palette.pinks.dark}
           p={4}
         >

@@ -20,7 +20,6 @@ const baseOptions: ThemeOptions = {
       main: '#fcd4ee',
       light: '#fdeef8',
       dark: '#ef6aae',
-      darker: '#B4417C',
       contrastText: '#ef6aae',
       contrastLightAAA: '#832A58'
     },

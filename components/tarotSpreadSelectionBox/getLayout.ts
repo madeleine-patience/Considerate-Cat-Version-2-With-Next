@@ -10,10 +10,9 @@ export interface CardLayout {
 }
 
 export default function getLayout(
-  tarotDeckData: any[],
+  tarotDeckData: TarotDeckData,
   amountOfCards: number,
-  cardTransitionTime: string,
-  isHovered: boolean
+  cardTransitionTime: string
 ) {
   let result: CardLayout;
 
@@ -42,8 +41,6 @@ export default function getLayout(
       right: 'scale(1.2) rotate(2deg) translate(0px, -10px)',
       center: 'scale(1.2) translate(0px, -10px)'
     };
-
-    if (!isHovered) return { transform: 'none' };
 
     return {
       transform:
