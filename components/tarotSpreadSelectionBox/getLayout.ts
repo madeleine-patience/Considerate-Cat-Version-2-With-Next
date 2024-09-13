@@ -97,7 +97,7 @@ export default function getLayout(
     1: {
       images: [img.d],
       scaleHovered: 1.1,
-      gridVerticalOffsetHovered: '10px'
+      gridVerticalOffsetHovered: '6px'
     },
     3: {
       images: [img.c, img.d, img.e],
@@ -105,30 +105,31 @@ export default function getLayout(
       gridHover: '50px 50px',
       scaleHovered: 1.1,
       tiltHovered: 5,
-      gridVerticalOffset: '5px'
+      gridVerticalOffset: '5px',
+      gridVerticalOffsetHovered: '11px'
     },
     4: {
       images: [img.b, img.c, img.d, img.e],
-      gridTemplateColumns: '30px 30px 30px',
-      gridHover: '55px 55px 55px',
-      scaleHovered: 1.1
+      gridTemplateColumns: '45px 45px 45px',
+      gridVerticalOffsetHovered: '8px',
+      scaleHovered: 1.1,
+      tiltHovered: 3
     },
     5: {
       images: [img.b, img.c, img.d, img.e, img.f],
-      gridTemplateColumns: '20px 20px 20px 20px',
-      gridHover: '40px 50px 50px 40px',
-      verticalCardSpacing: [10, 8, 6, 8, 10],
+      gridTemplateColumns: '30px 50px 50px 30px',
       scaleHovered: 1.1,
-      gridVerticalOffset: '5px'
+      gridVerticalOffset: '5px',
+      tiltHovered: 3
     },
     7: {
       images: [img.a, img.b, img.c, img.d, img.e, img.f, img.d],
-      gridTemplateColumns: '15px 15px 20px 20px 15px 15px',
-      gridHover: '60px 70px 80px 80px 70px 60px',
-      verticalCardSpacing: [40, 30, 20, 10, 20, 30, 40],
+      gridTemplateColumns: '20px 30px 50px 50px 30px 20px',
+      verticalCardSpacing: [26, 23, 12, 0, 12, 23, 26],
       scaleHovered: 1.1,
-      gridVerticalOffset: '20px',
-      tilt: 50
+      gridVerticalOffset: '40px',
+      gridVerticalOffsetHovered: '45px',
+      tiltHovered: 3
     }
   };
 

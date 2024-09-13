@@ -60,7 +60,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
     >
       <Box
         sx={{
-          padding: '50px 0',
+          padding: '60px 0',
           borderTopLeftRadius: '20px',
           borderTopRightRadius: '20px',
           backgroundColor: { backgroundColor },
