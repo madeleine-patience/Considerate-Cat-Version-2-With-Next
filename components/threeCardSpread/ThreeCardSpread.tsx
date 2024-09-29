@@ -1,7 +1,8 @@
 import { Box } from '@mui/material';
-import SingleTarotCard from '../singleTarotCard/SingleTarotCard';
-import { TarotDeckContext } from '../../context/TarotDeckContext';
 import { useContext } from 'react';
+import { TarotDeckContext } from '../../context/TarotDeckContext';
+import { TarotDeckData } from '../../types/tarotDeckData';
+import SingleTarotCard from '../singleTarotCard/SingleTarotCard';
 
 export interface ThreeCardSpreadProps {
   card1: string;
@@ -13,7 +14,7 @@ export const ThreeCardSpread = ({
   card2,
   card3
 }: ThreeCardSpreadProps) => {
-  const tarotDeckData = useContext(TarotDeckContext);
+  const tarotDeckData: TarotDeckData[] = useContext(TarotDeckContext);
   return (
     <Box sx={{}}>
       {tarotDeckData.length > 0 && (
