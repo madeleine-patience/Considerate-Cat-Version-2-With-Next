@@ -8,8 +8,7 @@ import { TarotDeckContext } from '../context/TarotDeckContext';
 import useFetchTarotDeck from '../hooks/fetchTarotDeck';
 import { useTarotCard } from '../hooks/useTarotCard';
 
-const homePageMainImage =
-  'https://bmxnsuildxczrsqnmyje.supabase.co/storage/v1/object/public/considerate%20cat%20assets/homepageImage.png';
+const homePageMainImage = '/image/homepageImage.webp';
 
 export default function Home() {
   const theme = useTheme();
