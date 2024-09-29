@@ -72,7 +72,7 @@ export interface CardLayout {
  * Determines the layout and styles for tarot cards based on input parameters.
  */
 export default function getLayout(
-  tarotDeckData: TarotDeckData,
+  tarotDeckData: TarotDeckData[],
   amountOfCards: number
 ): CardLayout {
   /**

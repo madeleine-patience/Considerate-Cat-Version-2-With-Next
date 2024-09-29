@@ -13,7 +13,7 @@ interface Transform {
  * Determines the layout and styles for tarot cards based on input parameters.
  */
 export default function getLayoutStyles(
-  tarotDeckData: TarotDeckData,
+  tarotDeckData: TarotDeckData[],
   amountOfCards: number,
   cardTransitionTime: string,
   isHovered: boolean
