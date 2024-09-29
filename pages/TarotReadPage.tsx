@@ -1,14 +1,15 @@
-import { useTarotCard } from '../hooks/useTarotCard';
-import useFetchTarotDeck from '../hooks/fetchTarotDeck';
-import { Box, useTheme } from '@mui/material';
-import { TarotDeckContext } from '../context/TarotDeckContext';
 import { useState } from 'react';
-import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
-import HompeageHeader from '../components/header/Header';
-import TarotSpreadSelectionBox from '../components/tarotSpreadSelectionBox/TarotSpreadSelectionBox';
-import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import { Box, useTheme } from '@mui/material';
+import { useTarotCard } from '../hooks/useTarotCard';
+import { TarotDeckContext } from '../context/TarotDeckContext';
+import { TarotSpreadSelectionProps } from '../components/tarotSpreadSelectionBox/TarotSpreadSelectionBox';
+import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import RaisedButton from '../components/raisedButton/RaisedButton';
+import HompeageHeader from '../components/header/Header';
+import useFetchTarotDeck from '../hooks/fetchTarotDeck';
+import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
+import TarotSpreadSelectionBoxList from '../components/tarotSpreadSelectionBoxList/TarotSpreadSelectionBoxList';
 
 export default function FirstPost() {
   const { palette } = useTheme();
@@ -35,6 +36,40 @@ export default function FirstPost() {
   };
   if (loading) return <LoadingPage />;
 
+  const tarotSpreadSelectionBoxes: TarotSpreadSelectionProps[] = [
+    {
+      onClick: () => displayTarotSpread(1),
+      title: 'Vibe Check',
+      amountOfCards: 1,
+      description: 'Single Card Pull. Good for yes or no questions.'
+    },
+    {
+      onClick: () => displayTarotSpread(3),
+      title: 'Three Card Spread',
+      amountOfCards: 3,
+      description: 'Past, Present and Future.'
+    },
+    {
+      onClick: () => displayTarotSpread(4),
+      title: 'Four Card Spread',
+      amountOfCards: 4,
+      description: 'Self Love Spread'
+    },
+    {
+      onClick: () => displayTarotSpread(5),
+      title: 'Five Card Spread',
+      amountOfCards: 5,
+      description: 'Past, Present and Future with guides to move you forward.'
+    },
+    {
+      onClick: () => displayTarotSpread(7),
+      title: 'Horse Shoe Spread',
+      amountOfCards: 7,
+      description:
+        'A spread useful for when the querent needs to make a decison.'
+    }
+  ];
+
   return (
     <TarotDeckContext.Provider value={tarotCardData}>
       <Box
@@ -46,44 +81,7 @@ export default function FirstPost() {
       >
         <HompeageHeader />
         {areSpreadChoicesVisible && (
-          <Box
-            display='flex'
-            flexWrap='wrap'
-            justifyContent='center'
-            gap={10}
-            p={10}
-          >
-            <TarotSpreadSelectionBox
-              onClick={() => displayTarotSpread(1)}
-              title='Vibe Check'
-              amountOfCards={1}
-              description='Single Card Pull. Good for yes or no questions.'
-            />
-            <TarotSpreadSelectionBox
-              onClick={() => displayTarotSpread(3)}
-              title='Three Card Spread'
-              amountOfCards={3}
-              description='Past, Present and Future.'
-            />
-            <TarotSpreadSelectionBox
-              onClick={() => displayTarotSpread(4)}
-              title='Four Card Spread'
-              amountOfCards={4}
-              description='Self Love Spread'
-            />
-            <TarotSpreadSelectionBox
-              onClick={() => displayTarotSpread(5)}
-              title='Five Card Spread'
-              amountOfCards={5}
-              description='Past, Present and Future with guides to move you forward.'
-            />
-            <TarotSpreadSelectionBox
-              onClick={() => displayTarotSpread(7)}
-              title='Horse Shoe Spread'
-              amountOfCards={7}
-              description='A spread useful for when the querent needs to make a decison.'
-            />
-          </Box>
+          <TarotSpreadSelectionBoxList data={tarotSpreadSelectionBoxes} />
         )}
 
         <Box
