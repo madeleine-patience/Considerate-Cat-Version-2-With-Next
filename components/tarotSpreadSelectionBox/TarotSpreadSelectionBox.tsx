@@ -2,6 +2,7 @@ import { Typography, useTheme } from '@mui/material';
 import Box from '@mui/material/Box';
 import React, { useContext, useState } from 'react';
 import { TarotDeckContext } from '../../context/TarotDeckContext';
+import { TarotDeckData } from '../../types/tarotDeckData';
 import SingleTarotCard from '../singleTarotCard/SingleTarotCard';
 import getLayoutStyles from './getLayoutStyles';
 
@@ -26,7 +27,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   zIndex,
   title
 }) => {
-  const tarotDeckData = useContext(TarotDeckContext);
+  const tarotDeckData: TarotDeckData[] = useContext(TarotDeckContext);
   const [isHovered, setIsHovered] = useState<boolean>(false);
   const { palette } = useTheme();
   const cardTransitionTime = '250ms';
