@@ -20,7 +20,7 @@ export const LoadingPage = ({}) => {
       <Box
         sx={{ height: isSmallScreen ? '300px' : '800px' }}
         component='img'
-        src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHZtNnIydmx3YXJ5NDRpbnd4ZWFmMnVmODI5a29mOXIyOTUwbTZhYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QeXnegIcgtpPlHppFV/source.gif'
+        src='/image/kneadingTheDough.webp'
       />
       <Typography
         variant={isSmallScreen ? 'h4' : 'h2'}
