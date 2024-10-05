@@ -1,4 +1,4 @@
-import { Box, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Grid, useTheme } from '@mui/material';
 import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import HompeageHeader from '../components/header/Header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
@@ -8,20 +8,8 @@ import useFetchCats from '../hooks/fetchCatData';
 export default function CatDirectory() {
   const { cats, loading } = useFetchCats();
   const { palette } = useTheme();
-  const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
 
   if (loading) return <LoadingPage />;
-
-  const getCatPurrrlaroids = () => {
-    return cats.map((cat, index) => (
-      <Purrlaroid
-        key={index}
-        catImage={cat.cat_main_image}
-        catName={cat.cat_name}
-      />
-    ));
-  };
 
   return (
     <Box
@@ -30,32 +18,25 @@ export default function CatDirectory() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        backgroundColor: palette.pinks.main
+        backgroundColor: palette.pinks.main,
+        alignItems: 'center'
       }}
     >
       <HompeageHeader />
-      <Box
+      <Grid
+        container
         sx={{
-          maxWidth: '1500px',
-          mx: 'auto',
-          my: 4,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center'
+          gap: 8,
+          maxWidth: 1500,
+          justifyContent: 'center'
         }}
       >
-        <Box
-          sx={{
-            display: 'flex',
-            gap: 8,
-            flexWrap: 'wrap',
-            width: '100%',
-            p: isSmallScreen ? 0 : 16
-          }}
-        >
-          {getCatPurrrlaroids()}
-        </Box>
-      </Box>
+        {cats.map((cat) => (
+          <Grid item key={cat.id}>
+            <Purrlaroid catImage={cat.cat_main_image} catName={cat.cat_name} />
+          </Grid>
+        ))}
+      </Grid>
 
       <FlowerFooter />
     </Box>
