@@ -61,6 +61,7 @@ pull requests, start noting your changes under "Unreleased".
 ### [Unreleased] YYYY-MM-DD
 
 - Padding and font adjustment, small refactor to TarotSelectionBox.tsx
+- Small Purrlaroid/Cat Directory refactor.
 
 #### New Features
 
