@@ -20,13 +20,11 @@ const PurrlaroidRoot = ({
   return (
     <Box
       sx={{
-        width: '300px',
+        width: 'fit-content',
         textAlign: 'center',
         backgroundColor: 'lightYellow',
-        border: '3px solid lightGrey',
         transform: 'rotate(0deg)',
         transition: '1s transform ease',
-        margin: 'auto',
         padding: 4,
         boxShadow: '5px 5px 15px 5px rgba(0,0,0,0.27)        ',
         '&:hover': {
@@ -37,7 +35,8 @@ const PurrlaroidRoot = ({
       <Box
         component='img'
         sx={{
-          width: '100%',
+          width: 250,
+          height: 250,
           objectFit: 'cover',
           transition: 'opacity .5s ease-in-out'
         }}
