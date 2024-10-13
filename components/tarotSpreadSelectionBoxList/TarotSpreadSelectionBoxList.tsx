@@ -17,7 +17,7 @@ export default function TarotSpreadSelectionBoxList({
 
         return (
           <TarotSpreadSelectionBox
-            key={`tarotSpreadSelectionBox-${i}`}
+            key={`tarotSpreadSelectionBox-${title}`}
             onClick={onClick}
             title={title}
             amountOfCards={amountOfCards}
