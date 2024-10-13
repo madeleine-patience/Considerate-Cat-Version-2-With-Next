@@ -1,10 +1,9 @@
 import { Typography, useTheme } from '@mui/material';
 import Box from '@mui/material/Box';
-import React, { useContext, useState } from 'react';
-import { TarotDeckContext } from '../../context/TarotDeckContext';
-import { TarotDeckData } from '../../types/tarotDeckData';
-import SingleTarotCard from '../singleTarotCard/SingleTarotCard';
+import React, { useState } from 'react';
 import getLayoutStyles from './getLayoutStyles';
+import { CardLayout } from './getLayout';
+import TarotSpread from '../tarotSpread/TarotSpread';
 
 interface TarotSpreadAction {
   onClick: () => void;
@@ -27,13 +26,11 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   zIndex,
   title
 }: TarotSpreadSelectionProps) => {
-  const tarotDeckData: TarotDeckData[] = useContext(TarotDeckContext);
   const [isHovered, setIsHovered] = useState<boolean>(false);
   const { palette } = useTheme();
   const cardTransitionTime = '400ms';
   const gridTransitionTime = '400ms';
-  const layout = getLayoutStyles(
-    tarotDeckData,
+  const layout: CardLayout = getLayoutStyles(
     amountOfCards,
     cardTransitionTime,
     isHovered
@@ -58,7 +55,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
     >
       <Box
         sx={{
-          padding: '60px 0',
+          padding: '80px 0',
           borderTopLeftRadius: '20px',
           borderTopRightRadius: '20px',
           backgroundColor: { backgroundColor },
@@ -82,18 +79,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
             transition: `grid ${cardTransitionTime}, bottom ${gridTransitionTime}`
           }}
         >
-          {Array.from({ length: amountOfCards }).map((_, i) => {
-            const img = layout.images[i];
-            const { sx } = layout.styles[i];
-
-            return (
-              <SingleTarotCard
-                key={`single-tarot-card-${i}`}
-                image={img}
-                sx={sx}
-              />
-            );
-          })}
+          <TarotSpread amountOfCards={amountOfCards} cardLayout={layout} />
         </Box>
       </Box>
       <Box>
@@ -101,6 +87,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
           variant='h3'
           textAlign='center'
           fontWeight={600}
+          fontSize={42}
           color={palette.pinks.dark}
           p={4}
         >
