@@ -1,3 +1,4 @@
+import { CSSProperties } from 'react';
 import { TarotDeckData } from '../../types/tarotDeckData';
 
 /**
@@ -65,7 +66,7 @@ export interface CardLayout {
   /**
    * A generated array of objects, the styles for each card in a layout.
    */
-  styles?: Array<{ sx: React.CSSProperties }>;
+  styles?: Array<{ sx: CSSProperties }>;
 }
 
 /**
