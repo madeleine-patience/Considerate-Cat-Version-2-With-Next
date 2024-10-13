@@ -28,7 +28,7 @@ export default function getLayoutStyles(
     border: '4px solid white',
     position: 'relative',
     width: '100px',
-    transition: `transform ${cardTransitionTime} ease-in`
+    transition: `transform ${cardTransitionTime}, top ${cardTransitionTime}`
   };
 
   /**
@@ -71,18 +71,34 @@ export default function getLayoutStyles(
   const generateStylesForLayout = (
     layout: CardLayout
   ): Array<{ sx: CSSProperties }> => {
-    const {
+    let {
       images,
       tilt,
       tiltHovered,
       scaleHovered,
-      verticalCardSpacing = []
+      tiltDelta = 0,
+      tiltDeltaHovered = 0,
+      verticalCardSpacing = [],
+      verticalCardSpacingHovered = []
     } = layout;
     const centerIndex = Math.floor(images.length / 2);
 
     return images.map((_, index) => {
       const distanceFromCenter = Math.abs(centerIndex - index);
-      const top = `${distanceFromCenter * (verticalCardSpacing[index] || 0)}px`;
+
+      if (tiltDelta) {
+        tilt = distanceFromCenter * tiltDelta;
+      }
+
+      if (tiltDeltaHovered) {
+        tiltHovered = distanceFromCenter * tiltDeltaHovered;
+      }
+
+      const verticalCardSpacingValue =
+        isHovered && verticalCardSpacingHovered.length > 0
+          ? verticalCardSpacingHovered[index] || 0
+          : verticalCardSpacing[index] || 0;
+      const top = `${distanceFromCenter * verticalCardSpacingValue}px`;
       let zIndex = 1;
 
       if (images.length % 2 !== 0) {

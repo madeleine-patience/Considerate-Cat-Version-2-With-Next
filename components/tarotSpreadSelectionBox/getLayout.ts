@@ -32,6 +32,11 @@ export interface CardLayout {
   verticalCardSpacing?: number[];
 
   /**
+   * Optional array defining the vertical spacing between each card on hover.
+   */
+  verticalCardSpacingHovered?: number[];
+
+  /**
    * Optional vertical offset applied to the entire grid layout.
    * This offset shifts the grid vertically relative to its container (from the bottom).
    */
@@ -47,15 +52,28 @@ export interface CardLayout {
   /**
    * Optional tilt angle for the cards.
    * This property determines the angle at which the cards are tilted.
-   * Cards will tilt to opposite sides
+   * Cards will tilt away from the center
    */
   tilt?: number;
 
   /**
+   * Optional value that increases the card tilt progressively.
+   * The farther from the center, the more effect tiltDelta will have.
+   * Defaults to 0.
+   */
+  tiltDelta?: number;
+
+  /**
    * Optional tilt angle applied when the cards are hovered.
-   * This property determines the angle at which the cards are tilted during hover.
+   * This property determines the amount of card tilt during hover.
    */
   tiltHovered?: number;
+
+  /**
+   * Optional value that increases the card tilt progressively on hover.
+   * Defaults to 0.
+   */
+  tiltDeltaHovered?: number;
 
   /**
    * Optional scale factor applied when the cards are hovered.
@@ -64,7 +82,7 @@ export interface CardLayout {
   scaleHovered?: number;
 
   /**
-   * A generated array of objects, the styles for each card in a layout.
+   * A generated array of objects, they contain the styles for each card in a layout.
    */
   styles?: Array<{ sx: CSSProperties }>;
 }
@@ -104,8 +122,9 @@ export default function getLayout(
       images: [img.c, img.d, img.e],
       gridTemplateColumns: '50px 50px',
       gridHover: '50px 50px',
+      verticalCardSpacingHovered: [2, 0, 2],
       scaleHovered: 1.1,
-      tiltHovered: 5,
+      tiltHovered: 4,
       gridVerticalOffset: '5px',
       gridVerticalOffsetHovered: '11px'
     },
@@ -113,15 +132,19 @@ export default function getLayout(
       images: [img.b, img.c, img.d, img.e],
       gridTemplateColumns: '45px 45px 45px',
       gridVerticalOffsetHovered: '8px',
+      verticalCardSpacingHovered: [2, 0, -1, 4],
       scaleHovered: 1.1,
       tiltHovered: 3
     },
     5: {
       images: [img.b, img.c, img.d, img.e, img.f],
       gridTemplateColumns: '30px 50px 50px 30px',
+      verticalCardSpacingHovered: [2, 1, 0, 1, 2],
       scaleHovered: 1.1,
       gridVerticalOffset: '5px',
-      tiltHovered: 3
+      gridVerticalOffsetHovered: '10px',
+      tiltHovered: 3,
+      tiltDeltaHovered: 1.5
     },
     7: {
       images: [img.a, img.b, img.c, img.d, img.e, img.f, img.d],
@@ -130,7 +153,8 @@ export default function getLayout(
       scaleHovered: 1.1,
       gridVerticalOffset: '40px',
       gridVerticalOffsetHovered: '45px',
-      tiltHovered: 3
+      tiltHovered: 1.5,
+      tiltDeltaHovered: 1.2
     }
   };
 
