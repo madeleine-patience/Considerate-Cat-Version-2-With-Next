@@ -1,5 +1,4 @@
 import { CSSProperties } from 'react';
-import { TarotDeckData } from '../../types/tarotDeckData';
 
 /**
  * Defines the layout and styling properties for a group of tarot cards.
@@ -90,21 +89,18 @@ export interface CardLayout {
 /**
  * Determines the layout and styles for tarot cards based on input parameters.
  */
-export default function getLayout(
-  tarotDeckData: TarotDeckData[],
-  amountOfCards: number
-): CardLayout {
+export default function getLayout(amountOfCards: number): CardLayout {
   /**
    * Mapping of tarot card indices to their respective image links.
    * This serves to shorten the images arrays in cardLayouts.
    */
   const img = {
-    a: tarotDeckData[51].image_link,
-    b: tarotDeckData[10].image_link,
-    c: tarotDeckData[3].image_link,
-    d: tarotDeckData[1].image_link,
-    e: tarotDeckData[5].image_link,
-    f: tarotDeckData[6].image_link
+    a: '/image/selection-cards/the-two-of-swords.webp',
+    b: '/image/selection-cards/the-hermit.webp',
+    c: '/image/selection-cards/the-high-priestess.webp',
+    d: '/image/selection-cards/the-fool.webp',
+    e: '/image/selection-cards/the-empurrer.webp',
+    f: '/image/selection-cards/the-hierophant.webp'
   };
 
   /**
@@ -124,17 +120,16 @@ export default function getLayout(
       gridHover: '50px 50px',
       verticalCardSpacingHovered: [2, 0, 2],
       scaleHovered: 1.1,
-      tiltHovered: 4,
+      tiltHovered: 3,
       gridVerticalOffset: '5px',
-      gridVerticalOffsetHovered: '11px'
+      gridVerticalOffsetHovered: '15px'
     },
     4: {
       images: [img.b, img.c, img.d, img.e],
-      gridTemplateColumns: '45px 45px 45px',
+      gridTemplateColumns: '31px 48px 50px',
       gridVerticalOffsetHovered: '8px',
-      verticalCardSpacingHovered: [2, 0, -1, 4],
       scaleHovered: 1.1,
-      tiltHovered: 3
+      tiltHovered: 2
     },
     5: {
       images: [img.b, img.c, img.d, img.e, img.f],
@@ -142,19 +137,19 @@ export default function getLayout(
       verticalCardSpacingHovered: [2, 1, 0, 1, 2],
       scaleHovered: 1.1,
       gridVerticalOffset: '5px',
-      gridVerticalOffsetHovered: '10px',
+      gridVerticalOffsetHovered: '15px',
       tiltHovered: 3,
       tiltDeltaHovered: 1.5
     },
     7: {
       images: [img.a, img.b, img.c, img.d, img.e, img.f, img.d],
       gridTemplateColumns: '20px 30px 50px 50px 30px 20px',
-      verticalCardSpacing: [26, 23, 12, 0, 12, 23, 26],
+      verticalCardSpacing: [33, 35, 30, 0, 30, 35, 33],
       scaleHovered: 1.1,
-      gridVerticalOffset: '40px',
-      gridVerticalOffsetHovered: '45px',
-      tiltHovered: 1.5,
-      tiltDeltaHovered: 1.2
+      gridVerticalOffset: '50px',
+      gridVerticalOffsetHovered: '60px',
+      tiltHovered: 1.2,
+      tiltDeltaHovered: 1.05
     }
   };
 
