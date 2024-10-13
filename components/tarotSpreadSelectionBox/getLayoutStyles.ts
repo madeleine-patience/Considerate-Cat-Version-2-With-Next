@@ -1,3 +1,4 @@
+import { CSSProperties } from 'react';
 import { TarotDeckData } from '../../types/tarotDeckData';
 import getLayout, { CardLayout } from './getLayout';
 
@@ -23,7 +24,7 @@ export default function getLayoutStyles(
   /**
    * Base styles applied to each tarot card.
    */
-  const SingleTarotCardBaseStyles: React.CSSProperties = {
+  const SingleTarotCardBaseStyles: CSSProperties = {
     border: '4px solid white',
     position: 'relative',
     width: '100px',
@@ -39,7 +40,7 @@ export default function getLayoutStyles(
     tilt = 0,
     tiltHovered = 0,
     scaleHovered = 1.0
-  }: Transform): React.CSSProperties => {
+  }: Transform): CSSProperties => {
     let transforms = {
       left: `scale(1) rotate(-${tilt}deg)`,
       right: `scale(1) rotate(${tilt}deg)`,
@@ -69,7 +70,7 @@ export default function getLayoutStyles(
    */
   const generateStylesForLayout = (
     layout: CardLayout
-  ): Array<{ sx: React.CSSProperties }> => {
+  ): Array<{ sx: CSSProperties }> => {
     const {
       images,
       tilt,
