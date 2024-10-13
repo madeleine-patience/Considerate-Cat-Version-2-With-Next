@@ -1,5 +1,4 @@
 import { CSSProperties } from 'react';
-import { TarotDeckData } from '../../types/tarotDeckData';
 import getLayout, { CardLayout } from './getLayout';
 
 interface Transform {
@@ -14,7 +13,6 @@ interface Transform {
  * Determines the layout and styles for tarot cards based on input parameters.
  */
 export default function getLayoutStyles(
-  tarotDeckData: TarotDeckData[],
   amountOfCards: number,
   cardTransitionTime: string,
   isHovered: boolean
@@ -125,7 +123,7 @@ export default function getLayoutStyles(
   /**
    * Get the layout configuration and generate styles based on the number of cards.
    */
-  layout = getLayout(tarotDeckData, amountOfCards);
+  layout = getLayout(amountOfCards);
   layout.styles = generateStylesForLayout(layout);
 
   return layout;
