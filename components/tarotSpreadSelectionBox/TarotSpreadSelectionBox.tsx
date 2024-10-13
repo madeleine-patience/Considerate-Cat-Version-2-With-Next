@@ -26,11 +26,11 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   onClick,
   zIndex,
   title
-}) => {
+}: TarotSpreadSelectionProps) => {
   const tarotDeckData: TarotDeckData[] = useContext(TarotDeckContext);
   const [isHovered, setIsHovered] = useState<boolean>(false);
   const { palette } = useTheme();
-  const cardTransitionTime = '250ms';
+  const cardTransitionTime = '400ms';
   const gridTransitionTime = '400ms';
   const layout = getLayoutStyles(
     tarotDeckData,
@@ -51,8 +51,6 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
           box-shadow ${gridTransitionTime},
           transform ${gridTransitionTime}
         `,
-        boxShadow: isHovered ? '3' : '1',
-        transform: isHovered ? 'scale(1.025) ' : '',
         zIndex: zIndex
       }}
       onMouseEnter={() => setIsHovered(true)}
