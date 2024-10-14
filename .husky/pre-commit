@@ -1,5 +1,5 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
+##!/bin/sh
+#. "$(dirname "$0")/_/husky.sh"
 
 # Get the current branch name
 branch=$(git rev-parse --abbrev-ref HEAD)
