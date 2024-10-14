@@ -15,7 +15,8 @@ interface Transform {
 export default function getLayoutStyles(
   amountOfCards: number,
   cardTransitionTime: string,
-  isHovered: boolean
+  isHovered: boolean,
+  providedLayout?: CardLayout
 ) {
   let layout: CardLayout;
 
@@ -122,8 +123,14 @@ export default function getLayoutStyles(
 
   /**
    * Get the layout configuration and generate styles based on the number of cards.
+   * If a layout is provided, use that layout instead.
    */
-  layout = getLayout(amountOfCards);
+  if (providedLayout) {
+    layout = providedLayout;
+  } else {
+    layout = getLayout(amountOfCards);
+  }
+
   layout.styles = generateStylesForLayout(layout);
 
   return layout;
