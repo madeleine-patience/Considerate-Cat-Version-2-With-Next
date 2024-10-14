@@ -82,8 +82,6 @@ const Template: StoryFn<StorybookProps> = ({
 
   layout = getLayoutStyles(amountOfCards, '400ms', isHovered, layout);
 
-  console.log(layout);
-
   return (
     <>
       <Box

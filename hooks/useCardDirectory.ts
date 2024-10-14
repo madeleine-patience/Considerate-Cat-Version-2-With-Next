@@ -44,7 +44,6 @@ export const useCardDirectory = () => {
 
   const closeTarotDialog = () => {
     setDisplayTarotDialog(false);
-    console.log('hi');
   };
 
   return {

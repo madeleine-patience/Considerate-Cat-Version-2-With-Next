@@ -62,6 +62,11 @@ pull requests, start noting your changes under "Unreleased".
 
 - Padding and font adjustment, small refactor to TarotSelectionBox.tsx
 - Small Purrlaroid/Cat Directory refactor.
+- New component tarotSpread to simplify tarotSpreadSelectionBox and allow for
+  separate stories
+- New stories for tarotSpread and tarotSpreadSelectionBox
+- tarotSpread now pulls optimized images from the public directory
+- Refactors and cleanup for tarotSpreadSelectionBox
 
 #### New Features
 
