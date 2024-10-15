@@ -124,5 +124,6 @@ function createSpread(amountOfCards: number): StoryFn<StorybookProps> {
 
 export const OneCardSpread: AnnotatedStoryFn = createSpread(1);
 export const ThreeCardSpread: AnnotatedStoryFn = createSpread(3);
+export const FourCardSpread: AnnotatedStoryFn = createSpread(4);
 export const FiveCardSpread: AnnotatedStoryFn = createSpread(5);
 export const SevenCardSpread: AnnotatedStoryFn = createSpread(7);
