@@ -2,7 +2,6 @@ import { Meta, StoryFn } from '@storybook/react';
 import TarotSpread, { TarotSpreadProps } from './TarotSpread';
 import getLayout, { CardLayout } from '../tarotSpreadSelectionBox/getLayout';
 import getLayoutStyles from '../tarotSpreadSelectionBox/getLayoutStyles';
-import Box from '@mui/material/Box';
 import React from 'react';
 import { AnnotatedStoryFn } from '@storybook/types';
 
@@ -58,11 +57,11 @@ export default {
       verticalCardSpacingHovered: { control: { type: 'object' } },
       gridVerticalOffset: { control: { type: 'text' } },
       gridVerticalOffsetHovered: { control: { type: 'text' } },
-      tilt: { control: { type: 'number', min: 0, max: 5 } },
-      tiltDelta: { control: { type: 'number', min: 0, max: 5 } },
-      tiltHovered: { control: { type: 'number', min: 0, max: 10 } },
-      tiltDeltaHovered: { control: { type: 'number', min: 0, max: 5 } },
-      scaleHovered: { control: { type: 'number', min: 1, max: 2, step: 0.1 } }
+      tilt: { control: { type: 'number', min: 0, max: 360 } },
+      tiltDelta: { control: { type: 'number', min: 0, max: 360 } },
+      tiltHovered: { control: { type: 'number', min: 0, max: 360 } },
+      tiltDeltaHovered: { control: { type: 'number', min: 0, max: 90 } },
+      scaleHovered: { control: { type: 'number', min: 1, max: 10, step: 0.1 } }
     }
   }
 } as Meta<typeof TarotSpread>;
@@ -77,38 +76,17 @@ const Template: StoryFn<StorybookProps> = ({
   isHovered,
   layout
 }: StorybookProps) => {
-  const cardTransitionTime = '400ms';
-  const gridTransitionTime = '400ms';
-
   layout = getLayoutStyles(amountOfCards, '400ms', isHovered, layout);
 
   return (
-    <>
-      <Box
-        sx={{
-          borderRadius: '20px',
-          cursor: 'pointer',
-          transition: `
-          box-shadow ${gridTransitionTime},
-          transform ${gridTransitionTime}
-        `
-        }}
-      >
-        <Box
-          sx={{
-            padding: '80px 0'
-          }}
-        >
-          <TarotSpread
-            amountOfCards={amountOfCards}
-            cardLayout={layout}
-            isHovered={isHovered}
-            cardTransitionTime={cardTransitionTime}
-            gridTransitionTime={gridTransitionTime}
-          />
-        </Box>
-      </Box>
-    </>
+    <TarotSpread
+      amountOfCards={amountOfCards}
+      cardLayout={layout}
+      isHovered={isHovered}
+      sx={{
+        marginTop: '100px'
+      }}
+    />
   );
 };
 
