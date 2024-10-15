@@ -12,14 +12,12 @@ interface TarotSpreadAction {
 export interface TarotSpreadSelectionProps extends TarotSpreadAction {
   title: string;
   amountOfCards?: number;
-  backgroundColor?: string;
   zIndex?: number;
   description: string;
   onClick: () => void;
 }
 
 const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
-  backgroundColor,
   amountOfCards,
   description,
   onClick,
@@ -53,35 +51,20 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Box
+      <TarotSpread
+        amountOfCards={amountOfCards}
+        cardLayout={layout}
+        isHovered={isHovered}
+        cardTransitionTime={cardTransitionTime}
+        gridTransitionTime={gridTransitionTime}
         sx={{
           padding: '80px 0',
           borderTopLeftRadius: '20px',
           borderTopRightRadius: '20px',
-          backgroundColor: { backgroundColor },
           backgroundImage:
             'linear-gradient(to right bottom, #f2afda, #ffb3c2, #ffbeb0, #f7cba9, #e7d8ae)'
         }}
-      >
-        <Box
-          display='grid'
-          justifyContent='center'
-          gridTemplateColumns={
-            isHovered && layout.gridHover
-              ? `${layout.gridHover} 0fr`
-              : `${layout.gridTemplateColumns || 'auto'} 0fr`
-          }
-          sx={{
-            position: 'relative',
-            bottom: isHovered
-              ? layout.gridVerticalOffsetHovered || layout.gridVerticalOffset
-              : layout.gridVerticalOffset || 0,
-            transition: `grid ${cardTransitionTime}, bottom ${gridTransitionTime}`
-          }}
-        >
-          <TarotSpread amountOfCards={amountOfCards} cardLayout={layout} />
-        </Box>
-      </Box>
+      />
       <Box>
         <Typography
           variant='h3'

@@ -99,24 +99,13 @@ const Template: StoryFn<StorybookProps> = ({
             padding: '80px 0'
           }}
         >
-          <Box
-            display='grid'
-            justifyContent='center'
-            gridTemplateColumns={
-              isHovered && layout.gridHover
-                ? `${layout.gridHover} 0fr`
-                : `${layout.gridTemplateColumns || 'auto'} 0fr`
-            }
-            sx={{
-              position: 'relative',
-              bottom: isHovered
-                ? layout.gridVerticalOffsetHovered || layout.gridVerticalOffset
-                : layout.gridVerticalOffset || 0,
-              transition: `grid ${cardTransitionTime}, bottom ${gridTransitionTime}`
-            }}
-          >
-            <TarotSpread amountOfCards={amountOfCards} cardLayout={layout} />
-          </Box>
+          <TarotSpread
+            amountOfCards={amountOfCards}
+            cardLayout={layout}
+            isHovered={isHovered}
+            cardTransitionTime={cardTransitionTime}
+            gridTransitionTime={gridTransitionTime}
+          />
         </Box>
       </Box>
     </>
