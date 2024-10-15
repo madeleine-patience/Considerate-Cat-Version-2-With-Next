@@ -89,7 +89,7 @@ export interface CardLayout {
 /**
  * Determines the layout and styles for tarot cards based on input parameters.
  */
-export default function getLayout(amountOfCards: number): CardLayout {
+export function getLayout(amountOfCards: number): CardLayout {
   /**
    * Mapping of tarot card indices to their respective image links.
    * This serves to shorten the images arrays in cardLayouts.

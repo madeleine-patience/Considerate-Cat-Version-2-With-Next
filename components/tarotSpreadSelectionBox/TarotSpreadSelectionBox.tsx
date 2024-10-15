@@ -1,9 +1,9 @@
 import { Typography, useTheme } from '@mui/material';
 import Box from '@mui/material/Box';
 import React, { useState } from 'react';
-import getLayoutStyles from './getLayoutStyles';
+import { getLayoutStyles } from './getLayoutStyles';
 import { CardLayout } from './getLayout';
-import TarotSpread from '../tarotSpread/TarotSpread';
+import { TarotSpread } from '../tarotSpread';
 
 interface TarotSpreadAction {
   onClick: () => void;

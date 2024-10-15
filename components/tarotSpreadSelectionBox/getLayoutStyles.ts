@@ -1,5 +1,5 @@
 import { CSSProperties } from 'react';
-import getLayout, { CardLayout } from './getLayout';
+import { getLayout, CardLayout } from './getLayout';
 
 interface Transform {
   index: number;
@@ -12,7 +12,7 @@ interface Transform {
 /**
  * Determines the layout and styles for tarot cards based on input parameters.
  */
-export default function getLayoutStyles(
+export function getLayoutStyles(
   amountOfCards: number,
   cardTransitionTime: string,
   isHovered: boolean,

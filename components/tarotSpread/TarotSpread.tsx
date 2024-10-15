@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { SxProps } from '@mui/material';
 import Box from '@mui/material/Box';
 import SingleTarotCard from '../singleTarotCard/SingleTarotCard';
-import { CardLayout } from '../tarotSpreadSelectionBox/getLayout';
+import { CardLayout } from '../tarotSpreadSelectionBox';
 
 export interface TarotSpreadProps {
   amountOfCards?: number;
@@ -13,7 +13,7 @@ export interface TarotSpreadProps {
   sx?: SxProps;
 }
 
-function TarotSpread({
+export function TarotSpread({
   amountOfCards = 3,
   cardLayout,
   isHovered = false,
@@ -60,5 +60,3 @@ function TarotSpread({
     </>
   );
 }
-
-export default TarotSpread;

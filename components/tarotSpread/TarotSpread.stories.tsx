@@ -1,9 +1,12 @@
 import { Meta, StoryFn } from '@storybook/react';
-import TarotSpread, { TarotSpreadProps } from './TarotSpread';
-import getLayout, { CardLayout } from '../tarotSpreadSelectionBox/getLayout';
-import getLayoutStyles from '../tarotSpreadSelectionBox/getLayoutStyles';
+import { TarotSpread, TarotSpreadProps } from './TarotSpread';
 import React from 'react';
 import { AnnotatedStoryFn } from '@storybook/types';
+import {
+  getLayout,
+  CardLayout,
+  getLayoutStyles
+} from '../tarotSpreadSelectionBox';
 
 const layoutTemplate: CardLayout = {
   images: [],
