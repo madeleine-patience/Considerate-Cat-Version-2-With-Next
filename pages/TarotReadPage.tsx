@@ -3,13 +3,13 @@ import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import { Box, useTheme } from '@mui/material';
 import { useTarotCard } from '../hooks/useTarotCard';
 import { TarotDeckContext } from '../context/TarotDeckContext';
-import { TarotSpreadSelectionProps } from '../components/tarotSpreadSelectionBox/TarotSpreadSelectionBox';
+import { TarotSpreadSelectionProps } from '../components/tarotSpreadSelectionBox';
+import { TarotSpreadSelectionBoxList } from '../components/tarotSpreadSelectionBoxList';
 import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import RaisedButton from '../components/raisedButton/RaisedButton';
 import HompeageHeader from '../components/header/Header';
 import useFetchTarotDeck from '../hooks/fetchTarotDeck';
 import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
-import TarotSpreadSelectionBoxList from '../components/tarotSpreadSelectionBoxList/TarotSpreadSelectionBoxList';
 
 export default function FirstPost() {
   const { palette } = useTheme();

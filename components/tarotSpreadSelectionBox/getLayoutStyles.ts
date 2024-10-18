@@ -1,5 +1,5 @@
-import { TarotDeckData } from '../../types/tarotDeckData';
-import getLayout, { CardLayout } from './getLayout';
+import { CSSProperties } from 'react';
+import { getLayout, CardLayout } from './getLayout';
 
 interface Transform {
   index: number;
@@ -12,22 +12,22 @@ interface Transform {
 /**
  * Determines the layout and styles for tarot cards based on input parameters.
  */
-export default function getLayoutStyles(
-  tarotDeckData: TarotDeckData[],
+export function getLayoutStyles(
   amountOfCards: number,
   cardTransitionTime: string,
-  isHovered: boolean
+  isHovered: boolean,
+  providedLayout?: CardLayout
 ) {
   let layout: CardLayout;
 
   /**
    * Base styles applied to each tarot card.
    */
-  const SingleTarotCardBaseStyles: React.CSSProperties = {
+  const SingleTarotCardBaseStyles: CSSProperties = {
     border: '4px solid white',
     position: 'relative',
     width: '100px',
-    transition: `transform ${cardTransitionTime} ease-in`
+    transition: `transform ${cardTransitionTime}, top ${cardTransitionTime}`
   };
 
   /**
@@ -39,7 +39,7 @@ export default function getLayoutStyles(
     tilt = 0,
     tiltHovered = 0,
     scaleHovered = 1.0
-  }: Transform): React.CSSProperties => {
+  }: Transform): CSSProperties => {
     let transforms = {
       left: `scale(1) rotate(-${tilt}deg)`,
       right: `scale(1) rotate(${tilt}deg)`,
@@ -69,19 +69,35 @@ export default function getLayoutStyles(
    */
   const generateStylesForLayout = (
     layout: CardLayout
-  ): Array<{ sx: React.CSSProperties }> => {
-    const {
+  ): Array<{ sx: CSSProperties }> => {
+    let {
       images,
       tilt,
       tiltHovered,
       scaleHovered,
-      verticalCardSpacing = []
+      tiltDelta = 0,
+      tiltDeltaHovered = 0,
+      verticalCardSpacing = [],
+      verticalCardSpacingHovered = []
     } = layout;
     const centerIndex = Math.floor(images.length / 2);
 
     return images.map((_, index) => {
       const distanceFromCenter = Math.abs(centerIndex - index);
-      const top = `${distanceFromCenter * (verticalCardSpacing[index] || 0)}px`;
+
+      if (tiltDelta) {
+        tilt = distanceFromCenter * tiltDelta;
+      }
+
+      if (tiltDeltaHovered) {
+        tiltHovered = distanceFromCenter * tiltDeltaHovered;
+      }
+
+      const verticalCardSpacingValue =
+        isHovered && verticalCardSpacingHovered.length > 0
+          ? verticalCardSpacingHovered[index] || 0
+          : verticalCardSpacing[index] || 0;
+      const top = `${distanceFromCenter * verticalCardSpacingValue}px`;
       let zIndex = 1;
 
       if (images.length % 2 !== 0) {
@@ -107,8 +123,14 @@ export default function getLayoutStyles(
 
   /**
    * Get the layout configuration and generate styles based on the number of cards.
+   * If a layout is provided, use that layout instead.
    */
-  layout = getLayout(tarotDeckData, amountOfCards);
+  if (providedLayout) {
+    layout = providedLayout;
+  } else {
+    layout = getLayout(amountOfCards);
+  }
+
   layout.styles = generateStylesForLayout(layout);
 
   return layout;
