@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@mui/material';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import type { Preview } from '@storybook/react';
 import React from 'react';
 import { defaultTheme } from '../theme/themeBuilder';
@@ -12,6 +13,10 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/i
       }
+    },
+    viewport: {
+      viewports: INITIAL_VIEWPORTS,
+      defaultViewport: 'desktop'
     }
   },
   decorators: [
