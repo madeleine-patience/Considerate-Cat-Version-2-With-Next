@@ -1,7 +1,6 @@
 import { ThemeOptions, createTheme } from '@mui/material';
 import { Lora } from 'next/font/google';
 
-// Load the Lora font
 const lora = Lora({
   weight: ['400', '500', '700'],
   subsets: ['latin'],
@@ -11,7 +10,6 @@ const lora = Lora({
 
 const baseOptions: ThemeOptions = {
   typography: {
-    // Conditionally apply the Lora font or fall back to a default font
     fontFamily: lora?.style?.fontFamily || 'Lora',
     fontSize: 16
   },
@@ -32,6 +30,15 @@ const baseOptions: ThemeOptions = {
       main: '#accca5',
       light: '#add4a5',
       contrastLightAAA: '#283626'
+    },
+    yellows: {
+      light: '#ebdfbe'
+    },
+    purples: {
+      light: '#d1c3d6'
+    },
+    browns: {
+      main: '#9C6E4F'
     }
   },
   spacing: 4
