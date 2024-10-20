@@ -1,6 +1,6 @@
 import { Box, Grid, useTheme } from '@mui/material';
 import FlowerFooter from '../components/flowerFooter/FlowerFooter';
-import HompeageHeader from '../components/header/Header';
+import { Header } from '../components/header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import Purrlaroid from '../components/purrlaroid';
 import useFetchCats from '../hooks/fetchCatData';
@@ -22,10 +22,14 @@ export default function CatDirectory() {
         alignItems: 'center'
       }}
     >
-      <HompeageHeader />
+      <Header.Root>
+        <Header.Animation />
+        <Header.Navigation />
+      </Header.Root>
       <Grid
         container
         sx={{
+          p: 4,
           gap: 8,
           maxWidth: 1500,
           justifyContent: 'center'

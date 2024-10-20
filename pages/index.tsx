@@ -1,6 +1,6 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material';
 import FlowerFooter from '../components/flowerFooter/FlowerFooter';
-import Header from '../components/header/Header';
+import { Header } from '../components/header';
 import HomepageWelcome from '../components/homepageWelcome/HomepageWelcome';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import { MagicCatReload } from '../components/magicCatAnimation/magicCatReload/MagicCatReload';
@@ -33,8 +33,12 @@ export default function Home() {
           backgroundColor: palette.pinks.main
         }}
       >
-        <Header />
-        <Box sx={{ maxWidth: '1200px', margin: 'auto' }}>
+        <Header.Root>
+          <Header.Title> Considerate Cat</Header.Title>
+          <Header.Animation />
+          <Header.Navigation />
+        </Header.Root>
+        <Box sx={{ maxWidth: '1200px', margin: 'auto', p: 4 }}>
           <Box display='flex' justifyContent='center' position='relative'>
             <Box
               component='img'

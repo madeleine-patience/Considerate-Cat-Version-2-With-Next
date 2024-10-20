@@ -35,7 +35,9 @@ const baseOptions: ThemeOptions = {
       light: '#ebdfbe'
     },
     purples: {
-      light: '#d1c3d6'
+      main: '#DEA9EA',
+      light: '#E6C9F3',
+      contrastLightAAA: '#56315E'
     },
     browns: {
       main: '#9C6E4F'

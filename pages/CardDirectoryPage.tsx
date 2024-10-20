@@ -2,7 +2,7 @@ import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { DisplayTarotCards } from '../components/displayTarotCards';
 import ElmerCircleIcon from '../components/elmerCircleIcon/ElmerCircleIcon';
 import FlowerFooter from '../components/flowerFooter/FlowerFooter';
-import HompeageHeader from '../components/header/Header';
+import { Header } from '../components/header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import RaisedButton from '../components/raisedButton/RaisedButton';
 import TarotDialog from '../components/tarotDialog/TarotDialog';
@@ -73,8 +73,10 @@ export default function FirstPost() {
           backgroundColor: palette.pinks.main
         }}
       >
-        <HompeageHeader />
-
+        <Header.Root>
+          <Header.Animation />
+          <Header.Navigation />
+        </Header.Root>
         <Box
           sx={{
             maxWidth: '1000px',

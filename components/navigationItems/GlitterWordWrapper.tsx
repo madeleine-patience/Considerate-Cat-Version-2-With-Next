@@ -1,11 +1,6 @@
-import { Box, Link, styled } from '@mui/material';
-import HeaderButton from '../headerButton/HeaderButton';
+import { Box, styled, Typography } from '@mui/material';
+import { PropsWithChildren } from 'react';
 import { ChubbyStar, CompactGlitter, Glitter } from '../../SVGs/GlitterSvg';
-
-interface GlitterWrapperProps {
-  title: string;
-  link: string;
-}
 
 const BoxWithStarAnimation = styled(Box)({
   width: 'fit-content',
@@ -28,53 +23,63 @@ const BoxWithStarAnimation = styled(Box)({
   }
 });
 
-export const GlitterWordWrapper = ({ title, link }: GlitterWrapperProps) => {
+export const GlitterWordWrapper = ({ children }: PropsWithChildren) => {
   return (
     <BoxWithStarAnimation>
-      <Link
-        href={link}
-        style={{
-          textDecoration: 'none'
+      <ChubbyStar
+        sx={{
+          position: 'absolute',
+          width: 20,
+          opacity: 0,
+          top: 5
         }}
+      />
+      <Glitter
+        sx={{
+          position: 'absolute',
+          width: 20,
+          opacity: 0,
+          right: 10,
+          top: 15,
+          transform: 'rotate(20deg)'
+        }}
+      />
+      <CompactGlitter
+        sx={{
+          position: 'absolute',
+          width: 20,
+          opacity: 0,
+          bottom: 10
+        }}
+      />
+      <ChubbyStar
+        sx={{
+          opacity: 0,
+          position: 'absolute',
+          width: 20,
+          right: 1,
+          top: -10
+        }}
+      />
+      <Box
+        display='flex'
+        width='250px'
+        justifyContent='center'
+        sx={{ display: 'flex', justifyContent: 'center' }}
       >
-        <ChubbyStar
+        <Typography
+          variant='h5'
           sx={{
-            position: 'absolute',
-            width: 20,
-            opacity: 0,
-            top: 5
+            width: '100%',
+            textAlign: 'center',
+            '&:hover': {
+              color: 'white'
+            }
           }}
-        />
-        <Glitter
-          sx={{
-            position: 'absolute',
-            width: 20,
-            opacity: 0,
-            right: 10,
-            top: 15,
-            transform: 'rotate(20deg)'
-          }}
-        />
-
-        <CompactGlitter
-          sx={{
-            position: 'absolute',
-            width: 20,
-            opacity: 0,
-            bottom: 10
-          }}
-        />
-        <ChubbyStar
-          sx={{
-            opacity: 0,
-            position: 'absolute',
-            width: 20,
-            right: 1,
-            top: -10
-          }}
-        />
-        <HeaderButton label={title} />
-      </Link>
+        >
+          {children}
+        </Typography>
+      </Box>
     </BoxWithStarAnimation>
   );
 };
