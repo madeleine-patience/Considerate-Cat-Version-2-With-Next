@@ -67,6 +67,7 @@ pull requests, start noting your changes under "Unreleased".
 - New stories for tarotSpread and tarotSpreadSelectionBox
 - tarotSpread now pulls optimized images from the public directory
 - Refactors and cleanup for tarotSpreadSelectionBox
+- Footer Background Image Bug Fix
 
 #### New Features
 

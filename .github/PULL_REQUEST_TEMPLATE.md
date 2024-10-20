@@ -17,11 +17,13 @@
 - Please provide before and after or a screenshot of a new change you have made.
   Delete this section if not necessary to show screenshots.
 
-| Before | After |
-| ------ | ----- |
+| Before                                | After                              |
+| ------------------------------------- | ---------------------------------- |
+| ![Before Image]("Before Image Here" ) | ![After Image]("After Image Here") |
 
-| Screenshot |
-| ---------- |
+| ScreenShot                   |
+| ---------------------------- |
+| ![Screenshot]("Image Here" ) |
 
 ### How did you purrrsonally test this
 
