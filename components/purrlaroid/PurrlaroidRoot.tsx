@@ -8,6 +8,7 @@ interface PurrlaroidAction {
 interface PurrlaroidProps extends PurrlaroidAction {
   isAnimated?: boolean;
   catImage: string;
+  altText?: string;
   children: ReactNode;
 }
 
@@ -15,6 +16,7 @@ const PurrlaroidRoot = ({
   onClick,
   isAnimated,
   catImage,
+  altText,
   children
 }: PurrlaroidProps) => {
   return (
@@ -42,6 +44,7 @@ const PurrlaroidRoot = ({
         }}
         onClick={onClick}
         src={catImage}
+        alt={altText}
       />
 
       {children}
