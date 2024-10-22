@@ -3,10 +3,10 @@ import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import HompeageHeader from '../components/header/Header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import Purrlaroid from '../components/purrlaroid';
-import useFetchCats from '../hooks/fetchCatData';
+import useFetchCats, { CatData } from '../hooks/fetchCatData';
 
 export default function CatDirectory() {
-  const { cats, loading } = useFetchCats();
+  const { cats, loading }: CatData = useFetchCats();
   const { palette } = useTheme();
 
   if (loading) return <LoadingPage />;
@@ -33,7 +33,11 @@ export default function CatDirectory() {
       >
         {cats.map((cat) => (
           <Grid item key={cat.id}>
-            <Purrlaroid catImage={cat.cat_main_image} catName={cat.cat_name} />
+            <Purrlaroid
+              catImage={cat.cat_main_image}
+              catName={cat.cat_name}
+              altText={cat.alt_text}
+            />
           </Grid>
         ))}
       </Grid>
