@@ -7,17 +7,17 @@ import { MagicCatReload } from '../components/magicCatAnimation/magicCatReload/M
 import { TarotDeckContext } from '../context/TarotDeckContext';
 import useFetchTarotDeck from '../hooks/fetchTarotDeck';
 import { useTarotCard } from '../hooks/useTarotCard';
+import type { Theme } from '@mui/system';
+import type { ReactElement } from 'react';
 
 const homePageMainImage = '/image/homepageImage.webp';
 
-export default function Home() {
-  const theme = useTheme();
+export default function Home(): ReactElement {
+  const { tarotDeck, loading } = useFetchTarotDeck();
+  const { tarotCardData } = useTarotCard(tarotDeck);
   const { palette } = useTheme();
-
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
-
-  const { tarotCards, loading } = useFetchTarotDeck();
-  const { tarotCardData } = useTarotCard(tarotCards);
+  const theme: Theme = useTheme();
+  const isSmallScreen: boolean = useMediaQuery(theme.breakpoints.down('md'));
 
   if (loading) return <LoadingPage />;
   return (

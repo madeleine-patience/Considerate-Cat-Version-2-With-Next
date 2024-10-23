@@ -3,10 +3,10 @@ import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import HompeageHeader from '../components/header/Header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import Purrlaroid from '../components/purrlaroid';
-import useFetchCats, { CatData } from '../hooks/fetchCatData';
+import useFetchCats, { CatProps } from '../hooks/fetchCatData';
 
 export default function CatDirectory() {
-  const { cats, loading }: CatData = useFetchCats();
+  const { cats, loading }: CatProps = useFetchCats();
   const { palette } = useTheme();
 
   if (loading) return <LoadingPage />;

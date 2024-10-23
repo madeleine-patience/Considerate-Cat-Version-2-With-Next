@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import { Box, useTheme } from '@mui/material';
 import { useTarotCard } from '../hooks/useTarotCard';
@@ -11,16 +11,16 @@ import HompeageHeader from '../components/header/Header';
 import useFetchTarotDeck from '../hooks/fetchTarotDeck';
 import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
 
-export default function FirstPost() {
+export default function FirstPost(): ReactElement {
   const { palette } = useTheme();
 
   const [isFlipped, setIsFlipped] = useState(false);
   const [areSpreadChoicesVisible, setAreIsSpreadChoicesVisible] =
     useState(true);
   const [isTarotReadVisible, setIsTarotReadVisible] = useState(false);
-  const { tarotCards, loading } = useFetchTarotDeck();
+  const { tarotDeck, loading } = useFetchTarotDeck();
   const { tarotCardData, displaySomeCards, displayFilteredData } =
-    useTarotCard(tarotCards);
+    useTarotCard(tarotDeck);
 
   const displayTarotSpread = (lengthOfSpread: number) => {
     displaySomeCards(lengthOfSpread);
