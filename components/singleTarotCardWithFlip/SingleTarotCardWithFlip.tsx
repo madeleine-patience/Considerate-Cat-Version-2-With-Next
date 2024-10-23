@@ -12,6 +12,7 @@ interface SingleTarotCardWithFlipProps extends SingleTarotCardWithFlipAction {
   image: string;
   isCardFlipped?: boolean;
   transitionDelay?: string;
+  altText?: string;
   size?: cardSize;
 }
 
@@ -23,6 +24,7 @@ const SingleTarotCard = ({
   isCardFlipped = true,
   transitionDelay,
   onClick,
+  altText,
   size = 'medium'
 }: SingleTarotCardWithFlipProps) => {
   return (
@@ -77,6 +79,7 @@ const SingleTarotCard = ({
         }}
         component='img'
         src={image}
+        alt={altText}
       />
     </Box>
   );

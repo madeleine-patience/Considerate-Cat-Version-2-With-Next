@@ -1,22 +1,20 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material';
-import { TarotDeckData } from '../../types/tarotDeckData';
+import type { TarotCard } from '../../hooks/fetchTarotDeck';
+import type { Theme } from '@mui/system';
 
-interface DisplayTarotCardActionProps {
-  onClick?: (param: number) => void;
-}
-
-interface DisplayTarotCardsProps extends DisplayTarotCardActionProps {
-  data: TarotDeckData[];
+interface DisplayTarotCardsProps {
+  data: TarotCard[];
   width: string;
+  onClick?: (_param: number) => void;
 }
+
 export const DisplayTarotCards = ({
   data,
   width,
   onClick
 }: DisplayTarotCardsProps) => {
-  const theme = useTheme();
-
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
+  const theme: Theme = useTheme();
+  const isSmallScreen: boolean = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Box>
@@ -29,16 +27,16 @@ export const DisplayTarotCards = ({
         p={4}
         gridTemplateColumns='auto auto auto auto auto'
       >
-        {data.map((card) => (
-          <Box key={card.id}>
+        {data.map(({ id, image_link, alt_text }: TarotCard) => (
+          <Box key={id}>
             <Box
-              key={card.id}
-              onClick={() => onClick(card.id)}
+              key={id}
+              onClick={() => onClick(id)}
               width={width}
               borderRadius={2}
               component='img'
-              src={card.image_link}
-              alt={card.card_name}
+              src={image_link}
+              alt={alt_text}
             />
           </Box>
         ))}
