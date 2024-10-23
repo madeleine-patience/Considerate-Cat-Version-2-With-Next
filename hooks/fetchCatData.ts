@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../supabase';
 
-export interface CatProps {
+export interface Cat {
   id: number;
   created_at: string;
   tarot_card: number;
@@ -13,14 +13,14 @@ export interface CatProps {
   cat_friends: string | null;
 }
 
-export interface CatData {
-  cats: CatProps[];
+export interface CatProps {
+  cats: Cat[];
   loading: boolean;
   fetchError: string | null;
 }
 
-function useFetchCats(): CatData {
-  const [cats, setCats] = useState<CatProps[]>([]);
+function useFetchCats(): CatProps {
+  const [cats, setCats] = useState<Cat[]>([]);
   const [loading, setLoading] = useState(true);
   const [fetchError, setFetchError] = useState<string | null>(null);
 
@@ -40,10 +40,7 @@ function useFetchCats(): CatData {
         }
       } catch (error) {
         setFetchError((error as Error).message);
-        console.error(
-          'Error caught in fetchCatData.ts: ',
-          (error as Error).message
-        );
+        console.error('Error caught in fetchCatData.ts: ', error.message);
       } finally {
         setLoading(false);
       }
