@@ -2,14 +2,11 @@ import { Box, Typography, useTheme } from '@mui/material';
 import Link from 'next/link';
 import { PropsWithChildren } from 'react';
 
-interface HeaderNavigationButtonProps extends PropsWithChildren {
+interface HeaderNavButtonProps extends PropsWithChildren {
   link: string;
 }
 
-const HeaderNavigationButton = ({
-  children,
-  link
-}: HeaderNavigationButtonProps) => {
+const HeaderNavButton = ({ children, link }: HeaderNavButtonProps) => {
   const { palette } = useTheme();
 
   return (
@@ -40,4 +37,4 @@ const HeaderNavigationButton = ({
   );
 };
 
-export default HeaderNavigationButton;
+export default HeaderNavButton;

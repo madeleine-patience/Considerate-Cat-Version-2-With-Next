@@ -1,11 +1,12 @@
-import { Box, useTheme } from '@mui/material';
-import HeaderNavigationButton from './HeaderNavigationButton';
+import { List, useTheme } from '@mui/material';
+import HeaderNavButton from './HeaderNavButton';
 
-export const HeaderNavigation = () => {
+const HeaderNavigation = () => {
   const theme = useTheme();
 
   return (
-    <Box
+    <List
+      component='nav'
       sx={{
         p: 4,
         gap: 4,
@@ -16,16 +17,14 @@ export const HeaderNavigation = () => {
         }
       }}
     >
-      <HeaderNavigationButton link='./'>Home </HeaderNavigationButton>
-      <HeaderNavigationButton link='./TarotReadPage'>
-        Tarot Reading
-      </HeaderNavigationButton>
-      <HeaderNavigationButton link='./CardDirectoryPage'>
+      <HeaderNavButton link='./'>Home </HeaderNavButton>
+      <HeaderNavButton link='./TarotReadPage'>Tarot Reading</HeaderNavButton>
+      <HeaderNavButton link='./CardDirectoryPage'>
         Card Directory
-      </HeaderNavigationButton>
-      <HeaderNavigationButton link='./CatDirectory'>
-        Meet the Cats
-      </HeaderNavigationButton>
-    </Box>
+      </HeaderNavButton>
+      <HeaderNavButton link='./CatDirectory'>Meet the Cats</HeaderNavButton>
+    </List>
   );
 };
+
+export default HeaderNavigation;
