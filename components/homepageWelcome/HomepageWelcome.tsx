@@ -6,8 +6,7 @@ import {
   useTheme
 } from '@mui/material';
 import { useRouter } from 'next/router';
-import { useContext, useState } from 'react';
-import { TarotDeckContext } from '../../context/TarotDeckContext';
+import { useState } from 'react';
 import RaisedButton from '../raisedButton/RaisedButton';
 import SingleTarotCard from '../singleTarotCardWithFlip/SingleTarotCardWithFlip';
 
@@ -18,7 +17,6 @@ interface HomepageWelcomeProps {
 const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
   const router = useRouter();
   const theme = useTheme();
-  const tarotDeckData = useContext(TarotDeckContext);
   const [petCount, setPetCount] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -79,21 +77,24 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
               top: -50
             }}
           >
-            {/*<SingleTarotCard*/}
-            {/*  image={tarotDeckData[51].image_link}*/}
-            {/*  isCardFlipped={isFlipped}*/}
-            {/*  size='small'*/}
-            {/*/>*/}
-            {/*<SingleTarotCard*/}
-            {/*  image={tarotDeckData[2].image_link}*/}
-            {/*  isCardFlipped={isFlipped}*/}
-            {/*  size='small'*/}
-            {/*/>*/}
-            {/*<SingleTarotCard*/}
-            {/*  image={tarotDeckData[15].image_link}*/}
-            {/*  isCardFlipped={isFlipped}*/}
-            {/*  size='small'*/}
-            {/*/>*/}
+            <SingleTarotCard
+              image='/image/welcome-cards/three-of-pentacles.webp'
+              altText='A tarot card with the text, “Three of Pentacles.” The artwork depicts a green-walled room with a view of a tree, a table with an artist’s palette, and two cats—one playing with the paint-covered palette, and another napping on the chair. Three sheets of painted pentacles are on the desk.'
+              isCardFlipped={isFlipped}
+              size='small'
+            />
+            <SingleTarotCard
+              image='/image/welcome-cards/the-emperor.webp'
+              altText='A tarot card with the text, “The Emperor.” The artwork depicts a cat wearing a large crown.'
+              isCardFlipped={isFlipped}
+              size='small'
+            />
+            <SingleTarotCard
+              image='/image/welcome-cards/three-of-cups.webp'
+              altText='A tarot card with the text, “Three of Cups.” The artwork depicts two friendly cats wearing birthday hats, leaning on each other at a table with waffles and strawberries. Three wine glasses are on the table.'
+              isCardFlipped={isFlipped}
+              size='small'
+            />
           </Box>
         </Box>
         <Box

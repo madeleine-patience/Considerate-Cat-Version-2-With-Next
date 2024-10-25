@@ -3,7 +3,7 @@ import SingleTarotCardWithFlip from '../../components/singleTarotCardWithFlip/Si
 import type { TarotCard } from '../../hooks/fetchTarotDeck';
 
 interface DisplayTarotCardsProps {
-  tarotDeck: TarotCard[];
+  tarotDeck?: TarotCard[];
   isFlipped: boolean;
   onClick: () => void;
 }

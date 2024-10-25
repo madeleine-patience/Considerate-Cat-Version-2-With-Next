@@ -1,7 +1,5 @@
 import { Box } from '@mui/material';
 
-const tarotBack = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/tarotcard/0.jpg`;
-
 interface SingleTarotCardWithFlipAction {
   onClick?: () => void;
 }
@@ -59,7 +57,8 @@ const SingleTarotCard = ({
           }
         }}
         component='img'
-        src={tarotBack}
+        src='/image/welcome-cards/tarot-card-back.webp'
+        alt='The tarot card back'
       />
       <Box
         data-size={size}
