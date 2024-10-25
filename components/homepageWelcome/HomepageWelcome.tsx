@@ -18,7 +18,6 @@ interface HomepageWelcomeProps {
 const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
   const router = useRouter();
   const theme = useTheme();
-
   const tarotDeckData = useContext(TarotDeckContext);
   const [petCount, setPetCount] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -80,21 +79,21 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
               top: -50
             }}
           >
-            <SingleTarotCard
-              image={tarotDeckData[51].image_link}
-              isCardFlipped={isFlipped}
-              size='small'
-            />
-            <SingleTarotCard
-              image={tarotDeckData[2].image_link}
-              isCardFlipped={isFlipped}
-              size='small'
-            />
-            <SingleTarotCard
-              image={tarotDeckData[15].image_link}
-              isCardFlipped={isFlipped}
-              size='small'
-            />
+            {/*<SingleTarotCard*/}
+            {/*  image={tarotDeckData[51].image_link}*/}
+            {/*  isCardFlipped={isFlipped}*/}
+            {/*  size='small'*/}
+            {/*/>*/}
+            {/*<SingleTarotCard*/}
+            {/*  image={tarotDeckData[2].image_link}*/}
+            {/*  isCardFlipped={isFlipped}*/}
+            {/*  size='small'*/}
+            {/*/>*/}
+            {/*<SingleTarotCard*/}
+            {/*  image={tarotDeckData[15].image_link}*/}
+            {/*  isCardFlipped={isFlipped}*/}
+            {/*  size='small'*/}
+            {/*/>*/}
           </Box>
         </Box>
         <Box
