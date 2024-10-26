@@ -1,17 +1,17 @@
-import { ReactElement } from 'react';
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { DisplayTarotCards } from '../components/displayTarotCards';
+import { TarotDeckContext } from '../context/TarotDeckContext';
+import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import { useCardDirectory } from '../hooks/useCardDirectory';
+import { useTarotCard } from '../hooks/useTarotCard';
 import ElmerCircleIcon from '../components/elmerCircleIcon/ElmerCircleIcon';
 import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import HompeageHeader from '../components/header/Header';
-import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import RaisedButton from '../components/raisedButton/RaisedButton';
 import TarotDialog from '../components/tarotDialog/TarotDialog';
 import ThreeCardSpread from '../components/threeCardSpread/ThreeCardSpread';
-import { TarotDeckContext } from '../context/TarotDeckContext';
 import useFetchTarotDeck from '../hooks/fetchTarotDeck';
-import { useCardDirectory } from '../hooks/useCardDirectory';
-import { useTarotCard } from '../hooks/useTarotCard';
+import type { ReactElement } from 'react';
 import type { Theme } from '@mui/system';
 
 export type CardSuitTypes = 'Major' | 'Cups' | 'Pentacles' | 'Swords' | 'Wands';
@@ -111,9 +111,9 @@ export default function FirstPost(): ReactElement {
           }
           {shouldShowThreeCards && (
             <ThreeCardSpread
-              card1={tarotDeck[15].image_link}
-              card2={tarotDeck[5].image_link}
-              card3={tarotDeck[7].image_link}
+              card1={tarotDeck[15]}
+              card2={tarotDeck[5]}
+              card3={tarotDeck[7]}
             />
           )}
         </Box>
