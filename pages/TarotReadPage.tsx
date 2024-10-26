@@ -94,7 +94,7 @@ export default function FirstPost(): ReactElement {
         >
           {isTarotReadVisible && (
             <DisplayTarotCardsWithFlip
-              data={displayFilteredData}
+              tarotDeck={displayFilteredData}
               isFlipped={isFlipped}
               onClick={() => setIsFlipped(true)}
             />
