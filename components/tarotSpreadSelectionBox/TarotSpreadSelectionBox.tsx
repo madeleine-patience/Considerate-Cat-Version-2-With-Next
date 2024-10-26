@@ -34,11 +34,23 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
     isHovered
   );
 
+  /**
+   * TODO Components with role="button" need replaced with actual button components
+   */
   return (
     <Box
       onClick={onClick}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick();
+        }
+      }}
+      role='button'
+      tabIndex={0}
       sx={{
         width: '340px',
+        tabIndex: 1,
         backgroundColor: palette.secondary.main,
         borderRadius: '20px',
         cursor: 'pointer',
@@ -50,6 +62,8 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onFocus={() => setIsHovered(true)}
+      onBlur={() => setIsHovered(false)}
     >
       <TarotSpread
         amountOfCards={amountOfCards}

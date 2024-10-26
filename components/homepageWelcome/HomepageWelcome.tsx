@@ -35,7 +35,9 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
       setIsFlipped(true);
     }
   };
-
+  /**
+   * TODO Components with role="button" need replaced with actual button components
+   */
   return (
     <Box
       sx={{
@@ -53,11 +55,21 @@ const HomepageWelcome = ({ sx }: HomepageWelcomeProps) => {
           flexDirection: isSmallScreen ? 'column' : 'row'
         }}
       >
-        <Box>
+        <Box
+          onClick={() => petTheCat()}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              petTheCat();
+            }
+          }}
+          role='button'
+          tabIndex={0}
+        >
           <Box
-            onClick={() => petTheCat()}
             component='img'
             src={butters}
+            alt='Butters the cat, waiting to show you a tarot reading if you give pets.'
             sx={{
               top: 25,
               zIndex: 2,

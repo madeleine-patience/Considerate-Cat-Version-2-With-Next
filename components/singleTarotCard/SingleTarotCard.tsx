@@ -2,10 +2,11 @@ import { Box, SxProps } from '@mui/material';
 
 interface SingleTarotCardProps {
   image: string;
+  altText?: string;
   sx?: SxProps;
 }
 
-const SingleTarotCard = ({ image, sx }: SingleTarotCardProps) => {
+const SingleTarotCard = ({ image, altText, sx }: SingleTarotCardProps) => {
   return (
     <Box
       width='250px'
@@ -17,6 +18,7 @@ const SingleTarotCard = ({ image, sx }: SingleTarotCardProps) => {
       }}
       component='img'
       src={image}
+      alt={altText}
     />
   );
 };

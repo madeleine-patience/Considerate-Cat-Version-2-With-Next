@@ -25,9 +25,20 @@ const SingleTarotCard = ({
   altText,
   size = 'medium'
 }: SingleTarotCardWithFlipProps) => {
+  /**
+   * TODO Tarot flip should be factored to one button
+   */
   return (
     <Box
       onClick={onClick}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick();
+        }
+      }}
+      role='button'
+      tabIndex={0}
       sx={{
         display: 'flex',
         flexDirection: 'row',
