@@ -98,7 +98,7 @@ pull requests, start noting your changes under "Unreleased".
 - `package.json` updated to include relevant project information
 - Added a Changelog to the readme
 - Added a new homepage screenshot for the readme
-- Added example.env
+- Added `example.env`
 
 #### Fixes
 
