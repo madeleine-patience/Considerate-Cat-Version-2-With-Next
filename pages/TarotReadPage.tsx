@@ -1,15 +1,15 @@
-import { useState } from 'react';
-import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import { Box, useTheme } from '@mui/material';
-import { useTarotCard } from '../hooks/useTarotCard';
-import { TarotDeckContext } from '../context/TarotDeckContext';
+import { useState } from 'react';
+import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
+import FlowerFooter from '../components/flowerFooter/FlowerFooter';
+import { Header } from '../components/header';
+import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import RaisedButton from '../components/raisedButton/RaisedButton';
 import { TarotSpreadSelectionProps } from '../components/tarotSpreadSelectionBox';
 import { TarotSpreadSelectionBoxList } from '../components/tarotSpreadSelectionBoxList';
-import FlowerFooter from '../components/flowerFooter/FlowerFooter';
-import RaisedButton from '../components/raisedButton/RaisedButton';
-import HompeageHeader from '../components/header/Header';
+import { TarotDeckContext } from '../context/TarotDeckContext';
 import useFetchTarotDeck from '../hooks/fetchTarotDeck';
-import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
+import { useTarotCard } from '../hooks/useTarotCard';
 
 export default function FirstPost() {
   const { palette } = useTheme();
@@ -79,7 +79,10 @@ export default function FirstPost() {
         justifyContent='space-between'
         sx={{ backgroundColor: palette.pinks.main }}
       >
-        <HompeageHeader />
+        <Header.Root>
+          <Header.Animation />
+          <Header.Navigation />
+        </Header.Root>
         {areSpreadChoicesVisible && (
           <TarotSpreadSelectionBoxList data={tarotSpreadSelectionBoxes} />
         )}
