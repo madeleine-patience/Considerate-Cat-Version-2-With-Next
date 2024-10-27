@@ -4,9 +4,9 @@ import { TarotDeckContext } from '../context/TarotDeckContext';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import { useCardDirectory } from '../hooks/useCardDirectory';
 import { useTarotCard } from '../hooks/useTarotCard';
+import { Header } from '../components/header';
 import ElmerCircleIcon from '../components/elmerCircleIcon/ElmerCircleIcon';
 import FlowerFooter from '../components/flowerFooter/FlowerFooter';
-import HompeageHeader from '../components/header/Header';
 import RaisedButton from '../components/raisedButton/RaisedButton';
 import TarotDialog from '../components/tarotDialog/TarotDialog';
 import ThreeCardSpread from '../components/threeCardSpread/ThreeCardSpread';
@@ -75,8 +75,10 @@ export default function FirstPost(): ReactElement {
           backgroundColor: palette.pinks.main
         }}
       >
-        <HompeageHeader />
-
+        <Header.Root>
+          <Header.Animation />
+          <Header.Navigation />
+        </Header.Root>
         <Box
           sx={{
             maxWidth: '1000px',
