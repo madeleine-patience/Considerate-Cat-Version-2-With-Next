@@ -35,7 +35,7 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
   );
 
   /**
-   * TODO Components with role="button" need replaced with actual button components
+   * TODO Replace components with role="button"
    */
   return (
     <Box
