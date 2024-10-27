@@ -1,7 +1,7 @@
 import { Meta, StoryFn } from '@storybook/react';
+import { TarotDeckContext } from '../../context/TarotDeckContext';
+import { tarotSpreadMocks } from '../../mocks/tarotSpreadData.mocks';
 import ThreeCardSpread from './ThreeCardSpread';
-
-const tarotImage = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/tarotcard/19.jpg`;
 
 export default {
   title: 'Components/ThreeCardSpread',
@@ -10,7 +10,13 @@ export default {
 } as Meta<typeof ThreeCardSpread>;
 
 const Template: StoryFn<typeof ThreeCardSpread> = () => (
-  <ThreeCardSpread card1={tarotImage} card2={tarotImage} card3={tarotImage} />
+  <TarotDeckContext.Provider value={tarotSpreadMocks.defaultSpread}>
+    <ThreeCardSpread
+      card1={tarotSpreadMocks.defaultSpread[0]}
+      card2={tarotSpreadMocks.defaultSpread[1]}
+      card3={tarotSpreadMocks.defaultSpread[2]}
+    />
+  </TarotDeckContext.Provider>
 );
 
 export const Default = Template.bind({});
