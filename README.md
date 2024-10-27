@@ -60,20 +60,24 @@ pull requests, start noting your changes under "Unreleased".
 
 ### [Unreleased] YYYY-MM-DD
 
-- Padding and font adjustment, small refactor to TarotSelectionBox.tsx
-- Small Purrlaroid/Cat Directory refactor.
-- New component tarotSpread to simplify tarotSpreadSelectionBox and allow for
-  separate stories
-- New stories for tarotSpread and tarotSpreadSelectionBox
-- tarotSpread now pulls optimized images from the public directory
-- Refactors and cleanup for tarotSpreadSelectionBox
-- Footer Background Image Bug Fix
-
 #### New Features
+
+- New component `TarotSpread` to simplify `TarotSpreadSelectionBox`.
+- New stories for `TarotSpread` and `TarotSpreadSelectionBox`
+- Alt text added to images.
 
 #### Improvements
 
+- Small Purrlaroid/Cat Directory refactor.
+- Small Purrlaroid/Cat Directory refactor.
+- Padding and font adjustment, small refactor to `TarotSelectionBox.tsx`
+- `TarotSpread` now pulls optimized images from the public directory.
+- Refactors and cleanup for `TarotSpreadSelectionBox`.
+- Button-like components made more accessible.
+
 #### Fixes
+
+- Footer Background Image Bug Fix.
 
 ### [2.1.7] 2024-09-07
 
