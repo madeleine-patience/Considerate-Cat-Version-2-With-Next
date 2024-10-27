@@ -23,7 +23,7 @@ export function TarotSpread({
 }: TarotSpreadProps): ReactElement {
   return (
     <>
-      <Box sx={{ ...sx }}>
+      <Box sx={{ ...sx }} role='presentation'>
         <Box
           display='grid'
           justifyContent='center'

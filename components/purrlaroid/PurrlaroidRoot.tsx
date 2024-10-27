@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import { ReactNode } from 'react';
+import { ReactElement } from 'react';
 
 interface PurrlaroidAction {
   onClick?: () => void;
@@ -8,13 +8,15 @@ interface PurrlaroidAction {
 interface PurrlaroidProps extends PurrlaroidAction {
   isAnimated?: boolean;
   catImage: string;
-  children: ReactNode;
+  altText?: string;
+  children: ReactElement;
 }
 
 const PurrlaroidRoot = ({
   onClick,
   isAnimated,
   catImage,
+  altText,
   children
 }: PurrlaroidProps) => {
   return (
@@ -26,7 +28,7 @@ const PurrlaroidRoot = ({
         transform: 'rotate(0deg)',
         transition: '1s transform ease',
         padding: 4,
-        boxShadow: '5px 5px 15px 5px rgba(0,0,0,0.27)        ',
+        boxShadow: '5px 5px 15px 5px rgba(0,0,0,0.27)',
         '&:hover': {
           transform: isAnimated ? 'rotate(3deg)' : 'rotate(0)'
         }
@@ -42,6 +44,7 @@ const PurrlaroidRoot = ({
         }}
         onClick={onClick}
         src={catImage}
+        alt={altText}
       />
 
       {children}

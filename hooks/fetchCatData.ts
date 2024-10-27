@@ -1,35 +1,55 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../supabase';
 
-const useFetchCats = () => {
-  const [cats, setCats] = useState([]);
+export interface Cat {
+  id: number;
+  created_at: string;
+  tarot_card: number;
+  cat_name: string;
+  cat_story: string;
+  cat_main_image: string;
+  alt_text: string;
+  cat_additional_images: string | null;
+  cat_friends: string | null;
+}
+
+export interface CatProps {
+  cats: Cat[];
+  loading: boolean;
+  fetchError: string | null;
+}
+
+function useFetchCats(): CatProps {
+  const [cats, setCats] = useState<Cat[]>([]);
   const [loading, setLoading] = useState(true);
   const [fetchError, setFetchError] = useState<string | null>(null);
 
-  useEffect(() => {
-    const fetchTarotCards = async () => {
+  useEffect((): void => {
+    async function fetchCats(): Promise<void> {
       try {
         setLoading(true);
         const { data, error } = await supabase.from('catData').select('*');
+
         if (error) {
-          throw error;
+          setFetchError(error.message);
+          console.error('Server error: ', error.message);
         }
 
-        setCats(data);
+        if (data) {
+          setCats(data);
+        }
       } catch (error) {
         setFetchError((error as Error).message);
-        console.error(error);
+        console.error('Error caught in fetchCatData.ts: ', error.message);
       } finally {
-        setTimeout(() => {
-          setLoading(false);
-        }, 1500);
+        setLoading(false);
       }
-    };
+    }
 
-    fetchTarotCards();
+    fetchCats();
   }, []);
 
   return { cats, loading, fetchError };
-};
+}
 
 export default useFetchCats;

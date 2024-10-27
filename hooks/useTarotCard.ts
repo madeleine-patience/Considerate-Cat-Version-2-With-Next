@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react';
-import { CardSuitTypes } from '../types/cardSuitTypes';
-import { TarotDeckData } from '../types/tarotDeckData';
+import type { CardSuitTypes } from '../pages/CardDirectoryPage';
+import type { TarotCard } from './fetchTarotDeck';
 
 const initialTarotCardDescription =
   'There are five suits of cards in the Considerate Cat Tarot deck. Major, Cups, Wands, Pentacles and Swords. While each card means something different from the next, each card has a connection or meaning to the suit of which it belongs.';
 
-export const useTarotCard = (cardData: TarotDeckData[]) => {
+export const useTarotCard = (cardData: TarotCard[]) => {
   const [tarotCardData, setTarotCardData] = useState([]);
   const [displayTarotCards, setDisplayTarotCards] = useState(false);
-  const [displayFilteredData, setDisplayFilteredData] = useState([]);
+  const [displayFilteredData, setDisplayFilteredData] = useState<TarotCard[]>(
+    []
+  );
   const [tarotSuitDescription, setTarotSuitDescription] = useState(
     initialTarotCardDescription
   );

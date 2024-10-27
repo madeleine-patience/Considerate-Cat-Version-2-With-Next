@@ -1,23 +1,23 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material';
-import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import { Header } from '../components/header';
-import HomepageWelcome from '../components/homepageWelcome/HomepageWelcome';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import { MagicCatReload } from '../components/magicCatAnimation/magicCatReload/MagicCatReload';
 import { TarotDeckContext } from '../context/TarotDeckContext';
-import useFetchTarotDeck from '../hooks/fetchTarotDeck';
 import { useTarotCard } from '../hooks/useTarotCard';
+import FlowerFooter from '../components/flowerFooter/FlowerFooter';
+import HomepageWelcome from '../components/homepageWelcome/HomepageWelcome';
+import useFetchTarotDeck from '../hooks/fetchTarotDeck';
+import type { Theme } from '@mui/system';
+import type { ReactElement } from 'react';
 
 const homePageMainImage = '/image/homepageImage.webp';
 
-export default function Home() {
-  const theme = useTheme();
+export default function Home(): ReactElement {
+  const { tarotDeck, loading } = useFetchTarotDeck();
+  const { tarotCardData } = useTarotCard(tarotDeck);
   const { palette } = useTheme();
-
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
-
-  const { tarotCards, loading } = useFetchTarotDeck();
-  const { tarotCardData } = useTarotCard(tarotCards);
+  const theme: Theme = useTheme();
+  const isSmallScreen: boolean = useMediaQuery(theme.breakpoints.down('md'));
 
   if (loading) return <LoadingPage />;
   return (
@@ -43,6 +43,7 @@ export default function Home() {
             <Box
               component='img'
               src={homePageMainImage}
+              alt='A whimsical illustration of a friendly cat seated at a kitchen table, performing a tarot reading from the Considerate Cat Tarot deck with a glass of hot tea nearby. The scene is framed by a cozy kitchen, with a lovely night sky visible through a window in the background.'
               width='100%'
               sx={{
                 display: isSmallScreen ? 'none' : undefined,

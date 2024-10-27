@@ -1,32 +1,34 @@
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { DisplayTarotCards } from '../components/displayTarotCards';
+import { TarotDeckContext } from '../context/TarotDeckContext';
+import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import { useCardDirectory } from '../hooks/useCardDirectory';
+import { useTarotCard } from '../hooks/useTarotCard';
+import { Header } from '../components/header';
 import ElmerCircleIcon from '../components/elmerCircleIcon/ElmerCircleIcon';
 import FlowerFooter from '../components/flowerFooter/FlowerFooter';
-import { Header } from '../components/header';
-import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import RaisedButton from '../components/raisedButton/RaisedButton';
 import TarotDialog from '../components/tarotDialog/TarotDialog';
 import ThreeCardSpread from '../components/threeCardSpread/ThreeCardSpread';
-import { TarotDeckContext } from '../context/TarotDeckContext';
 import useFetchTarotDeck from '../hooks/fetchTarotDeck';
-import { useCardDirectory } from '../hooks/useCardDirectory';
-import { useTarotCard } from '../hooks/useTarotCard';
-import { CardSuitTypes } from '../types/cardSuitTypes';
+import type { ReactElement } from 'react';
+import type { Theme } from '@mui/system';
 
-export default function FirstPost() {
-  const { tarotCards, loading } = useFetchTarotDeck();
+export type CardSuitTypes = 'Major' | 'Cups' | 'Pentacles' | 'Swords' | 'Wands';
+
+export default function FirstPost(): ReactElement {
+  const { tarotDeck, loading } = useFetchTarotDeck();
   const { palette } = useTheme();
-
-  const theme = useTheme();
-
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
+  const theme: Theme = useTheme();
+  const isSmallScreen: boolean = useMediaQuery(theme.breakpoints.down('md'));
 
   const {
     tarotCardData,
     displayCardBySuit,
     displayFilteredData,
     tarotSuitDescription
-  } = useTarotCard(tarotCards);
+  } = useTarotCard(tarotDeck);
+
   const {
     dialogProps,
     displayTarotDialog,
@@ -36,29 +38,29 @@ export default function FirstPost() {
     setShowCards,
     showThreeCards
   } = useCardDirectory();
-  const displayCards = (cards: CardSuitTypes) => {
+
+  function displayCards(cards: CardSuitTypes): void {
     setShowCards(false);
     displayCardBySuit(cards);
-  };
+  }
 
-  const handleCardClick = (cardId: number) => {
+  function handleCardClick(cardId: number): void {
     setCurrentCard(cardId);
     openTarotDialog(tarotCardData[cardId]);
-  };
+  }
 
-  const shouldShowThreeCards = !isSmallScreen && showThreeCards;
+  const shouldShowThreeCards: boolean = !isSmallScreen && showThreeCards;
 
-  const mappedDisplayGetCardsBuySuitButton = displayCardSuitButtonData.map(
-    (item, index) => {
-      return (
+  const mappedDisplayGetCardsBuySuitButton: ReactElement[] =
+    displayCardSuitButtonData.map(
+      ({ buttonLabel }, index: number): ReactElement => (
         <RaisedButton
           key={index}
-          buttonLabel={item.buttonLabel}
-          onClick={() => displayCards(item.buttonLabel)}
+          buttonLabel={buttonLabel}
+          onClick={() => displayCards(buttonLabel)}
         />
-      );
-    }
-  );
+      )
+    );
 
   if (loading) return <LoadingPage />;
   return (
@@ -111,9 +113,9 @@ export default function FirstPost() {
           }
           {shouldShowThreeCards && (
             <ThreeCardSpread
-              card1={tarotCards[15].image_link}
-              card2={tarotCards[5].image_link}
-              card3={tarotCards[7].image_link}
+              card1={tarotDeck[15]}
+              card2={tarotDeck[5]}
+              card3={tarotDeck[7]}
             />
           )}
         </Box>

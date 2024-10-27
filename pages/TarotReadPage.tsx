@@ -1,26 +1,26 @@
+import { ReactElement, useState } from 'react';
 import { Box, useTheme } from '@mui/material';
-import { useState } from 'react';
-import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
-import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import { Header } from '../components/header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
-import RaisedButton from '../components/raisedButton/RaisedButton';
 import { TarotSpreadSelectionProps } from '../components/tarotSpreadSelectionBox';
 import { TarotSpreadSelectionBoxList } from '../components/tarotSpreadSelectionBoxList';
 import { TarotDeckContext } from '../context/TarotDeckContext';
-import useFetchTarotDeck from '../hooks/fetchTarotDeck';
 import { useTarotCard } from '../hooks/useTarotCard';
+import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
+import FlowerFooter from '../components/flowerFooter/FlowerFooter';
+import RaisedButton from '../components/raisedButton/RaisedButton';
+import useFetchTarotDeck from '../hooks/fetchTarotDeck';
 
-export default function FirstPost() {
+export default function FirstPost(): ReactElement {
   const { palette } = useTheme();
 
   const [isFlipped, setIsFlipped] = useState(false);
   const [areSpreadChoicesVisible, setAreIsSpreadChoicesVisible] =
     useState(true);
   const [isTarotReadVisible, setIsTarotReadVisible] = useState(false);
-  const { tarotCards, loading } = useFetchTarotDeck();
+  const { tarotDeck, loading } = useFetchTarotDeck();
   const { tarotCardData, displaySomeCards, displayFilteredData } =
-    useTarotCard(tarotCards);
+    useTarotCard(tarotDeck);
 
   const displayTarotSpread = (lengthOfSpread: number) => {
     displaySomeCards(lengthOfSpread);
@@ -97,7 +97,7 @@ export default function FirstPost() {
         >
           {isTarotReadVisible && (
             <DisplayTarotCardsWithFlip
-              data={displayFilteredData}
+              tarotDeck={displayFilteredData}
               isFlipped={isFlipped}
               onClick={() => setIsFlipped(true)}
             />

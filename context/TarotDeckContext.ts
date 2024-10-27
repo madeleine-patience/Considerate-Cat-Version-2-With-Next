@@ -1,6 +1,6 @@
-import { createContext } from 'react';
-import { TarotDeckData } from '../types/tarotDeckData';
+import { createContext, Context } from 'react';
+import type { TarotCard } from '../hooks/fetchTarotDeck';
 
-export const TarotDeckContext = createContext<TarotDeckData[] | undefined>(
-  undefined
-);
+export const TarotDeckContext: Context<TarotCard[]> = createContext<
+  TarotCard[] | undefined
+>(undefined);

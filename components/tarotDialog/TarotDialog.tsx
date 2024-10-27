@@ -33,12 +33,12 @@ const TarotDialog = ({
   handleClickAway
 }: TarotDialogProps) => {
   const { palette, breakpoints } = useTheme();
+  /**
+   * TODO Replace components with role="button"
+   */
   return (
     <Dialog open={isOpen}>
-      <ClickAwayListener
-        onClickAway={handleClickAway}
-        sx={{ backgroundColor: 'transparent' }}
-      >
+      <ClickAwayListener onClickAway={handleClickAway}>
         <Grid
           container
           sx={{
@@ -47,6 +47,7 @@ const TarotDialog = ({
           }}
         >
           <Grid
+            item
             xs={12}
             md={6}
             sx={{
@@ -58,6 +59,7 @@ const TarotDialog = ({
             <CardMedia component='img' src={image} sx={{ borderRadius: 2 }} />
           </Grid>
           <Grid
+            item
             xs={12}
             md={6}
             sx={{
@@ -70,7 +72,6 @@ const TarotDialog = ({
             }}
           >
             <Box
-              onClick={onClick}
               sx={{
                 justifySelf: 'flex-end',
                 [breakpoints.down('md')]: {
@@ -81,6 +82,15 @@ const TarotDialog = ({
               }}
             >
               <Typography
+                onClick={onClick}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    onClick();
+                  }
+                }}
+                role='button'
+                tabIndex={0}
                 sx={{
                   background: palette.pinks.main,
                   color: palette.pinks.contrastLightAAA,

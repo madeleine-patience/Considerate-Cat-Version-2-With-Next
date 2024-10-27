@@ -1,12 +1,28 @@
 import { useEffect, useState } from 'react';
-import { supabase } from '../supabase'; // Adjust the path as necessary
+import { supabase } from '../supabase';
 
-const useFetchTarotDeck = () => {
-  const [tarotCards, setTarotCards] = useState([]);
+export interface TarotCard {
+  id: number;
+  card_name: string;
+  card_suit: string;
+  description: string;
+  image_link: string;
+  alt_text: string;
+  key_words: string[];
+}
+
+export interface TarotDeckProps {
+  tarotDeck: TarotCard[];
+  loading: boolean;
+}
+
+function useFetchTarotDeck(): TarotDeckProps {
+  const [tarotDeck, setTarotDeck] = useState<TarotCard[]>([]);
   const [loading, setLoading] = useState(true);
+  const [fetchError, setFetchError] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchTarotCards = async () => {
+    async function fetchTarotDeck(): Promise<void> {
       try {
         setLoading(true);
         const { data, error } = await supabase
@@ -14,23 +30,25 @@ const useFetchTarotDeck = () => {
           .select('*');
 
         if (error) {
-          throw error;
+          setFetchError(error.message);
+          console.error('Server error: ', fetchError);
         }
 
-        setTarotCards(data);
+        if (data) {
+          setTarotDeck(data);
+        }
       } catch (error) {
-        console.log(error);
+        setFetchError((error as Error).message);
+        console.error('Error caught in fetchTarotDeck.ts: ', error.message);
       } finally {
-        setTimeout(() => {
-          setLoading(false);
-        }, 1000);
+        setLoading(false);
       }
-    };
+    }
 
-    fetchTarotCards();
+    fetchTarotDeck();
   }, []);
 
-  return { tarotCards, loading };
-};
+  return { tarotDeck, loading };
+}
 
 export default useFetchTarotDeck;

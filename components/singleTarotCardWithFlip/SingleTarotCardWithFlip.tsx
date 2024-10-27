@@ -1,7 +1,5 @@
 import { Box } from '@mui/material';
 
-const tarotBack = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/tarotcard/0.jpg`;
-
 interface SingleTarotCardWithFlipAction {
   onClick?: () => void;
 }
@@ -12,6 +10,7 @@ interface SingleTarotCardWithFlipProps extends SingleTarotCardWithFlipAction {
   image: string;
   isCardFlipped?: boolean;
   transitionDelay?: string;
+  altText?: string;
   size?: cardSize;
 }
 
@@ -23,11 +22,23 @@ const SingleTarotCard = ({
   isCardFlipped = true,
   transitionDelay,
   onClick,
+  altText,
   size = 'medium'
 }: SingleTarotCardWithFlipProps) => {
+  /**
+   * TODO Tarot flip should be factored to one button
+   */
   return (
     <Box
       onClick={onClick}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick();
+        }
+      }}
+      role='button'
+      tabIndex={0}
       sx={{
         display: 'flex',
         flexDirection: 'row',
@@ -57,7 +68,8 @@ const SingleTarotCard = ({
           }
         }}
         component='img'
-        src={tarotBack}
+        src='/image/welcome-cards/tarot-card-back.webp'
+        alt='The tarot card back'
       />
       <Box
         data-size={size}
@@ -77,6 +89,7 @@ const SingleTarotCard = ({
         }}
         component='img'
         src={image}
+        alt={altText}
       />
     </Box>
   );

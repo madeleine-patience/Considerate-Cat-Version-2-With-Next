@@ -58,6 +58,7 @@ const FlowerFooter = () => {
                 component='img'
                 sx={{ width: 300, position: 'relative', top: 10, right: 8 }}
                 src='/image/catNamedShoe.webp'
+                alt='Artwork depicting Shoe the cat with a friendly expression.'
               />
             </Box>
             <Box

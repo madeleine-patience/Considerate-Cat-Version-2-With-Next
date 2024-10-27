@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { TarotDialogProps } from '../components/tarotDialog/TarotDialog';
-import { TarotDeckData } from '../types/tarotDeckData';
-import { CardSuitTypes } from '../types/cardSuitTypes';
+import type { TarotDialogProps } from '../components/tarotDialog';
+import type { TarotCard } from './fetchTarotDeck';
+import type { CardSuitTypes } from '../pages/CardDirectoryPage';
 
 const initialDialogProps: TarotDialogProps = {
   isOpen: false,
@@ -28,7 +28,7 @@ export const useCardDirectory = () => {
     { buttonLabel: 'Wands' }
   ];
 
-  const openTarotDialog = (tarotCard: TarotDeckData) => {
+  const openTarotDialog = (tarotCard: TarotCard) => {
     setDialogProps({
       isOpen: true,
       card: tarotCard.card_name,
