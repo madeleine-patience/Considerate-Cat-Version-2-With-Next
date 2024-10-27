@@ -16,6 +16,9 @@ export const DisplayTarotCards = ({
   const theme: Theme = useTheme();
   const isSmallScreen: boolean = useMediaQuery(theme.breakpoints.down('md'));
 
+  /**
+   * TODO Replace components with role="button"
+   */
   return (
     <Box>
       <Box
@@ -32,6 +35,14 @@ export const DisplayTarotCards = ({
             <Box
               key={id}
               onClick={() => onClick(id)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  onClick(id);
+                }
+              }}
+              role='button'
+              tabIndex={0}
               width={width}
               borderRadius={2}
               component='img'

@@ -24,7 +24,7 @@ const RaisedButton = ({
         border: `2px solid ${palette.pinks.dark}`,
         boxShadow: `4px 4px 0px 4px ${palette.pinks.dark}`,
         color: 'black',
-        '&:hover': {
+        '&:hover, &:focus': {
           backgroundColor: palette.pinks.light
         },
         '&:active': {
