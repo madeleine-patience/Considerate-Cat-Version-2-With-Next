@@ -27,8 +27,9 @@ function useFetchTarotDeck(): TarotDeckProps {
         setLoading(true);
         const { data, error } = await supabase
           .from('tarotCardInformation')
-          .select('*');
-
+          .select('*')
+          .order('id', { ascending: true });
+        console.log(data);
         if (error) {
           setFetchError(error.message);
           console.error('Server error: ', fetchError);

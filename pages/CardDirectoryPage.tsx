@@ -1,18 +1,18 @@
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
+import type { Theme } from '@mui/system';
+import type { ReactElement } from 'react';
 import { DisplayTarotCards } from '../components/displayTarotCards';
-import { TarotDeckContext } from '../context/TarotDeckContext';
-import { LoadingPage } from '../components/loadingPage/LoadingPage';
-import { useCardDirectory } from '../hooks/useCardDirectory';
-import { useTarotCard } from '../hooks/useTarotCard';
-import { Header } from '../components/header';
 import ElmerCircleIcon from '../components/elmerCircleIcon/ElmerCircleIcon';
 import FlowerFooter from '../components/flowerFooter/FlowerFooter';
+import { Header } from '../components/header';
+import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import RaisedButton from '../components/raisedButton/RaisedButton';
 import TarotDialog from '../components/tarotDialog/TarotDialog';
 import ThreeCardSpread from '../components/threeCardSpread/ThreeCardSpread';
-import useFetchTarotDeck from '../hooks/fetchTarotDeck';
-import type { ReactElement } from 'react';
-import type { Theme } from '@mui/system';
+import { TarotDeckContext } from '../context/TarotDeckContext';
+import useFetchTarotDeck, { TarotCard } from '../hooks/fetchTarotDeck';
+import { useCardDirectory } from '../hooks/useCardDirectory';
+import { useTarotCard } from '../hooks/useTarotCard';
 
 export type CardSuitTypes = 'Major' | 'Cups' | 'Pentacles' | 'Swords' | 'Wands';
 
@@ -44,9 +44,14 @@ export default function FirstPost(): ReactElement {
     displayCardBySuit(cards);
   }
 
+  function findCardById(deck: TarotCard[], id: number): TarotCard | undefined {
+    return deck.find((element) => element.id === id);
+  }
+
   function handleCardClick(cardId: number): void {
     setCurrentCard(cardId);
-    openTarotDialog(tarotCardData[cardId]);
+    const selectedCard = findCardById(tarotDeck, cardId);
+    openTarotDialog(selectedCard);
   }
 
   const shouldShowThreeCards: boolean = !isSmallScreen && showThreeCards;
