@@ -21,9 +21,7 @@ const CatCardFlipper = () => {
       setIsFlipped(true);
     }
   };
-  /**
-   * TODO Replace components with role="button"
-   */
+
   return (
     <Box
       onClick={() => petTheCat()}
