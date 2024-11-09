@@ -29,7 +29,7 @@ export default function Home(): ReactElement {
       <Box
         sx={{
           minHeight: '100vh',
-          width: 'fit-content%',
+          width: 'fit-content',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
