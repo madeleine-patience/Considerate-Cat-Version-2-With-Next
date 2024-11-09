@@ -74,6 +74,7 @@ pull requests, start noting your changes under "Unreleased".
 - `TarotSpread` now pulls optimized images from the public directory.
 - Refactors and cleanup for `TarotSpreadSelectionBox`.
 - Button-like components made more accessible.
+- Small homepage refactor
 
 #### Fixes
 
