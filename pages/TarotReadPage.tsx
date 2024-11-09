@@ -1,15 +1,15 @@
-import { ReactElement, useState } from 'react';
 import { Box, useTheme } from '@mui/material';
+import { ReactElement, useState } from 'react';
+import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
+import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import { Header } from '../components/header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import RaisedButton from '../components/raisedButton/RaisedButton';
 import { TarotSpreadSelectionProps } from '../components/tarotSpreadSelectionBox';
 import { TarotSpreadSelectionBoxList } from '../components/tarotSpreadSelectionBoxList';
 import { TarotDeckContext } from '../context/TarotDeckContext';
-import { useTarotCard } from '../hooks/useTarotCard';
-import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
-import FlowerFooter from '../components/flowerFooter/FlowerFooter';
-import RaisedButton from '../components/raisedButton/RaisedButton';
 import useFetchTarotDeck from '../hooks/fetchTarotDeck';
+import { useTarotCard } from '../hooks/useTarotCard';
 
 export default function FirstPost(): ReactElement {
   const { palette } = useTheme();
@@ -92,7 +92,8 @@ export default function FirstPost(): ReactElement {
             height: '100%',
             display: 'flex',
             flexDirection: 'column',
-            gap: 6
+            gap: 6,
+            p: 4
           }}
         >
           {isTarotReadVisible && (
