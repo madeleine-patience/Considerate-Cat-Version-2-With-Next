@@ -28,7 +28,7 @@ function useFetchCats(): CatProps {
     async function fetchCats(): Promise<void> {
       try {
         setLoading(true);
-        const { data, error } = await supabase.from('catData').select('*');
+        const { data, error } = await supabase.from('catData').select();
 
         if (error) {
           setFetchError(error.message);
