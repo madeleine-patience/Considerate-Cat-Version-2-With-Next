@@ -1,0 +1,59 @@
+#!/bin/sh
+
+# This post-commit script automates the process of managing the CHANGELOG.md file:
+# 1. Prevents infinite loops by using a temporary flag file (.changelog_generated).
+# 2. Checks for write permissions to the project directory and CHANGELOG.md.
+# 3. Removes the existing CHANGELOG.md file to ensure it's always regenerated fresh.
+# 4. Runs the changelog generation command (npm run changelog) to create a new changelog.
+# 5. If the changelog is updated, stages it and amends the current commit.
+# 6. Throws an error if permissions are insufficient or if changelog generation fails.
+# 7. Cleans up the temporary flag file before exiting.
+
+
+TEMP_FILE=".changelog_generated"
+
+# Make sure to clean up the flag file on exit
+trap 'rm -f "$TEMP_FILE"' EXIT
+
+# Exit if the flag file exists
+if [ -f "$TEMP_FILE" ]; then
+  exit 0
+fi
+
+# Create the temporary flag file to prevent re-entry
+touch "$TEMP_FILE"
+
+# Check for write permissions on the directory
+if [ ! -w "$(pwd)" ]; then
+  echo "Error: No write permissions for the project directory. Aborting."
+  rm -f "$TEMP_FILE" # Ensure cleanup
+  exit 1
+fi
+
+# Remove the existing CHANGELOG.md
+if [ -f "CHANGELOG.md" ]; then
+  if [ ! -w "CHANGELOG.md" ]; then
+    echo "Error: No write permissions for CHANGELOG.md. Aborting."
+    rm -f "$TEMP_FILE" # Ensure cleanup
+    exit 1
+  fi
+  echo "Removing existing CHANGELOG.md..."
+  rm CHANGELOG.md
+fi
+
+# Generate a fresh CHANGELOG.md
+if ! npm run changelog; then
+  echo "Failed to generate CHANGELOG.md. Aborting."
+  rm -f "$TEMP_FILE" # Ensure cleanup
+  exit 1
+fi
+
+# Format CHANGELOG.md with Prettier
+if ! npx prettier --write CHANGELOG.md; then
+  echo "Failed to format CHANGELOG.md with Prettier. Aborting."
+  exit 1
+fi
+
+# Add the new CHANGELOG.md to the commit
+git add CHANGELOG.md
+git commit --amend --no-edit
