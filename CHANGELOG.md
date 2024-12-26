@@ -16,6 +16,8 @@
   ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
 - Post commit and changelog script
   ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Post commit handles permissions
+  ([d7a94cf](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d7a94cfef093a4c612ac74d97361cac818a672e0))
 - Spread now using local card images (needed for stories)
   ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
 - Storybook components
