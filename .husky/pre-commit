@@ -7,6 +7,7 @@ branch=$(git rev-parse --abbrev-ref HEAD)
 # Skip running lint-staged on 'main'
 if [ "$branch" != "main" ]; then
   npx lint-staged
+  npm run changelog
 else
   echo "Skipping lint-staged on main branch"
 fi
