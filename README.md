@@ -4,7 +4,7 @@
 
 ![App Screenshot](/public/image/cc-homepage.webp)
 
-**TESTING CHANGELOG**
+**TESTING CHANGELOG 2**
 
 Pounce into the world of Considerate Cat Tarot, a cute and functional
 application designed as the perfect digital companion to the beloved Considerate
