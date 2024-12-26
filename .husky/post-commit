@@ -1,6 +1,16 @@
 ##!/bin/sh
-#. "$(dirname "$0")/_/husky.sh"
+##. "$(dirname "$0")/_/husky.sh"
 
-npm run changelog
-git add CHANGELOG.md
-git commit --amend --no-edit
+# Temporary flag file to prevent infinite loop
+TEMP_FILE=".changelog_generated"
+
+# Generate changelog, add it, and amend the current commit only if the flag file doesn't exist
+if [ ! -f "$TEMP_FILE" ]; then
+  npm run changelog
+  git add CHANGELOG.md
+  git commit --amend --no-edit
+  touch "$TEMP_FILE"
+else
+  # Clean up the flag file if it exists
+  rm "$TEMP_FILE"
+fi

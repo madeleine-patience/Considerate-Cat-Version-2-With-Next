@@ -26,6 +26,3255 @@
   ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
 - testing changelog
   ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([b313af5](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/b313af5fe26b5259b8636de78d446a48569702c0))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([61f09de](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/61f09de7c221707f87ddbe9cc54e5790f63c48ff))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([24f8b43](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/24f8b43031aef956adcf4d4bf807af7259cc2193))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([02624b4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/02624b4e87d6b420d8e13b60081d9d913299776a))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([3482a14](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/3482a1446e9de34bfea6cdce7e6520e90789222d))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([af71b6f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/af71b6f9f4c7cf86856b22bdd61d3cf17ef876b2))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([444097e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/444097ebd9bbc1fb1d348a179fd4f1780e8bfcfb))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([1c1edbb](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1c1edbbe30ff7342bab877d56746e2d4f1e82559))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([bafdf7e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/bafdf7eafef6b93346bd4a63687d9731894425e6))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([98ecc10](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/98ecc10dbccdbcd2c947b395d73aca18a9995bd9))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([5443667](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/54436674e447def8c624770a48e36af25c1a6900))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([a32f256](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a32f25635a1b0292c0fe16601c526ae9b4d862e2))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([3729689](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/372968910479fb30c7188729663d1de68e9ad34e))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([3786db5](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/3786db54eb82e1482903d3d1a24528b31b94166a))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([435b120](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/435b1204dc7eaf5c2817e64daa36954ac453760a))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([10ea948](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/10ea9489b45de15efba56b31bb16937cdf689f1a))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([4c0a620](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/4c0a6207215451956fb6ec00c9896306d6d40b3e))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([1453eaa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1453eaae641ffb3fc80c5068bd43f29ba8689352))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([d89d4f5](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d89d4f5d7cef47175e1745cd02c208e1b87aacba))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([d89d4f5](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d89d4f5d7cef47175e1745cd02c208e1b87aacba))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([c099662](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/c09966291da3d96020aba7f741669e501b0893b0))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([c099662](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/c09966291da3d96020aba7f741669e501b0893b0))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([5f7b0e4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5f7b0e46a44f46c3a71b34fc12db58db6a659918))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([5f7b0e4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5f7b0e46a44f46c3a71b34fc12db58db6a659918))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([e09efef](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e09efefe6cf4b913bcb2384862d2390c14d7692b))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([e09efef](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e09efefe6cf4b913bcb2384862d2390c14d7692b))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([d2cee11](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d2cee11c83c830c42847b1d46609055e24bcfb0b))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([d2cee11](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d2cee11c83c830c42847b1d46609055e24bcfb0b))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([22f5bc5](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/22f5bc50c3b0402bf02ae86fc5a11a93ced5699e))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([22f5bc5](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/22f5bc50c3b0402bf02ae86fc5a11a93ced5699e))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([5f4c26f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5f4c26fa8d8f82c4b330ad2e3a29f60a6d1a6a25))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post commit
+  ([5f4c26f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5f4c26fa8d8f82c4b330ad2e3a29f60a6d1a6a25))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post-commit hook
+  ([56e4c90](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/56e4c901809245910fc295bb0c740eec2521660e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
+- Testing post-commit hook
+  ([2c9b320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2c9b320c5989041522d1b726e611bcddc7468d9e))
+- Update to husky (per husky warning)
+  ([1b2ff68](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/1b2ff68f114aa5b344912a23b578dd247429b3fb))
+- Updated readme and removed console logs
+  ([74288c7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/74288c7b2b43a31e826185f25baed56147faf3c2))
+- Updated TODOs
+  ([9ab43dd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9ab43dd770e9de4351350847dd0a93ee760d50cc))
+- Updates to readme/changelog
+  ([43702f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/43702f72c1306be0c2e77cce8543934afb630314))
+- Updates to types, testing fetch
+  ([2b1201c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2b1201cd8fd0fe155869f5b64320ee6a319c25da))
+- Using non-index key
+  ([32805d9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/32805d9396b419e3cfbaae7a5d76da31c7b37c12))
+
+### Chore
+
+- Removed post commit
+  ([fb42604](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fb42604469b08425e59c4a28f347448c1f10fb55))
+
+### feat
+
+- Added alt text props to Purrlaroid
+  ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
+- Added new stories for card amounts
+  ([a77e642](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a77e64260aecf58fda74caa0a1cf3622849811a0))
+- Added roles to interactive components
+  ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
+- Adding tilt deltas for layouts
+  ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- changelog generated
+  ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
+- Forgot to add 4 card spread!
+  ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- Post commit and changelog script
+  ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
+- Spread now using local card images (needed for stories)
+  ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
+- Storybook components
+  ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
+- tarotSpread refactored to include containers and props
+  ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Updated CatDirectory to use alt_text
+  ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
+- Working props for storybook controls
+  ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### refactor
+
+- Added button behavior to cards in the Card Directory
+  ([9f8d945](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9f8d94552ff4c8118ffbe9d221533cb520cdb0ed))
+- Now using a component for tarot spread
+  ([84c280f](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/84c280f1572bd11cc9b26e22f702bb305595cb43))
+- Page types
+  ([fa7fcfd](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/fa7fcfd8073c422b8b42c291c144368ff83943f0))
+- Type and fetch calls
+  ([97b5ddc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97b5ddc9180d7dc0f2ef190092b6f1fcc5811dfc))
+
+### test
+
+- Testing Something
+  ([81ad68e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/81ad68eb3e8f523c320ee79236a04f8bcdb6fe73))
+
+## 2.1.8 (2024-12-26)
+
+### chore
+
+- Added alt text to component images
+  ([ad72564](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ad72564bb8706eee8f9cdc62a67866c17cec62ce))
+- Added type for props, removed unoriginal styles
+  ([9b8d7fa](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/9b8d7fa0ee26a8f3b338c006eebf52ab5aff1bb5))
+- adding static assets, types
+  ([1321899](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/132189953773038d2055ff6de40780d8fdeee2d4))
+- Allowing unused params in type declarations with an underscore
+  ([782fea9](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/782fea929c2feed82af57fab83a2b221bf11c254))
+- Created index files for simpler exports on the components
+  ([48dd94b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/48dd94b9429b73655373b99f08b06f301cccc29e))
+- fixed global import warning
+  ([12e68d4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/12e68d473fd015feb38932755e76ee702b8576a4))
+- fixed global import warning
+  ([f1b5320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f1b532000638fb84f9cc338418b9659fc14065fb))
+- Fixed param
+  ([ee093e2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ee093e2e3132439e99560948abeba19bf8f649dc))
+- no need to include tarotDeckData
+  ([33da361](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/33da361f04b332d9b1e94343cae8e2a374513246))
+- Refactored to include altText
+  ([7597afc](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/7597afc3d217f03ccb67f288f6b8341f644412fc))
+- Removed the types dir
+  ([a7e91e6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/a7e91e6316ebf6399fce9fb4f0ed737af4f9b204))
+- testing changelog
+  ([061309c](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/061309cb9aa96ffd0bab5fcf1ba838a4665ba774))
 - Testing post-commit hook
   ([2c9b320](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2c9b320c5989041522d1b726e611bcddc7468d9e))
 - Update to husky (per husky warning)
