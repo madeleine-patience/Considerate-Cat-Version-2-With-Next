@@ -22,6 +22,8 @@
   ([0a434a8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/0a434a89dc5b21d34932c6f47c54a15ad5480b3c))
 - tarotSpread refactored to include containers and props
   ([2442bff](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/2442bffe4620cc3adaf559846da560cad5d3a85b))
+- Testing changelog
+  ([415ef0b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/415ef0b7713165c03747b4d86745d9739f5050dc))
 - Updated CatDirectory to use alt_text
   ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
 - Updated post-commit
