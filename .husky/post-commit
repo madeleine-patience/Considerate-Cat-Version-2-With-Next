@@ -48,6 +48,12 @@ if ! npm run changelog; then
   exit 1
 fi
 
+# Format CHANGELOG.md with Prettier
+if ! npx prettier --write CHANGELOG.md; then
+  echo "Failed to format CHANGELOG.md with Prettier. Aborting."
+  exit 1
+fi
+
 # Add the new CHANGELOG.md to the commit
 git add CHANGELOG.md
 git commit --amend --no-edit
