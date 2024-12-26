@@ -1,108 +1,108 @@
 {
-  "printWidth": 80,
-  "tabWidth": 2,
-  "useTabs": false,
-  "semi": true,
-  "singleQuote": true,
-  "quoteProps": "as-needed",
-  "jsxSingleQuote": true,
-  "trailingComma": "none",
-  "bracketSpacing": true,
-  "bracketSameLine": false,
-  "arrowParens": "always",
-  "proseWrap": "preserve",
-  "htmlWhitespaceSensitivity": "css",
-  "embeddedLanguageFormatting": "auto",
-  "overrides": [
-	{
-	  "files": "*.ts",
-	  "options": {
-		"parser": "typescript",
-		"singleQuote": true,
-		"trailingComma": "none",
-		"printWidth": 80
-	  }
-	},
-	{
-	  "files": "*.tsx",
-	  "options": {
-		"parser": "typescript",
-		"jsxSingleQuote": true,
-		"trailingComma": "none",
-		"printWidth": 80
-	  }
-	},
-	{
-	  "files": "*.jsx",
-	  "options": {
-		"parser": "babel",
-		"singleQuote": true,
-		"trailingComma": "none",
-		"printWidth": 80
-	  }
-	},
-	{
-	  "files": "*.json",
-	  "options": {
-		"parser": "json",
-		"tabWidth": 2,
-		"trailingComma": "none",
-		"printWidth": 80
-	  }
-	},
-	{
-	  "files": "*.md",
-	  "options": {
-		"parser": "markdown",
-		"proseWrap": "always",
-		"singleQuote": false,
-		"trailingComma": "none"
-	  }
-	},
-	{
-	  "files": "*.html",
-	  "options": {
-		"parser": "html",
-		"tabWidth": 2,
-		"printWidth": 80,
-		"bracketSpacing": true,
-		"htmlWhitespaceSensitivity": "strict"
-	  }
-	},
-	{
-	  "files": "*.css",
-	  "options": {
-		"parser": "css",
-		"tabWidth": 2,
-		"singleQuote": true,
-		"printWidth": 80
-	  }
-	},
-	{
-	  "files": "*.scss",
-	  "options": {
-		"parser": "scss",
-		"tabWidth": 2,
-		"singleQuote": true,
-		"printWidth": 80
-	  }
-	},
-	{
-	  "files": "*.less",
-	  "options": {
-		"parser": "less",
-		"tabWidth": 2,
-		"singleQuote": true,
-		"printWidth": 80
-	  }
-	},
-	{
-	  "files": "*.mdx",
-	  "options": {
-		"parser": "mdx",
-		"proseWrap": "preserve",
-		"printWidth": 80
-	  }
-	},
-  ],
+	"printWidth": 80,
+	"tabWidth": 2,
+	"useTabs": false,
+	"semi": true,
+	"singleQuote": true,
+	"quoteProps": "as-needed",
+	"jsxSingleQuote": true,
+	"trailingComma": "none",
+	"bracketSpacing": true,
+	"bracketSameLine": false,
+	"arrowParens": "always",
+	"proseWrap": "preserve",
+	"htmlWhitespaceSensitivity": "css",
+	"embeddedLanguageFormatting": "auto",
+	"overrides": [
+		{
+			"files": "*.ts",
+			"options": {
+				"parser": "typescript",
+				"singleQuote": true,
+				"trailingComma": "none",
+				"printWidth": 80
+			}
+		},
+		{
+			"files": "*.tsx",
+			"options": {
+				"parser": "typescript",
+				"jsxSingleQuote": true,
+				"trailingComma": "none",
+				"printWidth": 80
+			}
+		},
+		{
+			"files": "*.jsx",
+			"options": {
+				"parser": "babel",
+				"singleQuote": true,
+				"trailingComma": "none",
+				"printWidth": 80
+			}
+		},
+		{
+			"files": "*.json",
+			"options": {
+				"parser": "json",
+				"tabWidth": 2,
+				"trailingComma": "none",
+				"printWidth": 80
+			}
+		},
+		{
+			"files": "*.md",
+			"options": {
+				"parser": "markdown",
+				"proseWrap": "always",
+				"singleQuote": false,
+				"trailingComma": "none"
+			}
+		},
+		{
+			"files": "*.html",
+			"options": {
+				"parser": "html",
+				"tabWidth": 2,
+				"printWidth": 80,
+				"bracketSpacing": true,
+				"htmlWhitespaceSensitivity": "strict"
+			}
+		},
+		{
+			"files": "*.css",
+			"options": {
+				"parser": "css",
+				"tabWidth": 2,
+				"singleQuote": true,
+				"printWidth": 80
+			}
+		},
+		{
+			"files": "*.scss",
+			"options": {
+				"parser": "scss",
+				"tabWidth": 2,
+				"singleQuote": true,
+				"printWidth": 80
+			}
+		},
+		{
+			"files": "*.less",
+			"options": {
+				"parser": "less",
+				"tabWidth": 2,
+				"singleQuote": true,
+				"printWidth": 80
+			}
+		},
+		{
+			"files": "*.mdx",
+			"options": {
+				"parser": "mdx",
+				"proseWrap": "preserve",
+				"printWidth": 80
+			}
+		}
+	]
 }
