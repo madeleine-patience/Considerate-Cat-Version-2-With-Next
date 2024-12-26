@@ -17,7 +17,8 @@
     "build-storybook": "storybook build",
     "lint": "eslint .",
     "prepare": "husky install",
-    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,css,scss,md,json,html}\""
+    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,css,scss,md,json,html}\"",
+    "changelog": "conventional-changelog -p eslint -i CHANGELOG.md -s"
   },
   "dependencies": {
     "@mui/icons-material": "^5.15.6",
@@ -45,6 +46,7 @@
     "@types/react": "18.2.48",
     "@typescript-eslint/eslint-plugin": "^8.2.0",
     "@typescript-eslint/parser": "^8.2.0",
+    "conventional-changelog-cli": "^5.0.0",
     "encoding": "^0.1.13",
     "eslint": "^9.9.1",
     "eslint-plugin-react": "^7.35.0",
@@ -58,7 +60,10 @@
     "typescript-eslint": "^8.2.0"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,css,md,ts,tsx}": "prettier --write"
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{scss,css,md}": "prettier --write"
   }
 }
