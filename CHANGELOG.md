@@ -25,7 +25,7 @@
 - Updated CatDirectory to use alt_text
   ([653b67d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/653b67dfbc8981ac34d910692a1a88edb92fba53))
 - Updated post-commit
-  ([13fd0c6](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/13fd0c6133640c44a1d05d9d3797dec3b10cb31f))
+  ([e9a47f2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e9a47f2907fc1c6e5c335e565296e5e2556b9628))
 - Working props for storybook controls
   ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
 
