@@ -21,7 +21,7 @@ twitch where I am building this project in public:
 
 https://www.twitch.tv/madeleinepatience
 
-**TEST WITHOUT CHANGELOG**
+**TEST WITH CHANGELOG**
 
 ## In Progress Features
 
