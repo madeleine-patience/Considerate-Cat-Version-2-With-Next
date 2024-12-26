@@ -10,19 +10,21 @@ if [ -f "$TEMP_FILE" ]; then
   exit 0
 fi
 
-# Create the temporary flag file
+# Create the temporary flag file to prevent re-entry
 touch "$TEMP_FILE"
 
-# Regenerate CHANGELOG.md
+# Remove the existing CHANGELOG.md
+if [ -f "CHANGELOG.md" ]; then
+  echo "Removing existing CHANGELOG.md..."
+  rm CHANGELOG.md
+fi
+
+# Generate a fresh CHANGELOG.md
 if ! npm run changelog; then
   echo "Failed to generate CHANGELOG.md. Aborting."
   exit 1
 fi
 
-# Check if CHANGELOG.md has changes before amending
-if git diff --quiet CHANGELOG.md; then
-  echo "No changes in CHANGELOG.md, skipping commit amend."
-else
-  git add CHANGELOG.md
-  git commit --amend --no-edit
-fi
+# Add the new CHANGELOG.md to the commit
+git add CHANGELOG.md
+git commit --amend --no-edit
