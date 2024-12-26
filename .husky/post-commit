@@ -1,16 +1,28 @@
-##!/bin/sh
-##. "$(dirname "$0")/_/husky.sh"
+#!/bin/sh
 
-# Temporary flag file to prevent infinite loop
 TEMP_FILE=".changelog_generated"
 
-# Generate changelog, add it, and amend the current commit only if the flag file doesn't exist
-if [ ! -f "$TEMP_FILE" ]; then
-  npm run changelog
+# Clean up the flag file on exit
+trap 'rm -f "$TEMP_FILE"' EXIT
+
+# Exit if the flag file exists
+if [ -f "$TEMP_FILE" ]; then
+  exit 0
+fi
+
+# Create the temporary flag file
+touch "$TEMP_FILE"
+
+# Regenerate CHANGELOG.md
+if ! npm run changelog; then
+  echo "Failed to generate CHANGELOG.md. Aborting."
+  exit 1
+fi
+
+# Check if CHANGELOG.md has changes before amending
+if git diff --quiet CHANGELOG.md; then
+  echo "No changes in CHANGELOG.md, skipping commit amend."
+else
   git add CHANGELOG.md
   git commit --amend --no-edit
-  touch "$TEMP_FILE"
-else
-  # Clean up the flag file if it exists
-  rm "$TEMP_FILE"
 fi
