@@ -21,8 +21,6 @@ twitch where I am building this project in public:
 
 https://www.twitch.tv/madeleinepatience
 
-**TEST WITH CHANGELOG**
-
 ## In Progress Features
 
 - Daily Cards and Insights
