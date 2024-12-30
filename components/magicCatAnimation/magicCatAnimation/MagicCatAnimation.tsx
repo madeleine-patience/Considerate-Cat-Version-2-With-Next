@@ -1,5 +1,5 @@
 import { keyframes } from '@emotion/react';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material';
 
 const animatedCat = keyframes`
 0%{background-image:url(${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/headerAnimation/heidi-01.png)}
@@ -18,13 +18,14 @@ const animatedCat = keyframes`
 100%{background-image:url(${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/headerAnimation/heidi-14.png)};`;
 
 const AnimatedCat = styled('div')({
+  margin: 'auto',
   backgroundImage: `url(${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/headerAnimation/heidi-01.png)`,
   animationName: animatedCat,
   animationDuration: '2.5s',
   animationIterationCount: '1',
   backgroundSize: 'cover',
-  height: 362,
-  width: 400,
+  height: 200,
+  width: 220,
   alignItems: 'center',
   animationPlayState: 'running',
   '&:hover': {

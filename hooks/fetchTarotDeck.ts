@@ -29,7 +29,6 @@ function useFetchTarotDeck(): TarotDeckProps {
           .from('tarotCardInformation')
           .select()
           .order('id', { ascending: true });
-        console.log(data);
         if (error) {
           setFetchError(error.message);
           console.error('Server error: ', fetchError);
@@ -40,7 +39,6 @@ function useFetchTarotDeck(): TarotDeckProps {
         }
       } catch (error) {
         setFetchError((error as Error).message);
-        console.error('Error caught in fetchTarotDeck.ts: ', error.message);
       } finally {
         setLoading(false);
       }
