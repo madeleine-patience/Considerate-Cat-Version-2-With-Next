@@ -3,15 +3,17 @@ import type { Theme } from '@mui/system';
 import type { TarotCard } from '../../hooks/fetchTarotDeck';
 
 interface DisplayTarotCardsProps {
-  data: TarotCard[];
+  tarotCardData: TarotCard[];
   width: string;
-  onClick: (_param: number) => void;
+  isGridView: boolean;
+  onClick?: (_param: number) => void;
 }
 
 export const DisplayTarotCards = ({
-  data,
+  tarotCardData,
   width,
-  onClick
+  onClick,
+  isGridView
 }: DisplayTarotCardsProps) => {
   const theme: Theme = useTheme();
   const isSmallScreen: boolean = useMediaQuery(theme.breakpoints.down('md'));
@@ -23,34 +25,51 @@ export const DisplayTarotCards = ({
     <Box>
       <Box
         margin='auto'
-        width='fit-content'
         display={isSmallScreen ? 'flex' : 'grid'}
         flexDirection='column'
         gap={4}
         p={4}
-        gridTemplateColumns='auto auto auto auto auto'
+        gridTemplateColumns={isGridView ? 'auto auto auto auto auto' : ''}
       >
-        {data.map(({ id, image_link, alt_text }: TarotCard) => (
-          <Box key={id}>
-            <Box
-              key={id}
-              onClick={() => onClick(id)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  e.preventDefault();
-                  onClick(id);
-                }
-              }}
-              role='button'
-              tabIndex={0}
-              width={width}
-              borderRadius={2}
-              component='img'
-              src={image_link}
-              alt={alt_text}
-            />
-          </Box>
-        ))}
+        {tarotCardData.map(
+          ({
+            id,
+            card_name,
+            image_link,
+            alt_text,
+            description,
+            key_words
+          }: TarotCard) => (
+            <Box key={id}>
+              {isGridView ? (
+                <Box
+                  key={id}
+                  onClick={() => onClick(id)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      onClick(id);
+                    }
+                  }}
+                  role='button'
+                  tabIndex={0}
+                  width={width}
+                  borderRadius={2}
+                  component='img'
+                  src={image_link}
+                  alt={alt_text}
+                />
+              ) : (
+                <TarotInformationTile
+                  image={image_link}
+                  name={card_name}
+                  description={description}
+                  keywords={key_words}
+                />
+              )}
+            </Box>
+          )
+        )}
       </Box>
     </Box>
   );

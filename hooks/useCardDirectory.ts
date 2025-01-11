@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { TarotInformationModalProps } from '../components/tarotInformationModal';
+import { TarotInformationModalProps } from '../components/tarotInformationModal';
 import type { CardSuitTypes } from '../pages/CardDirectoryPage';
 import type { TarotCard } from './fetchTarotDeck';
 
@@ -20,7 +20,7 @@ export const useCardDirectory = () => {
   const [dialogProps, setDialogProps] = useState(initialDialogProps);
   const [currentCard, setCurrentCard] = useState({});
   const [showThreeCards, setShowCards] = useState(true);
-
+  const [isGridView, setIsGridView] = useState(true);
   const displayCardSuitButtonData: { buttonLabel: CardSuitTypes }[] = [
     { buttonLabel: 'Major' },
     { buttonLabel: 'Cups' },
@@ -57,6 +57,8 @@ export const useCardDirectory = () => {
     setCurrentCard,
     displayCardSuitButtonData,
     setShowCards,
-    showThreeCards
+    showThreeCards,
+    isGridView,
+    setIsGridView
   };
 };

@@ -9,6 +9,7 @@ import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import RaisedButton from '../components/raisedButton/RaisedButton';
 import TarotInformationModal from '../components/tarotInformationModal/TarotInformationModal';
 import ThreeCardSpread from '../components/threeCardSpread/ThreeCardSpread';
+import ToggleButton from '../components/toggleButton/ToggleButton';
 import { TarotDeckContext } from '../context/TarotDeckContext';
 import useFetchTarotDeck, { TarotCard } from '../hooks/fetchTarotDeck';
 import { useCardDirectory } from '../hooks/useCardDirectory';
@@ -36,8 +37,15 @@ export default function FirstPost(): ReactElement {
     setCurrentCard,
     displayCardSuitButtonData,
     setShowCards,
-    showThreeCards
+    showThreeCards,
+    isGridView,
+    setIsGridView
   } = useCardDirectory();
+
+  const switchHandler = (event) => {
+    console.log(event.target.checked);
+    setIsGridView(event.target.checked);
+  };
 
   function displayCards(cards: CardSuitTypes): void {
     setShowCards(false);
@@ -111,11 +119,18 @@ export default function FirstPost(): ReactElement {
           >
             {mappedDisplayGetCardsBuySuitButton}
           </Box>
+          {!showThreeCards && (
+            <ToggleButton
+              onChange={switchHandler}
+              sx={{ margin: 'auto', marginTop: 3 }}
+            />
+          )}
           {
             <DisplayTarotCards
+              isGridView={isGridView}
               onClick={handleCardClick}
               width='248px'
-              data={displayFilteredData}
+              tarotCardData={displayFilteredData}
             />
           }
           {shouldShowThreeCards && (
