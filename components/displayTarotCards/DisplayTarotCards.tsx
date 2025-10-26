@@ -1,11 +1,11 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material';
-import type { TarotCard } from '../../hooks/fetchTarotDeck';
 import type { Theme } from '@mui/system';
+import type { TarotCard } from '../../hooks/fetchTarotDeck';
 
 interface DisplayTarotCardsProps {
   data: TarotCard[];
   width: string;
-  onClick?: (_param: number) => void;
+  onClick: (_param: number) => void;
 }
 
 export const DisplayTarotCards = ({
