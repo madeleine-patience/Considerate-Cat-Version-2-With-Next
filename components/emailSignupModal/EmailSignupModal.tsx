@@ -14,7 +14,6 @@ import {
 } from '@mui/material';
 import { Controller } from 'react-hook-form';
 import { useEmailMarketingForm } from './emailSignup.form';
-import MagicCatAnimation from '../magicCatAnimation/magicCatAnimation/MagicCatAnimation';
 
 interface EmailSignUpModalProps {
   isOpen: boolean;
@@ -42,7 +41,7 @@ const EmailSignUpModal = ({ isOpen, setIsOpen }: EmailSignUpModalProps) => {
             gap: 4
           }}
         >
-          <MagicCatAnimation />
+          <Box component='img' src='/image/MagicHeidi.webp' />
           <Box
             sx={{
               display: 'flex',
@@ -51,7 +50,7 @@ const EmailSignUpModal = ({ isOpen, setIsOpen }: EmailSignUpModalProps) => {
               gap: 2
             }}
           >
-            <Typography variant='h6'>Thanks for signing up!</Typography>
+            <Typography variant='h2'>Keep In Touch?</Typography>
             <Typography sx={{ fontStyle: 'italic' }}>
               We wont overwhelm you with emails, just send you the really
               exciting stuff!
@@ -100,10 +99,14 @@ const EmailSignUpModal = ({ isOpen, setIsOpen }: EmailSignUpModalProps) => {
               control={control}
               render={({ field }) => (
                 <>
-                  <FormLabel sx={{ fontWeight: 'bold' }}>
+                  <FormLabel
+                    id='email-choice-label'
+                    sx={{ fontWeight: 'bold' }}
+                  >
                     Pick your email choice:
                   </FormLabel>
                   <RadioGroup
+                    aria-labelledby='email-choice-label'
                     value={field.value}
                     onChange={(e) => field.onChange(e.target.value)}
                   >
@@ -115,7 +118,7 @@ const EmailSignUpModal = ({ isOpen, setIsOpen }: EmailSignUpModalProps) => {
                     <FormControlLabel
                       value='open_source'
                       control={<Radio />}
-                      label='I want info on contributing to the project'
+                      label='I want information on open-source projects'
                     />
                     <FormControlLabel
                       value='everything'

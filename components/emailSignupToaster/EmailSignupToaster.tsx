@@ -21,7 +21,12 @@ const EmailSignUpToaster = () => {
           <Box
             component='img'
             src='/image/ToasterImage.png'
-            sx={{ width: 210, cursor: 'pointer' }}
+            sx={{
+              width: 210,
+              cursor: 'pointer',
+              filter:
+                ' drop-shadow(2px 0 0 white) drop-shadow(0 2px 0 white) drop-shadow(-2px 0 0 white) drop-shadow(0 -2px 0 white)'
+            }}
           />
           <Box
             sx={{
@@ -35,7 +40,9 @@ const EmailSignUpToaster = () => {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              color: palette.pinks.dark
+              color: palette.pinks.dark,
+              boxShadow:
+                ' rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;'
             }}
           >
             <Typography variant='h6'>Keep In Touch</Typography>
