@@ -61,6 +61,7 @@ const EmailSignUpToaster = () => {
             <Typography variant='h6'>Keep In Touch</Typography>
             <Box
               component='button'
+              aria-label='Close'
               onClick={(e) => {
                 e.stopPropagation();
                 handleCloseToaster();
