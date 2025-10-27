@@ -19,7 +19,7 @@
     "prepare": "husky install",
     "format": "prettier --write \"**/*.{js,ts,jsx,tsx,css,scss,md,json,html}\"",
     "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -o CHANGELOG.md",
-    "chromatic": "npx chromatic --project-token=chpt_86db3fce3cde021"
+    "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
     "@mui/icons-material": "^5.15.6",
