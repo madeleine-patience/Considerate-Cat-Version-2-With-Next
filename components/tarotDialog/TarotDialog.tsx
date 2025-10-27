@@ -1,12 +1,5 @@
-import {
-  Box,
-  CardMedia,
-  ClickAwayListener,
-  Typography,
-  Grid,
-  Dialog,
-  useTheme
-} from '@mui/material';
+import { Box, CardMedia, Grid, Typography, useTheme } from '@mui/material';
+import { Modal } from '../modal';
 
 interface TarotDialogActions {
   onClick: () => void;
@@ -29,150 +22,102 @@ const TarotDialog = ({
   image,
   description,
   keyWords,
-  onClick,
-  handleClickAway
+  onClick
 }: TarotDialogProps) => {
   const { palette, breakpoints } = useTheme();
   /**
    * TODO Replace components with role="button"
    */
   return (
-    <Dialog open={isOpen}>
-      <ClickAwayListener onClickAway={handleClickAway}>
+    <Modal.Root open={isOpen} setIsOpen={onClick}>
+      <Box>
         <Grid
-          container
+          item
+          xs={12}
+          md={6}
           sx={{
-            backgroundColor: palette.greens.light,
-            p: 4
+            [breakpoints.up('md')]: {
+              minHeight: '500px'
+            }
           }}
         >
-          <Grid
-            item
-            xs={12}
-            md={6}
-            sx={{
-              [breakpoints.up('md')]: {
-                minHeight: '500px'
-              }
-            }}
-          >
-            <CardMedia component='img' src={image} sx={{ borderRadius: 2 }} />
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            md={6}
-            sx={{
-              height: '100%',
-              display: 'grid',
-              flexFlow: 'column wrap',
-              [breakpoints.up('md')]: {
-                minHeight: '500px'
-              }
-            }}
-          >
-            <Box
-              sx={{
-                justifySelf: 'flex-end',
-                [breakpoints.down('md')]: {
-                  order: 1,
-                  width: '100%',
-                  textAlign: 'center'
-                }
-              }}
-            >
-              <Typography
-                onClick={onClick}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    onClick();
-                  }
-                }}
-                role='button'
-                tabIndex={0}
-                sx={{
-                  background: palette.pinks.main,
-                  color: palette.pinks.contrastLightAAA,
-                  cursor: 'pointer',
-                  p: '0 6px',
-                  fontWeight: '700',
-                  [breakpoints.down('md')]: {
-                    pt: 2,
-                    pb: 2,
-                    '&::after': {
-                      content: '"Close"',
-                      pl: 1
-                    }
-                  }
-                }}
-              >
-                <span aria-label='close'>✕</span>
-              </Typography>
-            </Box>
-            <Box
-              sx={{
-                p: 4,
-                [breakpoints.up('md')]: {
-                  pt: 0
-                }
-              }}
-            >
-              <Typography
-                variant='h2'
-                fontWeight={700}
-                fontSize={32}
-                sx={{
-                  [breakpoints.down('md')]: {
-                    pt: 4
-                  }
-                }}
-              >
-                {card}
-              </Typography>
-              <Typography
-                variant='h3'
-                fontSize={26}
-                sx={{
-                  fontStyle: 'italic',
-                  pb: 4
-                }}
-              >
-                {suit}
-              </Typography>
-              <Typography>{description}</Typography>
-              <Box
-                sx={{
-                  display: 'flex',
-                  flexWrap: 'wrap',
-                  gap: 2,
-                  pt: 4,
-                  mb: 4
-                }}
-              >
-                {keyWords.map((keyword) => {
-                  return (
-                    <Typography
-                      key={keyword}
-                      fontSize={14}
-                      sx={{
-                        borderRadius: '64px',
-                        background: palette.pinks.main,
-                        color: palette.pinks.contrastLightAAA,
-                        fontWeight: 600,
-                        p: '4px 8px'
-                      }}
-                    >
-                      {keyword}
-                    </Typography>
-                  );
-                })}
-              </Box>
-            </Box>
-          </Grid>
+          <CardMedia component='img' src={image} sx={{ borderRadius: 2 }} />
         </Grid>
-      </ClickAwayListener>
-    </Dialog>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          sx={{
+            height: '100%',
+            display: 'grid',
+            flexFlow: 'column wrap',
+            [breakpoints.up('md')]: {
+              minHeight: '500px'
+            }
+          }}
+        >
+          <Box
+            sx={{
+              p: 4,
+              [breakpoints.up('md')]: {
+                pt: 0
+              }
+            }}
+          >
+            <Typography
+              variant='h2'
+              fontWeight={700}
+              fontSize={32}
+              sx={{
+                [breakpoints.down('md')]: {
+                  pt: 4
+                }
+              }}
+            >
+              {card}
+            </Typography>
+            <Typography
+              variant='h3'
+              fontSize={26}
+              sx={{
+                fontStyle: 'italic',
+                pb: 4
+              }}
+            >
+              {suit}
+            </Typography>
+            <Typography>{description}</Typography>
+            <Box
+              sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: 2,
+                pt: 4,
+                mb: 4
+              }}
+            >
+              {keyWords.map((keyword) => {
+                return (
+                  <Typography
+                    key={keyword}
+                    fontSize={14}
+                    sx={{
+                      borderRadius: '64px',
+                      background: palette.pinks.main,
+                      color: palette.pinks.contrastLightAAA,
+                      fontWeight: 600,
+                      p: '4px 8px'
+                    }}
+                  >
+                    {keyword}
+                  </Typography>
+                );
+              })}
+            </Box>
+          </Box>
+        </Grid>
+      </Box>
+    </Modal.Root>
   );
 };
 
