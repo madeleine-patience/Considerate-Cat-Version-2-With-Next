@@ -1,8 +1,6 @@
 import {
   Box,
   Button,
-  ClickAwayListener,
-  Dialog,
   FormControl,
   FormControlLabel,
   FormLabel,
@@ -13,6 +11,7 @@ import {
   useTheme
 } from '@mui/material';
 import { Controller } from 'react-hook-form';
+import { Modal } from '../modal';
 import { useEmailMarketingForm } from './emailSignup.form';
 
 interface EmailSignUpModalProps {
@@ -30,122 +29,111 @@ const EmailSignUpModal = ({ isOpen, setIsOpen }: EmailSignUpModalProps) => {
   };
 
   return (
-    <Dialog open={isOpen} PaperProps={{ sx: { borderRadius: 4 } }}>
-      <ClickAwayListener onClickAway={closeModal}>
+    <Modal.Root open={isOpen} setIsOpen={closeModal}>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: 'inherit'
+        }}
+      >
         <Box
+          component='img'
+          src='/image/MagicHeidi.webp'
+          sx={{ width: '100%', maxWidth: '400px' }}
+        />
+        <Modal.Title>Keep In Touch?</Modal.Title>
+        <Typography sx={{ fontStyle: 'italic' }}>
+          We wont overwhelm you with emails, just send you the really exciting
+          stuff!
+        </Typography>
+      </Box>
+      <FormControl sx={{ display: 'flex', gap: 4 }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+          <Controller
+            name='Name'
+            control={control}
+            render={({ field, fieldState }) => (
+              <TextField
+                value={field.value}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  field.onChange(value);
+                }}
+                label='Name'
+                color='secondary'
+                error={!!fieldState.error}
+                helperText={fieldState.error?.message || ''}
+              />
+            )}
+          />
+          <Controller
+            name='Email'
+            control={control}
+            render={({ field, fieldState }) => (
+              <TextField
+                value={field.value}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  field.onChange(value);
+                }}
+                fullWidth
+                label='Email'
+                color='secondary'
+                error={!!fieldState.error}
+                helperText={fieldState.error?.message || ''}
+              />
+            )}
+          />
+        </Box>
+        <Controller
+          name='EmailChoice'
+          control={control}
+          render={({ field }) => (
+            <>
+              <FormLabel id='email-choice-label' sx={{ fontWeight: 'bold' }}>
+                Pick your email choice:
+              </FormLabel>
+              <RadioGroup
+                aria-labelledby='email-choice-label'
+                value={field.value}
+                onChange={(e) => field.onChange(e.target.value)}
+              >
+                <FormControlLabel
+                  value='marketing'
+                  control={<Radio />}
+                  label='I want information on new projects and products'
+                />
+                <FormControlLabel
+                  value='open_source'
+                  control={<Radio />}
+                  label='I want information on open-source projects'
+                />
+                <FormControlLabel
+                  value='everything'
+                  control={<Radio />}
+                  label='I want everything!'
+                />
+              </RadioGroup>
+            </>
+          )}
+        />
+        <Button
+          variant='contained'
+          type='submit'
+          onClick={handleFormSubmit}
           sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            backgroundColor: palette.greens.light,
-            p: 5,
-            gap: 4
+            backgroundColor: palette.pinks.dark,
+            '&:hover': {
+              backgroundColor: palette.pinks.dark
+            }
           }}
         >
-          <Box component='img' src='/image/MagicHeidi.webp' />
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              textAlign: 'center',
-              gap: 2
-            }}
-          >
-            <Typography variant='h2'>Keep In Touch?</Typography>
-            <Typography sx={{ fontStyle: 'italic' }}>
-              We wont overwhelm you with emails, just send you the really
-              exciting stuff!
-            </Typography>
-          </Box>
-          <FormControl sx={{ display: 'flex', gap: 4 }}>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-              <Controller
-                name='Name'
-                control={control}
-                render={({ field, fieldState }) => (
-                  <TextField
-                    value={field.value}
-                    onChange={(e) => {
-                      const value = e.target.value;
-                      field.onChange(value);
-                    }}
-                    label='Name'
-                    color='secondary'
-                    error={!!fieldState.error}
-                    helperText={fieldState.error?.message || ''}
-                  />
-                )}
-              />
-              <Controller
-                name='Email'
-                control={control}
-                render={({ field, fieldState }) => (
-                  <TextField
-                    value={field.value}
-                    onChange={(e) => {
-                      const value = e.target.value;
-                      field.onChange(value);
-                    }}
-                    fullWidth
-                    label='Email'
-                    color='secondary'
-                    error={!!fieldState.error}
-                    helperText={fieldState.error?.message || ''}
-                  />
-                )}
-              />
-            </Box>
-            <Controller
-              name='EmailChoice'
-              control={control}
-              render={({ field }) => (
-                <>
-                  <FormLabel
-                    id='email-choice-label'
-                    sx={{ fontWeight: 'bold' }}
-                  >
-                    Pick your email choice:
-                  </FormLabel>
-                  <RadioGroup
-                    aria-labelledby='email-choice-label'
-                    value={field.value}
-                    onChange={(e) => field.onChange(e.target.value)}
-                  >
-                    <FormControlLabel
-                      value='marketing'
-                      control={<Radio />}
-                      label='I want information on new projects and products'
-                    />
-                    <FormControlLabel
-                      value='open_source'
-                      control={<Radio />}
-                      label='I want information on open-source projects'
-                    />
-                    <FormControlLabel
-                      value='everything'
-                      control={<Radio />}
-                      label='I want everything!'
-                    />
-                  </RadioGroup>
-                </>
-              )}
-            />
-            <Button
-              variant='contained'
-              type='submit'
-              onClick={handleFormSubmit}
-              sx={{
-                backgroundColor: palette.pinks.dark,
-                '&:hover': {
-                  backgroundColor: palette.pinks.dark
-                }
-              }}
-            >
-              Submit
-            </Button>
-          </FormControl>
-        </Box>
-      </ClickAwayListener>
-    </Dialog>
+          Submit
+        </Button>
+      </FormControl>
+    </Modal.Root>
   );
 };
 

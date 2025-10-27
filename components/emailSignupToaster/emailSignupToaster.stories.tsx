@@ -1,17 +1,10 @@
 import { Meta, StoryFn } from '@storybook/react';
-import EmailSignUpToaster from './EmailSignupToaster';
 import { expect, screen, userEvent, waitFor } from '@storybook/test';
+import EmailSignUpToaster from './EmailSignupToaster';
 
 export default {
   title: 'Components/EmailSignUpToaster',
-  component: EmailSignUpToaster,
-  decorators: [
-    (Story) => (
-      <div style={{ width: '100%', maxWidth: '100vw' }}>
-        <Story />
-      </div>
-    )
-  ]
+  component: EmailSignUpToaster
 } as Meta<typeof EmailSignUpToaster>;
 
 const Template: StoryFn<typeof EmailSignUpToaster> = () => (

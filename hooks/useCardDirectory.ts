@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import type { TarotDialogProps } from '../components/tarotDialog';
-import type { TarotCard } from './fetchTarotDeck';
+import type { TarotInformationModalProps } from '../components/tarotInformationModal';
 import type { CardSuitTypes } from '../pages/CardDirectoryPage';
+import type { TarotCard } from './fetchTarotDeck';
 
-const initialDialogProps: TarotDialogProps = {
+const initialDialogProps: TarotInformationModalProps = {
   isOpen: false,
-  card: '',
+  cardTitle: '',
   suit: '',
   image: '',
   description: '',
@@ -15,7 +15,8 @@ const initialDialogProps: TarotDialogProps = {
 };
 
 export const useCardDirectory = () => {
-  const [displayTarotDialog, setDisplayTarotDialog] = useState(false);
+  const [showTarotInformationModal, setShowTarotInformationModal] =
+    useState(false);
   const [dialogProps, setDialogProps] = useState(initialDialogProps);
   const [currentCard, setCurrentCard] = useState({});
   const [showThreeCards, setShowCards] = useState(true);
@@ -28,31 +29,31 @@ export const useCardDirectory = () => {
     { buttonLabel: 'Wands' }
   ];
 
-  const openTarotDialog = (tarotCard: TarotCard) => {
+  const openTarotInformationModal = (tarotCard: TarotCard) => {
     setDialogProps({
       isOpen: true,
-      card: tarotCard.card_name,
+      cardTitle: tarotCard.card_name,
       suit: tarotCard.card_suit,
       image: tarotCard.image_link,
       description: tarotCard.description,
       keyWords: tarotCard.key_words,
-      onClick: closeTarotDialog,
-      handleClickAway: closeTarotDialog
+      onClick: closeTarotInformationModal,
+      handleClickAway: closeTarotInformationModal
     });
-    setDisplayTarotDialog(true);
+    setShowTarotInformationModal(true);
   };
 
-  const closeTarotDialog = () => {
-    setDisplayTarotDialog(false);
+  const closeTarotInformationModal = () => {
+    setShowTarotInformationModal(false);
   };
 
   return {
     dialogProps,
-    displayTarotDialog,
+    showTarotInformationModal,
     currentCard,
-    openTarotDialog,
-    closeTarotDialog,
-    setDisplayTarotDialog,
+    openTarotInformationModal,
+    closeTarotInformationModal,
+    setShowTarotInformationModal,
     setCurrentCard,
     displayCardSuitButtonData,
     setShowCards,

@@ -75,7 +75,7 @@ const FlowerFooter = () => {
                 borderRadius: 5
               }}
             >
-              <Typography variant='h6' fontWeight='600'>
+              <Typography variant='h5'>
                 Considerate Cat is purrrrrently under construction. Hold onto
                 your whiskers while we work our
                 <b style={{ color: 'yellow' }}>

@@ -5,8 +5,7 @@ import ThreeCardSpread from './ThreeCardSpread';
 
 export default {
   title: 'Components/ThreeCardSpread',
-  component: ThreeCardSpread,
-  decorators: [(Story) => <Story />]
+  component: ThreeCardSpread
 } as Meta<typeof ThreeCardSpread>;
 
 const Template: StoryFn<typeof ThreeCardSpread> = () => (

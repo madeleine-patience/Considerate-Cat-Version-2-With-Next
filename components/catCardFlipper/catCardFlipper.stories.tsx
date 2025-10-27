@@ -1,10 +1,26 @@
+import { Box, Typography } from '@mui/material';
 import { Meta } from '@storybook/react';
 import { screen, userEvent } from '@storybook/test';
 import CatCardFlipper from './CatCardFlipper';
 
 export default {
   title: 'Components/CatCardFlipper',
-  component: CatCardFlipper
+  component: CatCardFlipper,
+  decorators: [
+    (Story) => (
+      <Box
+        sx={{
+          backgroundColor: 'pink',
+          height: '100vh',
+          display: 'flex',
+          alignItems: 'center'
+        }}
+      >
+        <Story />
+        <Typography variant='h2'> Click me for something cute !</Typography>
+      </Box>
+    )
+  ]
 } as Meta<typeof CatCardFlipper>;
 
 export const Default = {};

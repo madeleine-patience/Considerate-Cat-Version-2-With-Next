@@ -58,7 +58,7 @@ const EmailSignUpToaster = () => {
               cursor: 'pointer'
             }}
           >
-            <Typography variant='h6'>Keep In Touch</Typography>
+            <Typography variant='h4'>Keep In Touch</Typography>
             <Box
               component='button'
               aria-label='Close'

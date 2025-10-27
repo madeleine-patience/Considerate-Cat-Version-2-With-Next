@@ -81,23 +81,19 @@ const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
       />
       <Box>
         <Typography
-          variant='h3'
+          variant='h2'
           textAlign='center'
-          fontWeight={600}
-          fontSize={42}
           color={palette.pinks.dark}
           p={4}
         >
           {title}
         </Typography>
         <Typography
-          variant='body2'
+          variant='h5'
           p={4}
           pt={0}
           sx={{
-            fontWeight: 600,
             textAlign: 'center',
-            fontSize: '18px',
             color: palette.pinks.dark
           }}
         >

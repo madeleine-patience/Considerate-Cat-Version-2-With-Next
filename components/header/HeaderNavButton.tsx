@@ -29,7 +29,7 @@ const HeaderNavButton = ({ children, link }: HeaderNavButtonProps) => {
           }
         }}
       >
-        <Typography variant='h6' sx={{ textDecoration: 'none' }}>
+        <Typography variant='button' sx={{ textDecoration: 'none' }}>
           {children}
         </Typography>
       </Box>

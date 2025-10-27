@@ -84,7 +84,7 @@ export default function Home(): ReactElement {
                   alignItems: 'center'
                 }}
               >
-                <Typography variant='h6'>
+                <Typography variant='body1'>
                   Considerate Cat is a tarot deck that was published in 2018,
                   brought to life by a community of folks on Kickstarter. Since
                   then, the deck has been brought into many inspiring
@@ -93,7 +93,7 @@ export default function Home(): ReactElement {
                   online! Here, you can have your cards read, learn about the
                   cats that inspired the deck, and dive deeper into the artwork
                 </Typography>
-                <Typography variant='h6'>
+                <Typography variant='body1'>
                   Also, Butters is patiently waiting to have his cards read.
                   Click him to give him the reading he&apos;s been waiting for!
                 </Typography>

@@ -1,17 +1,10 @@
 import { Meta, StoryFn } from '@storybook/react';
-import EmailSignUpModal from './EmailSignupModal';
 import { expect, fn, screen, userEvent } from '@storybook/test';
+import EmailSignUpModal from './EmailSignupModal';
 
 export default {
   title: 'Components/EmailSignUpModal',
-  component: EmailSignUpModal,
-  decorators: [
-    (Story) => (
-      <div style={{ width: '100%', maxWidth: '100vw' }}>
-        <Story />
-      </div>
-    )
-  ]
+  component: EmailSignUpModal
 } as Meta<typeof EmailSignUpModal>;
 
 const Template: StoryFn<typeof EmailSignUpModal> = () => (

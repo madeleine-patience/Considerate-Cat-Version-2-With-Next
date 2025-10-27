@@ -7,7 +7,7 @@ import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import { Header } from '../components/header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
 import RaisedButton from '../components/raisedButton/RaisedButton';
-import TarotDialog from '../components/tarotDialog/TarotDialog';
+import TarotInformationModal from '../components/tarotInformationModal/TarotInformationModal';
 import ThreeCardSpread from '../components/threeCardSpread/ThreeCardSpread';
 import { TarotDeckContext } from '../context/TarotDeckContext';
 import useFetchTarotDeck, { TarotCard } from '../hooks/fetchTarotDeck';
@@ -31,8 +31,8 @@ export default function FirstPost(): ReactElement {
 
   const {
     dialogProps,
-    displayTarotDialog,
-    openTarotDialog,
+    showTarotInformationModal,
+    openTarotInformationModal,
     setCurrentCard,
     displayCardSuitButtonData,
     setShowCards,
@@ -52,7 +52,7 @@ export default function FirstPost(): ReactElement {
     setCurrentCard(cardId);
     const selectedCard = findCardById(tarotDeck, cardId);
     if (selectedCard) {
-      openTarotDialog(selectedCard);
+      openTarotInformationModal(selectedCard);
     }
   }
 
@@ -126,7 +126,9 @@ export default function FirstPost(): ReactElement {
             />
           )}
         </Box>
-        {displayTarotDialog && <TarotDialog {...dialogProps} />}
+        {showTarotInformationModal && (
+          <TarotInformationModal {...dialogProps} />
+        )}
         <FlowerFooter />
       </Box>
     </TarotDeckContext.Provider>
