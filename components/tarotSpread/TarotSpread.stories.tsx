@@ -1,12 +1,10 @@
 import { Meta, StoryFn } from '@storybook/react';
-import { TarotSpread, TarotSpreadProps } from './TarotSpread';
-import React from 'react';
-import { AnnotatedStoryFn } from '@storybook/types';
 import {
-  getLayout,
   CardLayout,
+  getLayout,
   getLayoutStyles
 } from '../tarotSpreadSelectionBox';
+import { TarotSpread, TarotSpreadProps } from './TarotSpread';
 
 const layoutTemplate: CardLayout = {
   images: [],
@@ -25,15 +23,13 @@ const layoutTemplate: CardLayout = {
 };
 
 function merge(layout: CardLayout, source: CardLayout): CardLayout {
-  const result = { ...layout };
-
-  for (const key in source) {
-    if (!layout.hasOwnProperty(key)) {
-      result[key] = source[key];
-    }
-  }
-
-  return result;
+  return {
+    ...source,
+    ...Object.fromEntries(
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      Object.entries(layout).filter(([_, value]) => value !== undefined)
+    )
+  } as CardLayout;
 }
 
 function getCardLayout(amountOfCards: number): CardLayout {
@@ -75,7 +71,7 @@ interface StorybookProps extends TarotSpreadProps, CardLayout {
 }
 
 const Template: StoryFn<StorybookProps> = ({
-  amountOfCards,
+  amountOfCards = 3,
   isHovered,
   layout
 }: StorybookProps) => {
@@ -103,8 +99,8 @@ function createSpread(amountOfCards: number): StoryFn<StorybookProps> {
   return spread;
 }
 
-export const OneCardSpread: AnnotatedStoryFn = createSpread(1);
-export const ThreeCardSpread: AnnotatedStoryFn = createSpread(3);
-export const FourCardSpread: AnnotatedStoryFn = createSpread(4);
-export const FiveCardSpread: AnnotatedStoryFn = createSpread(5);
-export const SevenCardSpread: AnnotatedStoryFn = createSpread(7);
+export const OneCardSpread = createSpread(1);
+export const ThreeCardSpread = createSpread(3);
+export const FourCardSpread = createSpread(4);
+export const FiveCardSpread = createSpread(5);
+export const SevenCardSpread = createSpread(7);

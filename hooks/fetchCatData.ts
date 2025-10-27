@@ -38,9 +38,11 @@ function useFetchCats(): CatProps {
         if (data) {
           setCats(data);
         }
-      } catch (error) {
-        setFetchError((error as Error).message);
-        console.error('Error caught in fetchCatData.ts: ', error.message);
+      } catch (err) {
+        if (err instanceof Error) {
+          setFetchError(err.message);
+          console.error('Error caught in fetchCats:', err.message);
+        }
       } finally {
         setLoading(false);
       }

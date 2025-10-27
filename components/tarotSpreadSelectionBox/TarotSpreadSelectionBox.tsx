@@ -18,7 +18,7 @@ export interface TarotSpreadSelectionProps extends TarotSpreadAction {
 }
 
 const TarotSpreadSelectionBox: React.FC<TarotSpreadSelectionProps> = ({
-  amountOfCards,
+  amountOfCards = 3,
   description,
   onClick,
   zIndex,

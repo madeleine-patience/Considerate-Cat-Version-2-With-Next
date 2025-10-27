@@ -3,6 +3,7 @@ import type { Theme } from '@mui/system';
 import { useRouter } from 'next/router';
 import type { ReactElement } from 'react';
 import CatCardFlipper from '../components/catCardFlipper/CatCardFlipper';
+import EmailSignUpToaster from '../components/emailSignupToaster/EmailSignupToaster';
 import FlowerFooter from '../components/flowerFooter/FlowerFooter';
 import { Header } from '../components/header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
@@ -107,6 +108,7 @@ export default function Home(): ReactElement {
           </Box>
         </Box>
         <FlowerFooter />
+        <EmailSignUpToaster />
       </Box>
     </TarotDeckContext.Provider>
   );

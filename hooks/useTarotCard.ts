@@ -6,12 +6,12 @@ const initialTarotCardDescription =
   'There are five suits of cards in the Considerate Cat Tarot deck. Major, Cups, Wands, Pentacles and Swords. While each card means something different from the next, each card has a connection or meaning to the suit of which it belongs.';
 
 export const useTarotCard = (cardData: TarotCard[]) => {
-  const [tarotCardData, setTarotCardData] = useState([]);
-  const [displayTarotCards, setDisplayTarotCards] = useState(false);
+  const [tarotCardData, setTarotCardData] = useState<TarotCard[]>([]);
+  const [displayTarotCards, setDisplayTarotCards] = useState<boolean>(false);
   const [displayFilteredData, setDisplayFilteredData] = useState<TarotCard[]>(
     []
   );
-  const [tarotSuitDescription, setTarotSuitDescription] = useState(
+  const [tarotSuitDescription, setTarotSuitDescription] = useState<string>(
     initialTarotCardDescription
   );
 
@@ -25,7 +25,7 @@ export const useTarotCard = (cardData: TarotCard[]) => {
     setDisplayTarotCards(true);
     let shuffledData = [...cardData];
     let currentIndex = shuffledData.length;
-    let randomIndex;
+    let randomIndex: number;
 
     while (currentIndex !== 0) {
       randomIndex = Math.floor(Math.random() * currentIndex);
@@ -50,13 +50,12 @@ export const useTarotCard = (cardData: TarotCard[]) => {
   // };
 
   const displayCardBySuit = (cardSuit: CardSuitTypes) => {
-    setDisplayFilteredData(tarotCardData);
-    setDisplayTarotCards(true);
     setDisplayFilteredData(
       tarotCardData
         .filter((card) => card.card_suit === cardSuit)
         .sort((a, b) => a.id - b.id)
     );
+    setDisplayTarotCards(true);
 
     if (cardSuit === 'Major') {
       setTarotSuitDescription(
@@ -78,7 +77,6 @@ export const useTarotCard = (cardData: TarotCard[]) => {
         'The suit of Swords represents intellect, thoughts, communication, and challenges. It signifies mental clarity, conflicts, decision-making, and the power of the mind to cut through illusions and gain insight.'
       );
     }
-
     if (cardSuit === 'Wands') {
       setTarotSuitDescription(
         'The suit of Wands symbolizes energy, ambition, passion, and personal growth. It signifies creativity, inspiration, willpower, and the pursuit of goals, often related to career or personal projects.'
@@ -94,7 +92,6 @@ export const useTarotCard = (cardData: TarotCard[]) => {
   return {
     displayTarotCards,
     tarotCardData,
-    // removeOneCard,
     displaySomeCards,
     displayCardBySuit,
     displayFilteredData,

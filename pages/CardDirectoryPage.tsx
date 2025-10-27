@@ -51,7 +51,9 @@ export default function FirstPost(): ReactElement {
   function handleCardClick(cardId: number): void {
     setCurrentCard(cardId);
     const selectedCard = findCardById(tarotDeck, cardId);
-    openTarotDialog(selectedCard);
+    if (selectedCard) {
+      openTarotDialog(selectedCard);
+    }
   }
 
   const shouldShowThreeCards: boolean = !isSmallScreen && showThreeCards;

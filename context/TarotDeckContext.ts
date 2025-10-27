@@ -1,6 +1,9 @@
-import { createContext, Context } from 'react';
+import { createContext } from 'react';
 import type { TarotCard } from '../hooks/fetchTarotDeck';
 
-export const TarotDeckContext: Context<TarotCard[]> = createContext<
-  TarotCard[] | undefined
->(undefined);
+/**
+ * TarotDeckContext
+ * Provides tarot deck data with a default empty array.
+ * Consumers can use the array immediately without null checks.
+ */
+export const TarotDeckContext = createContext<TarotCard[]>([]);

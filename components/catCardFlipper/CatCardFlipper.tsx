@@ -1,5 +1,6 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material';
 import { useState } from 'react';
+import { filter } from '../../utils/filter';
 import SingleTarotCard from '../singleTarotCardWithFlip/SingleTarotCardWithFlip';
 
 const CatCardFlipper = () => {
@@ -44,8 +45,7 @@ const CatCardFlipper = () => {
           zIndex: 2,
           position: 'relative',
           width: isSmallScreen ? '100%' : '500px',
-          filter:
-            ' drop-shadow(9px 0 0 white) drop-shadow(0 9px 0 white) drop-shadow(-9px 0 0 white) drop-shadow(0 -9px 0 white)'
+          filter: filter('white', 9)
         }}
       />
       <Box

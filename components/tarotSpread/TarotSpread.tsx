@@ -1,6 +1,6 @@
-import { ReactElement } from 'react';
 import { SxProps } from '@mui/material';
 import Box from '@mui/material/Box';
+import { ReactElement } from 'react';
 import SingleTarotCard from '../singleTarotCard/SingleTarotCard';
 import { CardLayout } from '../tarotSpreadSelectionBox';
 
@@ -42,9 +42,9 @@ export function TarotSpread({
           }}
         >
           {Array.from({ length: amountOfCards }).map(
-            (_: null, i: number): ReactElement => {
+            (_: unknown, i: number): ReactElement => {
               const img = cardLayout.images[i];
-              const { sx } = cardLayout.styles[i];
+              const { sx } = cardLayout.styles?.[i] || { sx: {} };
 
               return (
                 <SingleTarotCard

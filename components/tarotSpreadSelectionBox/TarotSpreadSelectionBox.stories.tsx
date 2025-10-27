@@ -2,7 +2,6 @@ import { Meta, StoryFn } from '@storybook/react';
 import TarotSpreadSelectionBox, {
   TarotSpreadSelectionProps
 } from './TarotSpreadSelectionBox';
-import { AnnotatedStoryFn } from '@storybook/types';
 
 export default {
   title: 'Components/TarotSpreadSelectionBox',
@@ -17,7 +16,9 @@ const Template: StoryFn<typeof TarotSpreadSelectionBox> = (
   args: TarotSpreadSelectionProps
 ) => <TarotSpreadSelectionBox {...args} />;
 
-function createTarotSpreadSelectionBox(amountOfCards: number): StoryFn {
+function createTarotSpreadSelectionBox(
+  amountOfCards: number
+): StoryFn<TarotSpreadSelectionProps> {
   const numbers: { [key: number]: string } = {
     1: 'One',
     3: 'Three',
@@ -36,13 +37,13 @@ function createTarotSpreadSelectionBox(amountOfCards: number): StoryFn {
   return tarotSpreadSelectionBox;
 }
 
-export const OneCardTarotSpreadSelectionBox: AnnotatedStoryFn =
+export const OneCardTarotSpreadSelectionBox: StoryFn<TarotSpreadSelectionProps> =
   createTarotSpreadSelectionBox(1);
-export const ThreeCardTarotSpreadSelectionBox: AnnotatedStoryFn =
+export const ThreeCardTarotSpreadSelectionBox: StoryFn<TarotSpreadSelectionProps> =
   createTarotSpreadSelectionBox(3);
-export const FourCardTarotSpreadSelectionBox: AnnotatedStoryFn =
+export const FourCardTarotSpreadSelectionBox: StoryFn<TarotSpreadSelectionProps> =
   createTarotSpreadSelectionBox(4);
-export const FiveCardTarotSpreadSelectionBox: AnnotatedStoryFn =
+export const FiveCardTarotSpreadSelectionBox: StoryFn<TarotSpreadSelectionProps> =
   createTarotSpreadSelectionBox(5);
-export const SevenCardTarotSpreadSelectionBox: AnnotatedStoryFn =
+export const SevenCardTarotSpreadSelectionBox: StoryFn<TarotSpreadSelectionProps> =
   createTarotSpreadSelectionBox(7);
