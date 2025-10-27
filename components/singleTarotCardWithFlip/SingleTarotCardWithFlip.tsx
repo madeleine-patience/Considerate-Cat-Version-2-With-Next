@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 
 interface SingleTarotCardWithFlipAction {
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 type cardSize = 'small' | 'medium';
@@ -34,7 +34,7 @@ const SingleTarotCard = ({
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          onClick();
+          onClick?.();
         }
       }}
       role='button'
