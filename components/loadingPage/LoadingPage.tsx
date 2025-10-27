@@ -23,8 +23,8 @@ export const LoadingPage = ({}) => {
         src='/image/kneadingTheDough.webp'
       />
       <Typography
-        variant={isSmallScreen ? 'h4' : 'h2'}
-        sx={{ color: palette.pinks.dark, fontWeight: 600 }}
+        variant={isSmallScreen ? 'h4' : 'h1'}
+        sx={{ color: palette.pinks.dark }}
       >
         Loading . . .
       </Typography>

@@ -7,8 +7,8 @@ interface PurrlaroidTitleProps {
 const PurrlaroidTitle = ({ catName }: PurrlaroidTitleProps) => {
   return (
     <Typography
+      variant='h3'
       sx={{
-        fontSize: 40,
         fontWeight: 'bold',
         fontStyle: 'italic',
         color: '#7d7168'

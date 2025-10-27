@@ -3,14 +3,7 @@ import FlowerFooter from './FlowerFooter';
 
 export default {
   title: 'Components/FlowerFooter',
-  component: FlowerFooter,
-  decorators: [
-    (Story) => (
-      <div style={{ width: '100%', maxWidth: '100vw' }}>
-        <Story />
-      </div>
-    )
-  ]
+  component: FlowerFooter
 } as Meta<typeof FlowerFooter>;
 
 const Template: StoryFn<typeof FlowerFooter> = () => <FlowerFooter />;

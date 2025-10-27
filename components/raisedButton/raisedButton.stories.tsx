@@ -4,8 +4,7 @@ import RaisedButton from './RaisedButton';
 
 export default {
   title: 'Components/RaisedButton',
-  component: RaisedButton,
-  decorators: [(Story) => <Story />]
+  component: RaisedButton
 } as Meta<typeof RaisedButton>;
 
 export const AllStates = () => {

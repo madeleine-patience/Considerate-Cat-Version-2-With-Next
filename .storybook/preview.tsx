@@ -1,7 +1,6 @@
 import { ThemeProvider } from '@mui/material';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import type { Preview } from '@storybook/react';
-import React from 'react';
 import { defaultTheme } from '../theme/themeBuilder';
 import './storybook.css';
 
@@ -22,7 +21,9 @@ const preview: Preview = {
   decorators: [
     (Story) => (
       <ThemeProvider theme={defaultTheme}>
-        <Story />
+        <div style={{ width: '100%', maxWidth: '100vw' }}>
+          <Story />
+        </div>
       </ThemeProvider>
     )
   ]

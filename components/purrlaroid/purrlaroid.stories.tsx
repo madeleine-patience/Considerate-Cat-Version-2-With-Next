@@ -4,8 +4,7 @@ const Eddie = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/
 
 export default {
   title: 'Components/Purrlaroid',
-  component: Purrlaroid,
-  decorators: [(Story) => <Story />]
+  component: Purrlaroid
 } as Meta<typeof Purrlaroid>;
 
 const Template: StoryFn<typeof Purrlaroid> = () => (

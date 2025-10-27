@@ -5,8 +5,7 @@ const tarotImage = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/pu
 
 export default {
   title: 'Components/SingleTarotCardWithFlip',
-  component: TarotCardWithFlip,
-  decorators: [(Story) => <Story />]
+  component: TarotCardWithFlip
 } as Meta<typeof TarotCardWithFlip>;
 
 const Template: StoryFn<typeof TarotCardWithFlip> = () => (

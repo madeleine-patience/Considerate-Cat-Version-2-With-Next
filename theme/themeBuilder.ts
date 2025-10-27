@@ -11,7 +11,15 @@ const lora = Lora({
 const baseOptions: ThemeOptions = {
   typography: {
     fontFamily: lora?.style?.fontFamily || 'Lora',
-    fontSize: 16
+    fontSize: 16,
+    h1: { fontStyle: 'normal', fontWeight: '700', fontSize: 48 },
+    h2: { fontStyle: 'normal', fontWeight: '700', fontSize: 40 },
+    h3: { fontStyle: 'normal', fontWeight: '700', fontSize: 32 },
+    h4: { fontStyle: 'normal', fontWeight: '700', fontSize: 24 },
+    h5: { fontStyle: 'normal', fontWeight: '700', fontSize: 16 },
+    h6: { fontStyle: 'normal', fontWeight: '700', fontSize: 14 },
+    body1: { fontStyle: 'normal', fontWeight: '400', fontSize: 16 },
+    button: { fontStyle: 'normal', fontWeight: '600', fontSize: 16 }
   },
   palette: {
     pinks: {
