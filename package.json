@@ -18,7 +18,8 @@
     "lint": "eslint .",
     "prepare": "husky install",
     "format": "prettier --write \"**/*.{js,ts,jsx,tsx,css,scss,md,json,html}\"",
-    "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -o CHANGELOG.md"
+    "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -o CHANGELOG.md",
+    "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
     "@mui/icons-material": "^5.15.6",
@@ -49,6 +50,7 @@
     "@types/react": "18.2.48",
     "@typescript-eslint/eslint-plugin": "^8.2.0",
     "@typescript-eslint/parser": "^8.2.0",
+    "chromatic": "^13.3.2",
     "conventional-changelog-cli": "^5.0.0",
     "encoding": "^0.1.13",
     "eslint": "^9.9.1",
