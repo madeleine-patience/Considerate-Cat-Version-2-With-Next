@@ -23,5 +23,5 @@ export const Default: Story = {
 };
 
 export const LongerWords: Story = {
-  render: () => <GlitterWordWrapper> Longer Word Test</GlitterWordWrapper>
+  render: () => <GlitterWordWrapper>Cats Rule Dogs Drool</GlitterWordWrapper>
 };

@@ -1,6 +1,7 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material';
 import type { Theme } from '@mui/system';
 import type { TarotCard } from '../../hooks/fetchTarotDeck';
+import TarotInformationTile from '../tarotInformationTile/TarotInformationTile';
 
 interface DisplayTarotCardsProps {
   tarotCardData: TarotCard[];
@@ -44,11 +45,11 @@ export const DisplayTarotCards = ({
               {isGridView ? (
                 <Box
                   key={id}
-                  onClick={() => onClick(id)}
+                  onClick={() => onClick?.(id)}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ') {
                       e.preventDefault();
-                      onClick(id);
+                      onClick?.(id);
                     }
                   }}
                   role='button'

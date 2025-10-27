@@ -42,8 +42,7 @@ export default function FirstPost(): ReactElement {
     setIsGridView
   } = useCardDirectory();
 
-  const switchHandler = (event) => {
-    console.log(event.target.checked);
+  const switchHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     setIsGridView(event.target.checked);
   };
 

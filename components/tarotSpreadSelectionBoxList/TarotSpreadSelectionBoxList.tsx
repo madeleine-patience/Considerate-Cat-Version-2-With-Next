@@ -1,7 +1,7 @@
+import { Box } from '@mui/material';
 import TarotSpreadSelectionBox, {
   TarotSpreadSelectionProps
 } from '../tarotSpreadSelectionBox/TarotSpreadSelectionBox';
-import { Box } from '@mui/material';
 
 interface TarotSpreadListProps {
   data: TarotSpreadSelectionProps[];
