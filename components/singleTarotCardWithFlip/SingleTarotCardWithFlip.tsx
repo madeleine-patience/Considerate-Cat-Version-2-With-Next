@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 
 interface SingleTarotCardWithFlipAction {
-  onClick?: () => void;
+  onClick: () => void;
 }
 
 type cardSize = 'small' | 'medium';
