@@ -1,38 +1,21 @@
-import { Box, Grid, useTheme } from '@mui/material';
-import FlowerFooter from '../components/flowerFooter/FlowerFooter';
-import { Header } from '../components/header';
+import { Grid } from '@mui/material';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import PageContainer from '../components/pageContainer/PageContainer';
 import Purrlaroid from '../components/purrlaroid';
 import useFetchCats, { CatProps } from '../hooks/fetchCatData';
 
 export default function CatDirectory() {
   const { cats, loading }: CatProps = useFetchCats();
-  const { palette } = useTheme();
 
   if (loading) return <LoadingPage />;
 
   return (
-    <Box
-      sx={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        backgroundColor: palette.pinks.main,
-        alignItems: 'center'
-      }}
-    >
-      <Header.Root>
-        <Header.Animation />
-        <Header.Navigation />
-      </Header.Root>
+    <PageContainer>
       <Grid
         container
         sx={{
-          p: 4,
-          gap: 8,
-          maxWidth: 1500,
-          justifyContent: 'center'
+          justifyContent: 'center',
+          gap: 8
         }}
       >
         {cats.map((cat) => (
@@ -45,8 +28,6 @@ export default function CatDirectory() {
           </Grid>
         ))}
       </Grid>
-
-      <FlowerFooter />
-    </Box>
+    </PageContainer>
   );
 }

@@ -1,6 +1,6 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material';
 import { useState } from 'react';
-import { filter } from '../../utils/filter';
+import { filter } from '../../theme/utils/filter';
 import SingleTarotCard from '../singleTarotCardWithFlip/SingleTarotCardWithFlip';
 
 const CatCardFlipper = () => {

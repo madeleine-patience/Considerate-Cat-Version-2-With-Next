@@ -17,7 +17,6 @@ const RaisedButton = ({
     <Button
       disableRipple
       sx={{
-        marginTop: 4,
         cursor: 'pointer',
         visibility: disabled ? 'hidden' : 'visible',
         borderRadius: 2,

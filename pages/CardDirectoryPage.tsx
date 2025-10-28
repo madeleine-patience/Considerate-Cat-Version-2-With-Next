@@ -1,34 +1,26 @@
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
-import type { Theme } from '@mui/system';
 import type { ReactElement } from 'react';
 import { DisplayTarotCards } from '../components/displayTarotCards';
 import ElmerCircleIcon from '../components/elmerCircleIcon/ElmerCircleIcon';
-import FlowerFooter from '../components/flowerFooter/FlowerFooter';
-import { Header } from '../components/header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import PageContainer from '../components/pageContainer/PageContainer';
 import RaisedButton from '../components/raisedButton/RaisedButton';
 import TarotInformationModal from '../components/tarotInformationModal/TarotInformationModal';
 import ThreeCardSpread from '../components/threeCardSpread/ThreeCardSpread';
 import ToggleButton from '../components/toggleButton/ToggleButton';
-import { TarotDeckContext } from '../context/TarotDeckContext';
 import useFetchTarotDeck, { TarotCard } from '../hooks/fetchTarotDeck';
 import { useCardDirectory } from '../hooks/useCardDirectory';
 import { useTarotCard } from '../hooks/useTarotCard';
 
 export type CardSuitTypes = 'Major' | 'Cups' | 'Pentacles' | 'Swords' | 'Wands';
 
-export default function FirstPost(): ReactElement {
+export default function FirstPost() {
   const { tarotDeck, loading } = useFetchTarotDeck();
-  const { palette } = useTheme();
-  const theme: Theme = useTheme();
+  const theme = useTheme();
   const isSmallScreen: boolean = useMediaQuery(theme.breakpoints.down('md'));
 
-  const {
-    tarotCardData,
-    displayCardBySuit,
-    displayFilteredData,
-    tarotSuitDescription
-  } = useTarotCard(tarotDeck);
+  const { displayCardBySuit, displayFilteredData, tarotSuitDescription } =
+    useTarotCard(tarotDeck);
 
   const {
     dialogProps,
@@ -65,7 +57,7 @@ export default function FirstPost(): ReactElement {
 
   const shouldShowThreeCards: boolean = !isSmallScreen && showThreeCards;
 
-  const mappedDisplayGetCardsBuySuitButton: ReactElement[] =
+  const mappedDisplayGetCardsBySuitButton: ReactElement[] =
     displayCardSuitButtonData.map(
       ({ buttonLabel }, index: number): ReactElement => (
         <RaisedButton
@@ -75,76 +67,55 @@ export default function FirstPost(): ReactElement {
         />
       )
     );
-
   if (loading) return <LoadingPage />;
   return (
-    <TarotDeckContext.Provider value={tarotCardData}>
+    <PageContainer>
       <Box
         sx={{
-          minHeight: '100vh',
-          width: '100vw',
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-between',
-          backgroundColor: palette.pinks.main
+          alignItems: 'center',
+          gap: 'inherit'
         }}
       >
-        <Header.Root>
-          <Header.Animation />
-          <Header.Navigation />
-        </Header.Root>
+        <ElmerCircleIcon />
+        <Typography variant='body1' fontStyle='italic' textAlign='center'>
+          {tarotSuitDescription}
+        </Typography>
         <Box
           sx={{
-            maxWidth: '1000px',
-            m: 'auto',
-            p: 10,
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center'
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: isSmallScreen ? 'column' : 'row',
+            gap: 'inherit'
           }}
         >
-          <ElmerCircleIcon />
-          <Typography variant='h5' fontStyle='italic' py={4} textAlign='center'>
-            {tarotSuitDescription}
-          </Typography>
-          <Box
-            sx={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              flexDirection: isSmallScreen ? 'column' : 'row',
-              gap: 4
-            }}
-          >
-            {mappedDisplayGetCardsBuySuitButton}
+          <Box sx={{ display: 'flex', gap: 4, p: 4 }}>
+            {mappedDisplayGetCardsBySuitButton}
           </Box>
-          {!showThreeCards && (
-            <ToggleButton
-              onChange={switchHandler}
-              sx={{ margin: 'auto', marginTop: 3 }}
-            />
-          )}
-          {
-            <DisplayTarotCards
-              isGridView={isGridView}
-              onClick={handleCardClick}
-              width='248px'
-              tarotCardData={displayFilteredData}
-            />
-          }
-          {shouldShowThreeCards && (
-            <ThreeCardSpread
-              card1={tarotDeck[15]}
-              card2={tarotDeck[5]}
-              card3={tarotDeck[7]}
-            />
-          )}
         </Box>
+        {!showThreeCards && (
+          <ToggleButton onChange={switchHandler} sx={{ margin: 'auto' }} />
+        )}
+        {
+          <DisplayTarotCards
+            isGridView={isGridView}
+            onClick={handleCardClick}
+            tarotCardData={displayFilteredData}
+          />
+        }
+        {shouldShowThreeCards && (
+          <ThreeCardSpread
+            card1={tarotDeck[15]}
+            card2={tarotDeck[5]}
+            card3={tarotDeck[7]}
+          />
+        )}
         {showTarotInformationModal && (
           <TarotInformationModal {...dialogProps} />
         )}
-        <FlowerFooter />
       </Box>
-    </TarotDeckContext.Provider>
+    </PageContainer>
   );
 }
