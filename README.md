@@ -15,9 +15,10 @@ You can shop the Considerate Tarot Deck here, Version Two is almost sold out!
 https://consideratecat.com/product/considerate-cat-volume-ii-preorder-copy/
 
 I (Madeleine) am the creator of Considerate Cat Tarot and am largely building
-this project on my own. My goal is to have it open source by November of 2024.
-If you are interested in Contibuting you can get involved with my community on
-twitch where I am building this project in public:
+this project on my own with the help of a few wonderful community members. My
+goal is to have it open source by November of 2024. If you are interested in
+Contibuting you can get involved with my community on twitch where I am building
+this project in public:
 
 https://www.twitch.tv/madeleinepatience
 
