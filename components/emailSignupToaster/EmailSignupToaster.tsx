@@ -53,7 +53,7 @@ const EmailSignUpToaster = () => {
                 cursor: 'pointer',
                 filter: filter('white', 2),
                 transform: 'translateY(45px)',
-                transition: 'all 200ms cubic-bezier(0.2, 0.4, 0.6, 2)'
+                transition: 'transform 180ms cubic-bezier(0.2, 0.4, 0.6, 2)'
               }}
             />
           </Box>
