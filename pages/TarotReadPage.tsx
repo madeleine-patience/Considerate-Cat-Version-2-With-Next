@@ -1,26 +1,21 @@
-import { Box, useTheme } from '@mui/material';
+import { Box } from '@mui/material';
 import { ReactElement, useState } from 'react';
 import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
-import FlowerFooter from '../components/flowerFooter/FlowerFooter';
-import { Header } from '../components/header';
 import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import PageContainer from '../components/pageContainer/PageContainer';
 import RaisedButton from '../components/raisedButton/RaisedButton';
 import { TarotSpreadSelectionProps } from '../components/tarotSpreadSelectionBox';
 import { TarotSpreadSelectionBoxList } from '../components/tarotSpreadSelectionBoxList';
-import { TarotDeckContext } from '../context/TarotDeckContext';
 import useFetchTarotDeck from '../hooks/fetchTarotDeck';
 import { useTarotCard } from '../hooks/useTarotCard';
 
-export default function FirstPost(): ReactElement {
-  const { palette } = useTheme();
-
+export default function TarotReadPage(): ReactElement {
   const [isFlipped, setIsFlipped] = useState(false);
   const [areSpreadChoicesVisible, setAreIsSpreadChoicesVisible] =
     useState(true);
   const [isTarotReadVisible, setIsTarotReadVisible] = useState(false);
   const { tarotDeck, loading } = useFetchTarotDeck();
-  const { tarotCardData, displaySomeCards, displayFilteredData } =
-    useTarotCard(tarotDeck);
+  const { displaySomeCards, displayFilteredData } = useTarotCard(tarotDeck);
 
   const displayTarotSpread = (lengthOfSpread: number) => {
     displaySomeCards(lengthOfSpread);
@@ -71,48 +66,34 @@ export default function FirstPost(): ReactElement {
   ];
 
   return (
-    <TarotDeckContext.Provider value={tarotCardData}>
+    <PageContainer>
+      {areSpreadChoicesVisible && (
+        <TarotSpreadSelectionBoxList data={tarotSpreadSelectionBoxes} />
+      )}
       <Box
-        minHeight='100vh'
-        display='flex'
-        flexDirection='column'
-        justifyContent='space-between'
-        sx={{ backgroundColor: palette.pinks.main }}
+        sx={{
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 6,
+          p: 4
+        }}
       >
-        <Header.Root>
-          <Header.Animation />
-          <Header.Navigation />
-        </Header.Root>
-        {areSpreadChoicesVisible && (
-          <TarotSpreadSelectionBoxList data={tarotSpreadSelectionBoxes} />
+        {isTarotReadVisible && (
+          <DisplayTarotCardsWithFlip
+            tarotDeck={displayFilteredData}
+            isFlipped={isFlipped}
+            onClick={() => setIsFlipped(true)}
+          />
         )}
-
-        <Box
-          sx={{
-            height: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 6,
-            p: 4
-          }}
-        >
-          {isTarotReadVisible && (
-            <DisplayTarotCardsWithFlip
-              tarotDeck={displayFilteredData}
-              isFlipped={isFlipped}
-              onClick={() => setIsFlipped(true)}
-            />
-          )}
-          <Box display='flex' justifyContent='center'>
-            <RaisedButton
-              disabled={!isFlipped}
-              buttonLabel='Get Another Read'
-              onClick={() => resetAndViewTarotSpreads()}
-            />
-          </Box>
+        <Box display='flex' justifyContent='center'>
+          <RaisedButton
+            disabled={!isFlipped}
+            buttonLabel='Get Another Read'
+            onClick={() => resetAndViewTarotSpreads()}
+          />
         </Box>
-        <FlowerFooter />
       </Box>
-    </TarotDeckContext.Provider>
+    </PageContainer>
   );
 }
