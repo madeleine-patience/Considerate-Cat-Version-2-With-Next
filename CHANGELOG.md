@@ -1,4 +1,4 @@
-## 2.2.0 (2025-10-27)
+## 2.2.0 (2025-10-28)
 
 ### Features
 
@@ -10,6 +10,8 @@
   ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
 - Adding tilt deltas for layouts
   ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- Cat poptart SVG and styles
+  ([b8386f7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/b8386f7ddabb5396527fc167ddf047b960775afa))
 - changelog generated
   ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
 - Forgot to add 4 card spread!
