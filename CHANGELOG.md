@@ -1,4 +1,4 @@
-## 2.2.0 (2025-10-27)
+## 2.2.0 (2025-10-28)
 
 ### Features
 
@@ -10,6 +10,8 @@
   ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
 - Adding tilt deltas for layouts
   ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- Cat poptart SVG and styles
+  ([acf2019](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/acf2019aa6964bde11d8c1f980a21ba3031fbb75))
 - changelog generated
   ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
 - Forgot to add 4 card spread!
@@ -32,6 +34,11 @@
   ([e9a47f2](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e9a47f2907fc1c6e5c335e565296e5e2556b9628))
 - Working props for storybook controls
   ([90cb9b7](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/90cb9b7df9a36ed57273254c14f298ec6dfad731))
+
+### Bug Fixes
+
+- Smoothed transition
+  ([54985ed](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/54985edc3a6b778ca7fb121ccde0b5f87daceb1b))
 
 ### Reverts
 
