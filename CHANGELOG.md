@@ -38,7 +38,7 @@
 ### Bug Fixes
 
 - Smoothed transition
-  ([cd74d69](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/cd74d691c255925cbde436460cf3136a74fabada))
+  ([54985ed](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/54985edc3a6b778ca7fb121ccde0b5f87daceb1b))
 
 ### Reverts
 

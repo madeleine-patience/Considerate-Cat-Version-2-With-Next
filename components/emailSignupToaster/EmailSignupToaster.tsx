@@ -2,7 +2,7 @@ import { Box, Snackbar, Typography, useTheme } from '@mui/material';
 import { useState } from 'react';
 import { filter } from '../../utils/filter';
 import EmailSignUpModal from '../emailSignupModal/EmailSignupModal';
-import { CloseSvg } from '../../SVGs/Close';
+import { CloseSvg } from '../../SVGs/CloseSvg';
 
 const EmailSignUpToaster = () => {
   const { palette } = useTheme();
