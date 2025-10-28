@@ -91,7 +91,7 @@ export default function FirstPost() {
             gap: 'inherit'
           }}
         >
-          <Box sx={{ display: 'flex', gap: 'inherit' }}>
+          <Box sx={{ display: 'flex', gap: 4, p: 4 }}>
             {mappedDisplayGetCardsBySuitButton}
           </Box>
         </Box>
