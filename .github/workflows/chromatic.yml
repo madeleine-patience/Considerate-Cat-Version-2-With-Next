@@ -1,6 +1,12 @@
 name: 'Chromatic'
 
-on: push
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - 'feature/**'
+  workflow_dispatch: # 👈 Adds a manual "Run workflow" button in the Actions tab
 
 jobs:
   chromatic:
@@ -11,14 +17,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22.20.0
+
       - name: Install dependencies
-        # ⚠️ See your package manager's documentation for the correct command to install dependencies in a CI environment.
         run: npm ci
+
       - name: Run Chromatic
         uses: chromaui/action@latest
         with:
-          # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }},
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
