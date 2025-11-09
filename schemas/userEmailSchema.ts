@@ -1,9 +1,9 @@
 import { z } from 'zod';
 
 export const EMAIL_SELECTION = Object.freeze({
-  MARKETING: 'marketing',
-  OPENSOURCE: 'open_source',
-  EVERYTHING: 'everything'
+  MARKETING: 'marketingInformationOnly',
+  OPENSOURCE: 'openSourceInformationOnly',
+  EVERYTHING: 'allTypesOfEmails'
 });
 
 export const emailChoiceValidationSchema = z.object({
