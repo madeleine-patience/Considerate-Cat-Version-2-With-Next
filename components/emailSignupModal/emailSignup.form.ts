@@ -6,14 +6,10 @@ import {
   emailChoiceValidationSchema
 } from '../../schemas/userEmailSchema';
 
-type EmailMarketingType =
-  | 'marketingInformationOnly'
-  | 'openSourceInformationOnly'
-  | 'allTypesOfEmails';
 export interface EmailFormProps {
   Email: string;
   Name: string;
-  EmailChoice: EmailMarketingType;
+  EmailChoice: typeof EMAIL_SELECTION;
 }
 
 export function useEmailMarketingForm() {
