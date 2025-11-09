@@ -26,17 +26,11 @@ export function useEmailMarketingForm() {
     resolver: zodResolver(emailChoiceValidationSchema)
   });
 
-  const {
-    control,
-    handleSubmit,
-    reset,
-    formState: { isSubmitSuccessful }
-  } = form;
+  const { control, handleSubmit, reset } = form;
 
   return {
     control,
     handleSubmit,
-    reset,
-    isSubmitSuccessful
+    reset
   };
 }

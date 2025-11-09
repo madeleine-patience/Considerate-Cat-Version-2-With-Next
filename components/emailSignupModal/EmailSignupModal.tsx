@@ -23,8 +23,7 @@ interface EmailSignUpModalProps {
 
 const EmailSignUpModal = ({ isOpen, setIsOpen }: EmailSignUpModalProps) => {
   const { palette } = useTheme();
-  const { control, handleSubmit, reset, isSubmitSuccessful } =
-    useEmailMarketingForm();
+  const { control, handleSubmit, reset } = useEmailMarketingForm();
 
   const closeModal = () => {
     reset();
@@ -153,11 +152,6 @@ const EmailSignUpModal = ({ isOpen, setIsOpen }: EmailSignUpModalProps) => {
           </Button>
         </FormControl>
       </>
-      {isSubmitSuccessful && (
-        <>
-          <Modal.Title>Success!</Modal.Title>
-        </>
-      )}
     </Modal.Root>
   );
 };
