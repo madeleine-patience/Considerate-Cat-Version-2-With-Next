@@ -1,7 +1,6 @@
 import { Box, Snackbar, Typography, useTheme } from '@mui/material';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import { CloseSvg } from '../../SVGs/CloseSvg';
-import { CustomerContext } from '../../context/CustomerContext';
 import { filter } from '../../theme/utils/filter';
 import EmailSignUpModal from '../emailSignupModal/EmailSignupModal';
 
@@ -9,8 +8,6 @@ const EmailSignUpToaster = () => {
   const { palette } = useTheme();
   const [isToasterOpen, setIsToasterOpen] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const { hasClosedEmailModal, setHasClosedEmailModal } =
-    useContext(CustomerContext);
 
   const handleCloseToaster = () => {
     setIsToasterOpen(false);
@@ -20,7 +17,6 @@ const EmailSignUpToaster = () => {
     setIsModalOpen(false);
     setIsToasterOpen(true);
   };
-  if (hasClosedEmailModal) return null;
 
   return (
     <>
@@ -90,7 +86,6 @@ const EmailSignUpToaster = () => {
               onClick={(e) => {
                 e.stopPropagation();
                 handleCloseToaster();
-                setHasClosedEmailModal(true);
               }}
               sx={{
                 display: 'flex',
