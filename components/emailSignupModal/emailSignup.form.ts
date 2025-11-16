@@ -9,7 +9,7 @@ import {
 export interface EmailFormProps {
   Email: string;
   Name: string;
-  EmailChoice: typeof EMAIL_SELECTION;
+  EmailChoice: (typeof EMAIL_SELECTION)[keyof typeof EMAIL_SELECTION];
 }
 
 export function useEmailMarketingForm() {
