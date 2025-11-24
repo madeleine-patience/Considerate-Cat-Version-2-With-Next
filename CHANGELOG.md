@@ -1,4 +1,4 @@
-## 2.2.0 (2025-11-16)
+## 2.2.0 (2025-11-24)
 
 ### Features
 
@@ -16,6 +16,8 @@
   ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
 - Forgot to add 4 card spread!
   ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- migrate to App Router with server-side data fetching
+  ([4cb6fec](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/4cb6feca6bd8b440887b2779857f3a518bdb10c4))
 - Post commit and changelog script
   ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
 - Post commit handles permissions
