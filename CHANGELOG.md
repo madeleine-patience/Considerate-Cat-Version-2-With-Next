@@ -2,6 +2,8 @@
 
 ### Features
 
+- add loading states for all routes
+  ([e875e22](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e875e223ad0c0556aeba558bd50bce9fa02a9940))
 - Added alt text props to Purrlaroid
   ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
 - Added new stories for card amounts

@@ -1,6 +1,8 @@
+'use client';
+
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 
-export const LoadingPage = ({}) => {
+export const LoadingPage = () => {
   const theme = useTheme();
   const { palette } = useTheme();
 
