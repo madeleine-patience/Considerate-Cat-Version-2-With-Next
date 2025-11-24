@@ -21,7 +21,7 @@
 - migrate to App Router with server-side data fetching
   ([55dad5a](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/55dad5ade3c4b6efab3ba76f77b4c203250e64bf))
 - optimize images with Next.js Image
-  ([ba7ad40](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ba7ad4018f762f24cc006fd0b648b9722e94355d))
+  ([be893f0](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/be893f0a06595e64719b86f7dde730b0c9ff348c))
 - Post commit and changelog script
   ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
 - Post commit handles permissions
