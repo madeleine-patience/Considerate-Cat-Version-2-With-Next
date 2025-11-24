@@ -1,4 +1,5 @@
 import { Box } from '@mui/material';
+import Image from 'next/image';
 
 interface SingleTarotCardWithFlipAction {
   onClick?: () => void;
@@ -60,6 +61,7 @@ const SingleTarotCard = ({
           borderRadius: 3,
           boxShadow: { boxShadow },
           backfaceVisibility: 'hidden',
+          overflow: 'hidden',
           "&[data-size='medium']": {
             width: '200px'
           },
@@ -67,17 +69,26 @@ const SingleTarotCard = ({
             width: '75px'
           }
         }}
-        component='img'
-        src='/image/welcome-cards/tarot-card-back.webp'
-        alt='The tarot card back'
-      />
+      >
+        <Image
+          src='/image/welcome-cards/tarot-card-back.webp'
+          alt='The tarot card back'
+          width={size === 'small' ? 75 : 200}
+          height={0}
+          style={{
+            width: '100%',
+            height: 'auto',
+            borderRadius: '12px'
+          }}
+        />
+      </Box>
       <Box
         data-size={size}
         sx={{
+          position: 'absolute',
           borderRadius: 3,
           boxShadow: { boxShadow },
           transformOrigin: 'center center',
-          position: 'absolute',
           backfaceVisibility: 'hidden',
           transform: 'rotateY(180deg)',
           "&[data-size='medium']": {
@@ -87,10 +98,19 @@ const SingleTarotCard = ({
             width: '100px'
           }
         }}
-        component='img'
-        src={image}
-        alt={altText}
-      />
+      >
+        <Image
+          src={image}
+          alt={altText || ''}
+          width={size === 'small' ? 100 : 200}
+          height={0}
+          style={{
+            width: '100%',
+            height: 'auto',
+            borderRadius: '12px'
+          }}
+        />
+      </Box>
     </Box>
   );
 };

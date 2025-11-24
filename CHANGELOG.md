@@ -3,7 +3,7 @@
 ### Features
 
 - add loading states for all routes
-  ([e875e22](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e875e223ad0c0556aeba558bd50bce9fa02a9940))
+  ([25e3f80](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/25e3f80cd600af72bf412822daf3a9d5782a63a1))
 - Added alt text props to Purrlaroid
   ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
 - Added new stories for card amounts
@@ -20,6 +20,8 @@
   ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
 - migrate to App Router with server-side data fetching
   ([55dad5a](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/55dad5ade3c4b6efab3ba76f77b4c203250e64bf))
+- optimize images with Next.js Image
+  ([ba7ad40](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/ba7ad4018f762f24cc006fd0b648b9722e94355d))
 - Post commit and changelog script
   ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
 - Post commit handles permissions

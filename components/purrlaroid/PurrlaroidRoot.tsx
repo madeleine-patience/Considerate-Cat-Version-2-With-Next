@@ -1,4 +1,5 @@
 import { Box } from '@mui/material';
+import Image from 'next/image';
 import { ReactElement } from 'react';
 
 interface PurrlaroidAction {
@@ -35,17 +36,25 @@ const PurrlaroidRoot = ({
       }}
     >
       <Box
-        component='img'
         sx={{
           width: 250,
           height: 250,
-          objectFit: 'cover',
-          transition: 'opacity .5s ease-in-out'
+          position: 'relative',
+          cursor: onClick ? 'pointer' : 'default'
         }}
         onClick={onClick}
-        src={catImage}
-        alt={altText}
-      />
+      >
+        <Image
+          src={catImage}
+          alt={altText || ''}
+          fill
+          sizes='250px'
+          style={{
+            objectFit: 'cover',
+            transition: 'opacity .5s ease-in-out'
+          }}
+        />
+      </Box>
 
       {children}
     </Box>
