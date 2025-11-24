@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { CardSuitTypes } from '../pages/CardDirectoryPage';
-import type { TarotCard } from './fetchTarotDeck';
+import type { TarotCard } from '../types/database';
 
 const initialTarotCardDescription =
   'There are five suits of cards in the Considerate Cat Tarot deck. Major, Cups, Wands, Pentacles and Swords. While each card means something different from the next, each card has a connection or meaning to the suit of which it belongs.';
@@ -87,7 +87,6 @@ export const useTarotCard = (cardData: TarotCard[]) => {
   // Parameters - tarotData (object), a number
   // Return a new array of cards and info randomized without duplicates.
   // Takes in an array of tarot cards and returns 3 random cards.
-  //
 
   return {
     displayTarotCards,

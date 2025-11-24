@@ -1,4 +1,4 @@
-import { TarotCard } from '../hooks/fetchTarotDeck';
+import { TarotCard } from '../types/database';
 
 const card1 = '/image/tarot-cards/15.webp';
 const card2 = '/image/tarot-cards/25.webp';

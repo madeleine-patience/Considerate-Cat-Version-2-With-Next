@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import SingleTarotCardWithFlip from '../../components/singleTarotCardWithFlip/SingleTarotCardWithFlip';
-import type { TarotCard } from '../../hooks/fetchTarotDeck';
+import type { TarotCard } from '../../types/database';
 
 interface DisplayTarotCardsProps {
   tarotDeck: TarotCard[];

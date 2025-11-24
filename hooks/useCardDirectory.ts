@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { TarotInformationModalProps } from '../components/tarotInformationModal';
 import type { CardSuitTypes } from '../pages/CardDirectoryPage';
-import type { TarotCard } from './fetchTarotDeck';
+import type { TarotCard } from '../types/database';
 
 const initialDialogProps: TarotInformationModalProps = {
   isOpen: false,
