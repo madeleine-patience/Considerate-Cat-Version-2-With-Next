@@ -17,11 +17,13 @@
 - Forgot to add 4 card spread!
   ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
 - migrate to App Router with server-side data fetching
-  ([4cb6fec](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/4cb6feca6bd8b440887b2779857f3a518bdb10c4))
+  ([55dad5a](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/55dad5ade3c4b6efab3ba76f77b4c203250e64bf))
 - Post commit and changelog script
   ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
 - Post commit handles permissions
   ([3493cbe](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/3493cbe2d5225ec51cf7f6bdf44028360cfca482))
+- secure Supabase credentials with server-only, adds form api route
+  ([927f1a0](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/927f1a0b58a2dc1f417e8e4c65e4d51c6c875788))
 - Spread now using local card images (needed for stories)
   ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
 - Storybook components

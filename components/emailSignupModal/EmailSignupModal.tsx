@@ -12,7 +12,6 @@ import {
 } from '@mui/material';
 import { Controller } from 'react-hook-form';
 import { EMAIL_SELECTION } from '../../schemas/userEmailSchema';
-import { supabase } from '../../supabase';
 import { Modal } from '../modal';
 import { EmailFormProps, useEmailMarketingForm } from './emailSignup.form';
 
@@ -33,22 +32,28 @@ const EmailSignUpModal = ({ isOpen, setIsOpen }: EmailSignUpModalProps) => {
   const onSubmit = async (formData: EmailFormProps) => {
     const { Email, Name, EmailChoice } = formData;
 
-    const { error } = await supabase
-      .from('Emails')
-      .insert([
-        {
+    try {
+      const response = await fetch('/api/email-signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
           customer_email: Email,
           name: Name,
           email_choice: EmailChoice
-        }
-      ])
-      .select();
+        })
+      });
 
-    if (error) {
-      console.error('Error inserting email:', error);
-    } else {
-      reset();
-      setIsOpen();
+      if (!response.ok) {
+        const error = await response.json();
+        console.error('Error inserting email:', error);
+      } else {
+        reset();
+        setIsOpen();
+      }
+    } catch (error) {
+      console.error('Error submitting email:', error);
     }
   };
 
