@@ -7,6 +7,7 @@ declare module '@mui/material/styles' {
     browns: PaletteColor;
     purples: PaletteColor;
     yellows: PaletteColor;
+    reds: PaletteColor;
   }
 
   interface PaletteOptions {
@@ -15,5 +16,6 @@ declare module '@mui/material/styles' {
     browns: PaletteColorOptions;
     purples: PaletteColorOptions;
     yellows: PaletteColorOptions;
+    reds: PaletteColor;
   }
 }

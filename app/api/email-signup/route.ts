@@ -7,7 +7,6 @@ import { supabase } from '../../../supabase';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-
     const { data, error } = await supabase.from('userEmail').insert([body]);
 
     if (error) {
@@ -16,7 +15,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ data }, { status: 200 });
   } catch (error) {
-    void error;
+    void error; // es-lint being dumb
 
     return NextResponse.json(
       { error: 'Internal server error' },

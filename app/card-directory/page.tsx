@@ -1,8 +1,8 @@
 /**
  * Server Component - runs on server only
  */
-import { supabase } from '../../supabase';
 import CardDirectoryClient from './CardDirectoryClient';
+import { supabase } from '../../supabase';
 
 export default async function CardDirectoryPage() {
   const { data, error } = await supabase

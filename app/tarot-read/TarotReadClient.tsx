@@ -1,14 +1,14 @@
 'use client';
 
-import { Box } from '@mui/material';
 import { ReactElement, useState } from 'react';
 import DisplayTarotCardsWithFlip from '../../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
 import PageContainer from '../../components/pageContainer/PageContainer';
 import RaisedButton from '../../components/raisedButton/RaisedButton';
-import { TarotSpreadSelectionProps } from '../../components/tarotSpreadSelectionBox';
 import { TarotSpreadSelectionBoxList } from '../../components/tarotSpreadSelectionBoxList';
-import { TarotCard } from '../../types/database';
+import { TarotSpreadSelectionProps } from '../../components/tarotSpreadSelectionBox';
 import { useTarotCard } from '../../hooks/useTarotCard';
+import { TarotCard } from '../../types/database';
+import { Box } from '@mui/material';
 
 interface TarotReadClientProps {
   tarotDeck: TarotCard[];

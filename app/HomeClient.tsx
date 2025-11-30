@@ -1,12 +1,14 @@
 'use client';
 
-import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import type { ReactElement } from 'react';
+import { Toaster } from '../components/toaster/Toaster';
+import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import CatCardFlipper from '../components/catCardFlipper/CatCardFlipper';
-import EmailSignUpToaster from '../components/emailSignupToaster/EmailSignupToaster';
+import EmailSignUpModal from '../components/emailSignupModal/EmailSignupModal';
 import PageContainer from '../components/pageContainer/PageContainer';
 import RaisedButton from '../components/raisedButton/RaisedButton';
+import type { ReactElement } from 'react';
 
 const homePageMainImage = '/image/homepageImage.webp';
 
@@ -14,10 +16,19 @@ export default function HomeClient(): ReactElement {
   const router = useRouter();
   const theme = useTheme();
   const isSmallScreen: boolean = useMediaQuery(theme.breakpoints.down('md'));
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <PageContainer>
-      <Box display='flex' justifyContent='center' position='relative'>
+      <Box display='flex' justifyContent='center'>
         <Box
           component='img'
           src={homePageMainImage}
@@ -76,7 +87,13 @@ export default function HomeClient(): ReactElement {
           </Box>
         </Box>
       </Box>
-      <EmailSignUpToaster />
+      <Toaster
+        type='custom'
+        message='Keep In Touch'
+        image='/image/ToasterImage.png'
+        onClick={handleOpenModal}
+      />
+      <EmailSignUpModal isOpen={isModalOpen} setIsOpen={handleCloseModal} />
     </PageContainer>
   );
 }

@@ -1,16 +1,16 @@
 'use client';
 
+import TarotInformationModal from '../../components/tarotInformationModal/TarotInformationModal';
+import ThreeCardSpread from '../../components/threeCardSpread/ThreeCardSpread';
 import ElmerCircleIcon from '../../components/elmerCircleIcon/ElmerCircleIcon';
 import PageContainer from '../../components/pageContainer/PageContainer';
 import RaisedButton from '../../components/raisedButton/RaisedButton';
-import TarotInformationModal from '../../components/tarotInformationModal/TarotInformationModal';
-import ThreeCardSpread from '../../components/threeCardSpread/ThreeCardSpread';
 import ToggleButton from '../../components/toggleButton/ToggleButton';
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { DisplayTarotCards } from '../../components/displayTarotCards';
-import { TarotCard } from '../../types/database';
 import { useCardDirectory } from '../../hooks/useCardDirectory';
 import { useTarotCard } from '../../hooks/useTarotCard';
+import { TarotCard } from '../../types/database';
 import type { ReactElement } from 'react';
 
 export type CardSuitTypes = 'Major' | 'Cups' | 'Pentacles' | 'Swords' | 'Wands';

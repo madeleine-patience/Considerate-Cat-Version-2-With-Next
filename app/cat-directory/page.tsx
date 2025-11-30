@@ -1,10 +1,10 @@
 /**
  * Server Component - runs on server only
  */
-import { Grid } from '@mui/material';
 import PageContainer from '../../components/pageContainer/PageContainer';
 import Purrlaroid from '../../components/purrlaroid';
 import { supabase } from '../../supabase';
+import { Grid } from '@mui/material';
 
 export default async function CatDirectoryPage() {
   const { data, error } = await supabase.from('catData').select();
