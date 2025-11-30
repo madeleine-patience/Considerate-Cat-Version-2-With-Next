@@ -45,6 +45,8 @@
 
 ### Bug Fixes
 
+- butters and images
+  ([26f8c31](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/26f8c311cd4d082ca3522b0546de34ce36dde03e))
 - Smoothed transition
   ([54985ed](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/54985edc3a6b778ca7fb121ccde0b5f87daceb1b))
 

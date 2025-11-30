@@ -1,14 +1,24 @@
-import { Box } from '@mui/material';
+import { Box, useMediaQuery, useTheme } from '@mui/material';
 import { useState } from 'react';
+import { filter } from '../../theme/utils/filter';
 import SingleTarotCard from '../singleTarotCardWithFlip/SingleTarotCardWithFlip';
 
 const CatCardFlipper = () => {
+  const theme = useTheme();
   const [petCount, setPetCount] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [butters, setButters] = useState(
+    'https://ixjcrkztvkqvrbwncthy.supabase.co/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-1.png'
+  );
+
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
   const petTheCat = () => {
     setPetCount((prev) => prev + 1);
 
     if (petCount >= 0) {
+      setButters(
+        'https://ixjcrkztvkqvrbwncthy.supabase.co/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-2.png'
+      );
       setIsFlipped(true);
     }
   };
@@ -27,12 +37,25 @@ const CatCardFlipper = () => {
       sx={{ width: 'fit-content' }}
     >
       <Box
+        component='img'
+        src={butters}
+        alt='Butters the cat, waiting to show you a tarot reading if you give pets.'
+        sx={{
+          top: 25,
+          zIndex: 2,
+          position: 'relative',
+          width: isSmallScreen ? '100%' : '500px',
+          filter: filter('white', 9)
+        }}
+      />
+      <Box
         sx={{
           zIndex: 1,
           position: 'relative',
           display: 'flex',
           justifyContent: 'center',
-          gap: 2
+          gap: 2,
+          top: -50
         }}
       >
         <SingleTarotCard

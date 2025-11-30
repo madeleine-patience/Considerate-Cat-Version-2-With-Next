@@ -1,5 +1,4 @@
 import { Box, SxProps } from '@mui/material';
-import Image from 'next/image';
 
 interface SingleTarotCardProps {
   image: string;
@@ -10,27 +9,17 @@ interface SingleTarotCardProps {
 const SingleTarotCard = ({ image, altText, sx }: SingleTarotCardProps) => {
   return (
     <Box
+      width='250px'
       sx={{
-        width: '250px',
         borderRadius: 3,
-        overflow: 'hidden',
         boxShadow:
           'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;',
         ...sx
       }}
-    >
-      <Image
-        src={image}
-        alt={altText || ''}
-        width={250}
-        height={0}
-        style={{
-          width: '100%',
-          height: 'auto',
-          borderRadius: '12px'
-        }}
-      />
-    </Box>
+      component='img'
+      src={image}
+      alt={altText}
+    />
   );
 };
 

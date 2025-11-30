@@ -13,7 +13,7 @@ const DisplayTarotCardsWithFlip = ({
   isFlipped,
   onClick
 }: DisplayTarotCardsProps) => {
-  const getDelaysArr = (amountOfElements: number) => {
+  const getDelaysArrays = (amountOfElements: number) => {
     const pageAnimationTime =
       amountOfElements < 4 ? 1000 : amountOfElements < 6 ? 2000 : 8000;
     const result = [];
@@ -28,7 +28,7 @@ const DisplayTarotCardsWithFlip = ({
     return result;
   };
 
-  const arrayOfDelays = getDelaysArr(tarotDeck.length);
+  const arrayOfDelays = getDelaysArrays(tarotDeck.length);
 
   return (
     <Box
