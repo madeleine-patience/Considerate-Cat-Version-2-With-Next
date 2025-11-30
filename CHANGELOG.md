@@ -12,6 +12,8 @@
   ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
 - Adding tilt deltas for layouts
   ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- Caching and image opt
+  ([f8e4e29](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/f8e4e29fafc63765a692c984f6d1f516515d54be))
 - Cat poptart SVG and styles
   ([acf2019](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/acf2019aa6964bde11d8c1f980a21ba3031fbb75))
 - changelog generated
@@ -46,7 +48,7 @@
 ### Bug Fixes
 
 - butters and images
-  ([26f8c31](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/26f8c311cd4d082ca3522b0546de34ce36dde03e))
+  ([3db50f3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/3db50f3eee8c937485a8cd4824ac7bd6dbbd581a))
 - Smoothed transition
   ([54985ed](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/54985edc3a6b778ca7fb121ccde0b5f87daceb1b))
 

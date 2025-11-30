@@ -1,20 +1,18 @@
 /**
  * Server Component - runs on server only
  */
+import { getCats } from '../../lib/data';
+import { Grid } from '@mui/material';
 import PageContainer from '../../components/pageContainer/PageContainer';
 import Purrlaroid from '../../components/purrlaroid';
-import { supabase } from '../../supabase';
-import { Grid } from '@mui/material';
+
+/**
+ * Revalidate this page cache every hour
+ */
+export const revalidate = 3600;
 
 export default async function CatDirectoryPage() {
-  const { data, error } = await supabase.from('catData').select();
-
-  if (error) {
-    console.error('Error fetching cats:', error);
-    return <PageContainer>Error loading cats</PageContainer>;
-  }
-
-  const cats = data || [];
+  const cats = await getCats();
 
   return (
     <PageContainer>

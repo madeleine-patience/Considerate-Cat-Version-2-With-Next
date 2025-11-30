@@ -6,7 +6,9 @@ export const LoadingPage = () => {
   const theme = useTheme();
   const { palette } = useTheme();
 
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'), {
+    noSsr: true
+  });
 
   return (
     <Box

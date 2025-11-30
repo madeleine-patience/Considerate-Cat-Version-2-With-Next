@@ -1,19 +1,16 @@
 /**
  * Server Component - runs on server only
  */
+import { getTarotDeck } from '../../lib/data';
 import CardDirectoryClient from './CardDirectoryClient';
-import { supabase } from '../../supabase';
+
+/**
+ * Revalidate this page cache every hour
+ */
+export const revalidate = 3600;
 
 export default async function CardDirectoryPage() {
-  const { data, error } = await supabase
-    .from('tarotCardInformation')
-    .select()
-    .order('id', { ascending: true });
+  const tarotDeck = await getTarotDeck();
 
-  if (error) {
-    console.error('Error fetching tarot deck:', error);
-    return <CardDirectoryClient tarotDeck={[]} />;
-  }
-
-  return <CardDirectoryClient tarotDeck={data || []} />;
+  return <CardDirectoryClient tarotDeck={tarotDeck} />;
 }

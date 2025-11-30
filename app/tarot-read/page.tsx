@@ -1,19 +1,16 @@
 /**
  * Server Component - runs on server only
  */
-import { supabase } from '../../supabase';
+import { getTarotDeck } from '../../lib/data';
 import TarotReadClient from './TarotReadClient';
 
+/**
+ * Revalidate this page every hour
+ */
+export const revalidate = 3600;
+
 export default async function TarotReadPage() {
-  const { data, error } = await supabase
-    .from('tarotCardInformation')
-    .select()
-    .order('id', { ascending: true });
+  const tarotDeck = await getTarotDeck();
 
-  if (error) {
-    console.error('Error fetching tarot deck:', error);
-    return <TarotReadClient tarotDeck={[]} />;
-  }
-
-  return <TarotReadClient tarotDeck={data || []} />;
+  return <TarotReadClient tarotDeck={tarotDeck} />;
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { CardSuitTypes } from '../pages/CardDirectoryPage';
+import type { CardSuitTypes } from '../app/card-directory/CardDirectoryClient';
 import type { TarotCard } from '../types/database';
 
 const initialTarotCardDescription =

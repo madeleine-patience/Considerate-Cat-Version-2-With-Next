@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { TarotInformationModalProps } from '../components/tarotInformationModal';
-import type { CardSuitTypes } from '../pages/CardDirectoryPage';
+import type { CardSuitTypes } from '../app/card-directory/CardDirectoryClient';
 import type { TarotCard } from '../types/database';
 
 const initialDialogProps: TarotInformationModalProps = {
