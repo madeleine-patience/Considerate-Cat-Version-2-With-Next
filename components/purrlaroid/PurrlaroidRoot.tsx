@@ -47,11 +47,13 @@ const PurrlaroidRoot = ({
         <Image
           src={catImage}
           alt={altText || ''}
-          fill
           sizes='250px'
+          height={250}
+          width={250}
           style={{
             objectFit: 'cover',
-            transition: 'opacity .5s ease-in-out'
+            transition: 'opacity .5s ease-in-out',
+            width: '100%'
           }}
         />
       </Box>

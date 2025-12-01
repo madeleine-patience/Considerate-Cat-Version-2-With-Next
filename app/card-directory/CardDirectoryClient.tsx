@@ -5,8 +5,8 @@ import { DisplayTarotCards } from '../../components/displayTarotCards';
 import { useCardDirectory } from '../../hooks/useCardDirectory';
 import { useTarotCard } from '../../hooks/useTarotCard';
 import { TarotCard } from '../../types/database';
+import Image from 'next/image';
 import TarotInformationModal from '../../components/tarotInformationModal/TarotInformationModal';
-import ThreeCardSpread from '../../components/threeCardSpread/ThreeCardSpread';
 import ElmerCircleIcon from '../../components/elmerCircleIcon/ElmerCircleIcon';
 import PageContainer from '../../components/pageContainer/PageContainer';
 import RaisedButton from '../../components/raisedButton/RaisedButton';
@@ -23,9 +23,7 @@ export default function CardDirectoryClient({
   tarotDeck
 }: CardDirectoryClientProps) {
   const theme = useTheme();
-  const isSmallScreen: boolean = useMediaQuery(theme.breakpoints.down('md'), {
-    noSsr: true
-  });
+  const isSmallScreen: boolean = useMediaQuery(theme.breakpoints.down('md'));
 
   const { displayCardBySuit, displayFilteredData, tarotSuitDescription } =
     useTarotCard(tarotDeck);
@@ -106,19 +104,78 @@ export default function CardDirectoryClient({
         {!showThreeCards && (
           <ToggleButton onChange={switchHandler} sx={{ margin: 'auto' }} />
         )}
-        {
+        {!showThreeCards && (
           <DisplayTarotCards
             isGridView={isGridView}
             onClick={handleCardClick}
             tarotCardData={displayFilteredData}
           />
-        }
+        )}
         {shouldShowThreeCards && (
-          <ThreeCardSpread
-            card1={tarotDeck[15]}
-            card2={tarotDeck[5]}
-            card3={tarotDeck[7]}
-          />
+          <Box position='relative' sx={{ height: '400px', width: '600px' }}>
+            <Box
+              sx={{
+                position: 'absolute',
+                transform: 'rotate(-14.4deg)',
+                top: '25px',
+                right: '375px',
+                width: '200px',
+                height: '350px',
+                borderRadius: 3,
+                overflow: 'hidden',
+                boxShadow:
+                  'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;'
+              }}
+            >
+              <Image
+                src='/image/tarot-cards/the-devil.webp'
+                alt='The Devil tarot card'
+                fill
+                style={{ objectFit: 'contain' }}
+              />
+            </Box>
+            <Box
+              sx={{
+                position: 'absolute',
+                zIndex: 2,
+                left: '200px',
+                width: '200px',
+                height: '350px',
+                borderRadius: 3,
+                overflow: 'hidden',
+                boxShadow:
+                  'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;'
+              }}
+            >
+              <Image
+                src='/image/tarot-cards/the-hierophant.webp'
+                alt='The Hierophant tarot card'
+                fill
+                style={{ objectFit: 'contain' }}
+              />
+            </Box>
+            <Box
+              sx={{
+                position: 'absolute',
+                transform: 'rotate(14.4deg)',
+                top: '25px',
+                left: '375px',
+                width: '200px',
+                height: '350px',
+                borderRadius: 3,
+                overflow: 'hidden',
+                boxShadow:
+                  'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;'
+              }}
+            >
+              <Image
+                src='/image/tarot-cards/the-chariot.webp'
+                alt='The Chariot tarot card'
+                fill
+                style={{ objectFit: 'contain' }}
+              />
+            </Box>
+          </Box>
         )}
         {showTarotInformationModal && (
           <TarotInformationModal {...dialogProps} />

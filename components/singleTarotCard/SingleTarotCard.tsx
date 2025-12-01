@@ -14,6 +14,7 @@ const SingleTarotCard = ({ image, altText, sx }: SingleTarotCardProps) => {
         width: '250px',
         borderRadius: 3,
         overflow: 'hidden',
+        position: 'relative',
         boxShadow:
           'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;',
         '& img': {
@@ -25,11 +26,12 @@ const SingleTarotCard = ({ image, altText, sx }: SingleTarotCardProps) => {
       <Image
         src={image}
         alt={altText || ''}
-        width={250}
-        height={350}
+        height={200}
+        width={200}
         style={{
+          height: '100%',
           width: '100%',
-          height: 'auto'
+          objectFit: 'cover'
         }}
       />
     </Box>

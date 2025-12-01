@@ -4,7 +4,7 @@ import { TarotDeckContext } from '../../context/TarotDeckContext';
 import { tarotSpreadMocks } from '../../mocks/tarotSpreadData.mocks';
 import TarotInformationTile from './TarotInformationTile';
 
-const card = '/image/tarot-cards/25.webp';
+const card = '/image/tarot-cards/three-of-cups.webp';
 
 export default {
   title: 'Components/TarotInformationTile',

@@ -66,7 +66,7 @@ const SingleTarotCard = ({
             width: '200px'
           },
           "&[data-size='small']": {
-            width: '75px'
+            width: '100px'
           },
           '& img': {
             display: 'block'
@@ -76,11 +76,12 @@ const SingleTarotCard = ({
         <Image
           src='/image/welcome-cards/tarot-card-back.webp'
           alt='The tarot card back'
-          width={size === 'small' ? 75 : 200}
-          height={size === 'small' ? 105 : 280}
+          width={200}
+          height={200}
           style={{
+            height: 'auto',
             width: '100%',
-            height: 'auto'
+            objectFit: 'cover'
           }}
         />
       </Box>
@@ -108,11 +109,12 @@ const SingleTarotCard = ({
         <Image
           src={image}
           alt={altText || ''}
-          width={size === 'small' ? 100 : 200}
-          height={size === 'small' ? 140 : 280}
+          width={200}
+          height={200}
           style={{
             width: '100%',
-            height: 'auto'
+            height: '100%',
+            objectFit: 'cover'
           }}
         />
       </Box>

@@ -12,16 +12,21 @@ import RaisedButton from '../../components/raisedButton/RaisedButton';
 
 interface TarotReadClientProps {
   tarotDeck: TarotCard[];
+  shuffledDeck: TarotCard[];
 }
 
 export default function TarotReadClient({
-  tarotDeck
+  tarotDeck,
+  shuffledDeck
 }: TarotReadClientProps): ReactElement {
   const [isFlipped, setIsFlipped] = useState(false);
   const [areSpreadChoicesVisible, setAreIsSpreadChoicesVisible] =
     useState(true);
   const [isTarotReadVisible, setIsTarotReadVisible] = useState(false);
-  const { displaySomeCards, displayFilteredData } = useTarotCard(tarotDeck);
+  const { displaySomeCards, displayFilteredData } = useTarotCard(
+    tarotDeck,
+    shuffledDeck
+  );
 
   const displayTarotSpread = (lengthOfSpread: number) => {
     displaySomeCards(lengthOfSpread);
