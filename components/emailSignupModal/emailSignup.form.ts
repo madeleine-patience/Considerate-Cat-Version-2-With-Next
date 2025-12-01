@@ -3,13 +3,14 @@ import { useForm } from 'react-hook-form';
 import {
   EMAIL_SELECTION,
   EmailChoiceSchema,
+  EmailChoiceType,
   emailChoiceValidationSchema
 } from '../../schemas/userEmailSchema';
 
 export interface EmailFormProps {
   Email: string;
   Name: string;
-  EmailChoice: (typeof EMAIL_SELECTION)[keyof typeof EMAIL_SELECTION];
+  EmailChoice: EmailChoiceType;
 }
 
 export function useEmailMarketingForm() {
