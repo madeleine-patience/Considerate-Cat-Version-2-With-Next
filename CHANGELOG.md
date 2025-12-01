@@ -50,7 +50,7 @@
 - butters and images
   ([3db50f3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/3db50f3eee8c937485a8cd4824ac7bd6dbbd581a))
 - Server side rendering and image component harassment
-  ([95ebaca](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/95ebaca1a4f307d2a66e57b7e43e0f9769ae1d11))
+  ([260dd2d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/260dd2df7f7dc4424d6491b229063df9d9cdd624))
 - Smoothed transition
   ([54985ed](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/54985edc3a6b778ca7fb121ccde0b5f87daceb1b))
 

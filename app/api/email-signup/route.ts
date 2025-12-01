@@ -3,11 +3,26 @@
  */
 import { NextResponse } from 'next/server';
 import { supabase } from '../../../supabase';
+import { emailChoiceValidationSchema } from '../../../schemas/userEmailSchema';
 
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { data, error } = await supabase.from('userEmail').insert([body]);
+
+    const validationResult = emailChoiceValidationSchema.safeParse({
+      Name: body.name,
+      Email: body.customer_email,
+      EmailChoice: body.email_choice
+    });
+
+    if (!validationResult.success) {
+      return NextResponse.json(
+        { error: 'Invalid input', details: validationResult.error.errors },
+        { status: 400 }
+      );
+    }
+
+    const { data, error } = await supabase.from('Emails').insert([body]);
 
     if (error) {
       return NextResponse.json({ error: error.message }, { status: 400 });
