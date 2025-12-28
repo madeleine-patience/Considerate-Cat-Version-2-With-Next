@@ -22,6 +22,8 @@
     "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^5.15.6",
     "@mui/material": "^5.15.6",
     "@mui/material-nextjs": "^5.15.5",
