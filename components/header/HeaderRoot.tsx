@@ -3,7 +3,6 @@ import { PropsWithChildren } from 'react';
 
 const HeaderRoot = ({ children }: PropsWithChildren) => {
   const { palette } = useTheme();
-  const theme = useTheme();
 
   return (
     <Box
