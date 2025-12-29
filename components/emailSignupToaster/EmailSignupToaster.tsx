@@ -1,8 +1,8 @@
 import { Box, Snackbar, Typography, useTheme } from '@mui/material';
 import { useState } from 'react';
+import { CloseSvg } from '../../SVGs/CloseSvg';
 import { filter } from '../../theme/utils/filter';
 import EmailSignUpModal from '../emailSignupModal/EmailSignupModal';
-import { CloseSvg } from '../../SVGs/CloseSvg';
 
 const EmailSignUpToaster = () => {
   const { palette } = useTheme();
@@ -15,6 +15,7 @@ const EmailSignUpToaster = () => {
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
+    setIsToasterOpen(true);
   };
 
   return (
@@ -22,7 +23,10 @@ const EmailSignUpToaster = () => {
       <Snackbar open={isToasterOpen}>
         <Box
           tabIndex={0}
-          onClick={() => setIsModalOpen(true)}
+          onClick={() => {
+            setIsToasterOpen(false);
+            setIsModalOpen(true);
+          }}
           sx={{
             position: 'relative',
             outline: 'none',
@@ -39,12 +43,7 @@ const EmailSignUpToaster = () => {
             }
           }}
         >
-          <Box
-            sx={{
-              overflow: 'clip',
-              height: '100%'
-            }}
-          >
+          <Box sx={{ overflow: 'clip', height: '100%' }}>
             <Box
               component='img'
               src='/image/ToasterImage.png'
@@ -57,6 +56,7 @@ const EmailSignUpToaster = () => {
               }}
             />
           </Box>
+
           <Box
             className='keep-in-touch-box'
             sx={{
@@ -79,6 +79,7 @@ const EmailSignUpToaster = () => {
             }}
           >
             <Typography variant='h4'>Keep In Touch</Typography>
+
             <Box
               component='button'
               aria-label='Close'
@@ -93,7 +94,7 @@ const EmailSignUpToaster = () => {
                 position: 'absolute',
                 borderRadius: '100%',
                 backgroundColor: palette.pinks.dark,
-                border: `2px solid white`,
+                border: '2px solid white',
                 color: 'white',
                 width: 30,
                 height: 30,
@@ -102,7 +103,7 @@ const EmailSignUpToaster = () => {
                 cursor: 'pointer',
                 transition: 'background-color 120ms ease-in-out',
                 '&:hover': {
-                  backgroundColor: `${palette.pinks.main}`
+                  backgroundColor: palette.pinks.main
                 },
                 '&:hover svg': {
                   stroke: palette.pinks.dark

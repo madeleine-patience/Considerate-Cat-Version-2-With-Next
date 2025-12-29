@@ -6,11 +6,11 @@ import { defaultTheme } from '../theme/themeBuilder';
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <StyledEngineProvider injectFirst>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={defaultTheme}>
         <CssBaseline />
-        <Component {...pageProps} />{' '}
-      </StyledEngineProvider>
-    </ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </StyledEngineProvider>
   );
 }
