@@ -6,12 +6,17 @@ on:
       - main
       - develop
       - 'feature/**'
-  workflow_dispatch: # 👈 Adds a manual "Run workflow" button in the Actions tab
+    paths:
+      - '.storybook/**'
+      - '**/*.stories.@(js|jsx|ts|tsx|mdx)'
+      - 'stories/**'
+  workflow_dispatch:
 
 jobs:
   chromatic:
     name: Run Chromatic
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -20,7 +25,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.20.0
+          node-version: 20
 
       - name: Install dependencies
         run: npm ci

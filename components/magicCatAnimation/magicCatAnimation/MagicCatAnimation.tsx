@@ -1,5 +1,4 @@
-import { keyframes } from '@emotion/react';
-import { styled } from '@mui/material';
+import { keyframes, styled } from '@mui/material';
 
 const animatedCat = keyframes`
 0%{background-image:url(${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/headerAnimation/heidi-01.png)}
