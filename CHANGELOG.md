@@ -2,6 +2,8 @@
 
 ### Features
 
+- add loading states for all routes
+  ([25e3f80](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/25e3f80cd600af72bf412822daf3a9d5782a63a1))
 - Added alt text props to Purrlaroid
   ([318cc35](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/318cc35812728cddad93d807fd2e36113831552f))
 - Added new stories for card amounts
@@ -10,16 +12,24 @@
   ([5d029b3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/5d029b3ed84c2000d6ed02c66631568270fa7081))
 - Adding tilt deltas for layouts
   ([69b796e](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/69b796eac3950d23c318bd4c4f55c3a2f9c42072))
+- Caching and image opt
+  ([3c85f23](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/3c85f23e32ce2d57cac0889d104df587610ad52b))
 - Cat poptart SVG and styles
   ([acf2019](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/acf2019aa6964bde11d8c1f980a21ba3031fbb75))
 - changelog generated
   ([dd1177b](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/dd1177ba5c98106dc846cf7bc067b386d7c9bbf9))
 - Forgot to add 4 card spread!
   ([e146167](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/e14616737981c9ba745432c6ec903956982921a8))
+- migrate to App Router with server-side data fetching
+  ([55dad5a](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/55dad5ade3c4b6efab3ba76f77b4c203250e64bf))
+- optimize images with Next.js Image
+  ([be893f0](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/be893f0a06595e64719b86f7dde730b0c9ff348c))
 - Post commit and changelog script
   ([d3be984](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/d3be984f9eeb25a82775dca9a8591d09d4fd2d20))
 - Post commit handles permissions
   ([3493cbe](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/3493cbe2d5225ec51cf7f6bdf44028360cfca482))
+- secure Supabase credentials with server-only, adds form api route
+  ([97a39a4](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/97a39a469686b9ac3621759e1ab2027cd0c3d993))
 - Spread now using local card images (needed for stories)
   ([08f76c8](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/08f76c89cc2ed854068be9ebc06b800bd7ff4a5a))
 - Storybook components
@@ -37,6 +47,10 @@
 
 ### Bug Fixes
 
+- butters and images
+  ([3db50f3](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/3db50f3eee8c937485a8cd4824ac7bd6dbbd581a))
+- Server side rendering and image component harassment
+  ([260dd2d](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/260dd2df7f7dc4424d6491b229063df9d9cdd624))
 - Smoothed transition
   ([54985ed](https://github.com/madeleine-patience/Considerate-Cat-Version-2-With-Next/commit/54985edc3a6b778ca7fb121ccde0b5f87daceb1b))
 

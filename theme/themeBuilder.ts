@@ -37,7 +37,14 @@ const baseOptions: ThemeOptions = {
     greens: {
       main: '#accca5',
       light: '#add4a5',
+      dark: '#5e9552ff',
       contrastLightAAA: '#283626'
+    },
+    reds: {
+      main: '#cd6868ff',
+      light: '#ffb2b2ff',
+      dark: '#730000ff',
+      contrastLightAAA: '#320000ff'
     },
     yellows: {
       light: '#ebdfbe'

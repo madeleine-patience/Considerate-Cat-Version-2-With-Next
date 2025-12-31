@@ -1,5 +1,5 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material';
-import type { TarotCard } from '../../hooks/fetchTarotDeck';
+import type { TarotCard } from '../../types/database';
 import SingleTarotCard from '../singleTarotCardWithFlip/SingleTarotCardWithFlip';
 import TarotInformationTile from '../tarotInformationTile/TarotInformationTile';
 

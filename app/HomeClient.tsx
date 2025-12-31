@@ -1,25 +1,34 @@
+'use client';
+
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { Toaster } from '../components/toaster/Toaster';
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
-import { useRouter } from 'next/router';
-import type { ReactElement } from 'react';
 import CatCardFlipper from '../components/catCardFlipper/CatCardFlipper';
-import EmailSignUpToaster from '../components/emailSignupToaster/EmailSignupToaster';
-import { LoadingPage } from '../components/loadingPage/LoadingPage';
+import EmailSignUpModal from '../components/emailSignupModal/EmailSignupModal';
 import PageContainer from '../components/pageContainer/PageContainer';
 import RaisedButton from '../components/raisedButton/RaisedButton';
-import useFetchTarotDeck from '../hooks/fetchTarotDeck';
+import type { ReactElement } from 'react';
 
 const homePageMainImage = '/image/homepageImage.webp';
 
-export default function Home(): ReactElement {
+export default function HomeClient(): ReactElement {
   const router = useRouter();
-  const { loading } = useFetchTarotDeck();
   const theme = useTheme();
   const isSmallScreen: boolean = useMediaQuery(theme.breakpoints.down('md'));
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  if (loading) return <LoadingPage />;
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <PageContainer>
-      <Box display='flex' justifyContent='center' position='relative'>
+      <Box display='flex' justifyContent='center'>
         <Box
           component='img'
           src={homePageMainImage}
@@ -72,13 +81,19 @@ export default function Home(): ReactElement {
             <RaisedButton
               buttonLabel='Get My Own Tarot Read!'
               onClick={() => {
-                router.push('/TarotReadPage');
+                router.push('/tarot-read');
               }}
             />
           </Box>
         </Box>
       </Box>
-      <EmailSignUpToaster />
+      <Toaster
+        type='custom'
+        message='Keep In Touch'
+        image='/image/ToasterImage.png'
+        onClick={handleOpenModal}
+      />
+      <EmailSignUpModal isOpen={isModalOpen} setIsOpen={handleCloseModal} />
     </PageContainer>
   );
 }

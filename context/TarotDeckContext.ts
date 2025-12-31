@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import type { TarotCard } from '../hooks/fetchTarotDeck';
+import type { TarotCard } from '../types/database';
 
 /**
  * TarotDeckContext

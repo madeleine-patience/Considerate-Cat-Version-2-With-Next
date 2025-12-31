@@ -1,21 +1,32 @@
-import { Box } from '@mui/material';
-import { ReactElement, useState } from 'react';
-import DisplayTarotCardsWithFlip from '../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
-import { LoadingPage } from '../components/loadingPage/LoadingPage';
-import PageContainer from '../components/pageContainer/PageContainer';
-import RaisedButton from '../components/raisedButton/RaisedButton';
-import { TarotSpreadSelectionProps } from '../components/tarotSpreadSelectionBox';
-import { TarotSpreadSelectionBoxList } from '../components/tarotSpreadSelectionBoxList';
-import useFetchTarotDeck from '../hooks/fetchTarotDeck';
-import { useTarotCard } from '../hooks/useTarotCard';
+'use client';
 
-export default function TarotReadPage(): ReactElement {
+import { ReactElement, useState } from 'react';
+import { TarotSpreadSelectionBoxList } from '../../components/tarotSpreadSelectionBoxList';
+import { TarotSpreadSelectionProps } from '../../components/tarotSpreadSelectionBox';
+import { useTarotCard } from '../../hooks/useTarotCard';
+import { TarotCard } from '../../types/database';
+import { Box } from '@mui/material';
+import DisplayTarotCardsWithFlip from '../../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
+import PageContainer from '../../components/pageContainer/PageContainer';
+import RaisedButton from '../../components/raisedButton/RaisedButton';
+
+interface TarotReadClientProps {
+  tarotDeck: TarotCard[];
+  shuffledDeck: TarotCard[];
+}
+
+export default function TarotReadClient({
+  tarotDeck,
+  shuffledDeck
+}: TarotReadClientProps): ReactElement {
   const [isFlipped, setIsFlipped] = useState(false);
   const [areSpreadChoicesVisible, setAreIsSpreadChoicesVisible] =
     useState(true);
   const [isTarotReadVisible, setIsTarotReadVisible] = useState(false);
-  const { tarotDeck, loading } = useFetchTarotDeck();
-  const { displaySomeCards, displayFilteredData } = useTarotCard(tarotDeck);
+  const { displaySomeCards, displayFilteredData } = useTarotCard(
+    tarotDeck,
+    shuffledDeck
+  );
 
   const displayTarotSpread = (lengthOfSpread: number) => {
     displaySomeCards(lengthOfSpread);
@@ -29,7 +40,6 @@ export default function TarotReadPage(): ReactElement {
     setIsFlipped(false);
     setIsTarotReadVisible(false);
   };
-  if (loading) return <LoadingPage />;
 
   const tarotSpreadSelectionBoxes: TarotSpreadSelectionProps[] = [
     {

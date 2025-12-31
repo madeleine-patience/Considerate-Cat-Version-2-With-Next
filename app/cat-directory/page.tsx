@@ -1,13 +1,18 @@
+/**
+ * Server Component - runs on server only
+ */
+import { getCats } from '../../lib/data';
 import { Grid } from '@mui/material';
-import { LoadingPage } from '../components/loadingPage/LoadingPage';
-import PageContainer from '../components/pageContainer/PageContainer';
-import Purrlaroid from '../components/purrlaroid';
-import useFetchCats, { CatProps } from '../hooks/fetchCatData';
+import PageContainer from '../../components/pageContainer/PageContainer';
+import Purrlaroid from '../../components/purrlaroid';
 
-export default function CatDirectory() {
-  const { cats, loading }: CatProps = useFetchCats();
+/**
+ * Revalidate this page cache every hour
+ */
+export const revalidate = 3600;
 
-  if (loading) return <LoadingPage />;
+export default async function CatDirectoryPage() {
+  const cats = await getCats();
 
   return (
     <PageContainer>

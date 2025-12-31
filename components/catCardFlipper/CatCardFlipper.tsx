@@ -7,18 +7,14 @@ const CatCardFlipper = () => {
   const theme = useTheme();
   const [petCount, setPetCount] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
-  const [butters, setButters] = useState(
-    `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-1.png`
-  );
+  const [butters, setButters] = useState('/image/No-Background-Butters-1.png');
 
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
   const petTheCat = () => {
     setPetCount((prev) => prev + 1);
 
     if (petCount >= 0) {
-      setButters(
-        `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/considerate%20cat%20assets/No-Background-Butters-2.png`
-      );
+      setButters('/image/No-Background-Butters-2.png');
       setIsFlipped(true);
     }
   };

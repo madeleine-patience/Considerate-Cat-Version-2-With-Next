@@ -17,12 +17,10 @@ const HeaderNavigation = () => {
         }
       }}
     >
-      <HeaderNavButton link='./'>Home </HeaderNavButton>
-      <HeaderNavButton link='./TarotReadPage'>Tarot Reading</HeaderNavButton>
-      <HeaderNavButton link='./CardDirectoryPage'>
-        Card Directory
-      </HeaderNavButton>
-      <HeaderNavButton link='./CatDirectory'>Meet the Cats</HeaderNavButton>
+      <HeaderNavButton link='/'>Home </HeaderNavButton>
+      <HeaderNavButton link='/tarot-read'>Tarot Reading</HeaderNavButton>
+      <HeaderNavButton link='/card-directory'>Card Directory</HeaderNavButton>
+      <HeaderNavButton link='/cat-directory'>Meet the Cats</HeaderNavButton>
     </List>
   );
 };
