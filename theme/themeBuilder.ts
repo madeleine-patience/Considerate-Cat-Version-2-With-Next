@@ -48,11 +48,14 @@ const baseOptions: ThemeOptions = {
       contrastLightAAA: '#320000ff'
     },
     yellows: {
+      main: '#ecdc82ff',
+      dark: '#d08660ff',
       light: '#ebdfbe'
     },
     purples: {
       main: '#DEA9EA',
       light: '#E6C9F3',
+      dark: '#8f6aa1ff',
       contrastLightAAA: '#56315E'
     },
     browns: {

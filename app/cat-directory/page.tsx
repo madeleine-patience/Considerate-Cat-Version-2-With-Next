@@ -1,7 +1,7 @@
 /**
  * Server Component - runs on server only
  */
-import { getCats } from '../../lib/data';
+import { getCats, getTarotDeck } from '../../lib/data';
 import CatDirectoryClient from './CatDirectoryClient';
 
 /**
@@ -11,6 +11,7 @@ export const revalidate = 3600;
 
 export default async function CardDirectoryPage() {
   const cats = await getCats();
+  const tarotDeck = await getTarotDeck();
 
-  return <CatDirectoryClient cats={cats} />;
+  return <CatDirectoryClient cats={cats} tarotDeck={tarotDeck} />;
 }

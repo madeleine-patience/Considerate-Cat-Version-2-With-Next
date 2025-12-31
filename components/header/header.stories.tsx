@@ -11,7 +11,7 @@ type Story = StoryObj<typeof Header.Root>;
 export const Default: Story = {
   render: () => (
     <Header.Root>
-      <Header.Title> Considerate Cat</Header.Title>
+      <Header.Title />
       <Header.Animation />
       <Header.Navigation />
     </Header.Root>
@@ -24,7 +24,7 @@ export const Mobile: Story = {
   },
   render: () => (
     <Header.Root>
-      <Header.Title> Considerate Cat</Header.Title>
+      <Header.Title />
       <Header.Animation />
       <Header.Navigation />
     </Header.Root>

@@ -1,11 +1,13 @@
 import { Box, Typography } from '@mui/material';
-import { Cat } from '../../types/database';
+import { Cat, TarotCard } from '../../types/database';
 import { Modal } from '../modal';
 import Purrlaroid from '../purrlaroid';
+import SingleTarotCard from '../singleTarotCardWithFlip/SingleTarotCardWithFlip';
 
 export interface CatInformationModalProps {
   selectedCat: Cat;
   allCatData: Cat[];
+  tarotDeck: TarotCard[];
   isOpen: boolean;
   onClick: () => void;
 }
@@ -14,18 +16,33 @@ export const CatInformationModal = ({
   isOpen,
   selectedCat,
   allCatData,
-  onClick
+  onClick,
+  tarotDeck
 }: CatInformationModalProps) => {
   if (!selectedCat) return null;
 
   function getCatFriends(cat: Cat, allCats: Cat[]): Cat[] {
     return (cat.cat_friends ?? [])
-      .map((id) => allCats.find((c) => c.id === id))
+      .map((id) => allCats.find((cat) => cat.id === id))
       .filter((c): c is Cat => Boolean(c));
+  }
+
+  function getAssociatedTarotCards(
+    deck: TarotCard[],
+    selectedCatAssociatedCards: number[]
+  ) {
+    return (deck ?? []).filter((card) => {
+      return (selectedCatAssociatedCards ?? []).includes(card.id);
+    });
   }
 
   const catPals = getCatFriends(selectedCat, allCatData);
 
+  const associatedCards = getAssociatedTarotCards(
+    tarotDeck,
+    selectedCat.associated_cards!
+  );
+  console.log(associatedCards);
   return (
     <Modal.Root open={isOpen} setIsOpen={onClick} color='pink'>
       <Box
@@ -56,6 +73,22 @@ export const CatInformationModal = ({
                   catImage={friend.cat_main_image}
                   altText={friend.alt_text}
                   isAnimated={false}
+                />
+              ))}
+            </Box>
+          </>
+        )}
+        {associatedCards.length > 0 && (
+          <>
+            <Typography variant='h5'>
+              You will find {selectedCat.cat_name} on the following cards:
+            </Typography>
+            <Box sx={{ display: 'flex', gap: 4 }}>
+              {associatedCards.map((card) => (
+                <SingleTarotCard
+                  key={card.id}
+                  image={card.image_link}
+                  size='small'
                 />
               ))}
             </Box>

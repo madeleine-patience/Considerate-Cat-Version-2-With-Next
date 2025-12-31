@@ -40,8 +40,8 @@ const PurrlaroidRoot = ({
     >
       <Box
         sx={{
-          width: size === 'medium' ? 250 : 100,
-          height: size === 'medium' ? 250 : 100,
+          width: size === 'medium' ? 225 : 100,
+          height: size === 'medium' ? 225 : 100,
           position: 'relative',
           cursor: onClick ? 'pointer' : 'default'
         }}
@@ -51,8 +51,8 @@ const PurrlaroidRoot = ({
           src={catImage}
           alt={altText || ''}
           sizes='250px'
-          height={size === 'medium' ? 250 : 100}
-          width={size === 'medium' ? 250 : 100}
+          height={size === 'medium' ? 225 : 100}
+          width={size === 'medium' ? 225 : 100}
           style={{
             objectFit: 'cover',
             transition: 'opacity .5s ease-in-out',

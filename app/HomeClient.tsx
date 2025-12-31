@@ -28,7 +28,7 @@ export default function HomeClient(): ReactElement {
 
   return (
     <PageContainer>
-      <Box display='flex' justifyContent='center'>
+      <Box sx={{ display: 'flex', p: 8 }}>
         <Box
           component='img'
           src={homePageMainImage}
@@ -87,6 +87,7 @@ export default function HomeClient(): ReactElement {
           </Box>
         </Box>
       </Box>
+
       <Toaster
         type='custom'
         message='Keep In Touch'

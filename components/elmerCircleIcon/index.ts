@@ -1,1 +1,1 @@
-export * from './ElmerCircleIcon';
+export * from './CatCircleIcon';

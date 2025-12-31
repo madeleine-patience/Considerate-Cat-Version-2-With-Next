@@ -13,18 +13,17 @@ export default function PageContainer({ children }: PropsWithChildren) {
       sx={{
         minHeight: '100vh',
         display: 'flex',
-        gap: 4,
         flexDirection: 'column',
         justifyContent: 'space-between',
         backgroundColor: palette.pinks.main
       }}
     >
       <Header.Root>
-        <Header.Title> Considerate Cat</Header.Title>
+        <Header.Title />
         <Header.Animation />
         <Header.Navigation />
       </Header.Root>
-      <Box sx={{ maxWidth: '1000px', margin: 'auto', p: 4 }}>{children}</Box>
+      <Box sx={{ maxWidth: '1000px', margin: 'auto' }}>{children}</Box>
       <FlowerFooter />
     </Box>
   );
