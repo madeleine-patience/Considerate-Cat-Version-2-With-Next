@@ -1,3 +1,14 @@
 body {
-  margin: 0;
+  cursor:
+    url('https://ixjcrkztvkqvrbwncthy.supabase.co/storage/v1/object/public/considerate%20cat%20assets/PawCursor.png')
+      16 16,
+    default;
+}
+
+button *,
+a * {
+  cursor:
+    url('https://ixjcrkztvkqvrbwncthy.supabase.co/storage/v1/object/public/considerate%20cat%20assets/PawCursorHover.png')
+      16 16,
+    pointer !important;
 }
