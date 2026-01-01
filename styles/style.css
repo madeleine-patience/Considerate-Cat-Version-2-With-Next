@@ -5,8 +5,15 @@ body {
     default;
 }
 
+button,
 button *,
-a * {
+a,
+a *,
+[role='button'] *,
+[tabindex='0'] *,
+input[type='radio'] *,
+label,
+label * {
   cursor:
     url('https://ixjcrkztvkqvrbwncthy.supabase.co/storage/v1/object/public/considerate%20cat%20assets/PawCursorHover.png')
       16 16,
