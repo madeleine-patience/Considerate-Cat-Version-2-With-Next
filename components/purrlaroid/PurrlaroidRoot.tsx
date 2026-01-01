@@ -25,6 +25,7 @@ const PurrlaroidRoot = ({
 }: PurrlaroidProps) => {
   return (
     <Box
+      component={onClick ? 'button' : 'img'}
       sx={{
         width: 'fit-content',
         textAlign: 'center',
@@ -33,6 +34,7 @@ const PurrlaroidRoot = ({
         transition: '1s transform ease',
         padding: size === 'medium' ? 4 : 1,
         boxShadow: '5px 5px 15px 5px rgba(0,0,0,0.27)',
+        border: '0px',
         '&:hover': {
           transform: isAnimated ? 'rotate(3deg)' : 'rotate(0)'
         }
@@ -42,8 +44,7 @@ const PurrlaroidRoot = ({
         sx={{
           width: size === 'medium' ? 225 : 100,
           height: size === 'medium' ? 225 : 100,
-          position: 'relative',
-          cursor: onClick ? 'pointer' : 'default'
+          position: 'relative'
         }}
         onClick={onClick}
       >
