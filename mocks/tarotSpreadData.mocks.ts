@@ -15,7 +15,7 @@ const threeOfPentalces: TarotCard = {
   key_words: ['creation', 'starting something new', 'artistic spirit']
 };
 
-const threeOfCups: TarotCard = {
+export const threeOfCups: TarotCard = {
   id: 25,
   card_name: 'Three Of Cups',
   card_suit: 'Cups',
@@ -26,7 +26,7 @@ const threeOfCups: TarotCard = {
   key_words: ['Celebration', 'friendship', 'happiness']
 };
 
-const temperance: TarotCard = {
+export const temperance: TarotCard = {
   id: 15,
   card_name: 'Temperance',
   card_suit: 'Major',

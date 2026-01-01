@@ -2,6 +2,7 @@ import { Meta, StoryFn } from '@storybook/react';
 import { catDataMocks } from './catData.mocks';
 import { fn } from '@storybook/test';
 import { CatInformationModal } from './CatInformationModal';
+import { temperance, threeOfCups } from '../../mocks/tarotSpreadData.mocks';
 
 export default {
   title: 'Components/CatInformationModal',
@@ -14,6 +15,7 @@ const Template: StoryFn<typeof CatInformationModal> = () => (
     allCatData={catDataMocks.manyCats}
     isOpen
     onClick={fn()}
+    tarotDeck={[temperance, threeOfCups]}
   />
 );
 
