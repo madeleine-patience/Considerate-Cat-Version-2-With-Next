@@ -25,7 +25,7 @@ const PurrlaroidRoot = ({
 }: PurrlaroidProps) => {
   return (
     <Box
-      component={onClick ? 'button' : 'img'}
+      component={onClick ? 'button' : 'div'}
       sx={{
         width: 'fit-content',
         textAlign: 'center',
