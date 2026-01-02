@@ -1,14 +1,16 @@
 import { Meta, StoryFn } from '@storybook/react';
 import Purrlaroid from './index';
-const Eddie = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/Cat%20Images/Eddie.jpg`;
+import { catDataMocks } from '../catInformationModal/catData.mocks';
 
 export default {
   title: 'Components/Purrlaroid',
   component: Purrlaroid
 } as Meta<typeof Purrlaroid>;
 
+const catMock = catDataMocks.singleCat;
+
 const Template: StoryFn<typeof Purrlaroid> = () => (
-  <Purrlaroid catImage={Eddie} catName='Eddie' />
+  <Purrlaroid catImage={catMock.cat_main_image} catName={catMock.cat_name} />
 );
 
 export const Default = Template.bind({});

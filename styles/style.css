@@ -1,3 +1,19 @@
 body {
-  margin: 0;
+  cursor:
+    url('/image/PawCursor.png') 16 16,
+    default;
+}
+
+button,
+button *,
+a,
+a *,
+[role='button'] *,
+[tabindex='0'] *,
+input[type='radio'] *,
+label,
+label * {
+  cursor:
+    url('/image/PawCursorHover.png') 16 16,
+    pointer !important;
 }

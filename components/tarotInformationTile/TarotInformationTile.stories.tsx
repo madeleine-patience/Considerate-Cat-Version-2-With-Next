@@ -1,8 +1,8 @@
 import { Box } from '@mui/material';
 import { Meta, StoryFn } from '@storybook/react';
 import { TarotDeckContext } from '../../context/TarotDeckContext';
-import { tarotSpreadMocks } from '../../mocks/tarotSpreadData.mocks';
 import TarotInformationTile from './TarotInformationTile';
+import { tarotSpreadMocks } from '../../mocks/tarotSpreadData.mocks';
 
 const card = '/image/tarot-cards/three-of-cups.webp';
 

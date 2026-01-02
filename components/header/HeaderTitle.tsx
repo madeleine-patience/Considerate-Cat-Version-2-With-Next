@@ -1,23 +1,24 @@
-import { Typography, useTheme } from '@mui/material';
-import { PropsWithChildren } from 'react';
+import { Box, useTheme } from '@mui/material';
 
-const HeaderTitle = ({ children }: PropsWithChildren) => {
-  const { palette } = useTheme();
+const HeaderTitle = () => {
+  const titleImage = '/image/titleImage.png';
   const theme = useTheme();
 
   return (
-    <Typography
-      variant='h1'
-      color={palette.purples.contrastLightAAA}
-      sx={{
-        zIndex: 1,
-        [theme.breakpoints.down('lg')]: {
-          display: 'none'
-        }
-      }}
-    >
-      {children}
-    </Typography>
+    <>
+      <Box
+        component='img'
+        src={titleImage}
+        alt='Considerate Cat'
+        sx={{
+          width: '450px',
+          p: 4,
+          [theme.breakpoints.down('md')]: {
+            display: 'none'
+          }
+        }}
+      />
+    </>
   );
 };
 

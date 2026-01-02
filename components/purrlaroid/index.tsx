@@ -1,9 +1,22 @@
 import PurrlaroidRoot from './PurrlaroidRoot';
-import PurrlaroidTitle from './PurrlaroidTitle';
-import { StoryFn } from '@storybook/react';
+import { PurrlaroidTitle } from './PurrlaroidTitle';
+import { PurrlaroidProps } from './types';
 
-const Purrlaroid: StoryFn = ({ catImage, catName, altText }) => (
-  <PurrlaroidRoot catImage={catImage} altText={altText} isAnimated>
+const Purrlaroid = ({
+  catImage,
+  altText,
+  isAnimated,
+  onClick,
+  catName,
+  size
+}: PurrlaroidProps) => (
+  <PurrlaroidRoot
+    catImage={catImage}
+    altText={altText}
+    isAnimated={isAnimated}
+    onClick={onClick}
+    size={size}
+  >
     <PurrlaroidTitle catName={catName} />
   </PurrlaroidRoot>
 );

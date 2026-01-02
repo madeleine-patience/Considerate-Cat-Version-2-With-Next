@@ -10,12 +10,11 @@ export interface TarotCard {
 
 export interface Cat {
   id: number;
-  created_at: string;
   tarot_card: number;
   cat_name: string;
   cat_story: string;
   cat_main_image: string;
   alt_text: string;
-  cat_additional_images: string | null;
-  cat_friends: string | null;
+  cat_friends?: number[];
+  associated_cards?: number[];
 }

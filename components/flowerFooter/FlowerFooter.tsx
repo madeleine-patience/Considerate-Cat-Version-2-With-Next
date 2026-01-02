@@ -1,6 +1,6 @@
 import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { Box, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Link, Typography, useMediaQuery, useTheme } from '@mui/material';
 
 const FlowerFooter = () => {
   const theme = useTheme();
@@ -86,8 +86,12 @@ const FlowerFooter = () => {
               </Typography>
 
               <Box sx={{ display: 'flex', gap: 4 }}>
-                <InstagramIcon sx={{ color: 'white', fontSize: '56px' }} />
-                <EmailIcon sx={{ color: 'white', fontSize: '56px' }} />
+                <Link href='https://www.instagram.com/madeleineillustration/'>
+                  <InstagramIcon sx={{ color: 'white', fontSize: '56px' }} />
+                </Link>
+                <Link href='mailto:consideratecatdesign@gmail.com'>
+                  <EmailIcon sx={{ color: 'white', fontSize: '56px' }} />
+                </Link>
               </Box>
             </Box>
           </Box>

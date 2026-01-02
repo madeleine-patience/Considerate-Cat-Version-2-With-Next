@@ -7,11 +7,11 @@ import { useTarotCard } from '../../hooks/useTarotCard';
 import { TarotCard } from '../../types/database';
 import Image from 'next/image';
 import TarotInformationModal from '../../components/tarotInformationModal/TarotInformationModal';
-import ElmerCircleIcon from '../../components/elmerCircleIcon/ElmerCircleIcon';
 import PageContainer from '../../components/pageContainer/PageContainer';
 import RaisedButton from '../../components/raisedButton/RaisedButton';
 import ToggleButton from '../../components/toggleButton/ToggleButton';
 import type { ReactElement } from 'react';
+import { CatCircleIcon } from '../../components/elmerCircleIcon';
 
 export type CardSuitTypes = 'Major' | 'Cups' | 'Pentacles' | 'Swords' | 'Wands';
 
@@ -81,10 +81,11 @@ export default function CardDirectoryClient({
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          gap: 'inherit'
+          gap: 4,
+          p: 8
         }}
       >
-        <ElmerCircleIcon />
+        <CatCircleIcon catType='elmer' />
         <Typography variant='body1' fontStyle='italic' textAlign='center'>
           {tarotSuitDescription}
         </Typography>

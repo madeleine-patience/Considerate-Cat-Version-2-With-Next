@@ -64,14 +64,13 @@ const EmailSignUpModal = ({ isOpen, setIsOpen }: EmailSignUpModalProps) => {
           sx={{
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center',
-            gap: 'inherit'
+            alignItems: 'center'
           }}
         >
           <Box
             component='img'
             src='/image/MagicHeidi.webp'
-            sx={{ width: '100%', maxWidth: '400px' }}
+            sx={{ width: '100%', maxWidth: '250px' }}
           />
           <Modal.Title>Keep In Touch?</Modal.Title>
           <Typography sx={{ fontStyle: 'italic' }}>

@@ -22,7 +22,7 @@ export const LoadingPage = () => {
       }}
     >
       <Box
-        sx={{ height: isSmallScreen ? '300px' : '800px' }}
+        sx={{ height: isSmallScreen ? '300px' : '600px' }}
         component='img'
         src='/image/kneadingTheDough.webp'
       />

@@ -18,8 +18,9 @@ const baseOptions: ThemeOptions = {
     h4: { fontStyle: 'normal', fontWeight: '700', fontSize: 24 },
     h5: { fontStyle: 'normal', fontWeight: '700', fontSize: 16 },
     h6: { fontStyle: 'normal', fontWeight: '700', fontSize: 14 },
-    body1: { fontStyle: 'normal', fontWeight: '400', fontSize: 16 },
-    button: { fontStyle: 'normal', fontWeight: '600', fontSize: 16 }
+    body1: { fontStyle: 'normal', fontWeight: '400', fontSize: 18 },
+    body2: { fontStyle: 'normal', fontWeight: '400', fontSize: 16 },
+    button: { fontStyle: 'normal', fontWeight: '600', fontSize: 18 }
   },
   palette: {
     pinks: {
@@ -47,11 +48,14 @@ const baseOptions: ThemeOptions = {
       contrastLightAAA: '#320000ff'
     },
     yellows: {
+      main: '#ecdc82ff',
+      dark: '#d08660ff',
       light: '#ebdfbe'
     },
     purples: {
       main: '#DEA9EA',
       light: '#E6C9F3',
+      dark: '#8f6aa1ff',
       contrastLightAAA: '#56315E'
     },
     browns: {

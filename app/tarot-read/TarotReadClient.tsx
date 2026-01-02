@@ -5,10 +5,11 @@ import { TarotSpreadSelectionBoxList } from '../../components/tarotSpreadSelecti
 import { TarotSpreadSelectionProps } from '../../components/tarotSpreadSelectionBox';
 import { useTarotCard } from '../../hooks/useTarotCard';
 import { TarotCard } from '../../types/database';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import DisplayTarotCardsWithFlip from '../../components/displayTarotCardsWithFlip/DisplayTarotCardsWithFlip';
 import PageContainer from '../../components/pageContainer/PageContainer';
 import RaisedButton from '../../components/raisedButton/RaisedButton';
+import { CatCircleIcon } from '../../components/elmerCircleIcon';
 
 interface TarotReadClientProps {
   tarotDeck: TarotCard[];
@@ -78,6 +79,24 @@ export default function TarotReadClient({
   return (
     <PageContainer>
       {areSpreadChoicesVisible && (
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: 4,
+            p: 8
+          }}
+        >
+          <CatCircleIcon catType='louie' />
+          <Typography variant='body1' textAlign='center'>
+            Here you get get a tarot reading with the Considerate Cat Tarot
+            deck. Be careful, readings may be extremely accurate. Select an
+            option below depending on your spiritual needs.
+          </Typography>
+        </Box>
+      )}
+      {areSpreadChoicesVisible && (
         <TarotSpreadSelectionBoxList data={tarotSpreadSelectionBoxes} />
       )}
       <Box
@@ -86,7 +105,7 @@ export default function TarotReadClient({
           display: 'flex',
           flexDirection: 'column',
           gap: 6,
-          p: 4
+          p: 8
         }}
       >
         {isTarotReadVisible && (
