@@ -24,7 +24,7 @@ export const CatInformationModal = ({
   function getCatFriends(cat: Cat, allCats: Cat[]): Cat[] {
     return (cat.cat_friends ?? [])
       .map((id) => allCats.find((cat) => cat.id === id))
-      .filter((c): c is Cat => Boolean(c));
+      .filter(Boolean) as Cat[];
   }
 
   function getAssociatedTarotCards(

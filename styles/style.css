@@ -1,7 +1,6 @@
 body {
   cursor:
-    url('https://ixjcrkztvkqvrbwncthy.supabase.co/storage/v1/object/public/considerate%20cat%20assets/PawCursor.png')
-      16 16,
+    url('/image/PawCursor.png') 16 16,
     default;
 }
 
@@ -15,7 +14,6 @@ input[type='radio'] *,
 label,
 label * {
   cursor:
-    url('https://ixjcrkztvkqvrbwncthy.supabase.co/storage/v1/object/public/considerate%20cat%20assets/PawCursorHover.png')
-      16 16,
+    url('/image/PawCursorHover.png') 16 16,
     pointer !important;
 }
